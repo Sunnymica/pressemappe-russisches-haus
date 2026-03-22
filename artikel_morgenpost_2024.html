@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berliner Morgenpost · August 2024 · Pressemappe Russisches Haus</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+  :root {
+    --blau: #005BBB;
+    --gelb: #FFD700;
+    --dunkel: #1a1a1a;
+    --grau: #4a4a4a;
+    --hellgrau: #f4f4f2;
+    --linie: #e0e0e0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    color: var(--dunkel);
+    background: #fff;
+    line-height: 1.7;
+  }
+
+  /* NAV-LEISTE */
+  nav {
+    background: var(--dunkel);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  nav a:hover { opacity: 1; }
+  nav .sep { color: #fff; opacity: 0.3; }
+  nav .home { opacity: 1; font-weight: 600; }
+
+  /* UKRAINE-STREIFEN */
+  .ukraine-bar {
+    height: 5px;
+    background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%);
+  }
+
+  /* HEADER */
+  header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 24px 32px;
+    border-bottom: 1px solid var(--linie);
+  }
+
+  .medium-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--hellgrau);
+    padding: 6px 14px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--grau);
+    margin-bottom: 20px;
+  }
+
+  .medium-badge .dot {
+    width: 8px; height: 8px;
+    background: var(--blau);
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 5vw, 40px);
+    line-height: 1.2;
+    color: var(--dunkel);
+    margin-bottom: 16px;
+  }
+
+  .meta {
+    font-size: 14px;
+    color: var(--grau);
+    margin-bottom: 0;
+  }
+
+  /* FAKTENBOX */
+  .faktenbox {
+    max-width: 780px;
+    margin: 32px auto;
+    padding: 0 24px;
+  }
+
+  .faktenbox-inner {
+    background: var(--hellgrau);
+    border-left: 4px solid var(--blau);
+    padding: 24px 28px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .faktenbox-inner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin-bottom: 14px;
+    color: var(--dunkel);
+    letter-spacing: 0.02em;
+  }
+
+  .faktenbox-inner ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .faktenbox-inner ul li {
+    padding: 7px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 15px;
+    border-bottom: 1px solid var(--linie);
+  }
+
+  .faktenbox-inner ul li:last-child { border-bottom: none; }
+
+  .faktenbox-inner ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--blau);
+    font-weight: 600;
+  }
+
+  /* RELEVANZ-BOX */
+  .relevanz {
+    max-width: 780px;
+    margin: 0 auto 32px;
+    padding: 0 24px;
+  }
+
+  .relevanz-inner {
+    background: var(--blau);
+    color: #fff;
+    padding: 18px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .relevanz-inner .label {
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 3px;
+    opacity: 0.8;
+    min-width: 110px;
+  }
+
+  /* ARTIKEL-INHALT */
+  .artikel {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px 24px;
+  }
+
+  .artikel h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--grau);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--linie);
+    letter-spacing: 0.02em;
+  }
+
+  .artikel p {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: var(--dunkel);
+  }
+
+  .artikel blockquote {
+    border-left: 3px solid var(--gelb);
+    margin: 24px 0;
+    padding: 12px 20px;
+    font-style: italic;
+    color: var(--grau);
+    font-size: 17px;
+  }
+
+  /* LINK ZUM ORIGINAL */
+  .original-link {
+    max-width: 780px;
+    margin: 0 auto 48px;
+    padding: 0 24px;
+  }
+
+  .original-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blau);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--blau);
+    padding-bottom: 2px;
+    transition: opacity 0.2s;
+  }
+
+  .original-link a:hover { opacity: 0.7; }
+
+  /* FOOTER */
+  footer {
+    background: var(--dunkel);
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    opacity: 0.9;
+  }
+
+  footer a { color: var(--gelb); text-decoration: none; }
+
+  /* TRENNLINIE */
+  .divider {
+    max-width: 780px;
+    margin: 0 auto 32px;
+    padding: 0 24px;
+  }
+  .divider hr { border: none; border-top: 1px solid var(--linie); }
+
+  @media (max-width: 600px) {
+    header { padding: 32px 16px 24px; }
+    .faktenbox, .relevanz, .artikel, .original-link, .divider { padding-left: 16px; padding-right: 16px; }
+    .relevanz-inner { flex-direction: column; gap: 6px; }
+    .relevanz-inner .label { min-width: unset; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="home">Pressemappe Russisches Haus</a>
+  <span class="sep">›</span>
+  <a href="#">Artikel</a>
+  <span class="sep">›</span>
+  <a href="#">Berliner Morgenpost 2024</a>
+</nav>
+
+<div class="ukraine-bar"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="medium-badge">
+    <span class="dot"></span>
+    Berliner Morgenpost
+  </div>
+  <h1>Wer ist der Mann mit Ukraine-Flagge vor dem Russischen Haus?</h1>
+  <p class="meta">7. August 2024 &nbsp;·&nbsp; Von Dirk Krampitz &nbsp;·&nbsp; Lesezeit: 4 Min.</p>
+</header>
+
+<!-- FAKTENBOX -->
+<div class="faktenbox">
+  <div class="faktenbox-inner">
+    <h2>Was steht drin</h2>
+    <ul>
+      <li>Erstes großes Porträt Henrys in einer Berliner Zeitung – wer er ist, warum er das tut</li>
+      <li>Alltägliche Anfeindungen: Anspucken, Todesdrohungen, körperliche Bedrohungen</li>
+      <li>Henry als Privatier mit Hintergrund in Psychotherapie und Unternehmensberatung</li>
+      <li>Materielle Ukraine-Hilfe: Transporter-Übergabe an die Front direkt nach dem Interview</li>
+      <li>Auslöser: Die russischen Feierlichkeiten am 8./9. Mai 2022 – da stand er zum ersten Mal mit Fahne</li>
+    </ul>
+  </div>
+</div>
+
+<!-- RELEVANZ -->
+<div class="relevanz">
+  <div class="relevanz-inner">
+    <span class="label">Warum relevant</span>
+    <span>Erste öffentliche Aufmerksamkeit für Henrys Protest – der Startpunkt der medialen Chronologie. Das Thema Russisches Haus war bis dahin kaum in der Öffentlichkeit.</span>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- ARTIKEL-INHALT -->
+<div class="artikel">
+  <h2>Vollständiger Artikel</h2>
+
+  <p>Berlin. Immer wieder steht er in der Friedrichstraße, spielt ukrainische Lieder, schwenkt die Flagge – und nimmt es hin, dass er bespuckt wird.</p>
+
+  <p>Seit Monaten steht er immer wieder dort, spielt ukrainische Lieder wie den patriotischen Marsch „Oj, u lusi tscherwona kalyna" über seine Bluetooth-Box ab – ausgerechnet vor dem Russischen Haus der Kultur in der Friedrichstraße in Berlin-Mitte. Wer die Berliner Einkaufsstraße entlang geht, sieht ihn immer wieder. Fast ist er mittlerweile eines jener Berliner Originale wie einst Helga Götze, die über Jahre vor der Gedächtniskirche stand. Es sind jene auffälligen Menschen, die man in Großstädten oft sieht, an denen man im Alltagstrubel oft vorbeigeht. Manchmal lohnt es sich, stehenzubleiben. Wie bei Henry Lindemeier. So heißt der Mann mit der Flagge.</p>
+
+  <p>Der 61-Jährige setzt sich irgendwie auch für Liebe ein. Denn er will den russischen Krieg gegen die Ukraine nicht in Vergessenheit geraten lassen. „Ich will ja gerade die Russen erreichen, deshalb stehe ich genau hier", sagt er. Und das klappt wohl auch oft, wenn auch nicht gerade auf liebevolle Weise. „Ich zähle schon nicht mehr, wie oft ich angespuckt werde", sagt Lindemeier. „Es sind meist die Männer, die mir körperliche Gewalt androhen. Ihre Frauen halten sie zurück."</p>
+
+  <blockquote>„Ich möchte nicht, dass dieser Krieg gegen die Ukraine, der täglich Leben kostet, in Vergessenheit gerät und die Unterstützung für die Ukraine nachlässt."</blockquote>
+
+  <p>Lindemeier ist Psychologe im Vorruhestand, hat viel für Unternehmen gearbeitet. Nun widmet er einen Großteil seiner Zeit der ideellen Unterstützung der Ukraine – aber auch der ganz praktischen: Am Nachmittag nach dem Gespräch holt er einen Transporter ab, den er günstig bekommen hat. Er wird in die Ukraine an die Front gebracht.</p>
+
+  <p>Henry Lindemeier wurde durch den Angriff Russlands auf die Ukraine tief in seinem Menschsein erschüttert. Seine Reaktion: „Ich habe zuerst viel geweint und dann angefangen viel zu lesen, viel zu gucken." Seine Bewältigungsstrategie ist Verstehen statt Verdrängen.</p>
+
+  <p>Den Anstoß, aktiv zu werden, gaben die Feierlichkeiten zum Kriegsende am 8. und 9. Mai 2022, bei denen er das Gedenken an die Kapitulation der Nationalsozialisten durch die Russen missbraucht sah. Seitdem ist er mit seiner Fahne unterwegs. Er wird weitermachen. So viel steht fest.</p>
+</div>
+
+<!-- ORIGINAL-LINK -->
+<div class="original-link">
+  <a href="https://www.morgenpost.de/bezirke/mitte/article406962998/wer-ist-der-mann-mit-ukraine-flagge-vor-dem-russischen-haus.html" target="_blank">
+    → Zum Originalartikel (Berliner Morgenpost, archiviert)
+  </a>
+</div>
+
+<footer>
+  Pressemappe Russisches Haus Berlin &nbsp;·&nbsp; Initiative Gedenken &nbsp;·&nbsp;
+  <a href="#">Zurück zur Übersicht</a>
+</footer>
+
+</body>
+</html>
