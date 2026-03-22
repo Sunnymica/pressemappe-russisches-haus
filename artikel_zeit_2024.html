@@ -48,6 +48,30 @@ h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); 
 footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
 footer a { color: var(--gelb); text-decoration: none; }
 @media (max-width: 600px) { .tabs-wrapper { padding: 0 16px; } header { padding: 24px 16px; } .tab-btn { padding: 10px 14px; font-size: 12px; } .relevanz { flex-direction: column; gap: 6px; } .relevanz .label { min-width: unset; } }
+
+.pdf-download {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--linie);
+}
+.pdf-download a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--hellgrau);
+  border: 2px solid var(--blau);
+  color: var(--blau);
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.pdf-download a:hover {
+  background: var(--blau);
+  color: #fff;
+}
 </style>
 </head>
 <body>
@@ -65,7 +89,7 @@ footer a { color: var(--gelb); text-decoration: none; }
 <div class="tabs-wrapper">
   <nav class="tab-nav">
     <button class="tab-btn active" onclick="showTab('highlights', this)">Auf einen Blick</button>
-    <button class="tab-btn" onclick="showTab('artikel', this)">Vollständiger Artikel</button>
+    <button class="tab-btn" onclick="showTab('artikel', this)">Artikel-Auszug &amp; PDF</button>
   </nav>
   <div id="highlights" class="tab-content active">
     <div class="faktenbox">
@@ -85,6 +109,8 @@ footer a { color: var(--gelb); text-decoration: none; }
   </div>
   <div id="artikel" class="tab-content">
     <div class="artikel-text">
+<p style="font-size:13px;color:var(--grau);font-style:italic;margin-bottom:20px;">Die folgenden Auszüge geben die wesentlichen Inhalte des Artikels wieder. Der vollständige Originalartikel erschien in der jeweiligen Publikation.</p>
+
       <p>Häufig kommt die Polizei zum Russischen Haus in Berlin. Das Kulturzentrum ist einer Kreml-nahen Organisation unterstellt. Die Betreiber stören sich an Henry Lindemeier. Der 61-Jährige steht hier jeden Tag mit seiner gelb-blauen Flagge.</p>
       <blockquote>„Slawa Ukrajini!" – „Ruhm der Ukraine!", ruft er Passanten entgegen.</blockquote>
       <p>Lindemeier hat erlebt, wie ihn Besucher bespuckt und körperlich bedroht haben. Warum er trotzdem weitermacht?</p>

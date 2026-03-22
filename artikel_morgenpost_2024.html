@@ -136,6 +136,30 @@ footer a { color: var(--gelb); text-decoration: none; }
   .relevanz { flex-direction: column; gap: 6px; }
   .relevanz .label { min-width: unset; }
 }
+
+.pdf-download {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--linie);
+}
+.pdf-download a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--hellgrau);
+  border: 2px solid var(--blau);
+  color: var(--blau);
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.pdf-download a:hover {
+  background: var(--blau);
+  color: #fff;
+}
 </style>
 </head>
 <body>
@@ -161,7 +185,7 @@ footer a { color: var(--gelb); text-decoration: none; }
 <div class="tabs-wrapper">
   <nav class="tab-nav">
     <button class="tab-btn active" onclick="showTab('highlights', this)">Auf einen Blick</button>
-    <button class="tab-btn" onclick="showTab('artikel', this)">Vollständiger Artikel</button>
+    <button class="tab-btn" onclick="showTab('artikel', this)">Artikel-Auszug &amp; PDF</button>
   </nav>
 
   <!-- TAB 1: HIGHLIGHTS -->
@@ -185,6 +209,8 @@ footer a { color: var(--gelb); text-decoration: none; }
   <!-- TAB 2: ARTIKEL -->
   <div id="artikel" class="tab-content">
     <div class="artikel-text">
+<p style="font-size:13px;color:var(--grau);font-style:italic;margin-bottom:20px;">Die folgenden Auszüge geben die wesentlichen Inhalte des Artikels wieder. Der vollständige Originalartikel erschien in der jeweiligen Publikation.</p>
+
       <p>Berlin. Immer wieder steht er in der Friedrichstraße, spielt ukrainische Lieder, schwenkt die Flagge – und nimmt es hin, dass er bespuckt wird.</p>
       <p>Seit Monaten steht er immer wieder dort, spielt ukrainische Lieder wie den patriotischen Marsch „Oj, u lusi tscherwona kalyna" über seine Bluetooth-Box ab – ausgerechnet vor dem Russischen Haus der Kultur in der Friedrichstraße in Berlin-Mitte. Wer die Berliner Einkaufsstraße entlang geht, sieht ihn immer wieder. Fast ist er mittlerweile eines jener Berliner Originale wie einst Helga Götze, die über Jahre vor der Gedächtniskirche stand. Es sind jene auffälligen Menschen, die man in Großstädten oft sieht, an denen man im Alltagstrubel oft vorbeigeht. Manchmal lohnt es sich, stehenzubleiben. Wie bei Henry Lindemeier. So heißt der Mann mit der Flagge.</p>
       <p>Der 61-Jährige setzt sich irgendwie auch für Liebe ein. Denn er will den russischen Krieg gegen die Ukraine nicht in Vergessenheit geraten lassen. „Ich will ja gerade die Russen erreichen, deshalb stehe ich genau hier", sagt er. Und das klappt wohl auch oft, wenn auch nicht gerade auf liebevolle Weise. „Ich zähle schon nicht mehr, wie oft ich angespuckt werde", sagt Lindemeier. „Es sind meist die Männer, die mir körperliche Gewalt androhen. Ihre Frauen halten sie zurück."</p>
