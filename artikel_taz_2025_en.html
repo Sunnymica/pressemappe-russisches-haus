@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAZ · April 2025 · Russian House Berlin Press Kit</title>
+<meta name="description" content="TAZ reportage: One-man protest against Russia – Henry Lindemeier and the legal grey zone of the Russian House.">
+<meta property="og:title" content="TAZ · April 2025">
+<meta property="og:description" content="TAZ reportage: One-man protest against Russia – Henry Lindemeier and the legal grey zone of the Russian House.">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/taz.jpg.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.hero { width: 100%; max-height: 480px; overflow: hidden; position: relative; }
+.hero img { width: 100%; height: 480px; object-fit: cover; object-position: center top; display: block; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.75)); color: #fff; padding: 32px 24px 16px; font-size: 13px; opacity: 0.85; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
+header { max-width: 780px; margin: 0 auto; padding: 36px 24px 24px; border-bottom: 1px solid var(--linie); }
+.medium-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--hellgrau); padding: 6px 14px; border-radius: 2px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grau); margin-bottom: 16px; }
+.medium-badge .dot { width: 8px; height: 8px; background: var(--blau); border-radius: 50%; }
+h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 12px; }
+.meta { font-size: 14px; color: var(--grau); }
+.tabs-wrapper { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+.tab-nav { display: flex; border-bottom: 2px solid var(--linie); margin-top: 28px; }
+.tab-btn { padding: 12px 20px; background: none; border: none; cursor: pointer; font-family: 'Source Sans 3', sans-serif; font-size: 13px; font-weight: 600; color: var(--grau); letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.2s, border-color 0.2s; }
+.tab-btn:hover { color: var(--blau); }
+.tab-btn.active { color: var(--blau); border-bottom-color: var(--blau); }
+.tab-content { display: none; padding: 28px 0 48px; }
+.tab-content.active { display: block; }
+.faktenbox { background: var(--hellgrau); border-left: 4px solid var(--blau); padding: 24px 28px; border-radius: 0 4px 4px 0; margin-bottom: 20px; }
+.faktenbox h2 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 14px; }
+.faktenbox ul { list-style: none; padding: 0; }
+.faktenbox ul li { padding: 8px 0 8px 22px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); }
+.faktenbox ul li:last-child { border-bottom: none; }
+.faktenbox ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
+.relevanz { background: var(--blau); color: #fff; padding: 18px 24px; border-radius: 4px; font-size: 15px; display: flex; gap: 12px; align-items: flex-start; }
+.relevanz .label { font-weight: 600; white-space: nowrap; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; opacity: 0.8; min-width: 110px; }
+.artikel-text p { font-size: 16px; margin-bottom: 18px; }
+.artikel-text blockquote { border-left: 3px solid var(--gelb); margin: 24px 0; padding: 12px 20px; font-style: italic; color: var(--grau); font-size: 17px; }
+.note-de { background: var(--hellgrau); border-left: 3px solid var(--gelb); padding: 12px 18px; margin-bottom: 20px; font-size: 13px; color: var(--grau); font-style: italic; border-radius: 0 4px 4px 0; }
+.pdf-download { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--linie); }
+.pdf-download a { display: inline-flex; align-items: center; gap: 8px; background: var(--hellgrau); border: 2px solid var(--blau); color: var(--blau); padding: 12px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; text-decoration: none; }
+.pdf-download a:hover { background: var(--blau); color: #fff; }
+.back-link { max-width: 780px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: var(--gelb); text-decoration: none; }
+@media (max-width: 600px) { .tabs-wrapper { padding: 0 16px; } header { padding: 24px 16px; } .tab-btn { padding: 10px 10px; font-size: 11px; } .relevanz { flex-direction: column; gap: 6px; } }
+</style>
+</head>
+<body>
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index_en.html">← Back to overview</a></div>
+<div class="hero">
+  <img src="img/taz.jpg.png" alt="Henry Lindemeier in front of the Russian House – TAZ">
+  <div class="hero-caption">© Julia Baier / TAZ</div>
+</div>
+<header>
+  <div class="medium-badge"><span class="dot"></span>TAZ Berlin</div>
+  <h1>One-man protest against Russia</h1>
+  <p class="meta">23 April 2025 &nbsp;·&nbsp; By Tilman Baumgärtel &nbsp;·&nbsp; Reading time: 6 min.</p>
+</header>
+<div class="tabs-wrapper">
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('highlights', this)">At a Glance</button>
+    
+    <button class="tab-btn" onclick="showTab('artikel', this)">Article Extract &amp; PDF</button>
+  </nav>
+    <div id="highlights" class="tab-content active">
+    <div class="faktenbox">
+      <h2>What the article covers</h2>
+      <ul>
+        <li>In-depth reportage about Lindemeier's daily routine – several times a week, flag, Bluetooth speaker, air raid sirens</li>
+        <li>The Russian House in a legal grey zone: sanctions against Rossotrudnitschestwo since July 2022, but the House continues to operate</li>
+        <li>Scandal in the programme: the bookshop sold soap moulds shaped like grenades, tanks and pistols</li>
+        <li>Illegal surveillance cameras filmed the pavement – footage used as evidence against Lindemeier</li>
+        <li>Lindemeier physically attacked four times – now wears a stab-proof vest and a whistle</li>
+        <li>Lithuania, Poland, Czech Republic and Sweden have already closed comparable Russian institutes</li>
+      </ul>
+    </div>
+    <div class="relevanz">
+      <span class="label">Why it matters</span>
+      <span>First detailed analysis of the legal contradictions – and evidence that the Russian House actively uses the German legal system against legitimate protest.</span>
+    </div>
+  </div>
+  
+  <div id="artikel" class="tab-content">
+    <div class="note-de">This article was originally published in German. The following is an English summary of the key content.</div>
+    <div class="artikel-text">
+      <p>It must be considered a special honour when the representatives of a rogue state give you your own street sign. When Henry Lindemeier takes up position in front of the Russian House on Friedrichstraße with his Ukrainian flag and speaker, the doorman places two A-boards on the pavement showing a stylised figure with a flag inside a red warning triangle – with the inscription: "Caution: risk of provocation!"</p>
+      <p>And provoke he does: in front of a Russian state institution in the heart of Berlin – whose very existence many consider a provocation – he wants to draw attention to the brutal war of aggression that Russia has been waging against Ukraine for more than three years. Since June 2024 he has been standing on Friedrichstraße several times a week with a large blue-and-yellow flag, playing Ukrainian folk songs, air raid sirens or the sound of bombs.</p>
+      <blockquote>"I want to push back against the collective forgetting. I want the Russians who visit events here to think about the fact that their country is at war – morning and evening."</blockquote>
+      <p>The Russian House was opened in East Berlin in 1984. Its operator, Rossotrudnitschestwo, has been on the EU sanctions list since July 2022. Although the legal basis for closing the House is not clear-cut, Lithuania, Poland, Czech Republic and Sweden have already closed comparable institutions years ago.</p>
+      <p>The Russian House buries Lindemeier under complaints and legal proceedings. Police are regularly called for alleged noise disturbance or harassment of passers-by. Surveillance camera footage – possibly obtained illegally – was used as evidence against him.</p>
+      <p>Having been physically attacked four times, he now wears a stab-proof vest and carries a whistle to raise the alarm during attacks.</p>
+    <div class="pdf-download">
+      <a href="pdf/taz.pdf" download>📄 Download full article as PDF (German)</a>
+    </div>
+    </div>
+  </div>
+</div>
+<footer>Press Kit · Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to overview</a></footer>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
