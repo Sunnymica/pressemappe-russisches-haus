@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fakten · Pressemappe Russisches Haus Berlin</title>
+<meta name="description" content="Alle verifizierten Fakten zum Russischen Haus Berlin – Institution, Finanzen, Recht, Polizei, Ermittlungen.">
+<meta property="og:title" content="Fakten · Pressemappe Russisches Haus Berlin">
+<meta property="og:description" content="Alle verifizierten Fakten zum Russischen Haus Berlin – Institution, Finanzen, Recht, Polizei, Ermittlungen.">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/sz.jpg.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
+.back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
+header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin-bottom: 10px; }
+header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+.tabs-wrapper { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
+.tab-nav { display: flex; border-bottom: 2px solid var(--linie); margin-top: 28px; }
+.tab-btn { padding: 12px 28px; background: none; border: none; cursor: pointer; font-family: 'Source Sans 3', sans-serif; font-size: 14px; font-weight: 600; color: var(--grau); letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.2s, border-color 0.2s; }
+.tab-btn:hover { color: var(--blau); }
+.tab-btn.active { color: var(--blau); border-bottom-color: var(--blau); }
+.tab-content { display: none; padding: 28px 0; }
+.tab-content.active { display: block; }
+.akkordeon { display: flex; flex-direction: column; gap: 10px; }
+.akk-item { border: 1px solid var(--linie); border-radius: 6px; overflow: hidden; }
+.akk-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; cursor: pointer; background: var(--hellgrau); transition: background 0.2s; user-select: none; }
+.akk-header:hover { background: #eaeae8; }
+.akk-header.open { background: var(--blau); color: #fff; }
+.akk-titel { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; }
+.akk-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+.akk-header.open .akk-icon { transform: rotate(45deg); }
+.akk-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fff; }
+.akk-body.open { max-height: 3000px; }
+.akk-inner { padding: 20px 22px; }
+.akk-inner ul { list-style: none; padding: 0; }
+.akk-inner ul li { padding: 9px 0 9px 24px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); line-height: 1.5; }
+.akk-inner ul li:last-child { border-bottom: none; }
+.akk-inner ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 700; }
+.akk-inner ul li strong { font-weight: 600; }
+.quelle { display: block; font-size: 12px; color: var(--grau); margin-top: 3px; font-style: italic; }
+.akk-zitat { background: var(--hellgrau); border-left: 4px solid var(--gelb); padding: 14px 18px; margin: 14px 0; font-style: italic; font-size: 15px; color: var(--grau); border-radius: 0 4px 4px 0; }
+.akk-zitat .attribution { font-style: normal; font-size: 13px; margin-top: 6px; font-weight: 600; color: var(--dunkel); }
+.rechtsdok { background: var(--hellgrau); border: 1px solid var(--linie); border-radius: 4px; padding: 18px 20px; margin-bottom: 12px; }
+.rechtsdok:last-child { margin-bottom: 0; }
+.rechtsdok h3 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 6px; }
+.rechtsdok .datum { font-size: 11px; color: var(--grau); margin-bottom: 10px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+.rechtsdok p { font-size: 14px; line-height: 1.6; }
+.rechtsdok .bedeutung { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--linie); font-size: 13px; color: var(--blau); font-weight: 600; }
+.anfragen-hinweis { background: var(--blau); color: #fff; padding: 18px 22px; border-radius: 4px; margin-top: 20px; font-size: 15px; display: flex; gap: 14px; align-items: flex-start; }
+.anfragen-hinweis a { color: var(--gelb); }
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: var(--gelb); text-decoration: none; }
+@media (max-width: 600px) {
+  .tabs-wrapper { padding: 0 16px 40px; }
+  header { padding: 24px 16px; }
+  .back-link { padding: 12px 16px 0; }
+  .tab-btn { padding: 10px 14px; font-size: 12px; }
+  .akk-header { padding: 14px 16px; }
+  .akk-titel { font-size: 15px; }
+  .akk-inner { padding: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index.html">← Zurück zur Übersicht</a></div>
+
+<header>
+  <h1>Fakten &amp; Rechtslage</h1>
+  <p>Alle verifizierten Fakten zum Russischen Haus Berlin – aus sechs überregionalen Medienberichten 2024–2026. Kachel anklicken zum Öffnen.</p>
+</header>
+
+<div class="tabs-wrapper">
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('kernfakten', this)">Kernfakten</button>
+    <button class="tab-btn" onclick="showTab('recht', this)">Rechtliche Grundlagen</button>
+  </nav>
+
+  <div id="kernfakten" class="tab-content active">
+    <div class="akkordeon">
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">🏛️ Die Institution</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <ul>
+            <li><strong>29.000 m² Fläche</strong> in der Friedrichstraße, Berlin-Mitte – eines der größten russischen Kulturinstitute weltweit<span class="quelle">SZ, Dez. 2025</span></li>
+            <li>Eröffnet <strong>1984 in Ostberlin</strong> – blieb nach der Wiedervereinigung als russisches Kulturzentrum bestehen<span class="quelle">TAZ, Apr. 2025</span></li>
+            <li>Betreiber ist <strong>Rossotrudnitschestwo</strong> – eine russische Regierungsbehörde, dem Außenministerium unterstellt<span class="quelle">t-online, Mai 2025</span></li>
+            <li>Rossotrudnitschestwo seit <strong>Juli 2022 auf der EU-Sanktionsliste</strong> – Vorwurf: Kreml-Narrative verbreiten, ukrainische Souveränität untergraben<span class="quelle">Tages-Anzeiger, Feb. 2026</span></li>
+            <li>Direktor Izvolskiy behauptet Unabhängigkeit von Rossotrudnitschestwo – <strong>archivierte Websites belegten die Verbindung</strong>; Hinweis inzwischen gelöscht<span class="quelle">Tages-Anzeiger, Feb. 2026</span></li>
+            <li>Angebot trotz Sanktionen: Sprachkurse, Konzerte, Theater, Restaurant, Buchladen, Kino<span class="quelle">SZ, Dez. 2025</span></li>
+            <li>Im Buchladen zeitweise <strong>Seifenformen in Form von Handgranaten, Panzern und Pistolen</strong> im Angebot<span class="quelle">TAZ, Apr. 2025</span></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">💶 Finanzen &amp; Staat</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <ul>
+            <li>Deutschland zahlt jährlich <strong>70.000 € Grundsteuer</strong> aus dem Bundeshaushalt – laut Abkommen von 2011<span class="quelle">SZ, Dez. 2025</span></li>
+            <li>2023: <strong>Bundesbank verweigerte Stromzahlungen</strong> – hohe Kosten deuteten auf wirtschaftlichen Betrieb und Sanktionsverstoß hin<span class="quelle">SZ, Dez. 2025</span></li>
+            <li><strong>Bayerischer VGH, 24. Juni 2025:</strong> Bundesbank handelte korrekt<span class="quelle">SZ, Dez. 2025</span></li>
+            <li>Wie Betriebskosten seitdem beglichen werden – <strong>keine Antwort auf Anfragen</strong><span class="quelle">SZ, Dez. 2025</span></li>
+            <li>Klingelschilder zeigen <strong>nur Nummern, keine Namen</strong> – Verdacht auf geheime Wohnungsvermietung<span class="quelle">SZ / Tages-Anzeiger, 2025–2026</span></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">🔍 Ermittlungen &amp; Behörden</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <ul>
+            <li><strong>Berliner Staatsanwaltschaft ermittelt</strong> wegen Verstößen gegen das Außenwirtschaftsgesetz – Verfahren läuft<span class="quelle">SZ, Dez. 2025</span></li>
+            <li><strong>Berliner Datenschutzbeauftragter prüft</strong> illegale Straßenüberwachung durch Kameras des Hauses – Verfahren läuft<span class="quelle">Tages-Anzeiger, Feb. 2026</span></li>
+            <li>Kamera-Aufnahmen wurden als <strong>Beweismaterial gegen Henry Lindemeier</strong> verwendet – möglicherweise illegal erstellt<span class="quelle">TAZ, Apr. 2025</span></li>
+            <li>Litauen, Polen, Tschechien, Schweden: <strong>vergleichbare russische Institute bereits geschlossen</strong><span class="quelle">TAZ, Apr. 2025</span></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">🚔 Polizei &amp; Protest</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <ul>
+            <li><strong>Mindestens 33 Polizeieinsätze</strong> am Russischen Haus im Jahr 2024 – alle auf Betreiben des Hauses<span class="quelle">t-online, Mai 2025</span></li>
+            <li><strong>18. Dezember 2024:</strong> Rechtswidrige Festnahme – Handschellen, Sammelzelle, 4 Stunden. Polizei räumte formell ein: Einsatz war rechtswidrig<span class="quelle">t-online, Mai 2025</span></li>
+            <li><strong>9. Dezember 2025:</strong> Russisches Haus meldete Gegenveranstaltung an – Henrys Demo wurde verboten<span class="quelle">SZ, Dez. 2025</span></li>
+            <li>Über <strong>100 Anzeigen</strong> aus dem Russischen Haus, drei Strafbefehle<span class="quelle">SZ, Dez. 2025</span></li>
+            <li>Ukrainischer Botschafter Makeiev: mehr Respekt vor Lindemeier als vor <strong>russischen Oppositionellen in Deutschland</strong><span class="quelle">t-online, Mai 2025</span></li>
+            <li>Im russischen Staatsfernsehen bei Skabejewa als <strong>„Provokateur"</strong> vorgestellt<span class="quelle">t-online, Mai 2025</span></li>
+          </ul>
+          <div class="akk-zitat">
+            „Bei einer gemeldeten Ruhestörung kommen manchmal drei Streifenwagen. Als mein Mandant bedroht wurde, war niemand verfügbar."
+            <div class="attribution">Anwalt Christian Wolf – t-online, Mai 2025</div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">🗣️ Politische Stimmen</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <div class="akk-zitat">
+            „Es kann nicht sein, dass diese Propagandabude auch noch Geld von uns bekommt und die Russen von dort ihren Informationskrieg gegen uns führen."
+            <div class="attribution">Robin Wagener, MdB (Grüne) – SZ, Dez. 2025</div>
+          </div>
+          <div class="akk-zitat">
+            „Das Russische Haus ist ein verlängerter Arm Putins in Berlin, das als Umschlagplatz für Desinformation wirkt. Es muss unverzüglich geschlossen werden."
+            <div class="attribution">Roderich Kiesewetter, MdB (CDU) – SZ, Dez. 2025</div>
+          </div>
+          <div class="akk-zitat">
+            „Die spucken auf den Vertrag, und wir klammern uns an die Illusion eines kulturellen Austausches."
+            <div class="attribution">Robin Wagener, MdB (Grüne) – SZ, Dez. 2025</div>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="recht" class="tab-content">
+    <div class="akkordeon">
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">📄 Deutsch-Russisches Abkommen 2011</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <div class="rechtsdok">
+            <div class="datum">4. Februar 2011</div>
+            <h3>Bilaterales Kulturabkommen Deutschland–Russland</h3>
+            <p>Regelt den Status des Russischen Hauses in Berlin und des Goethe-Instituts in Moskau. Verpflichtet Deutschland zur Zahlung der Grundsteuer: 70.000 € jährlich aus dem Bundeshaushalt.</p>
+            <div class="bedeutung">→ Einseitige Kündigung erst nach 99 Jahren möglich – frühestens 2110. Auswärtiges Amt beruft sich auf Artikel 26 der Wiener Konvention.</div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">🇪🇺 EU-Sanktionierung Rossotrudnitschestwo</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <div class="rechtsdok">
+            <div class="datum">Juli 2022</div>
+            <h3>EU setzt Rossotrudnitschestwo auf Sanktionsliste</h3>
+            <p>Rechtsfolge laut Auswärtigem Amt: „Einfrierung von Vermögenswerten sowie ein wirtschaftliches Bereitstellungsverbot." Keine kommerziellen Veranstaltungen, keine Einnahmen, keine wirtschaftliche Tätigkeit.</p>
+            <div class="bedeutung">→ Das Russische Haus betreibt trotzdem Sprachkurse, Restaurant, Konzerte – möglicherweise in Verletzung der Sanktionen.</div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">⚖️ Urteil: Bayerischer VGH – Stromrechnung</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <div class="rechtsdok">
+            <div class="datum">24. Juni 2025</div>
+            <h3>Bayerischer Verwaltungsgerichtshof – Bundesbank ./. Russisches Haus</h3>
+            <p>Das Russische Haus klagte gegen die Weigerung der Bundesbank, Stromrechnungen zu begleichen. Die Bank hatte wegen Sanktionsverdachts verweigert.</p>
+            <div class="bedeutung">→ Gericht gab der Bundesbank recht. Wie das Haus seitdem Betriebskosten begleicht – unbekannt, keine Antwort auf Anfragen.</div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">⚖️ Rechtswidrige Festnahme Lindemeier</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <div class="rechtsdok">
+            <div class="datum">18. Dezember 2024</div>
+            <h3>Fortsetzungsfeststellungsklage – Polizei Berlin</h3>
+            <p>Henry Lindemeier wurde vor dem Russischen Haus festgenommen, gefesselt und erkennungsdienstlich behandelt. Vorwurf: Beleidigung und Ruhestörung – beides nicht belegt. Die Polizei räumte formell ein: der Einsatz war rechtswidrig.</p>
+            <div class="bedeutung">→ Gerichtlich bestätigt: Die Festnahme hatte keine Rechtsgrundlage.</div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="akk-item">
+        <div class="akk-header" onclick="toggleAkk(this)">
+          <span class="akk-titel">🔍 Laufende Ermittlungsverfahren</span>
+          <span class="akk-icon">+</span>
+        </div>
+        <div class="akk-body"><div class="akk-inner">
+          <div class="rechtsdok">
+            <div class="datum">Laufend seit 2024</div>
+            <h3>Berliner Staatsanwaltschaft – Außenwirtschaftsgesetz</h3>
+            <p>Ermittlung wegen Verdachts auf geheime Wohnungsvermietung mit nicht offengelegten Einnahmen. Klingelschilder zeigen nur Nummern.</p>
+            <div class="bedeutung">→ Verfahren läuft. Ergebnis steht aus.</div>
+          </div>
+          <div class="rechtsdok">
+            <div class="datum">Laufend seit 2024</div>
+            <h3>Berliner Datenschutzbeauftragter – Überwachungskameras</h3>
+            <p>Prüfung ob Kameras illegal öffentliche Straßen filmten. Diese Aufnahmen wurden als Beweismaterial gegen Henry Lindemeier verwendet.</p>
+            <div class="bedeutung">→ Prüfung läuft. Ergebnis steht aus.</div>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+
+    <div class="anfragen-hinweis">
+      <span>📩</span>
+      <span>Weitere Dokumente und Behördenkorrespondenz auf Anfrage: <a href="mailto:gedenken.start@protonmail.com">gedenken.start@protonmail.com</a></span>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  Pressemappe Russisches Haus Berlin &nbsp;·&nbsp;
+  <a href="index.html">Zur Übersicht</a>
+</footer>
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+function toggleAkk(header) {
+  const body = header.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  document.querySelectorAll('.akk-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.akk-header').forEach(h => h.classList.remove('open'));
+  if (!isOpen) {
+    body.classList.add('open');
+    header.classList.add('open');
+  }
+}
+</script>
+</body>
+</html>
