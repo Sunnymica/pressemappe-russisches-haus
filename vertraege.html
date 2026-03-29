@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Verträge · Pressemappe Russisches Haus Berlin</title>
+<meta name="description" content="Das Kündigungsfenster für das Abkommen zum Russischen Haus schließt sich am 7. Dezember 2026.">
+<meta property="og:title" content="Die Verträge · Pressemappe Russisches Haus Berlin">
+<meta property="og:description" content="Das Kündigungsfenster für das Abkommen zum Russischen Haus schließt sich am 7. Dezember 2026.">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #c0392b; --orange: #e67e22; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
+.back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
+header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin-bottom: 10px; }
+header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+
+/* ALARMBANNER */
+.alarm {
+  max-width: 860px; margin: 32px auto 0; padding: 0 24px;
+}
+.alarm-inner {
+  background: var(--rot); color: #fff;
+  padding: 20px 28px; border-radius: 6px;
+  font-size: 17px; font-weight: 600;
+  display: flex; gap: 16px; align-items: center;
+}
+.alarm-inner .uhr { font-size: 28px; flex-shrink: 0; }
+.alarm-inner .text { line-height: 1.4; }
+.alarm-inner .text span { font-size: 13px; font-weight: 300; display: block; margin-top: 4px; opacity: 0.9; }
+
+/* DREI KACHELN */
+.kacheln {
+  max-width: 860px; margin: 32px auto; padding: 0 24px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.kachel {
+  border-radius: 6px; overflow: hidden;
+  border: 1px solid var(--linie);
+}
+.kachel-header {
+  padding: 16px 20px; display: flex; align-items: center; gap: 12px;
+}
+.kachel-header .status {
+  width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0;
+}
+.kachel-header .status.rot { background: var(--rot); }
+.kachel-header .status.gelb { background: var(--orange); }
+.kachel-header .status.grau { background: #888; }
+.kachel-header h3 { font-family: 'Playfair Display', serif; font-size: 16px; line-height: 1.2; }
+.kachel-datum {
+  padding: 0 20px 12px;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+}
+.kachel-datum.rot { color: var(--rot); }
+.kachel-datum.gelb { color: var(--orange); }
+.kachel-datum.grau { color: #888; }
+.kachel-body {
+  padding: 0 20px 20px;
+  font-size: 14px; color: var(--grau); line-height: 1.6;
+  border-top: 1px solid var(--linie);
+  padding-top: 14px;
+}
+.kachel-body strong { color: var(--dunkel); font-weight: 600; }
+.kachel-body .fazit {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--linie);
+  font-size: 13px; font-weight: 600;
+}
+.kachel-body .fazit.rot { color: var(--rot); }
+.kachel-body .fazit.gelb { color: var(--orange); }
+.kachel-body .fazit.grau { color: #888; }
+
+/* ZEITLEISTE */
+.zeitleiste-wrapper {
+  max-width: 860px; margin: 0 auto 48px; padding: 0 24px;
+}
+.zeitleiste-wrapper h2 {
+  font-family: 'Playfair Display', serif; font-size: 20px;
+  margin-bottom: 24px; padding-bottom: 10px;
+  border-bottom: 2px solid var(--linie);
+}
+
+.zeitliste { list-style: none; padding: 0; position: relative; }
+.zeitliste::before {
+  content: ''; position: absolute;
+  left: 72px; top: 0; bottom: 0;
+  width: 2px; background: var(--linie);
+}
+
+.zeitliste li {
+  display: flex; gap: 20px; margin-bottom: 24px;
+  position: relative;
+}
+.zeitliste li .jahr {
+  min-width: 60px; text-align: right;
+  font-size: 13px; font-weight: 600; color: var(--grau);
+  padding-top: 2px; flex-shrink: 0;
+}
+.zeitliste li .punkt {
+  width: 12px; height: 12px; border-radius: 50%;
+  margin-top: 5px; flex-shrink: 0; position: relative; z-index: 1;
+}
+.zeitliste li.aktiv .punkt { background: var(--blau); }
+.zeitliste li.inaktiv .punkt { background: var(--linie); border: 2px solid #ccc; }
+.zeitliste li.kritisch .punkt { background: var(--rot); }
+
+.zeitliste li .inhalt { flex: 1; }
+.zeitliste li .inhalt .titel {
+  font-size: 15px; font-weight: 600; line-height: 1.3;
+  margin-bottom: 4px;
+}
+.zeitliste li.inaktiv .inhalt .titel {
+  text-decoration: line-through; color: var(--grau);
+}
+.zeitliste li .inhalt .beschreibung {
+  font-size: 13px; color: var(--grau); line-height: 1.5;
+}
+.zeitliste li .inhalt .kuendigung {
+  display: inline-block; margin-top: 6px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  padding: 3px 10px; border-radius: 3px;
+}
+.kuendigung.rot { background: #fde8e8; color: var(--rot); }
+.kuendigung.gelb { background: #fef3e2; color: var(--orange); }
+.kuendigung.grau { background: var(--hellgrau); color: #888; }
+
+/* HINWEIS */
+.hinweis {
+  max-width: 860px; margin: 0 auto 48px; padding: 0 24px;
+}
+.hinweis-inner {
+  background: var(--hellgrau); border-left: 4px solid var(--blau);
+  padding: 18px 22px; border-radius: 0 4px 4px 0;
+  font-size: 14px; color: var(--grau); line-height: 1.6;
+}
+.hinweis-inner strong { color: var(--dunkel); }
+
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: var(--gelb); text-decoration: none; }
+
+@media (max-width: 600px) {
+  .kacheln { grid-template-columns: 1fr; padding: 0 16px; }
+  .alarm { padding: 0 16px; }
+  .zeitleiste-wrapper { padding: 0 16px; }
+  .hinweis { padding: 0 16px; }
+  header { padding: 24px 16px; }
+  .back-link { padding: 12px 16px 0; }
+  .zeitliste::before { left: 60px; }
+  .zeitliste li .jahr { min-width: 48px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index.html">← Zurück zur Übersicht</a></div>
+
+<header>
+  <h1>Die Verträge</h1>
+  <p>Welche Abkommen regeln das Russische Haus – und welche können noch gekündigt werden?</p>
+</header>
+
+<!-- ALARMBANNER -->
+<div class="alarm">
+  <div class="alarm-inner">
+    <span class="uhr">⏰</span>
+    <div class="text">
+      Das Kündigungsfenster für das Abkommen zur Tätigkeit des Russischen Hauses schließt sich am 7. Dezember 2026.
+      <span>Wird es nicht gekündigt, darf das Russische Haus weitere fünf Jahre ungestört operieren – Sprachkurse, Konzerte, Restaurant, Kino und alles andere.</span>
+    </div>
+  </div>
+</div>
+
+<!-- DREI KACHELN -->
+<div class="kacheln">
+
+  <div class="kachel">
+    <div class="kachel-header">
+      <span class="status rot"></span>
+      <h3>Jetzt handeln</h3>
+    </div>
+    <div class="kachel-datum rot">Kündigung bis 7. Dezember 2026</div>
+    <div class="kachel-body">
+      <strong>Abkommen 2011</strong> – regelt, was im Russischen Haus erlaubt ist: Sprachkurse, Konzerte, Ausstellungen, Restaurant, Kino – alles basiert auf diesem Abkommen.
+      <div class="fazit rot">→ Deutschland könnte sagen: nichts mehr. Und tschüss.</div>
+    </div>
+  </div>
+
+  <div class="kachel">
+    <div class="kachel-header">
+      <span class="status gelb"></span>
+      <h3>Noch Zeit</h3>
+    </div>
+    <div class="kachel-datum gelb">Kündigung bis 18. November 2027</div>
+    <div class="kachel-body">
+      <strong>Vertrag 1992</strong> – der kulturpolitische Basisvertrag Deutschland–Russland. Kündigung beendet auch das Sprachabkommen 2003.
+      <div class="fazit gelb">→ Grundlage für alle kulturelle Zusammenarbeit entfällt.</div>
+    </div>
+  </div>
+
+  <div class="kachel">
+    <div class="kachel-header">
+      <span class="status grau"></span>
+      <h3>Nicht kündbar</h3>
+    </div>
+    <div class="kachel-datum grau">Läuft bis 5. Juni 2112</div>
+    <div class="kachel-body">
+      <strong>Abkommen 2013</strong> – regelt das Grundstück und Gebäude an der Friedrichstraße. Russland behält das Nutzungsrecht für 99 Jahre.
+      <div class="fazit grau">→ Das Gebäude bleibt russisch – egal was passiert.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ZEITLEISTE -->
+<div class="zeitleiste-wrapper">
+  <h2>Alle Abkommen im Überblick</h2>
+  <ul class="zeitliste">
+
+    <li class="inaktiv">
+      <span class="jahr">1982</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Abkommen DDR–SU: Bau des Hauses &amp; Nutzungsrecht am Grundstück</div>
+        <div class="beschreibung">Durch Abkommen 2013 außer Kraft gesetzt.</div>
+      </div>
+    </li>
+
+    <li class="inaktiv">
+      <span class="jahr">1983</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Abkommen DDR–SU: Tätigkeit des Hauses der sowjetischen Wissenschaft und Kultur</div>
+        <div class="beschreibung">Durch Abkommen 2011 außer Kraft gesetzt.</div>
+      </div>
+    </li>
+
+    <li class="inaktiv">
+      <span class="jahr">1984</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Protokoll: Übergabe des Gebäudes in sowjetisches Eigentum</div>
+        <div class="beschreibung">Durch Abkommen 2013 außer Kraft gesetzt.</div>
+      </div>
+    </li>
+
+    <li class="aktiv">
+      <span class="jahr">1992</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Vertrag über kulturelle Zusammenarbeit Deutschland–Russland</div>
+        <div class="beschreibung">Kulturpolitischer Basisvertrag. In Kraft seit 18. Mai 1993. Enthält keine spezifischen Details zum Russischen Haus.</div>
+        <span class="kuendigung gelb">Kündigung bis 18. November 2027</span>
+      </div>
+    </li>
+
+    <li class="aktiv">
+      <span class="jahr">2003</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Abkommen über das Erlernen der deutschen und russischen Sprache</div>
+        <div class="beschreibung">An die Laufzeit des Vertrags 1992 gebunden – läuft automatisch aus, wenn dieser gekündigt wird.</div>
+        <span class="kuendigung gelb">Endet mit Vertrag 1992</span>
+      </div>
+    </li>
+
+    <li class="kritisch">
+      <span class="jahr">2011</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Abkommen über die Tätigkeit von Kultur- und Informationszentren</div>
+        <div class="beschreibung">Das Schlüsseldokument: regelt, was im Russischen Haus erlaubt ist – und was nicht. Gilt auch für die drei Goethe-Institute in Russland.</div>
+        <span class="kuendigung rot">⚠ Kündigung bis 7. Dezember 2026</span>
+      </div>
+    </li>
+
+    <li class="aktiv">
+      <span class="jahr">2013</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="titel">Abkommen über die Unterbringung des Russischen Hauses – Grundstück &amp; Gebäude</div>
+        <div class="beschreibung">Räumt Russland das unbefristete und unentgeltliche Nutzungsrecht am Gebäude Friedrichstraße ein. Laufzeit 99 Jahre ab Inkrafttreten 5. Juni 2013.</div>
+        <span class="kuendigung grau">Nicht kündbar bis 2112</span>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<!-- HINWEIS -->
+<div class="hinweis">
+  <div class="hinweis-inner">
+    <strong>Wichtiger Hinweis:</strong> Auch wenn das Abkommen 2011 gekündigt wird, bleibt Russland im Besitz des Gebäudes bis 2112. Das Abkommen 2013 ist nicht kündbar. Eine Kündigung des Abkommens 2011 würde jedoch die <strong>Rechtsgrundlage für alle Aktivitäten</strong> im Russischen Haus entziehen – Deutschland könnte bestimmen, was dort noch erlaubt ist. Dieser Überblick basiert auf einer Zusammenstellung von Jens Baganz (Rechtsanwalt, ehem. Bürgermeister).
+  </div>
+</div>
+
+<footer>
+  Pressemappe Russisches Haus Berlin &nbsp;·&nbsp;
+  <a href="index.html">Zur Übersicht</a>
+</footer>
+
+</body>
+</html>
