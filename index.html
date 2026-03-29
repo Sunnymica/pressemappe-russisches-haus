@@ -9,250 +9,281 @@
 <meta property="og:description" content="Eine EU-sanktionierte russische Behörde betreibt mitten in Berlin ein 29.000 m² großes Kulturzentrum – finanziert vom deutschen Steuerzahler.">
 <meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/sz.jpg.png">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap');
-:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root {
+  --blau: #005BBB;
+  --blau-hell: #E6F1FB;
+  --blau-rand: #B5D4F4;
+  --rot: #A32D2D;
+  --rot-hell: #FCEBEB;
+  --rot-rand: #F09595;
+  --grau-rand: #D3D1C7;
+  --grau-hell: #F4F4F2;
+  --dunkel: #1a1a1a;
+  --grau: #4a4a4a;
+  --linie: #e0e0e0;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
 
-.ukraine-bar { height: 6px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
 
-/* HERO HEADER */
-.site-header {
-  background: var(--dunkel);
-  color: #fff;
-  padding: 48px 24px 40px;
-  text-align: center;
-}
-.site-header .label {
-  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
-  opacity: 0.6; margin-bottom: 16px;
-}
-.site-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(28px, 5vw, 52px);
-  line-height: 1.1; margin-bottom: 16px;
-}
-.site-header h1 span { color: var(--gelb); }
-.site-header p {
-  max-width: 620px; margin: 0 auto;
-  font-size: 16px; opacity: 0.8; line-height: 1.6;
-}
+.lang-switch { max-width: 900px; margin: 0 auto; padding: 10px 24px; text-align: right; }
+.lang-switch a { font-size: 13px; font-weight: 600; color: var(--blau); text-decoration: none; border: 1px solid var(--blau); padding: 4px 12px; border-radius: 4px; }
 
-/* START-FAKTEN */
-.start-fakten {
-  max-width: 860px; margin: 40px auto;
-  padding: 0 24px;
-}
-.start-fakten-inner {
-  background: var(--hellgrau);
-  border-left: 5px solid var(--blau);
-  padding: 28px 32px;
-  border-radius: 0 4px 4px 0;
-}
-.start-fakten-inner h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px; margin-bottom: 16px;
-}
-.start-fakten-inner ul { list-style: none; }
-.start-fakten-inner ul li {
-  padding: 9px 0 9px 24px; position: relative;
-  font-size: 15px; border-bottom: 1px solid var(--linie);
-}
-.start-fakten-inner ul li:last-child { border-bottom: none; }
-.start-fakten-inner ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 700; }
+.site-header { background: var(--dunkel); color: #fff; padding: 40px 24px 36px; text-align: center; }
+.site-header .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.5; margin-bottom: 14px; }
+.site-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 5vw, 44px); line-height: 1.15; margin-bottom: 14px; font-weight: 700; }
+.site-header h1 span { color: #7eb8f7; }
+.site-header p { max-width: 560px; margin: 0 auto; font-size: 15px; opacity: 0.7; line-height: 1.6; }
 
-.warum-jetzt {
-  max-width: 860px; margin: 0 auto 48px;
-  padding: 0 24px;
-}
-.warum-jetzt-inner {
-  background: var(--blau); color: #fff;
-  padding: 18px 28px; border-radius: 4px;
-  font-size: 15px; display: flex; gap: 14px; align-items: flex-start;
-}
-.warum-jetzt-inner .label {
-  font-weight: 700; font-size: 11px; letter-spacing: 0.1em;
-  text-transform: uppercase; opacity: 0.8; min-width: 100px; margin-top: 3px;
-}
+.main { max-width: 900px; margin: 0 auto; padding: 0 24px 48px; }
 
-/* ARTIKEL-GRID */
+.section { margin-top: 32px; }
 .section-title {
-  max-width: 860px; margin: 0 auto 20px;
-  padding: 0 24px;
-  font-family: 'Playfair Display', serif;
-  font-size: 22px; border-bottom: 2px solid var(--linie); padding-bottom: 12px;
-}
-.artikel-grid {
-  max-width: 860px; margin: 0 auto 56px;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
-}
-.artikel-card {
-  border: 1px solid var(--linie);
-  border-radius: 4px;
-  overflow: hidden;
-  text-decoration: none;
-  color: var(--dunkel);
-  transition: box-shadow 0.2s, transform 0.2s;
-  display: flex; flex-direction: column;
-}
-.artikel-card:hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-  transform: translateY(-2px);
-}
-.artikel-card img {
-  width: 100%; height: 180px;
-  object-fit: cover; object-position: center top;
-  display: block;
-}
-.artikel-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
-.artikel-card .medium {
-  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--blau); margin-bottom: 6px;
-}
-.artikel-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px; line-height: 1.3; margin-bottom: 8px; flex: 1;
-}
-.artikel-card .datum { font-size: 13px; color: var(--grau); margin-bottom: 10px; }
-.artikel-card .relevant {
-  font-size: 13px; color: var(--grau);
-  border-top: 1px solid var(--linie); padding-top: 10px; margin-top: auto;
-  font-style: italic;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--grau);
+  margin-bottom: 12px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--linie);
 }
 
-/* FOOTER */
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+
+.kachel {
+  border-radius: 6px; padding: 16px 18px;
+  background: #fff;
+  border: 1px solid var(--blau-rand);
+}
+.kachel.rot {
+  border-left: 4px solid var(--rot);
+  border-top: 1px solid var(--rot-rand);
+  border-right: 1px solid var(--rot-rand);
+  border-bottom: 1px solid var(--rot-rand);
+  background: var(--rot-hell);
+}
+.kachel.grau {
+  border: 1px solid var(--grau-rand);
+  background: var(--grau-hell);
+}
+.kachel.blau-stark {
+  border-left: 4px solid var(--blau);
+  border-top: 1px solid var(--blau-rand);
+  border-right: 1px solid var(--blau-rand);
+  border-bottom: 1px solid var(--blau-rand);
+  background: var(--blau-hell);
+}
+
+.kachel .tag {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.07em;
+  text-transform: uppercase; margin-bottom: 6px;
+  color: var(--blau);
+}
+.kachel.rot .tag { color: var(--rot); }
+.kachel.grau .tag { color: var(--grau); }
+.kachel.blau-stark .tag { color: var(--blau); }
+
+.kachel .titel {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; font-weight: 700;
+  line-height: 1.3; margin-bottom: 6px;
+  color: var(--dunkel);
+}
+.kachel.rot .titel { color: var(--rot); }
+.kachel.grau .titel { color: var(--grau); }
+
+.kachel .sub {
+  font-size: 13px; color: var(--grau); line-height: 1.5;
+}
+.kachel.rot .sub { color: #7a1f1f; }
+
+.presseliste { margin-top: 4px; }
+.pressezeile {
+  display: flex; gap: 14px; padding: 10px 0;
+  border-bottom: 1px solid var(--linie);
+  align-items: flex-start;
+  text-decoration: none; color: inherit;
+}
+.pressezeile:last-child { border-bottom: none; }
+.pressezeile:hover .ptitel { color: var(--blau); }
+.pressezeile .medium {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--blau); min-width: 105px;
+  flex-shrink: 0; padding-top: 2px;
+}
+.pressezeile .info .ptitel {
+  font-size: 14px; font-weight: 600;
+  line-height: 1.3; color: var(--dunkel);
+  transition: color 0.15s;
+}
+.pressezeile .info .datum {
+  font-size: 12px; color: var(--grau); margin-top: 2px;
+}
+
 footer {
   background: var(--dunkel); color: #fff;
-  text-align: center; padding: 28px; font-size: 13px;
+  padding: 20px 24px;
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 8px;
 }
-footer a { color: var(--gelb); text-decoration: none; }
+footer span { font-size: 12px; opacity: 0.5; }
+footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 
-@media (max-width: 600px) {
-  .start-fakten { padding: 0 16px; }
-  .warum-jetzt { padding: 0 16px; }
-  .artikel-grid { padding: 0 16px; grid-template-columns: 1fr; }
-  .section-title { padding: 0 16px 12px; }
-  .warum-jetzt-inner { flex-direction: column; gap: 6px; }
+@media (max-width: 640px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .main { padding: 0 16px 40px; }
+  .pressezeile .medium { min-width: 80px; }
 }
 </style>
 </head>
 <body>
 
 <div class="ukraine-bar"></div>
-<div style="max-width:860px;margin:0 auto;padding:10px 24px;text-align:right;">
-  <a href="index_en.html" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#005BBB;text-decoration:none;border:1px solid #005BBB;padding:5px 12px;border-radius:4px;">🇬🇧 English version</a>
-</div>
+<div class="lang-switch"><a href="index_en.html">🇬🇧 English</a></div>
 
 <header class="site-header">
-  <p class="label">Pressemappe · Initiative Gedenken Berlin</p>
+  <div class="label">Pressemappe · Initiative Gedenken Berlin</div>
   <h1>Das <span>Russische Haus</span> Berlin</h1>
-  <p>Eine EU-sanktionierte russische Behörde betreibt mitten in Berlin ein 29.000 m² großes Kulturzentrum – als gäbe es keine Sanktionen und keinen Krieg. Ein Berliner Bürger hält dagegen.</p>
+  <p>Eine EU-sanktionierte russische Behörde betreibt mitten in Berlin ein 29.000 m² großes Kulturzentrum – als gäbe es keine Sanktionen und keinen Krieg.</p>
 </header>
 
-<div class="start-fakten">
-  <div class="start-fakten-inner">
-    <h2>Worum geht es?</h2>
-    <ul>
-      <li>Rossotrudnitschestwo – seit Juli 2022 auf der EU-Sanktionsliste – betreibt das Russische Haus weiter ungehindert</li>
-      <li>Der deutsche Staat zahlt jährlich 70.000 € Grundsteuer aus dem Bundeshaushalt</li>
-      <li>Die Berliner Staatsanwaltschaft ermittelt wegen möglicher Sanktionsverstöße</li>
-      <li>Henry Lindemeier protestiert seit Juni 2024 täglich davor – über 100 Anzeigen, 1 rechtswidrige Festnahme</li>
-      <li>Sechs überregionale Medien haben berichtet: Morgenpost, ZEIT, TAZ, t-online, SZ, Tages-Anzeiger Schweiz</li>
-    </ul>
+<div class="main">
+
+  <!-- REIHE 1: POLITISCHE HANDLUNGSTHEMEN -->
+  <div class="section">
+    <div class="section-title">Politische Handlungsthemen</div>
+    <div class="grid-3">
+
+      <a href="vertraege.html" class="kachel rot" style="text-decoration:none;">
+        <div class="tag">Frist: 7. Dezember 2026</div>
+        <div class="titel">Ein Vertrag ist jetzt kündbar</div>
+        <div class="sub">Er bestimmt, was im Russischen Haus erlaubt ist. Deutschland könnte sagen: nichts mehr. Und tschüss.</div>
+      </a>
+
+      <a href="goethe.html" class="kachel" style="text-decoration:none;">
+        <div class="tag">Argument</div>
+        <div class="titel">Goethe-Institut – kein Druckmittel mehr</div>
+        <div class="sub">Warum das Schutzargument der Bundesregierung faktisch nicht mehr trägt.</div>
+      </a>
+
+      <a href="polizei.html" class="kachel" style="text-decoration:none;">
+        <div class="tag">Dokumentiert</div>
+        <div class="titel">Polizei &amp; Protest</div>
+        <div class="sub">Systematische Schieflage – rechtswidrige Festnahme gerichtlich bestätigt. 33+ Einsätze 2024.</div>
+      </a>
+
+    </div>
   </div>
-</div>
 
-<div class="warum-jetzt">
-  <div class="warum-jetzt-inner">
-    <span class="label">Warum jetzt</span>
-    <span>Das Russische Haus hebelt Henrys angemeldete Dauerdemonstration durch eigene Gegenveranstaltungen aus – mit Polizeiunterstützung. Gleichzeitig laufen Ermittlungen der Staatsanwaltschaft und des Datenschutzbeauftragten.</span>
+  <!-- REIHE 2: ERMITTLUNGEN -->
+  <div class="section">
+    <div class="section-title">Laufende Ermittlungen &amp; offene Fragen</div>
+    <div class="grid-3">
+
+      <a href="kameras.html" class="kachel" style="text-decoration:none;">
+        <div class="tag">Ermittlung läuft</div>
+        <div class="titel">Verbotene Kameraüberwachung</div>
+        <div class="sub">Was filmen die 360°-Kameras vor dem Russischen Haus? Warum schlägt die Politik keinen Alarm?</div>
+      </a>
+
+      <div class="kachel grau">
+        <div class="tag">In Bearbeitung</div>
+        <div class="titel">Postannahmestelle</div>
+        <div class="sub">Pakete nach Russland trotz Sanktionen – wer kontrolliert, was da verschickt wird?</div>
+      </div>
+
+      <div class="kachel grau">
+        <div class="tag">In Bearbeitung</div>
+        <div class="titel">Übersetzungsbüro</div>
+        <div class="sub">Behörden schicken Ukrainer ins Russische Haus – Zwang zur Dokumentenübersetzung beim Feind.</div>
+      </div>
+
+    </div>
   </div>
-</div>
 
-<h2 class="section-title">Fakten &amp; Rechtslage</h2>
-<div style="max-width:860px;margin:0 auto 16px;padding:0 24px;">
-  <a href="fakten.html" style="display:inline-flex;align-items:center;gap:10px;background:var(--dunkel);color:#fff;padding:14px 24px;border-radius:4px;text-decoration:none;font-size:15px;font-weight:600;">
-    → Alle verifizierten Fakten &amp; laufende Ermittlungen
-  </a>
-</div>
-<div style="max-width:860px;margin:0 auto 40px;padding:0 24px;">
-  <a href="vertraege.html" style="display:inline-flex;align-items:center;gap:10px;background:#c0392b;color:#fff;padding:14px 24px;border-radius:4px;text-decoration:none;font-size:15px;font-weight:600;">
-    ⏰ Die Verträge – Kündigungsfenster schließt sich am 7. Dezember 2026
-  </a>
-</div>
+  <!-- REIHE 3: FAKTEN & BELEGE -->
+  <div class="section">
+    <div class="section-title">Fakten &amp; Belege</div>
+    <div class="grid-2">
 
-<h2 class="section-title">Presseartikel – Chronologisch</h2>
+      <a href="fakten.html" class="kachel" style="text-decoration:none;">
+        <div class="tag">Zusammengestellt aus 6 Medienberichten</div>
+        <div class="titel">Alle verifizierten Fakten &amp; Rechtslage</div>
+        <div class="sub">Institution, Finanzen, Ermittlungen, Polizei – mit Quellenangaben.</div>
+      </a>
 
-<div class="artikel-grid">
+      <a href="#presseartikel" class="kachel blau-stark" style="text-decoration:none;">
+        <div class="tag">6 Artikel · 2024–2026</div>
+        <div class="titel">Presseartikel chronologisch</div>
+        <div class="sub">Morgenpost · ZEIT · TAZ · t-online · SZ · Tages-Anzeiger Schweiz</div>
+      </a>
 
-  <a href="artikel_morgenpost_2024.html" class="artikel-card">
-    <img src="img/morgenpost.jpg.png" alt="Berliner Morgenpost">
-    <div class="artikel-card-body">
-      <div class="medium">Berliner Morgenpost</div>
-      <h3>Wer ist der Mann mit Ukraine-Flagge vor dem Russischen Haus?</h3>
-      <div class="datum">7. August 2024 · Dirk Krampitz</div>
-      <div class="relevant">Erstes Porträt – der Startpunkt der medialen Chronologie</div>
     </div>
-  </a>
+  </div>
 
-  <a href="artikel_zeit_2024.html" class="artikel-card">
-    <img src="img/zeit.jpg.png" alt="DIE ZEIT">
-    <div class="artikel-card-body">
-      <div class="medium">DIE ZEIT · Zeit im Osten</div>
-      <h3>Bleibt das so? – Der Protest am Russischen Haus</h3>
-      <div class="datum">19. September 2024 · Sarah Vojta</div>
-      <div class="relevant">Erste überregionale Einordnung – kein Berliner Lokalthema</div>
-    </div>
-  </a>
+  <!-- PRESSEARTIKEL -->
+  <div class="section" id="presseartikel">
+    <div class="section-title">Presseartikel</div>
+    <div class="presseliste">
 
-  <a href="artikel_taz_2025.html" class="artikel-card">
-    <img src="img/taz.jpg.png" alt="TAZ">
-    <div class="artikel-card-body">
-      <div class="medium">TAZ Berlin</div>
-      <h3>Ein-Mann-Demo gegen Russland</h3>
-      <div class="datum">23. April 2025 · Tilman Baumgärtel</div>
-      <div class="relevant">Erste Analyse der rechtlichen Widersprüche rund ums Haus</div>
-    </div>
-  </a>
+      <a href="artikel_morgenpost_2024.html" class="pressezeile">
+        <span class="medium">Morgenpost</span>
+        <div class="info">
+          <div class="ptitel">Wer ist der Mann mit Ukraine-Flagge vor dem Russischen Haus?</div>
+          <div class="datum">7. August 2024 · Dirk Krampitz</div>
+        </div>
+      </a>
 
-  <a href="artikel_tonline_2025.html" class="artikel-card">
-    <img src="img/t-online.jpg.png" alt="t-online">
-    <div class="artikel-card-body">
-      <div class="medium">t-online</div>
-      <h3>Zu viel Protest gegen Russland</h3>
-      <div class="datum">26. Mai 2025 · Lars Wienand</div>
-      <div class="relevant">Rechtswidrige Festnahme gerichtlich bestätigt – 33+ Polizeieinsätze</div>
-    </div>
-  </a>
+      <a href="artikel_zeit_2024.html" class="pressezeile">
+        <span class="medium">DIE ZEIT</span>
+        <div class="info">
+          <div class="ptitel">Bleibt das so? – Der Protest am Russischen Haus</div>
+          <div class="datum">19. September 2024 · Sarah Vojta</div>
+        </div>
+      </a>
 
-  <a href="artikel_sz_2025.html" class="artikel-card">
-    <img src="img/sz.jpg.png" alt="Süddeutsche Zeitung">
-    <div class="artikel-card-body">
-      <div class="medium">Süddeutsche Zeitung</div>
-      <h3>Der Kampf eines Mannes</h3>
-      <div class="datum">16. Dezember 2025 · Herrmann / Ismar / Bungert</div>
-      <div class="relevant">Bisher stärkste Aufarbeitung – Gerichtsurteil, Politikerstatements, Live-Reportage</div>
-    </div>
-  </a>
+      <a href="artikel_taz_2025.html" class="pressezeile">
+        <span class="medium">TAZ</span>
+        <div class="info">
+          <div class="ptitel">Ein-Mann-Demo gegen Russland</div>
+          <div class="datum">23. April 2025 · Tilman Baumgärtel</div>
+        </div>
+      </a>
 
-  <a href="artikel_tagesanzeiger_2026.html" class="artikel-card">
-    <img src="img/tagesanzeiger.jpg.png" alt="Tages-Anzeiger Schweiz">
-    <div class="artikel-card-body">
-      <div class="medium">Tages-Anzeiger · Schweiz</div>
-      <h3>Mit Fahne und Musikbox gegen Putins Kulturhaus</h3>
-      <div class="datum">4. Februar 2026 · Simon Widmer</div>
-      <div class="relevant">Erste internationale Berichterstattung – europäischer Kontext</div>
+      <a href="artikel_tonline_2025.html" class="pressezeile">
+        <span class="medium">t-online</span>
+        <div class="info">
+          <div class="ptitel">Zu viel Protest gegen Russland</div>
+          <div class="datum">26. Mai 2025 · Lars Wienand</div>
+        </div>
+      </a>
+
+      <a href="artikel_sz_2025.html" class="pressezeile">
+        <span class="medium">Süddeutsche</span>
+        <div class="info">
+          <div class="ptitel">Der Kampf eines Mannes</div>
+          <div class="datum">16. Dezember 2025 · Herrmann / Ismar / Bungert</div>
+        </div>
+      </a>
+
+      <a href="artikel_tagesanzeiger_2026.html" class="pressezeile">
+        <span class="medium">Tages-Anzeiger</span>
+        <div class="info">
+          <div class="ptitel">Mit Fahne und Musikbox gegen Putins Kulturhaus</div>
+          <div class="datum">4. Februar 2026 · Simon Widmer</div>
+        </div>
+      </a>
+
     </div>
-  </a>
+  </div>
 
 </div>
 
 <footer>
-  Pressemappe Russisches Haus Berlin &nbsp;·&nbsp; Initiative Gedenken &nbsp;·&nbsp;
-  Kontakt: <a href="mailto:gedenken.start@protonmail.com">gedenken.start@protonmail.com</a>
+  <span>Initiative Gedenken Berlin · Henry Lindemeier</span>
+  <a href="mailto:gedenken.start@protonmail.com">Kontakt &amp; Presseanfragen</a>
 </footer>
 
 </body>
