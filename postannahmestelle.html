@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postannahmestelle – Pressemappe Russisches Haus Berlin</title>
+<meta name="description" content="Die einzige ausländische Filiale der russischen Staatspost sitzt im Russischen Haus Berlin – täglich geöffnet, trotz Sanktionen.">
+<meta property="og:title" content="Postannahmestelle im Russischen Haus – täglich geöffnet trotz Sanktionen">
+<meta property="og:description" content="Die einzige ausländische Filiale der russischen Staatspost sitzt im Russischen Haus Berlin. Wer hat das genehmigt?">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #A32D2D; --orange: #e67e22; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
+.back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
+header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
+header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+.main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
+
+.alarm { margin: 28px 0 24px; background: var(--rot); color: #fff; padding: 20px 28px; border-radius: 6px; display: flex; gap: 16px; align-items: flex-start; }
+.alarm .icon { font-size: 24px; flex-shrink: 0; }
+.alarm .text { font-size: 16px; line-height: 1.5; }
+.alarm .text strong { display: block; font-size: 13px; letter-spacing: 0.07em; text-transform: uppercase; opacity: 0.8; margin-bottom: 4px; }
+
+.oeffnung { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 0 0 28px; }
+.oeff-kachel { background: var(--hellgrau); border-radius: 6px; padding: 16px 18px; text-align: center; }
+.oeff-kachel .zahl { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--blau); line-height: 1; margin-bottom: 6px; }
+.oeff-kachel .label { font-size: 13px; color: var(--grau); line-height: 1.4; }
+
+.akkordeon { display: flex; flex-direction: column; gap: 10px; }
+.akk-item { border: 1px solid var(--linie); border-radius: 6px; overflow: hidden; }
+.akk-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; cursor: pointer; background: var(--hellgrau); transition: background 0.2s; user-select: none; }
+.akk-header:hover { background: #eaeae8; }
+.akk-header.open { background: var(--blau); color: #fff; }
+.akk-titel { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; }
+.akk-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+.akk-header.open .akk-icon { transform: rotate(45deg); }
+.akk-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fff; }
+.akk-body.open { max-height: 2000px; }
+.akk-inner { padding: 20px 22px; }
+.akk-inner ul { list-style: none; padding: 0; }
+.akk-inner ul li { padding: 9px 0 9px 24px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); line-height: 1.5; }
+.akk-inner ul li:last-child { border-bottom: none; }
+.akk-inner ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 700; }
+.akk-inner ul li strong { font-weight: 600; }
+.quelle { display: block; font-size: 12px; color: var(--grau); margin-top: 3px; font-style: italic; }
+
+.fragen { margin-top: 28px; background: var(--dunkel); color: #fff; padding: 22px 28px; border-radius: 6px; }
+.fragen h3 { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 14px; }
+.fragen ul { list-style: none; padding: 0; }
+.fragen ul li { padding: 8px 0 8px 22px; position: relative; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); opacity: 0.9; }
+.fragen ul li:last-child { border-bottom: none; }
+.fragen ul li::before { content: '?'; position: absolute; left: 0; color: #7eb8f7; font-weight: 700; }
+
+.status-box { margin: 28px 0 0; background: #FEF3E2; border: 1px solid #F5C4B3; border-left: 4px solid var(--orange); border-radius: 0 6px 6px 0; padding: 18px 22px; }
+.status-box .status-label { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #854F0B; margin-bottom: 6px; }
+.status-box p { font-size: 14px; color: #633806; line-height: 1.6; }
+
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: #7eb8f7; text-decoration: none; }
+@media (max-width: 600px) { .oeffnung { grid-template-columns: 1fr; } .main { padding: 0 16px 40px; } header { padding: 24px 16px; } .back-link { padding: 12px 16px 0; } .alarm { flex-direction: column; gap: 10px; } .akk-header { padding: 14px 16px; } .akk-inner { padding: 16px; } }
+</style>
+</head>
+<body>
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index.html">← Zurück zur Übersicht</a></div>
+<header>
+  <h1>Postannahmestelle im Russischen Haus</h1>
+  <p>Mitten im sanktionierten Russischen Haus Berlin sitzt die einzige ausländische Filiale der russischen Staatspost – täglich geöffnet, während die Staatsanwaltschaft ermittelt.</p>
+</header>
+<div class="main">
+
+  <div class="alarm">
+    <span class="icon">📦</span>
+    <div class="text">
+      <strong>Aktuell bestätigt – März 2026</strong>
+      Die Postannahmestelle für Pakete nach Russland ist täglich in Betrieb: Mo–Fr 12:00–17:30 Uhr. Das Russische Haus steht auf der EU-Sanktionsliste. Die Staatsanwaltschaft ermittelt.
+    </div>
+  </div>
+
+  <div class="oeffnung">
+    <div class="oeff-kachel">
+      <div class="zahl">2018</div>
+      <div class="label">Eröffnung der Filiale im Pförtnerzimmer des Russischen Hauses</div>
+    </div>
+    <div class="oeff-kachel">
+      <div class="zahl">1</div>
+      <div class="label">Einzige offizielle Niederlassung der russischen Staatspost außerhalb Russlands – weltweit</div>
+    </div>
+    <div class="oeff-kachel">
+      <div class="zahl">täglich</div>
+      <div class="label">Fahrten Berlin–Moskau, Lieferzeit 4–5 Tage, europaweite Abholung</div>
+    </div>
+  </div>
+
+  <div class="akkordeon">
+
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-titel">📬 Was wir wissen – belegte Fakten</span>
+        <span class="akk-icon">+</span>
+      </div>
+      <div class="akk-body"><div class="akk-inner">
+        <ul>
+          <li>Im Mai 2018 wurde im Russischen Haus im bisherigen <strong>Pförtnerzimmer eine Filiale der russischen Staatspost</strong> eröffnet<span class="quelle">Ost-Impuls, Mai 2018</span></li>
+          <li>Die <strong>RusPost GmbH</strong> ist eine 100%ige Tochter der russischen Staatspost – und die <strong>einzige offizielle Niederlassung außerhalb der Russischen Föderation weltweit</strong><span class="quelle">RusPost GmbH, eigene Website</span></li>
+          <li>Die RusPost GmbH ist laut Handelsregister <strong>wirtschaftsaktiv</strong> – letzte Eintragung September 2024<span class="quelle">Handelsregister Berlin, 2024</span></li>
+          <li>Laut Nutzerberichten vom März 2026 läuft der Postbetrieb im Russischen Haus weiterhin: <strong>Mo–Fr 12:00–17:30 Uhr</strong>, Pause 15:00–16:00 Uhr</li>
+          <li>Henry Lindemeier beobachtete über lange Zeit regelmäßig <strong>Transporter</strong>, die vor dem Russischen Haus massenweise Pakete einsammelten</li>
+          <li>Menschen gehen mit Paketen ins Russische Haus – auch von außen sichtbar und dokumentiert</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-titel">⚠️ Warum das sanktionsrelevant ist</span>
+        <span class="akk-icon">+</span>
+      </div>
+      <div class="akk-body"><div class="akk-inner">
+        <ul>
+          <li>Rossotrudnitschestwo – der Betreiber des Russischen Hauses – steht seit Juli 2022 auf der <strong>EU-Sanktionsliste</strong>: Einfrierung aller Vermögenswerte, Verbot der Zurverfügungstellung von Geldern</li>
+          <li>Das bedeutet: <strong>keine kommerziellen Aktivitäten</strong>, keine Einnahmen, keine wirtschaftliche Tätigkeit</li>
+          <li>Eine Postannahmestelle ist eine <strong>kommerzielle Dienstleistung</strong> – sie generiert Einnahmen oder ermöglicht zumindest Geldflüsse</li>
+          <li>Die Berliner Staatsanwaltschaft ermittelt bereits wegen möglicher Sanktionsverstöße – unter anderem wegen unversteuerten Mieteinnahmen im Gebäude<span class="quelle">SZ, Dezember 2025</span></li>
+          <li>Ob die Postannahmestelle Teil dieser Ermittlungen ist, ist nicht bekannt – aber die Frage liegt auf der Hand</li>
+          <li>Die russische Staatspost untersteht direkt dem russischen Staat – sie ist kein privates Unternehmen</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-titel">🏛️ Wer hat das genehmigt?</span>
+        <span class="akk-icon">+</span>
+      </div>
+      <div class="akk-body"><div class="akk-inner">
+        <ul>
+          <li>Die Filiale wurde <strong>2018</strong> eröffnet – vier Jahre nach der Krim-Annexion, aber vier Jahre vor dem Angriff auf die Ukraine</li>
+          <li>Wer auf deutscher Seite die Genehmigung erteilt hat – oder ob überhaupt eine eingeholt wurde – ist <strong>nicht öffentlich bekannt</strong></li>
+          <li>Das Auswärtige Amt hat sich dazu bisher nicht geäußert</li>
+          <li>Nach Beginn des Angriffskrieges 2022 und Einführung der EU-Sanktionen hätte die Genehmigung <strong>eigentlich überprüft und entzogen</strong> werden müssen</li>
+          <li>Stattdessen läuft die Filiale weiter – als wären die Sanktionen nicht existent</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-titel">🔍 Was unklar bleibt</span>
+        <span class="akk-icon">+</span>
+      </div>
+      <div class="akk-body"><div class="akk-inner">
+        <ul>
+          <li>Wer betreibt die Filiale heute – RusPost GmbH direkt, oder ein anderer Dienstleister?</li>
+          <li>Welche Waren werden verschickt – und wer kontrolliert das?</li>
+          <li>Fließen Einnahmen aus dem Postbetrieb an Rossotrudnitschestwo oder an die russische Staatspost?</li>
+          <li>Ist der Betrieb dem Zoll und der Bundesanwaltschaft bekannt?</li>
+          <li>Läuft der Service unter diplomatischem Schutz – oder in einer rechtlichen Grauzone?</li>
+        </ul>
+      </div></div>
+    </div>
+
+  </div>
+
+  <div class="fragen">
+    <h3>Offene Fragen an Politik und Behörden</h3>
+    <ul>
+      <li>Wer hat 2018 die Eröffnung der russischen Staatspost-Filiale im Russischen Haus genehmigt?</li>
+      <li>Wurde diese Genehmigung nach Einführung der EU-Sanktionen 2022 überprüft?</li>
+      <li>Ist der laufende Postbetrieb dem Zoll und der Staatsanwaltschaft bekannt?</li>
+      <li>Verstößt der Betrieb gegen das Außenwirtschaftsgesetz oder die EU-Sanktionsverordnung?</li>
+      <li>Wer kontrolliert, was in den Paketen nach Russland steckt?</li>
+    </ul>
+  </div>
+
+  <div class="status-box">
+    <div class="status-label">Recherche läuft</div>
+    <p>Diese Seite wird laufend aktualisiert. Hinweise und Dokumente bitte an: <a href="mailto:gedenken.start@protonmail.com" style="color:#854F0B;font-weight:600;">gedenken.start@protonmail.com</a></p>
+  </div>
+
+</div>
+<footer>Pressemappe Russisches Haus Berlin &nbsp;·&nbsp; <a href="index.html">Zur Übersicht</a></footer>
+<script>
+function toggleAkk(header) {
+  const body = header.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  document.querySelectorAll('.akk-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.akk-header').forEach(h => h.classList.remove('open'));
+  if (!isOpen) { body.classList.add('open'); header.classList.add('open'); }
+}
+</script>
+</body>
+</html>
