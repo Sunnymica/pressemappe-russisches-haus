@@ -208,13 +208,13 @@ footer a { color: var(--gelb); text-decoration: none; }
 
   <div class="kachel">
     <div class="kachel-header">
-      <span class="status grau"></span>
-      <h3>Nicht kündbar</h3>
+      <span class="status" style="background:#e67e22;width:14px;height:14px;border-radius:50%;flex-shrink:0;"></span>
+      <h3>Doch kündbar?</h3>
     </div>
-    <div class="kachel-datum grau">Läuft bis 5. Juni 2112</div>
+    <div class="kachel-datum" style="color:#e67e22;padding:0 20px 12px;font-size:13px;font-weight:600;">Abkommen 2013 – regulär bis 2112</div>
     <div class="kachel-body">
-      <strong>Abkommen 2013</strong> – regelt das Grundstück und Gebäude an der Friedrichstraße. Russland behält das Nutzungsrecht für 99 Jahre.
-      <div class="fazit grau">→ Das Gebäude bleibt russisch – egal was passiert.</div>
+      <strong>Aber:</strong> Rechtsanwalt Jens Baganz argumentiert, dass der „Wegfall der Geschäftsgrundlage" (Art. 62 Wiener Vertragsrechtsübereinkommen) eine Kündigung oder Suspendierung ermöglicht.
+      <div class="fazit" style="color:#e67e22;">→ Das Gebäude ist möglicherweise doch nicht für 99 Jahre gesperrt.</div>
     </div>
   </div>
 
@@ -287,18 +287,80 @@ footer a { color: var(--gelb); text-decoration: none; }
       <span class="punkt"></span>
       <div class="inhalt">
         <div class="titel">Abkommen über die Unterbringung des Russischen Hauses – Grundstück &amp; Gebäude</div>
-        <div class="beschreibung">Räumt Russland das unbefristete und unentgeltliche Nutzungsrecht am Gebäude Friedrichstraße ein. Laufzeit 99 Jahre ab Inkrafttreten 5. Juni 2013.</div>
-        <span class="kuendigung grau">Nicht kündbar bis 2112</span>
+        <div class="beschreibung">Räumt Russland das unbefristete und unentgeltliche Nutzungsrecht am Gebäude Friedrichstraße ein. Laufzeit 99 Jahre ab Inkrafttreten 5. Juni 2013. Regulär nicht kündbar – aber: Rechtsanwalt Jens Baganz argumentiert, dass der Wegfall der Geschäftsgrundlage (Art. 62 Wiener Vertragsrechtsübereinkommen) eine Kündigung oder Suspendierung ermöglicht.</div>
+        <span class="kuendigung" style="background:#fef3e2;color:#e67e22;display:inline-block;margin-top:6px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:3px;">⚠ Möglicherweise doch kündbar – siehe Rechtsgutachten</span>
       </div>
     </li>
 
   </ul>
 </div>
 
+<!-- AKKORDEON: WEGFALL DER GESCHÄFTSGRUNDLAGE -->
+<div class="zeitleiste-wrapper">
+  <h2>Das juristische Argument: Wegfall der Geschäftsgrundlage</h2>
+
+  <div style="display:flex;flex-direction:column;gap:10px;">
+
+    <div style="border:1px solid var(--linie);border-radius:6px;overflow:hidden;">
+      <div class="akk-header" onclick="toggleAkk(this)" style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;background:var(--hellgrau);user-select:none;">
+        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;">⚖️ Was ist der „Wegfall der Geschäftsgrundlage"?</span>
+        <span class="akk-icon" style="font-size:22px;font-weight:300;transition:transform 0.3s;margin-left:16px;">+</span>
+      </div>
+      <div class="akk-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:#fff;">
+        <div style="padding:20px 22px;font-size:15px;line-height:1.6;color:var(--grau);">
+          <p style="margin-bottom:12px;">Art. 62 des Wiener Vertragsrechtsübereinkommens – von Deutschland und Russland ratifiziert – erlaubt die Kündigung oder Suspendierung eines Vertrags, wenn sich die Umstände grundlegend geändert haben und diese Änderung von den Vertragsparteien nicht vorhersehbar war.</p>
+          <p>Im Völkervertragsrecht ist man mit dieser Regelung vorsichtig, weil man verhindern möchte, dass Staaten sich zu schnell aus Verträgen lösen. Sie greift aber dann, wenn:</p>
+          <ul style="list-style:none;padding:0;margin-top:12px;">
+            <li style="padding:8px 0 8px 24px;position:relative;border-bottom:1px solid var(--linie);">→ die ursprünglichen Umstände eine wesentliche Grundlage für den Vertragsschluss waren; <strong>und</strong></li>
+            <li style="padding:8px 0 8px 24px;position:relative;">→ die Änderung das Ausmaß der Verpflichtungen tiefgreifend umgestaltet.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:1px solid var(--linie);border-radius:6px;overflow:hidden;">
+      <div class="akk-header" onclick="toggleAkk(this)" style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;background:var(--hellgrau);user-select:none;">
+        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;">📋 Warum das auf das Abkommen 2013 zutrifft</span>
+        <span class="akk-icon" style="font-size:22px;font-weight:300;transition:transform 0.3s;margin-left:16px;">+</span>
+      </div>
+      <div class="akk-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:#fff;">
+        <div style="padding:20px 22px;">
+          <ul style="list-style:none;padding:0;">
+            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--linie);line-height:1.5;">Das Abkommen 2013 verweist in seiner Präambel auf den Vertrag 1992 – der seinerseits auf Helsinki-Prinzipien und die Schaffung einer <strong>gemeinsamen europäischen Kulturgemeinschaft</strong> Bezug nimmt</li>
+            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--linie);line-height:1.5;">Russland tritt diese Prinzipien durch den Angriffskrieg gegen die Ukraine und die <strong>massenhafte Zerstörung ukrainischer Kulturgüter</strong> mit Füßen</li>
+            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--linie);line-height:1.5;">Hätte Deutschland 1992 gewusst, dass Russland die Ukraine überfallen würde – <strong>der Vertrag wäre nie geschlossen worden.</strong> Selbst Russland hätte das 1992 nicht für möglich gehalten, wie die Unterzeichnung des Budapester Memorandums 1994 zeigt</li>
+            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;line-height:1.5;">Auch die zweite Voraussetzung – die „tiefgreifende Umgestaltung der Verpflichtungen" – ist erfüllt: Weder Russland noch Deutschland können angesichts des Ukraine-Krieges <strong>ungestört über kulturelle Beziehungen reden</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:1px solid var(--linie);border-radius:6px;overflow:hidden;">
+      <div class="akk-header" onclick="toggleAkk(this)" style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;background:var(--hellgrau);user-select:none;">
+        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;">💡 Kündigung oder Suspendierung?</span>
+        <span class="akk-icon" style="font-size:22px;font-weight:300;transition:transform 0.3s;margin-left:16px;">+</span>
+      </div>
+      <div class="akk-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:#fff;">
+        <div style="padding:20px 22px;font-size:15px;line-height:1.6;color:var(--grau);">
+          <p style="margin-bottom:12px;">Rechtsanwalt Jens Baganz hält es für <strong>eindeutig, dass Deutschland das Abkommen 2013 kündigen könnte</strong>. Gleichzeitig weist er auf eine wichtige Alternative hin:</p>
+          <p style="margin-bottom:12px;">In der Staatspraxis werden völkerrechtliche Verträge bei schwerwiegenden Störungen oft nicht gekündigt, sondern <strong>suspendiert</strong> – also „eingefroren". Hintergrund: Ist ein Vertrag erst einmal „weg", ist es nach Beendigung eines Konflikts mühsam, das Vertragswerk neu auszuhandeln.</p>
+          <p>Eine Suspendierung würde bedeuten: Das Russische Haus muss schließen – aber die Rechtsgrundlage bleibt für eine spätere Normalisierung erhalten.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:#E6F1FB;border-left:4px solid var(--blau);padding:18px 22px;border-radius:0 4px 4px 0;margin-top:20px;font-size:14px;color:#042C53;line-height:1.6;">
+    <strong style="display:block;margin-bottom:4px;">Einschätzung von Rechtsanwalt Jens Baganz</strong>
+    „Ich halte es für eindeutig, dass Deutschland das Abkommen 2013 kündigen könnte. Auch eine Suspendierung wäre möglich – siehe Art. 62 Abs. 3 des Wiener Abkommens."
+  </div>
+</div>
+
 <!-- HINWEIS -->
 <div class="hinweis">
   <div class="hinweis-inner">
-    <strong>Wichtiger Hinweis:</strong> Auch wenn das Abkommen 2011 gekündigt wird, bleibt Russland im Besitz des Gebäudes bis 2112. Das Abkommen 2013 ist nicht kündbar. Eine Kündigung des Abkommens 2011 würde jedoch die <strong>Rechtsgrundlage für alle Aktivitäten</strong> im Russischen Haus entziehen – Deutschland könnte bestimmen, was dort noch erlaubt ist. Dieser Überblick basiert auf einer Zusammenstellung von Jens Baganz (Rechtsanwalt, ehem. Bürgermeister).
+    <strong>Wichtiger Hinweis:</strong> Die Kündigung des Abkommens 2011 entzieht dem Russischen Haus die <strong>Betriebsgrundlage</strong> – Deutschland könnte bestimmen, was dort noch erlaubt ist. Darüber hinaus argumentiert Rechtsanwalt Jens Baganz, dass auch das Abkommen 2013 über den <strong>Wegfall der Geschäftsgrundlage</strong> (Art. 62 Wiener Vertragsrechtsübereinkommen) kündbar oder suspendierbar ist. Das bisherige Argument der Bundesregierung – „wir sind auf 99 Jahre gebunden" – hält einer juristischen Prüfung möglicherweise nicht stand.
   </div>
 </div>
 
@@ -307,5 +369,14 @@ footer a { color: var(--gelb); text-decoration: none; }
   <a href="index.html">Zur Übersicht</a>
 </footer>
 
+<script>
+function toggleAkk(header) {
+  const body = header.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  document.querySelectorAll('.akk-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.akk-header').forEach(h => h.classList.remove('open'));
+  if (!isOpen) { body.classList.add('open'); header.classList.add('open'); }
+}
+</script>
 </body>
 </html>
