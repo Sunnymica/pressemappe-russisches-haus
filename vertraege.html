@@ -22,9 +22,7 @@ header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 
 header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* ALARMBANNER */
-.alarm {
-  max-width: 860px; margin: 32px auto 0; padding: 0 24px;
-}
+.alarm { max-width: 860px; margin: 32px auto 0; padding: 0 24px; }
 .alarm-inner {
   background: var(--rot); color: #fff;
   padding: 20px 28px; border-radius: 6px;
@@ -41,116 +39,82 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
   display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
 }
-.kachel {
-  border-radius: 6px; overflow: hidden;
-  border: 1px solid var(--linie);
-}
-.kachel-header {
-  padding: 16px 20px; display: flex; align-items: center; gap: 12px;
-}
-.kachel-header .status {
-  width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0;
-}
+.kachel { border-radius: 6px; overflow: hidden; border: 1px solid var(--linie); }
+.kachel-header { padding: 16px 20px; display: flex; align-items: center; gap: 12px; }
+.kachel-header .status { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
 .kachel-header .status.rot { background: var(--rot); }
 .kachel-header .status.gelb { background: var(--orange); }
 .kachel-header .status.grau { background: #888; }
 .kachel-header h3 { font-family: 'Playfair Display', serif; font-size: 16px; line-height: 1.2; }
-.kachel-datum {
-  padding: 0 20px 12px;
-  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
-}
+.kachel-datum { padding: 0 20px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
 .kachel-datum.rot { color: var(--rot); }
 .kachel-datum.gelb { color: var(--orange); }
 .kachel-datum.grau { color: #888; }
-.kachel-body {
-  padding: 0 20px 20px;
-  font-size: 14px; color: var(--grau); line-height: 1.6;
-  border-top: 1px solid var(--linie);
-  padding-top: 14px;
-}
+.kachel-body { padding: 14px 20px 20px; font-size: 14px; color: var(--grau); line-height: 1.6; border-top: 1px solid var(--linie); }
 .kachel-body strong { color: var(--dunkel); font-weight: 600; }
-.kachel-body .fazit {
-  margin-top: 10px; padding-top: 10px;
-  border-top: 1px solid var(--linie);
-  font-size: 13px; font-weight: 600;
-}
+.kachel-body .fazit { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--linie); font-size: 13px; font-weight: 600; }
 .kachel-body .fazit.rot { color: var(--rot); }
 .kachel-body .fazit.gelb { color: var(--orange); }
 .kachel-body .fazit.grau { color: #888; }
 
 /* ZEITLEISTE */
-.zeitleiste-wrapper {
-  max-width: 860px; margin: 0 auto 48px; padding: 0 24px;
-}
-.zeitleiste-wrapper h2 {
-  font-family: 'Playfair Display', serif; font-size: 20px;
-  margin-bottom: 24px; padding-bottom: 10px;
-  border-bottom: 2px solid var(--linie);
-}
+.zeitleiste-wrapper { max-width: 860px; margin: 0 auto 48px; padding: 0 24px; }
+.zeitleiste-wrapper h2 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 24px; padding-bottom: 10px; border-bottom: 2px solid var(--linie); }
 
 .zeitliste { list-style: none; padding: 0; position: relative; }
-.zeitliste::before {
-  content: ''; position: absolute;
-  left: 72px; top: 0; bottom: 0;
-  width: 2px; background: var(--linie);
-}
-
-.zeitliste li {
-  display: flex; gap: 20px; margin-bottom: 24px;
-  position: relative;
-}
-.zeitliste li .jahr {
-  min-width: 60px; text-align: right;
-  font-size: 13px; font-weight: 600; color: var(--grau);
-  padding-top: 2px; flex-shrink: 0;
-}
-.zeitliste li .punkt {
-  width: 12px; height: 12px; border-radius: 50%;
-  margin-top: 5px; flex-shrink: 0; position: relative; z-index: 1;
-}
+.zeitliste::before { content: ''; position: absolute; left: 72px; top: 0; bottom: 0; width: 2px; background: var(--linie); }
+.zeitliste li { display: flex; gap: 20px; margin-bottom: 24px; position: relative; }
+.zeitliste li .jahr { min-width: 60px; text-align: right; font-size: 13px; font-weight: 600; color: var(--grau); padding-top: 2px; flex-shrink: 0; }
+.zeitliste li .punkt { width: 12px; height: 12px; border-radius: 50%; margin-top: 5px; flex-shrink: 0; position: relative; z-index: 1; }
 .zeitliste li.aktiv .punkt { background: var(--blau); }
 .zeitliste li.inaktiv .punkt { background: var(--linie); border: 2px solid #ccc; }
 .zeitliste li.kritisch .punkt { background: var(--rot); }
-
 .zeitliste li .inhalt { flex: 1; }
-.zeitliste li .inhalt .titel {
-  font-size: 15px; font-weight: 600; line-height: 1.3;
-  margin-bottom: 4px;
-}
-.zeitliste li.inaktiv .inhalt .titel {
-  text-decoration: line-through; color: var(--grau);
-}
-.zeitliste li .inhalt .beschreibung {
-  font-size: 13px; color: var(--grau); line-height: 1.5;
-}
-.zeitliste li .inhalt .kuendigung {
-  display: inline-block; margin-top: 6px;
-  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
-  padding: 3px 10px; border-radius: 3px;
-}
+.zeitliste li .inhalt .titel { font-size: 15px; font-weight: 600; line-height: 1.3; margin-bottom: 4px; }
+.zeitliste li.inaktiv .inhalt .titel { text-decoration: line-through; color: var(--grau); }
+.zeitliste li .inhalt .beschreibung { font-size: 13px; color: var(--grau); line-height: 1.5; }
+.zeitliste li .inhalt .kuendigung { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 3px; }
 .kuendigung.rot { background: #fde8e8; color: var(--rot); }
 .kuendigung.gelb { background: #fef3e2; color: var(--orange); }
 .kuendigung.grau { background: var(--hellgrau); color: #888; }
 
-/* HINWEIS */
-.hinweis {
-  max-width: 860px; margin: 0 auto 48px; padding: 0 24px;
+/* AKKORDEON */
+.akk-container { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+.akk-item { border: 1px solid var(--linie); border-radius: 6px; overflow: hidden; }
+.akk-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 22px; cursor: pointer;
+  background: var(--hellgrau); user-select: none;
 }
-.hinweis-inner {
-  background: var(--hellgrau); border-left: 4px solid var(--blau);
+.akk-header:hover { background: #ebebea; }
+.akk-header-text { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; }
+.akk-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; margin-left: 16px; flex-shrink: 0; }
+.akk-header.open .akk-icon { transform: rotate(45deg); }
+.akk-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fff; }
+.akk-body.open { max-height: 800px; }
+.akk-body-inner { padding: 20px 22px; font-size: 15px; line-height: 1.7; color: var(--grau); }
+.akk-body-inner p { margin-bottom: 12px; }
+.akk-body-inner p:last-child { margin-bottom: 0; }
+.akk-body-inner strong { color: var(--dunkel); }
+
+/* ZITAT BAGANZ */
+.baganz-zitat {
+  background: #E6F1FB; border-left: 4px solid var(--blau);
   padding: 18px 22px; border-radius: 0 4px 4px 0;
-  font-size: 14px; color: var(--grau); line-height: 1.6;
+  margin-top: 20px; font-size: 14px; color: #042C53; line-height: 1.6;
 }
+.baganz-zitat strong { display: block; margin-bottom: 4px; }
+
+/* HINWEIS */
+.hinweis { max-width: 860px; margin: 0 auto 48px; padding: 0 24px; }
+.hinweis-inner { background: var(--hellgrau); border-left: 4px solid var(--blau); padding: 18px 22px; border-radius: 0 4px 4px 0; font-size: 14px; color: var(--grau); line-height: 1.6; }
 .hinweis-inner strong { color: var(--dunkel); }
 
 footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
 footer a { color: var(--gelb); text-decoration: none; }
 
 @media (max-width: 600px) {
-  .kacheln { grid-template-columns: 1fr; padding: 0 16px; }
-  .alarm { padding: 0 16px; }
-  .zeitleiste-wrapper { padding: 0 16px; }
-  .hinweis { padding: 0 16px; }
+  .kacheln, .alarm, .zeitleiste-wrapper, .hinweis { padding: 0 16px; }
   header { padding: 24px 16px; }
   .back-link { padding: 12px 16px 0; }
   .zeitliste::before { left: 60px; }
@@ -299,62 +263,55 @@ footer a { color: var(--gelb); text-decoration: none; }
 <div class="zeitleiste-wrapper">
   <h2>Das juristische Argument: Wegfall der Geschäftsgrundlage</h2>
 
-  <div style="display:flex;flex-direction:column;gap:10px;">
+  <div class="akk-container">
 
-    <div style="border:1px solid var(--linie);border-radius:6px;overflow:hidden;">
-      <div class="akk-header" onclick="toggleAkk(this)" style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;background:var(--hellgrau);user-select:none;">
-        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;">⚖️ Was ist der „Wegfall der Geschäftsgrundlage"?</span>
-        <span class="akk-icon" style="font-size:22px;font-weight:300;transition:transform 0.3s;margin-left:16px;">+</span>
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-header-text">⚖️ Was ist der „Wegfall der Geschäftsgrundlage"?</span>
+        <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:#fff;">
-        <div style="padding:20px 22px;font-size:15px;line-height:1.6;color:var(--grau);">
-          <p style="margin-bottom:12px;">Art. 62 des Wiener Vertragsrechtsübereinkommens – von Deutschland und Russland ratifiziert – erlaubt die Kündigung oder Suspendierung eines Vertrags, wenn sich die Umstände grundlegend geändert haben und diese Änderung von den Vertragsparteien nicht vorhersehbar war.</p>
-          <p>Im Völkervertragsrecht ist man mit dieser Regelung vorsichtig, weil man verhindern möchte, dass Staaten sich zu schnell aus Verträgen lösen. Sie greift aber dann, wenn:</p>
-          <ul style="list-style:none;padding:0;margin-top:12px;">
-            <li style="padding:8px 0 8px 24px;position:relative;border-bottom:1px solid var(--linie);">→ die ursprünglichen Umstände eine wesentliche Grundlage für den Vertragsschluss waren; <strong>und</strong></li>
-            <li style="padding:8px 0 8px 24px;position:relative;">→ die Änderung das Ausmaß der Verpflichtungen tiefgreifend umgestaltet.</li>
-          </ul>
+      <div class="akk-body">
+        <div class="akk-body-inner">
+          <p>Völkerrechtliche Verträge zwischen Staaten beruhen auf Annahmen – über das Verhältnis der Vertragsparteien, über gemeinsame Interessen, über eine geteilte politische Realität. Ändert sich diese Grundlage fundamental, kann ein Vertrag angepasst oder beendet werden, auch ohne entsprechende Klausel.</p>
+          <p>Im Völkerrecht steht das in <strong>Artikel 62 des Wiener Übereinkommens</strong>: Ein Staat ist nicht für alle Ewigkeit und unter allen Umständen gebunden – sondern unter den Bedingungen, die beim Vertragsschluss galten. Die Regelung greift, wenn die ursprünglichen Umstände eine wesentliche Grundlage für den Vertragsschluss waren <em>und</em> die Änderung das Ausmaß der Verpflichtungen tiefgreifend umgestaltet.</p>
         </div>
       </div>
     </div>
 
-    <div style="border:1px solid var(--linie);border-radius:6px;overflow:hidden;">
-      <div class="akk-header" onclick="toggleAkk(this)" style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;background:var(--hellgrau);user-select:none;">
-        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;">📋 Warum das auf das Abkommen 2013 zutrifft</span>
-        <span class="akk-icon" style="font-size:22px;font-weight:300;transition:transform 0.3s;margin-left:16px;">+</span>
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-header-text">📋 Warum das auf das Abkommen 2013 zutrifft</span>
+        <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:#fff;">
-        <div style="padding:20px 22px;">
-          <ul style="list-style:none;padding:0;">
-            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--linie);line-height:1.5;">Das Abkommen 2013 verweist in seiner Präambel auf den Vertrag 1992 – der seinerseits auf Helsinki-Prinzipien und die Schaffung einer <strong>gemeinsamen europäischen Kulturgemeinschaft</strong> Bezug nimmt</li>
-            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--linie);line-height:1.5;">Russland tritt diese Prinzipien durch den Angriffskrieg gegen die Ukraine und die <strong>massenhafte Zerstörung ukrainischer Kulturgüter</strong> mit Füßen</li>
-            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--linie);line-height:1.5;">Hätte Deutschland 1992 gewusst, dass Russland die Ukraine überfallen würde – <strong>der Vertrag wäre nie geschlossen worden.</strong> Selbst Russland hätte das 1992 nicht für möglich gehalten, wie die Unterzeichnung des Budapester Memorandums 1994 zeigt</li>
-            <li style="padding:9px 0 9px 24px;position:relative;font-size:15px;line-height:1.5;">Auch die zweite Voraussetzung – die „tiefgreifende Umgestaltung der Verpflichtungen" – ist erfüllt: Weder Russland noch Deutschland können angesichts des Ukraine-Krieges <strong>ungestört über kulturelle Beziehungen reden</strong></li>
-          </ul>
+      <div class="akk-body">
+        <div class="akk-body-inner">
+          <p>Das Liegenschaftsabkommen von 2013 entstand in einer anderen Zeit – als Deutschland und Russland Partner waren, zumindest dem Anschein nach. Seit dem 24. Februar 2022 ist diese Grundlage weg.</p>
+          <p>Russland führt einen Angriffskrieg gegen die Ukraine. Rossotrudnitschestwo, der Betreiber des Russischen Hauses, steht seit Juli 2022 auf der EU-Sanktionsliste. Unter diesen Bedingungen hätte Deutschland 2013 kein unentgeltliches, unbefristetes Nutzungsrecht an einem Berliner Innenstadtgrundstück eingeräumt. <strong>Selbst Russland hätte das 1992 nicht für möglich gehalten</strong> – wie die Unterzeichnung des Budapester Memorandums 1994 zeigt.</p>
+          <p>Rechtsanwalt Jens Baganz sieht darin den Tatbestand des Art. 62 der Wiener Vertragsrechtskonvention als erfüllt an.</p>
         </div>
       </div>
     </div>
 
-    <div style="border:1px solid var(--linie);border-radius:6px;overflow:hidden;">
-      <div class="akk-header" onclick="toggleAkk(this)" style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;background:var(--hellgrau);user-select:none;">
-        <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;">💡 Kündigung oder Suspendierung?</span>
-        <span class="akk-icon" style="font-size:22px;font-weight:300;transition:transform 0.3s;margin-left:16px;">+</span>
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-header-text">💡 Kündigung oder Suspendierung?</span>
+        <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:#fff;">
-        <div style="padding:20px 22px;font-size:15px;line-height:1.6;color:var(--grau);">
-          <p style="margin-bottom:12px;">Rechtsanwalt Jens Baganz hält es für <strong>eindeutig, dass Deutschland das Abkommen 2013 kündigen könnte</strong>. Gleichzeitig weist er auf eine wichtige Alternative hin:</p>
-          <p style="margin-bottom:12px;">In der Staatspraxis werden völkerrechtliche Verträge bei schwerwiegenden Störungen oft nicht gekündigt, sondern <strong>suspendiert</strong> – also „eingefroren". Hintergrund: Ist ein Vertrag erst einmal „weg", ist es nach Beendigung eines Konflikts mühsam, das Vertragswerk neu auszuhandeln.</p>
-          <p>Eine Suspendierung würde bedeuten: Das Russische Haus muss schließen – aber die Rechtsgrundlage bleibt für eine spätere Normalisierung erhalten.</p>
+      <div class="akk-body">
+        <div class="akk-body-inner">
+          <p>Art. 62 lässt beides zu. Eine <strong>Kündigung</strong> würde das Abkommen vollständig beenden – das Nutzungsrecht am Grundstück wäre weg. Eine <strong>Suspendierung</strong> würde es vorübergehend außer Kraft setzen, solange der Krieg andauert – mit dem Vorteil, dass die Rechtsgrundlage für eine spätere Normalisierung erhalten bleibt.</p>
+          <p>Rechtsanwalt Baganz hält beide Wege für juristisch vertretbar. Die Bundesregierung hat dieses Argument bisher weder geprüft noch widerlegt. Ihr Verweis auf die 99-Jahres-Bindung bezieht sich auf den Vertragstext – nicht auf das Völkergewohnheitsrecht, das Art. 62 kodifiziert.</p>
         </div>
       </div>
     </div>
 
   </div>
 
-  <div style="background:#E6F1FB;border-left:4px solid var(--blau);padding:18px 22px;border-radius:0 4px 4px 0;margin-top:20px;font-size:14px;color:#042C53;line-height:1.6;">
-    <strong style="display:block;margin-bottom:4px;">Einschätzung von Rechtsanwalt Jens Baganz</strong>
+  <div class="baganz-zitat">
+    <strong>Einschätzung von Rechtsanwalt Jens Baganz</strong>
     „Ich halte es für eindeutig, dass Deutschland das Abkommen 2013 kündigen könnte. Auch eine Suspendierung wäre möglich – siehe Art. 62 Abs. 3 des Wiener Abkommens."
   </div>
+
 </div>
 
 <!-- HINWEIS -->
@@ -372,10 +329,18 @@ footer a { color: var(--gelb); text-decoration: none; }
 <script>
 function toggleAkk(header) {
   const body = header.nextElementSibling;
+  const icon = header.querySelector('.akk-icon');
   const isOpen = body.classList.contains('open');
+
+  // Alle schließen
   document.querySelectorAll('.akk-body').forEach(b => b.classList.remove('open'));
   document.querySelectorAll('.akk-header').forEach(h => h.classList.remove('open'));
-  if (!isOpen) { body.classList.add('open'); header.classList.add('open'); }
+
+  // Dieses öffnen, wenn es vorher zu war
+  if (!isOpen) {
+    body.classList.add('open');
+    header.classList.add('open');
+  }
 }
 </script>
 </body>
