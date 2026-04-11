@@ -49,17 +49,21 @@ body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--
 .kachel.rot { border-left: 4px solid var(--rot); border-top: 1px solid var(--rot-rand); border-right: 1px solid var(--rot-rand); border-bottom: 1px solid var(--rot-rand); background: var(--rot-hell); }
 .kachel.grau { border: 1px solid var(--grau-rand); background: var(--grau-hell); }
 .kachel.blau-stark { border-left: 4px solid var(--blau); border-top: 1px solid var(--blau-rand); border-right: 1px solid var(--blau-rand); border-bottom: 1px solid var(--blau-rand); background: var(--blau-hell); }
+.kachel.dunkel { border: 1px solid #333; background: var(--dunkel); }
 
 .kachel .tag { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; color: var(--blau); }
 .kachel.rot .tag { color: var(--rot); }
 .kachel.grau .tag { color: var(--grau); }
+.kachel.dunkel .tag { color: #f87171; }
 
 .kachel .titel { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--dunkel); }
 .kachel.rot .titel { color: var(--rot); }
 .kachel.grau .titel { color: var(--grau); }
+.kachel.dunkel .titel { color: #fff; }
 
 .kachel .sub { font-size: 13px; color: var(--grau); line-height: 1.5; }
 .kachel.rot .sub { color: #7a1f1f; }
+.kachel.dunkel .sub { color: #aaa; }
 
 .presseliste { margin-top: 4px; }
 .pressezeile { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--linie); align-items: flex-start; text-decoration: none; color: inherit; }
@@ -97,76 +101,80 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
   <div class="section">
     <div class="section-title">Political action items</div>
     <div class="grid-3">
-
       <a href="vertraege_en.html" class="kachel rot">
         <div class="tag">Deadline: 7 December 2026</div>
         <div class="titel">One treaty is terminable now</div>
         <div class="sub">It determines what is permitted inside the Russian House. Germany could say: nothing more. Goodbye.</div>
       </a>
-
       <a href="goethe_en.html" class="kachel">
         <div class="tag">Argument</div>
         <div class="titel">Goethe-Institut – no longer a bargaining chip</div>
         <div class="sub">Why the government's protective argument no longer holds factually.</div>
       </a>
-
       <a href="polizei_en.html" class="kachel">
         <div class="tag">Documented</div>
         <div class="titel">Police &amp; Protest</div>
         <div class="sub">Systematic imbalance – unlawful arrest confirmed by court. 33+ deployments in 2024.</div>
       </a>
-
     </div>
   </div>
 
   <div class="section">
     <div class="section-title">Ongoing investigations &amp; open questions</div>
     <div class="grid-3">
-
       <a href="kameras_en.html" class="kachel">
         <div class="tag">Investigation ongoing</div>
         <div class="titel">Illegal surveillance cameras</div>
         <div class="sub">What do the 360° cameras in front of the Russian House film? Why is there no political response?</div>
       </a>
-
       <a href="postannahmestelle_en.html" class="kachel">
         <div class="tag">Confirmed · March 2026</div>
         <div class="titel">Parcel collection point</div>
         <div class="sub">The only foreign branch of the Russian state postal service worldwide – operating inside the sanctioned Russian House since 2018.</div>
       </a>
-
       <a href="uebersetzungsbuero_en.html" class="kachel">
         <div class="tag">Newly documented</div>
         <div class="titel">Translation office</div>
         <div class="sub">A translation office inside the sanctioned Russian House – easy to find online, but nothing on the website reveals where you are.</div>
       </a>
+    </div>
+  </div>
 
+  <div class="section">
+    <div class="section-title">Intimidation &amp; counter-campaign</div>
+    <div class="grid-2">
+      <div class="kachel grau">
+        <div class="tag">In preparation</div>
+        <div class="titel">The Methods of the Russian House</div>
+        <div class="sub">False criminal complaints, RT propaganda, physical assaults – how a sanctioned agency fights its critics. English version coming soon.</div>
+      </div>
+      <div class="kachel grau">
+        <div class="tag">In preparation</div>
+        <div class="titel">Russian Houses in the EU – who has already closed?</div>
+        <div class="sub">Lithuania, Poland, Czech Republic, Sweden, Moldova – and why Germany is waiting.</div>
+      </div>
     </div>
   </div>
 
   <div class="section">
     <div class="section-title">Facts &amp; evidence</div>
     <div class="grid-2">
-
       <a href="fakten_en.html" class="kachel">
         <div class="tag">Compiled from 6 media reports</div>
         <div class="titel">All verified facts &amp; legal background</div>
         <div class="sub">Institution, finances, investigations, police – with source references.</div>
       </a>
-
       <a href="#presseartikel" class="kachel blau-stark">
         <div class="tag">6 articles · 2024–2026</div>
         <div class="titel">Press coverage chronological</div>
         <div class="sub">Morgenpost · ZEIT · TAZ · t-online · SZ · Tages-Anzeiger Switzerland</div>
       </a>
-
     </div>
   </div>
 
   <div class="section" id="presseartikel">
     <div class="section-title">Press articles</div>
     <div class="presseliste">
-
       <a href="artikel_morgenpost_2024_en.html" class="pressezeile">
         <span class="medium">Morgenpost</span>
         <div class="info">
@@ -174,7 +182,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">7 August 2024 · Dirk Krampitz</div>
         </div>
       </a>
-
       <a href="artikel_zeit_2024_en.html" class="pressezeile">
         <span class="medium">DIE ZEIT</span>
         <div class="info">
@@ -182,7 +189,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">19 September 2024 · Sarah Vojta</div>
         </div>
       </a>
-
       <a href="artikel_taz_2025_en.html" class="pressezeile">
         <span class="medium">TAZ</span>
         <div class="info">
@@ -190,7 +196,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">23 April 2025 · Tilman Baumgärtel</div>
         </div>
       </a>
-
       <a href="artikel_tonline_2025_en.html" class="pressezeile">
         <span class="medium">t-online</span>
         <div class="info">
@@ -198,7 +203,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">26 May 2025 · Lars Wienand</div>
         </div>
       </a>
-
       <a href="artikel_sz_2025_en.html" class="pressezeile">
         <span class="medium">Süddeutsche</span>
         <div class="info">
@@ -206,7 +210,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">16 December 2025 · Herrmann / Ismar / Bungert</div>
         </div>
       </a>
-
       <a href="artikel_tagesanzeiger_2026_en.html" class="pressezeile">
         <span class="medium">Tages-Anzeiger</span>
         <div class="info">
@@ -214,7 +217,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">4 February 2026 · Simon Widmer</div>
         </div>
       </a>
-
     </div>
   </div>
 
@@ -223,5 +225,10 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 <footer>
   <span>Initiative Gedenken Berlin · Henry Lindemeier</span>
   <div style="display:flex;gap:20px;">
-    <a href="/cdn-cgi/l/email-protection#2641434243484d4348085552475452665654495249484b474f4a0845494b">Contact &amp; Press enquiries</a>
-    <a href="impressum_en.html">L
+    <a href="mailto:gedenken.start@protonmail.com">Contact &amp; Press enquiries</a>
+    <a href="impressum_en.html">Legal notice</a>
+  </div>
+</footer>
+
+</body>
+</html>
