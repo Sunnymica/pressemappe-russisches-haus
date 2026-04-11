@@ -51,6 +51,15 @@ body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--
 .kachel.blau-stark { border-left: 4px solid var(--blau); border-top: 1px solid var(--blau-rand); border-right: 1px solid var(--blau-rand); border-bottom: 1px solid var(--blau-rand); background: var(--blau-hell); }
 .kachel.dunkel { border: 1px solid #333; background: var(--dunkel); }
 
+.countdown-bar { background: #A32D2D; color: #fff; padding: 20px 24px; text-align: center; }
+.countdown-bar .countdown-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; margin-bottom: 10px; }
+.countdown-bar .countdown-zahlen { display: flex; justify-content: center; gap: 24px; margin-bottom: 10px; }
+.countdown-bar .countdown-einheit { text-align: center; }
+.countdown-bar .countdown-zahl { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 52px); font-weight: 700; line-height: 1; display: block; }
+.countdown-bar .countdown-text { font-size: 11px; opacity: 0.7; letter-spacing: 0.06em; text-transform: uppercase; }
+.countdown-bar .countdown-info { font-size: 13px; opacity: 0.85; }
+.countdown-bar .countdown-info a { color: #fff; font-weight: 600; text-decoration: underline; }
+
 .kachel .tag { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; color: var(--blau); }
 .kachel.rot .tag { color: var(--rot); }
 .kachel.grau .tag { color: var(--grau); }
@@ -88,6 +97,29 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 <body>
 
 <div class="ukraine-bar"></div>
+
+<div class="countdown-bar">
+  <div class="countdown-label">⏳ Termination deadline running out</div>
+  <div class="countdown-zahlen">
+    <div class="countdown-einheit">
+      <span class="countdown-zahl" id="cd-tage">–</span>
+      <span class="countdown-text">Days</span>
+    </div>
+    <div class="countdown-einheit">
+      <span class="countdown-zahl" id="cd-stunden">–</span>
+      <span class="countdown-text">Hours</span>
+    </div>
+    <div class="countdown-einheit">
+      <span class="countdown-zahl" id="cd-minuten">–</span>
+      <span class="countdown-text">Minutes</span>
+    </div>
+    <div class="countdown-einheit">
+      <span class="countdown-zahl" id="cd-sekunden">–</span>
+      <span class="countdown-text">Seconds</span>
+    </div>
+  </div>
+  <div class="countdown-info">until <strong>7 December 2026</strong> – the last day Germany can terminate its treaty with the Russian House. <a href="vertraege_en.html">Why this matters →</a></div>
+</div>
 <div class="lang-switch"><a href="index.html">🇩🇪 Deutsche Version</a></div>
 
 <header class="site-header">
@@ -254,5 +286,26 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
   </div>
 </footer>
 
+<script>
+function updateCountdown() {
+  const ziel = new Date('2026-12-07T23:59:59');
+  const jetzt = new Date();
+  const diff = ziel - jetzt;
+  if (diff <= 0) {
+    document.querySelector('.countdown-bar').innerHTML = '<p style="font-size:18px;font-weight:700;">The termination deadline has passed.</p>';
+    return;
+  }
+  const tage = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const stunden = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minuten = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const sekunden = Math.floor((diff % (1000 * 60)) / 1000);
+  document.getElementById('cd-tage').textContent = String(tage).padStart(2, '0');
+  document.getElementById('cd-stunden').textContent = String(stunden).padStart(2, '0');
+  document.getElementById('cd-minuten').textContent = String(minuten).padStart(2, '0');
+  document.getElementById('cd-sekunden').textContent = String(sekunden).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
 </body>
 </html>
