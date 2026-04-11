@@ -40,94 +40,40 @@ body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--
 .main { max-width: 900px; margin: 0 auto; padding: 0 24px 48px; }
 
 .section { margin-top: 32px; }
-.section-title {
-  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--grau);
-  margin-bottom: 12px; padding-bottom: 8px;
-  border-bottom: 1px solid var(--linie);
-}
+.section-title { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grau); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--linie); }
 
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 
-.kachel {
-  border-radius: 6px; padding: 16px 18px;
-  background: #fff;
-  border: 1px solid var(--blau-rand);
-  text-decoration: none; color: inherit; display: block;
-}
-.kachel.rot {
-  border-left: 4px solid var(--rot);
-  border-top: 1px solid var(--rot-rand);
-  border-right: 1px solid var(--rot-rand);
-  border-bottom: 1px solid var(--rot-rand);
-  background: var(--rot-hell);
-}
-.kachel.grau {
-  border: 1px solid var(--grau-rand);
-  background: var(--grau-hell);
-}
-.kachel.blau-stark {
-  border-left: 4px solid var(--blau);
-  border-top: 1px solid var(--blau-rand);
-  border-right: 1px solid var(--blau-rand);
-  border-bottom: 1px solid var(--blau-rand);
-  background: var(--blau-hell);
-}
+.kachel { border-radius: 6px; padding: 16px 18px; background: #fff; border: 1px solid var(--blau-rand); text-decoration: none; color: inherit; display: block; }
+.kachel.rot { border-left: 4px solid var(--rot); border-top: 1px solid var(--rot-rand); border-right: 1px solid var(--rot-rand); border-bottom: 1px solid var(--rot-rand); background: var(--rot-hell); }
+.kachel.grau { border: 1px solid var(--grau-rand); background: var(--grau-hell); }
+.kachel.blau-stark { border-left: 4px solid var(--blau); border-top: 1px solid var(--blau-rand); border-right: 1px solid var(--blau-rand); border-bottom: 1px solid var(--blau-rand); background: var(--blau-hell); }
+.kachel.dunkel { border: 1px solid #333; background: var(--dunkel); }
 
-.kachel .tag {
-  font-size: 10px; font-weight: 600; letter-spacing: 0.07em;
-  text-transform: uppercase; margin-bottom: 6px;
-  color: var(--blau);
-}
+.kachel .tag { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; color: var(--blau); }
 .kachel.rot .tag { color: var(--rot); }
 .kachel.grau .tag { color: var(--grau); }
-.kachel.blau-stark .tag { color: var(--blau); }
+.kachel.dunkel .tag { color: #f87171; }
 
-.kachel .titel {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px; font-weight: 700;
-  line-height: 1.3; margin-bottom: 6px;
-  color: var(--dunkel);
-}
+.kachel .titel { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--dunkel); }
 .kachel.rot .titel { color: var(--rot); }
 .kachel.grau .titel { color: var(--grau); }
+.kachel.dunkel .titel { color: #fff; }
 
-.kachel .sub {
-  font-size: 13px; color: var(--grau); line-height: 1.5;
-}
+.kachel .sub { font-size: 13px; color: var(--grau); line-height: 1.5; }
 .kachel.rot .sub { color: #7a1f1f; }
+.kachel.dunkel .sub { color: #aaa; }
 
 .presseliste { margin-top: 4px; }
-.pressezeile {
-  display: flex; gap: 14px; padding: 10px 0;
-  border-bottom: 1px solid var(--linie);
-  align-items: flex-start;
-  text-decoration: none; color: inherit;
-}
+.pressezeile { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--linie); align-items: flex-start; text-decoration: none; color: inherit; }
 .pressezeile:last-child { border-bottom: none; }
 .pressezeile:hover .ptitel { color: var(--blau); }
-.pressezeile .medium {
-  font-size: 11px; font-weight: 600;
-  letter-spacing: 0.06em; text-transform: uppercase;
-  color: var(--blau); min-width: 105px;
-  flex-shrink: 0; padding-top: 2px;
-}
-.pressezeile .info .ptitel {
-  font-size: 14px; font-weight: 600;
-  line-height: 1.3; color: var(--dunkel);
-  transition: color 0.15s;
-}
-.pressezeile .info .datum {
-  font-size: 12px; color: var(--grau); margin-top: 2px;
-}
+.pressezeile .medium { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blau); min-width: 105px; flex-shrink: 0; padding-top: 2px; }
+.pressezeile .info .ptitel { font-size: 14px; font-weight: 600; line-height: 1.3; color: var(--dunkel); transition: color 0.15s; }
+.pressezeile .info .datum { font-size: 12px; color: var(--grau); margin-top: 2px; }
 
-footer {
-  background: var(--dunkel); color: #fff;
-  padding: 20px 24px;
-  display: flex; justify-content: space-between;
-  align-items: center; flex-wrap: wrap; gap: 8px;
-}
+footer { background: var(--dunkel); color: #fff; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 footer span { font-size: 12px; opacity: 0.5; }
 footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 
@@ -152,83 +98,83 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 
 <div class="main">
 
-  <!-- REIHE 1: POLITISCHE HANDLUNGSTHEMEN -->
   <div class="section">
     <div class="section-title">Politische Handlungsthemen</div>
     <div class="grid-3">
-
       <a href="vertraege.html" class="kachel rot">
         <div class="tag">Frist: 7. Dezember 2026</div>
         <div class="titel">Ein Vertrag ist jetzt kündbar</div>
         <div class="sub">Er bestimmt, was im Russischen Haus erlaubt ist. Deutschland könnte sagen: nichts mehr. Und tschüss.</div>
       </a>
-
       <a href="goethe.html" class="kachel">
         <div class="tag">Argument</div>
         <div class="titel">Goethe-Institut – kein Druckmittel mehr</div>
         <div class="sub">Warum das Schutzargument der Bundesregierung faktisch nicht mehr trägt.</div>
       </a>
-
       <a href="polizei.html" class="kachel">
         <div class="tag">Dokumentiert</div>
         <div class="titel">Polizei &amp; Protest</div>
         <div class="sub">Systematische Schieflage – rechtswidrige Festnahme gerichtlich bestätigt. 33+ Einsätze 2024.</div>
       </a>
-
     </div>
   </div>
 
-  <!-- REIHE 2: ERMITTLUNGEN -->
   <div class="section">
     <div class="section-title">Laufende Ermittlungen &amp; offene Fragen</div>
     <div class="grid-3">
-
       <a href="kameras.html" class="kachel">
         <div class="tag">Ermittlung läuft</div>
         <div class="titel">Verbotene Kameraüberwachung</div>
         <div class="sub">Was filmen die 360°-Kameras vor dem Russischen Haus? Warum schlägt die Politik keinen Alarm?</div>
       </a>
-
       <a href="postannahmestelle.html" class="kachel">
         <div class="tag">Neu dokumentiert</div>
         <div class="titel">Postannahmestelle</div>
         <div class="sub">Die einzige ausländische Filiale der russischen Staatspost – weltweit – sitzt im Russischen Haus Berlin.</div>
       </a>
-
       <a href="uebersetzungsbuero.html" class="kachel">
         <div class="tag">Neu dokumentiert</div>
         <div class="titel">Übersetzungsbüro</div>
         <div class="sub">Im sanktionierten Russischen Haus sitzt ein Übersetzungsbüro – gut auffindbar online, aber ohne Hinweis, wo man landet.</div>
       </a>
-
     </div>
   </div>
 
-  <!-- REIHE 3: FAKTEN & BELEGE -->
+  <div class="section">
+    <div class="section-title">Einschüchterung &amp; Gegenkampagne</div>
+    <div class="grid-2">
+      <a href="methoden.html" class="kachel dunkel">
+        <div class="tag">Dokumentiert · 2024–2026</div>
+        <div class="titel">Die Methoden des Russischen Hauses</div>
+        <div class="sub">Falschanzeigen, RT-Propaganda, körperliche Übergriffe – wie eine sanktionierte Behörde ihre Kritiker bekämpft.</div>
+      </a>
+      <div class="kachel grau">
+        <div class="tag">In Vorbereitung</div>
+        <div class="titel">Russische Häuser in der EU – wer hat schon geschlossen?</div>
+        <div class="sub">Litauen, Polen, Tschechien, Schweden, Moldawien – und warum Deutschland wartet.</div>
+      </div>
+    </div>
+  </div>
+
   <div class="section">
     <div class="section-title">Fakten &amp; Belege</div>
     <div class="grid-2">
-
       <a href="fakten.html" class="kachel">
         <div class="tag">Zusammengestellt aus 6 Medienberichten</div>
         <div class="titel">Alle verifizierten Fakten &amp; Rechtslage</div>
         <div class="sub">Institution, Finanzen, Ermittlungen, Polizei – mit Quellenangaben.</div>
       </a>
-
       <a href="#presseartikel" class="kachel blau-stark">
         <div class="tag">6 Artikel · 2024–2026</div>
         <div class="titel">Presseartikel chronologisch</div>
         <div class="sub">Morgenpost · ZEIT · TAZ · t-online · SZ · Tages-Anzeiger Schweiz</div>
       </a>
-
     </div>
   </div>
 
-  <!-- PRESSEARTIKEL -->
   <div class="section" id="presseartikel">
     <div class="section-title">Presseartikel</div>
     <div class="presseliste">
-
       <a href="artikel_morgenpost_2024.html" class="pressezeile">
         <span class="medium">Morgenpost</span>
         <div class="info">
@@ -236,7 +182,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">7. August 2024 · Dirk Krampitz</div>
         </div>
       </a>
-
       <a href="artikel_zeit_2024.html" class="pressezeile">
         <span class="medium">DIE ZEIT</span>
         <div class="info">
@@ -244,7 +189,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">19. September 2024 · Sarah Vojta</div>
         </div>
       </a>
-
       <a href="artikel_taz_2025.html" class="pressezeile">
         <span class="medium">TAZ</span>
         <div class="info">
@@ -252,7 +196,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">23. April 2025 · Tilman Baumgärtel</div>
         </div>
       </a>
-
       <a href="artikel_tonline_2025.html" class="pressezeile">
         <span class="medium">t-online</span>
         <div class="info">
@@ -260,7 +203,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">26. Mai 2025 · Lars Wienand</div>
         </div>
       </a>
-
       <a href="artikel_sz_2025.html" class="pressezeile">
         <span class="medium">Süddeutsche</span>
         <div class="info">
@@ -268,7 +210,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">16. Dezember 2025 · Herrmann / Ismar / Bungert</div>
         </div>
       </a>
-
       <a href="artikel_tagesanzeiger_2026.html" class="pressezeile">
         <span class="medium">Tages-Anzeiger</span>
         <div class="info">
@@ -276,7 +217,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">4. Februar 2026 · Simon Widmer</div>
         </div>
       </a>
-
     </div>
   </div>
 
