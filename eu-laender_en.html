@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Russian Houses in Europe – who has already closed? · Press Kit Russian House Berlin</title>
+<meta name="description" content="Lithuania, Poland, Sweden, Republic of Moldova – they have all closed Rossotrudnichestvo centres. Germany has not.">
+<meta property="og:title" content="Russian Houses in Europe – who has already closed?">
+<meta property="og:description" content="Lithuania, Poland, Sweden, Republic of Moldova – they have all closed Rossotrudnichestvo centres. Germany has not.">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #A32D2D; --gruen: #2d7a3a; --orange: #e67e22; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
+.back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
+header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
+header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+.main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
+
+.vergleich { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0 36px; }
+.vergleich-box { border-radius: 6px; padding: 20px 24px; }
+.vergleich-box.geschlossen { background: #E8F5E9; border-left: 4px solid var(--gruen); }
+.vergleich-box.offen { background: #FCEBEB; border-left: 4px solid var(--rot); }
+.vergleich-box .label { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 8px; }
+.vergleich-box.geschlossen .label { color: var(--gruen); }
+.vergleich-box.offen .label { color: var(--rot); }
+.vergleich-box ul { list-style: none; padding: 0; }
+.vergleich-box ul li { padding: 5px 0 5px 20px; position: relative; font-size: 14px; border-bottom: 1px solid rgba(0,0,0,0.07); }
+.vergleich-box ul li:last-child { border-bottom: none; }
+.vergleich-box.geschlossen ul li::before { content: '✓'; position: absolute; left: 0; color: var(--gruen); font-weight: 700; }
+.vergleich-box.offen ul li::before { content: '→'; position: absolute; left: 0; color: var(--rot); font-weight: 700; }
+
+.land-karte { display: flex; flex-direction: column; gap: 16px; margin: 0 0 32px; }
+.land { border-radius: 6px; border: 1px solid var(--linie); overflow: hidden; }
+.land-header { display: flex; align-items: center; gap: 16px; padding: 18px 22px; background: var(--hellgrau); }
+.land-flag { font-size: 28px; flex-shrink: 0; }
+.land-info { flex: 1; }
+.land-info .name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; }
+.land-info .status { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; }
+.land.geschlossen .land-info .status { color: var(--gruen); }
+.land.offen .land-info .status { color: var(--rot); }
+.land.pruefung .land-info .status { color: var(--orange); }
+.land-body { padding: 16px 22px; font-size: 14px; color: var(--grau); line-height: 1.6; }
+.land-body strong { color: var(--dunkel); font-weight: 600; }
+.quelle { font-size: 12px; font-style: italic; margin-top: 6px; display: block; }
+
+.moldau-box { background: var(--dunkel); color: #fff; border-radius: 6px; padding: 22px 28px; margin: 32px 0; }
+.moldau-box h3 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 12px; color: #7eb8f7; }
+.moldau-box p { font-size: 15px; line-height: 1.7; opacity: 0.9; }
+.moldau-box p + p { margin-top: 10px; }
+.moldau-box strong { color: #FFD700; }
+
+.fazit { background: var(--hellgrau); border-left: 4px solid var(--blau); padding: 20px 24px; border-radius: 0 6px 6px 0; margin: 32px 0; }
+.fazit h3 { font-family: 'Playfair Display', serif; font-size: 17px; margin-bottom: 10px; }
+.fazit p { font-size: 14px; color: var(--grau); line-height: 1.6; }
+
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: #7eb8f7; text-decoration: none; }
+
+@media (max-width: 600px) {
+  .vergleich { grid-template-columns: 1fr; }
+  .main { padding: 0 16px 40px; }
+  header { padding: 24px 16px; }
+  .back-link { padding: 12px 16px 0; }
+  .land-header { padding: 14px 16px; }
+  .land-body { padding: 14px 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index_en.html">← Back to overview</a></div>
+
+<header>
+  <h1>Russian Houses in Europe – who has already closed?</h1>
+  <p>Several European countries have closed Rossotrudnichestvo centres following the EU sanctions of 2022 – including the Republic of Moldova, which is not even an EU member. Germany is waiting.</p>
+</header>
+
+<div class="main">
+
+  <div class="vergleich">
+    <div class="vergleich-box geschlossen">
+      <div class="label">Closed</div>
+      <ul>
+        <li>Lithuania</li>
+        <li>Poland</li>
+        <li>Sweden</li>
+        <li>Republic of Moldova</li>
+      </ul>
+    </div>
+    <div class="vergleich-box offen">
+      <div class="label">Still open / under investigation</div>
+      <ul>
+        <li>Germany – open, despite sanctions</li>
+        <li>Czech Republic – sporadically open, under investigation</li>
+        <li>France – open</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="moldau-box">
+    <h3>The strongest case: Republic of Moldova</h3>
+    <p>The Republic of Moldova is not an EU member. It shares a border with Ukraine, has Russian troops stationed in Transnistria, and is economically far more dependent on Russia than Germany – and yet it closed the Russian House in Chișinău.</p>
+    <p>Culture Minister Cristian Jardan justified the closure in November 2025 by stating that the centre was financed by <strong>Rossotrudnichestvo</strong> – "the main state agency projecting the Kremlin's soft power" – and could be used to promote "distorted Russian narratives."</p>
+    <p>When a country under direct Russian pressure manages what Germany does not dare – <strong>that is no longer an argument. It is a choice.</strong></p>
+  </div>
+
+  <div class="land-karte">
+
+    <div class="land geschlossen">
+      <div class="land-header">
+        <span class="land-flag">🇱🇹</span>
+        <div class="land-info">
+          <div class="name">Lithuania</div>
+          <div class="status">Closed</div>
+        </div>
+      </div>
+      <div class="land-body">
+        Lithuania closed the Rossotrudnichestvo centre in Vilnius – one of the first EU countries to act decisively after the 2022 invasion of Ukraine. Lithuania also expelled the Russian ambassador and reduced diplomatic relations to a bare minimum.
+        <span class="quelle">TAZ, April 2025 / Lithuania–Russia relations, Wikipedia</span>
+      </div>
+    </div>
+
+    <div class="land geschlossen">
+      <div class="land-header">
+        <span class="land-flag">🇵🇱</span>
+        <div class="land-info">
+          <div class="name">Poland</div>
+          <div class="status">Closed</div>
+        </div>
+      </div>
+      <div class="land-body">
+        Poland closed the Russian cultural centre in Warsaw. The country is one of Ukraine's most committed supporters and has consistently treated Russian state cultural institutions as propaganda instruments.
+        <span class="quelle">TAZ, April 2025</span>
+      </div>
+    </div>
+
+    <div class="land geschlossen">
+      <div class="land-header">
+        <span class="land-flag">🇸🇪</span>
+        <div class="land-info">
+          <div class="name">Sweden</div>
+          <div class="status">Closed</div>
+        </div>
+      </div>
+      <div class="land-body">
+        Sweden closed the Russian cultural centre in Stockholm. As a new NATO member, Sweden has fundamentally reassessed its approach to Russian state institutions.
+        <span class="quelle">TAZ, April 2025</span>
+      </div>
+    </div>
+
+    <div class="land geschlossen">
+      <div class="land-header">
+        <span class="land-flag">🇲🇩</span>
+        <div class="land-info">
+          <div class="name">Republic of Moldova</div>
+          <div class="status">Closed – November 2025</div>
+        </div>
+      </div>
+      <div class="land-body">
+        The Moldovan government voted in November 2025 to close the Russian House in Chișinău. Culture Minister Cristian Jardan stated that the centre was operated by the sanctioned agency Rossotrudnichestvo and could be used to promote "distorted Russian narratives." The Republic of Moldova is not an EU member – and acted nonetheless.
+        <span class="quelle">Pravda Deutschland, November 2025</span>
+      </div>
+    </div>
+
+    <div class="land pruefung">
+      <div class="land-header">
+        <span class="land-flag">🇨🇿</span>
+        <div class="land-info">
+          <div class="name">Czech Republic</div>
+          <div class="status">Still open – under investigation</div>
+        </div>
+      </div>
+      <div class="land-body">
+        The Russian House in Prague has not been closed, but now opens only a few times per month. Czech authorities, including the intelligence services, are investigating and examining whether the centre should be added to the national sanctions list. The centre is known for distributing anti-Ukrainian material in Czech translation. In March 2026, the building was attacked with Molotov cocktails – a suspect turned himself in and confessed.
+        <span class="quelle">EURACTIV, July 2023 / Czech Police, March 2026</span>
+      </div>
+    </div>
+
+    <div class="land offen">
+      <div class="land-header">
+        <span class="land-flag">🇩🇪</span>
+        <div class="land-info">
+          <div class="name">Germany</div>
+          <div class="status">Open – despite sanctions</div>
+        </div>
+      </div>
+      <div class="land-body">
+        The Russian House in Berlin is the only major Rossotrudnichestwo centre in the EU operating at full capacity: open daily, with a cinema, language courses, restaurant and parcel collection point. The German government points to the bilateral agreement of 2011 and concerns about the Goethe-Institutes in Russia. The operational agreement is terminable by <strong>7 December 2026</strong>.
+        <span class="quelle">SZ, December 2025 / Foreign Office, May 2024</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fazit">
+    <h3>What this means</h3>
+    <p>At the Federal Press Conference on 8 May 2024, Germany's Foreign Office acknowledged that "cultural centres of the Russian Federation have been closed in several EU countries" – and explained why Germany had not followed suit. The argument: the bilateral agreement and the Goethe-Institutes. But Lithuania, Poland and Sweden did not use such agreements as a shield. And the Republic of Moldova – not even an EU member, with Russian troops on its own soil – acted anyway.</p>
+  </div>
+
+</div>
+
+<footer>Press Kit Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to overview</a></footer>
+</body>
+</html>
