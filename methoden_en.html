@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Pattern of Intimidation · Press Kit Russian House Berlin</title>
+<meta name="description" content="How the Russian House Berlin fights its critics with legal, media and physical means – documented incidents since 2024.">
+<meta property="og:title" content="A Pattern of Intimidation – False complaints, RT propaganda, physical assaults">
+<meta property="og:description" content="A sanctioned Russian agency systematically targets its critics – with criminal complaints, RT propaganda and physical attacks.">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #A32D2D; --orange: #e67e22; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
+.back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
+header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
+header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+.main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
+
+.intro-box { margin: 28px 0 32px; background: var(--dunkel); color: #fff; padding: 24px 28px; border-radius: 6px; }
+.intro-box p { font-size: 15px; line-height: 1.7; opacity: 0.9; }
+.intro-box p + p { margin-top: 12px; }
+
+.methoden-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 0 0 36px; }
+.methode-kachel { background: var(--hellgrau); border-radius: 6px; padding: 18px 20px; border-top: 3px solid var(--rot); }
+.methode-kachel .icon { font-size: 24px; margin-bottom: 8px; }
+.methode-kachel h3 { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--rot); }
+.methode-kachel p { font-size: 13px; color: var(--grau); line-height: 1.5; }
+
+.chronik-titel { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 24px; padding-bottom: 10px; border-bottom: 2px solid var(--linie); }
+
+.zeitliste { list-style: none; padding: 0; position: relative; }
+.zeitliste::before { content: ''; position: absolute; left: 90px; top: 0; bottom: 0; width: 2px; background: var(--linie); }
+.zeitliste li { display: flex; gap: 20px; margin-bottom: 28px; position: relative; }
+.zeitliste li .datum { min-width: 78px; text-align: right; font-size: 12px; font-weight: 600; color: var(--grau); padding-top: 4px; flex-shrink: 0; line-height: 1.4; }
+.zeitliste li .punkt { width: 14px; height: 14px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; position: relative; z-index: 1; }
+.zeitliste li.rot .punkt { background: var(--rot); }
+.zeitliste li.orange .punkt { background: var(--orange); }
+.zeitliste li.blau .punkt { background: var(--blau); }
+.zeitliste li .inhalt { flex: 1; }
+.zeitliste li .inhalt .kategorie { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 4px; }
+.zeitliste li.rot .inhalt .kategorie { color: var(--rot); }
+.zeitliste li.orange .inhalt .kategorie { color: var(--orange); }
+.zeitliste li.blau .inhalt .kategorie { color: var(--blau); }
+.zeitliste li .inhalt .titel { font-size: 16px; font-weight: 600; line-height: 1.3; margin-bottom: 6px; font-family: 'Playfair Display', serif; }
+.zeitliste li .inhalt .text { font-size: 14px; color: var(--grau); line-height: 1.6; }
+.zeitliste li .inhalt .text strong { color: var(--dunkel); font-weight: 600; }
+.quelle { display: block; font-size: 12px; color: var(--grau); margin-top: 5px; font-style: italic; }
+
+.worm-box { background: #FEF3E2; border-left: 4px solid var(--orange); padding: 20px 24px; border-radius: 0 6px 6px 0; margin: 32px 0; }
+.worm-box h3 { font-family: 'Playfair Display', serif; font-size: 17px; margin-bottom: 10px; color: #633806; }
+.worm-box ul { list-style: none; padding: 0; }
+.worm-box ul li { padding: 8px 0 8px 22px; position: relative; font-size: 14px; color: #633806; border-bottom: 1px solid #F5C4B3; line-height: 1.5; }
+.worm-box ul li:last-child { border-bottom: none; }
+.worm-box ul li::before { content: '→'; position: absolute; left: 0; font-weight: 700; }
+.worm-box ul li strong { font-weight: 600; }
+
+.rt-box { background: #1a1a1a; color: #fff; padding: 20px 24px; border-radius: 6px; margin: 32px 0; }
+.rt-box h3 { font-family: 'Playfair Display', serif; font-size: 17px; margin-bottom: 10px; color: #f87171; }
+.rt-box p { font-size: 14px; line-height: 1.6; opacity: 0.9; margin-bottom: 10px; }
+.rt-box p:last-child { margin-bottom: 0; }
+.rt-box strong { color: #fbbf24; }
+
+.hinweis-blau { background: #E6F1FB; border-left: 4px solid var(--blau); padding: 18px 22px; border-radius: 0 4px 4px 0; margin: 32px 0; font-size: 14px; color: #042C53; line-height: 1.6; }
+.hinweis-blau strong { display: block; margin-bottom: 4px; font-size: 15px; }
+
+.status-box { background: #FEF3E2; border: 1px solid #F5C4B3; border-left: 4px solid var(--orange); border-radius: 0 6px 6px 0; padding: 18px 22px; margin-top: 32px; }
+.status-box .status-label { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #854F0B; margin-bottom: 6px; }
+.status-box p { font-size: 14px; color: #633806; line-height: 1.6; }
+
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: #7eb8f7; text-decoration: none; }
+
+@media (max-width: 600px) {
+  .methoden-grid { grid-template-columns: 1fr; }
+  .main { padding: 0 16px 40px; }
+  header { padding: 24px 16px; }
+  .back-link { padding: 12px 16px 0; }
+  .zeitliste::before { left: 70px; }
+  .zeitliste li .datum { min-width: 58px; font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index_en.html">← Back to overview</a></div>
+
+<header>
+  <h1>A Pattern of Intimidation</h1>
+  <p>How a sanctioned Russian agency fights its critics with legal, media and physical means – documented incidents since 2024.</p>
+</header>
+
+<div class="main">
+
+  <div class="intro-box">
+    <p>The Russian House Berlin is subject to EU sanctions. Its operator Rossotrudnichestvo has been on the EU sanctions list since July 2022. Those who protest or report publicly are not ignored – they are targeted.</p>
+    <p>The methods are varied: false criminal complaints that exploit the German legal system. Physical assaults on protesters. Propaganda published on the Russian state broadcaster RT, which is banned across the EU. Deliberate character assassination through coordinated media articles. The pattern is recognisable – and documented.</p>
+  </div>
+
+  <div class="methoden-grid">
+    <div class="methode-kachel">
+      <div class="icon">⚖️</div>
+      <h3>Legal intimidation</h3>
+      <p>Over 100 criminal complaints against Henry Lindemeier. Journalist Regina Laska named as co-perpetrator despite being provably abroad. Witness: house lawyer Thomas Worm, whose office is inside the Russian House.</p>
+    </div>
+    <div class="methode-kachel">
+      <div class="icon">📺</div>
+      <h3>RT propaganda campaign</h3>
+      <p>Coordinated coverage on the banned Russian state broadcaster RT: the protester portrayed as a threat to children, then visually linked to a terrorist attack in Prague.</p>
+    </div>
+    <div class="methode-kachel">
+      <div class="icon">🥊</div>
+      <h3>Physical assaults</h3>
+      <p>Documented physical attacks on protesters outside the building. Death threats. One unlawful arrest – confirmed by court ruling.</p>
+    </div>
+  </div>
+
+  <h2 class="chronik-titel">Documented incidents – chronology</h2>
+
+  <ul class="zeitliste">
+
+    <li class="rot">
+      <span class="datum">Aug.<br>2025</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">False criminal complaint</div>
+        <div class="titel">Regina Laska named as co-perpetrator – provably false</div>
+        <div class="text">In a criminal complaint against Henry Lindemeier for allegedly attaching stickers to lamp posts on Friedrichstraße, journalist Regina Laska is named as a <strong>co-perpetrator</strong> – alleged time of the offence: <strong>6 August 2025, approx. 18:30.</strong> Laska was provably abroad at the time. A receipt documents an Amazon Prime Video purchase at 18:34 – which contradicts committing an offence in Berlin at the same moment. Laska was never contacted by police – presumably because the evidence was too thin. The witness named in the complaint: <strong>solicitor Thomas Worm</strong>, whose office is located inside the Russian House.<span class="quelle">Criminal complaint, Russian House Berlin, August 2025</span></div>
+      </div>
+    </li>
+
+    <li class="orange">
+      <span class="datum">4 Dec.<br>2025</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">Physical assault</div>
+        <div class="titel">Man from the Russian House attacks protester</div>
+        <div class="text">Henry Lindemeier is standing outside the entrance at 17:45 playing an air raid siren. A man storms out of the building and threatens him: <strong>"If you don't turn that off, I'll smash your face in!"</strong> – then shoves him into a parked car. The man flees but is apprehended by police eight minutes later.<span class="quelle">X/@Sunnymica, 4 December 2025 – 35,896 views</span></div>
+      </div>
+    </li>
+
+    <li class="rot">
+      <span class="datum">9 Dec.<br>2025</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">Coordinated counter-mobilisation</div>
+        <div class="titel">Russian speakers mobilised, Lindemeier's protest blocked</div>
+        <div class="text">Via Telegram channels, the association "Integral e.V." calls on Russian-speaking Berliners to appear outside the Russian House in shifts from 15:00 to 21:00. On-site organiser: <strong>solicitor Thomas Worm</strong> – "the staff at the entrance know him." The event is registered with Berlin city authorities and blocks Lindemeier's standing vigil. Worm personally briefs participants and hands out flyers. The Russian-language mobilisation makes clear: this counter-action is not spontaneous – it is coordinated, with the house's own lawyer as organiser.<span class="quelle">Telegram / Integral e.V., 8 December 2025</span></div>
+      </div>
+    </li>
+
+    <li class="blau">
+      <span class="datum">12 Dec.<br>2025</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">RT propaganda</div>
+        <div class="titel">RT/Worm: protest reframed as "harassment of children"</div>
+        <div class="text">The Russian state broadcaster RT publishes an article describing Lindemeier's standing protest as <strong>"harassment of children"</strong> and <strong>"attacks on children."</strong> The source: solicitor Thomas Worm – office inside the Russian House. The article appears eight days after the physical assault on Lindemeier, which RT does not mention.<span class="quelle">RT DE, 12 December 2025</span></div>
+      </div>
+    </li>
+
+    <li class="orange">
+      <span class="datum">Dec.<br>2024</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">Death threat / police inaction</div>
+        <div class="titel">"You'll get a knife in the back one day"</div>
+        <div class="text">Henry Lindemeier is threatened outside the Russian House with the words: "You'll get a knife in the back one day." He calls the police. <strong>The police do not come.</strong> The following day, Lindemeier himself is arrested – three patrol cars respond. His lawyer Christian Wolf: <strong>"When a noise complaint comes in, sometimes three patrol cars show up. When my client was threatened, nobody was available."</strong><span class="quelle">t-online, May 2025</span></div>
+      </div>
+    </li>
+
+    <li class="rot">
+      <span class="datum">18 Dec.<br>2024</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">Unlawful arrest</div>
+        <div class="titel">Lindemeier arrested – police acknowledge unlawfulness</div>
+        <div class="text">Henry Lindemeier is arrested outside the Russian House, handcuffed, subjected to identity processing and held in a detention cell for four hours. Allegations: insult and breach of the peace – neither substantiated. Berlin Police formally acknowledged in subsequent proceedings: <strong>the operation was unlawful.</strong><span class="quelle">t-online, May 2025 / declaratory judgment proceedings</span></div>
+      </div>
+    </li>
+
+    <li class="blau">
+      <span class="datum">2024/<br>2025</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">Legal attrition</div>
+        <div class="titel">Criminal intelligence translates song lyrics – not incitement – proceedings continue anyway</div>
+        <div class="text">The Russian House files a criminal complaint against Lindemeier for alleged incitement to hatred – including over a song he had played outside the building. The LKA (state criminal intelligence office) translates the lyrics and concludes: <strong>not incitement to hatred.</strong> The proceedings continue regardless. The case illustrates the pattern: criminal complaints as an instrument of attrition, regardless of outcome.<span class="quelle">t-online, May 2025</span></div>
+      </div>
+    </li>
+
+    <li class="blau">
+      <span class="datum">27 Mar.<br>2026</span>
+      <span class="punkt"></span>
+      <div class="inhalt">
+        <div class="kategorie">RT image manipulation</div>
+        <div class="titel">Prague arson attack: RT links Lindemeier visually to act of terrorism</div>
+        <div class="text">Following the arson attack on the Russian House Prague, RT publishes an article. Directly alongside the sentence <strong>"Their methods and behaviour are well known to us"</strong> – spoken by house director Girenko about the suspected perpetrators – appears a photograph of Henry Lindemeier. No text makes a direct connection. The visual association is nonetheless unmistakable. Lindemeier was filming in Berlin with Czech television that day – his whereabouts are documented. <strong>On 31 March 2026, a suspect turned himself in to Czech police, confessed, and stated he had been planning the attack since summer 2025.</strong> The RT link to Lindemeier was not merely unfounded – it was demonstrably refuted.<span class="quelle">RT DE, 27 March 2026 / Czech Police, 31 March 2026</span></div>
+      </div>
+    </li>
+
+  </ul>
+
+  <div class="worm-box">
+    <h3>Solicitor Thomas Worm – role and conflict of interest</h3>
+    <ul>
+      <li>Worm runs his law practice <strong>inside the Russian House Berlin</strong> – a sanctioned building operated by Rossotrudnichestvo</li>
+      <li>He appeared as a <strong>witness</strong> in the false complaint naming Regina Laska – despite standing in a direct conflict of interest as the house's own lawyer</li>
+      <li>He was the <strong>RT article's source</strong> of 12 December 2025, in which Lindemeier's protest was described as "harassment of children"</li>
+      <li>He was the <strong>organiser of the counter-demonstration on 9 December 2025</strong> – Russian-speaking Berliners were assigned shifts via Telegram and personally briefed by Worm; "the staff at the entrance know him"</li>
+      <li>A <strong>professional conduct complaint</strong> against Thomas Worm has been submitted to the Berlin Bar Association</li>
+      <li>Rental income from his practice flows to an <strong>EU-sanctioned institution</strong> – the legal implications are subject to ongoing investigation</li>
+    </ul>
+  </div>
+
+  <div class="rt-box">
+    <h3>RT DE – a banned broadcaster as a propaganda tool</h3>
+    <p>RT DE (Russia Today Germany) has been banned across the EU since March 2022. Access to the website is restricted in Germany. Despite this, RT DE regularly publishes articles about the Russian House Berlin and its critics – visibly coordinated with the house itself.</p>
+    <p>The pattern: incidents involving the Russian House are reported from the house's perspective. Critics are portrayed as <strong>provocateurs, threats to children or terrorists.</strong> Counter-accounts or reports of assaults originating from the house do not appear.</p>
+    <p>The visual linking of Lindemeier to the Prague arson attack through deliberate image placement is the most serious example of this strategy to date.</p>
+  </div>
+
+  <div class="hinweis-blau">
+    <strong>Note on sourcing</strong>
+    This page documents verified incidents with source references. All information is based on police files, court proceedings, published media reports or first-hand documentation with dates and witnesses. Speculative connections are identified as such.
+  </div>
+
+  <div class="status-box">
+    <div class="status-label">Documentation ongoing</div>
+    <p>This page is updated continuously. Tips, documents and witness accounts welcome at: <a href="mailto:gedenken.start@protonmail.com" style="color:#854F0B;font-weight:600;">gedenken.start@protonmail.com</a></p>
+  </div>
+
+</div>
+
+<footer>Press Kit Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to overview</a></footer>
+
+</body>
+</html>
