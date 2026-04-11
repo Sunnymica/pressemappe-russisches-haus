@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Programme – Press Kit Russian House Berlin</title>
+<meta name="description" content="The cinema and exhibition programme of the Russian House Berlin – an analysis. From state-prize films to children's cinema, from art house to memorial exhibitions.">
+<meta property="og:title" content="The Programme of the Russian House – if you don't look closely, it seems harmless">
+<meta property="og:description" content="State-prize films, art house cinema, children's film, memorial exhibition – the Russian House programme is broader and more deliberate than it appears.">
+<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #A32D2D; --orange: #e67e22; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
+.back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+.back-link a { color: var(--grau); text-decoration: none; }
+.back-link a:hover { color: var(--blau); }
+header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
+header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
+header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+.main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
+
+.intro { margin: 28px 0 36px; }
+.intro .zitat { font-family: 'Playfair Display', serif; font-size: 22px; line-height: 1.4; color: var(--dunkel); border-left: 4px solid var(--blau); padding-left: 20px; margin-bottom: 20px; }
+.intro p { font-size: 15px; color: var(--grau); line-height: 1.7; margin-bottom: 12px; }
+.intro p strong { color: var(--dunkel); }
+
+.spektrum { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin: 0 0 36px; }
+.spektrum-kachel { background: var(--hellgrau); border-radius: 6px; padding: 14px 16px; text-align: center; }
+.spektrum-kachel .label { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 4px; }
+.spektrum-kachel.offen .label { color: var(--rot); }
+.spektrum-kachel.mittel .label { color: var(--orange); }
+.spektrum-kachel.subtil .label { color: var(--blau); }
+.spektrum-kachel p { font-size: 13px; color: var(--grau); }
+
+.beispiele { display: flex; flex-direction: column; gap: 28px; margin: 0 0 36px; }
+.beispiel { border-radius: 6px; overflow: hidden; border: 1px solid var(--linie); }
+.beispiel-header { padding: 18px 22px; display: flex; gap: 16px; align-items: flex-start; }
+.beispiel-header.offen { background: var(--rot); color: #fff; }
+.beispiel-header.mittel { background: #1a1a1a; color: #fff; }
+.beispiel-header.subtil { background: var(--blau); color: #fff; }
+.beispiel-header.ausstellung { background: #5B4A2E; color: #fff; }
+.beispiel-nummer { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; opacity: 0.3; flex-shrink: 0; line-height: 1; }
+.beispiel-meta { flex: 1; }
+.beispiel-meta .typ { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
+.beispiel-meta .titel { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; line-height: 1.2; margin-bottom: 4px; }
+.beispiel-meta .untertitel { font-size: 13px; opacity: 0.8; }
+.beispiel-body { padding: 20px 22px; background: #fff; }
+.beispiel-body p { font-size: 15px; color: var(--grau); line-height: 1.7; margin-bottom: 10px; }
+.beispiel-body p:last-child { margin-bottom: 0; }
+.beispiel-body p strong { color: var(--dunkel); font-weight: 600; }
+.beispiel-body .fakt { background: var(--hellgrau); border-radius: 4px; padding: 10px 14px; font-size: 13px; color: var(--grau); margin-top: 12px; }
+.beispiel-body .fakt strong { color: var(--dunkel); }
+
+.fazit-box { background: var(--dunkel); color: #fff; border-radius: 6px; padding: 28px 32px; margin: 0 0 32px; }
+.fazit-box h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 16px; color: #7eb8f7; }
+.fazit-box p { font-size: 15px; line-height: 1.7; opacity: 0.9; margin-bottom: 12px; }
+.fazit-box p:last-child { margin-bottom: 0; }
+.fazit-box strong { color: var(--gelb); }
+
+.autorin { background: var(--hellgrau); border-radius: 6px; padding: 18px 22px; font-size: 13px; color: var(--grau); }
+.autorin strong { color: var(--dunkel); }
+
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer a { color: #7eb8f7; text-decoration: none; }
+
+@media (max-width: 600px) {
+  .spektrum { grid-template-columns: 1fr; }
+  .main { padding: 0 16px 40px; }
+  header { padding: 24px 16px; }
+  .back-link { padding: 12px 16px 0; }
+  .beispiel-header { padding: 14px 16px; }
+  .beispiel-body { padding: 16px; }
+  .fazit-box { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="ukraine-bar"></div>
+<div class="back-link"><a href="index_en.html">← Back to overview</a></div>
+
+<header>
+  <h1>The Programme of the Russian House</h1>
+  <p>If you don't look closely, it seems harmless. An analysis.</p>
+</header>
+
+<div class="main">
+
+  <div class="intro">
+    <div class="zitat">"They are really clever in how they design their programme. If you don't look closely, it seems completely innocuous."</div>
+    <p>The Russian House Berlin offers concerts, language courses, children's films, exhibitions. At first glance: cultural exchange. At second glance: a programme that ranges from overt state propaganda to subtle cultural self-projection – and that is precisely its strength.</p>
+    <p>Not every film shown here is propaganda in the classical sense. Some are works of art. Some are children's films. Some are poetic art house cinema. And yet they form a coherent whole: <strong>Russia as a profound, suffering, culturally rich nation – far removed from the war, the sanctions, the bodies in Bucha.</strong></p>
+    <p>Four examples from the current programme.</p>
+  </div>
+
+  <div class="spektrum">
+    <div class="spektrum-kachel offen">
+      <div class="label">Overt</div>
+      <p>State production, Kremlin prize, Roscosmos</p>
+    </div>
+    <div class="spektrum-kachel mittel">
+      <div class="label">Subtle</div>
+      <p>Cultural nation, great poets, the Russian soul</p>
+    </div>
+    <div class="spektrum-kachel subtil">
+      <div class="label">Invisible</div>
+      <p>Children's film, mountain idyll, no agenda – apparently</p>
+    </div>
+  </div>
+
+  <div class="beispiele">
+
+    <div class="beispiel">
+      <div class="beispiel-header offen">
+        <div class="beispiel-nummer">1</div>
+        <div class="beispiel-meta">
+          <div class="typ">Cinema · 9 April 2026</div>
+          <div class="titel">The Challenge</div>
+          <div class="untertitel">Director: Klim Shipenko · Russia 2023</div>
+        </div>
+      </div>
+      <div class="beispiel-body">
+        <p>The first feature film shot on the International Space Station. A Russian surgeon flies to the ISS to save a cosmonaut. A co-production of <strong>Roscosmos and the Russian state broadcaster Channel One</strong>. The message is unmistakable: Russia is a world power – despite sanctions, despite war, despite everything.</p>
+        <p>Roscosmos itself described the project as "a unique scientific and educational endeavour." The production was accelerated to beat Tom Cruise and Hollywood to the milestone – a space race in the tradition of the Cold War.</p>
+        <div class="fakt"><strong>Verified:</strong> Putin personally awarded director Shipenko and lead actress Peresild a state prize at the Kremlin on 12 June 2023. The Russian House screened the film on 9 April 2026.</div>
+      </div>
+    </div>
+
+    <div class="beispiel">
+      <div class="beispiel-header mittel">
+        <div class="beispiel-nummer">2</div>
+        <div class="beispiel-meta">
+          <div class="typ">Cinema · Programme 2025/2026</div>
+          <div class="titel">Lermontov</div>
+          <div class="untertitel">Director: Boris Bakuradze · Russia</div>
+        </div>
+      </div>
+      <div class="beispiel-body">
+        <p>A poetic art house portrait of the poet Mikhail Lermontov. Long takes, no conventional dramaturgy, a focus on mood and inner torment. Not an overt state film – and that is precisely what makes it interesting.</p>
+        <p>The propaganda here lies not in what is said – but in <strong>what is deliberately left out</strong>: the war, the dead, the sanctions. Instead: Russia as a nation of great poets, deep feeling, tragic beauty. An image that travels well internationally – and works precisely because of that.</p>
+        <div class="fakt"><strong>Assessment:</strong> No state prize, no direct message. But part of a programme that presents Russia as a cultural nation – while Russian missiles strike Ukrainian cities.</div>
+      </div>
+    </div>
+
+    <div class="beispiel">
+      <div class="beispiel-header subtil">
+        <div class="beispiel-nummer">3</div>
+        <div class="beispiel-meta">
+          <div class="typ">Cinema · Programme 2025/2026</div>
+          <div class="titel">The Adventures of Little Baha</div>
+          <div class="untertitel">Director: Aleksandr Galibin · Russia</div>
+        </div>
+      </div>
+      <div class="beispiel-body">
+        <p>A children's film. Eight-year-old Baha lives in a remote mountain village in Dagestan. No villains, no agenda, no politics. Rugged Caucasus landscapes, authentic faces, a warm story about childhood and growing up.</p>
+        <p>Who would think to question it? That is precisely the point. <strong>A children's film disarms.</strong> It invites families, builds sympathy, projects an image of Russia – one of vastness, authenticity, humanity. None of it is false. And yet: it is an image that has been carefully chosen.</p>
+        <div class="fakt"><strong>Assessment:</strong> Not a propaganda film in the classical sense. But a film that – in the context of this programme, in this building, at this moment – serves a purpose.</div>
+      </div>
+    </div>
+
+    <div class="beispiel">
+      <div class="beispiel-header ausstellung">
+        <div class="beispiel-nummer">4</div>
+        <div class="beispiel-meta">
+          <div class="typ">Exhibition · since March 2025</div>
+          <div class="titel">"The Russian Soul of the White Rose"</div>
+          <div class="untertitel">On Alexander Schmorell · Patronage: Russian Embassy</div>
+        </div>
+      </div>
+      <div class="beispiel-body">
+        <p>Alexander Schmorell was a member of the White Rose resistance group. He was executed by the Nazis in 1943. He was four years old when he came to Munich from Russia. Russian was his first language.</p>
+        <p>The Russian House presents an exhibition focused precisely on this: the "Russian soul" of this resistance fighter. Under the official patronage of the Russian Embassy. In the fourth year of Russia's self-portrayal as the anti-fascist liberator of Ukraine.</p>
+        <p><strong>A victim of National Socialism is posthumously turned into a screen for imperial mythology.</strong> That is not interpretation – it is the logic of this exhibition, in this building, in this year.</p>
+        <div class="fakt"><strong>Verified:</strong> Exhibition running since March 2025 at the Russian House Berlin, under the official patronage of the Russian Embassy. Analysis: Regina Laska, antwortseiten.org, 19 June 2025.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fazit-box">
+    <h3>The pattern</h3>
+    <p>No single film, no single exhibition proves anything on its own. That is the point. <strong>The pattern emerges from the combination:</strong> state cinema alongside art house alongside children's film alongside memorial exhibition – a programme that reaches everyone, repels no one, and makes Russia appear as a normal, rich, profound cultural nation.</p>
+    <p>While Russian missiles strike Ukrainian cities. While dissidents die. While sanctions apply that nobody enforces.</p>
+    <p>The Russian House is not a clumsy propaganda institute. <strong>It is a skilled one.</strong> And that is precisely what makes it more dangerous.</p>
+  </div>
+
+  <div class="autorin">
+    <strong>Regina Laska</strong> is a journalist and author. She writes for FOCUS+ and publishes at antwortseiten.org. This analysis is based on independent research and publicly available sources.
+  </div>
+
+</div>
+
+<footer>Press Kit Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to overview</a></footer>
+</body>
+</html>
