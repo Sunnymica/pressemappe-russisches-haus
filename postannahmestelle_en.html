@@ -138,6 +138,23 @@ footer a { color: #7eb8f7; text-decoration: none; }
 
     <div class="akk-item">
       <div class="akk-header" onclick="toggleAkk(this)">
+        <span class="akk-titel">🚨 Prohibited goods &amp; criminal proceedings</span>
+        <span class="akk-icon">+</span>
+      </div>
+      <div class="akk-body"><div class="akk-inner">
+        <ul>
+          <li>Customs authorities found prohibited goods in <strong>dozens of parcels</strong> that RusPost was transporting from Germany to Moscow: <strong>electronic devices, cash and jewellery</strong><span class="quelle">Bild / FOCUS online, 27 January 2026</span></li>
+          <li>The <strong>Berlin Public Prosecutor's Office intends to charge a senior RusPost manager</strong> in connection with these findings<span class="quelle">FOCUS online, 27 January 2026</span></li>
+          <li>A parallel <strong>bypass network based in Cologne</strong> has been identified: a company founded by former employees of a German RusPost subsidiary offers shipping services through Russian supermarkets</li>
+          <li>Parcels were labelled with stickers from the <strong>Uzbek state postal service (UzPost)</strong> – a company that, according to Germany's Federal Network Agency, <strong>is not permitted to operate in Germany</strong><span class="quelle">FOCUS online, 27 January 2026</span></li>
+          <li>Journalists packed parcels with sanctioned contents and submitted them – the goods were tracked by GPS transmitter and confirmed to have reached <strong>Russia</strong><span class="quelle">Bild / FOCUS online, 27 January 2026</span></li>
+          <li>Insiders report a <strong>confidential agreement between the Russian and Uzbek state postal services</strong> – both parties confirmed the cooperation<span class="quelle">FOCUS online, 27 January 2026</span></li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="akk-item">
+      <div class="akk-header" onclick="toggleAkk(this)">
         <span class="akk-titel">🏛️ Who authorised this?</span>
         <span class="akk-icon">+</span>
       </div>
@@ -161,9 +178,10 @@ footer a { color: #7eb8f7; text-decoration: none; }
         <ul>
           <li>Who operates the branch today – RusPost GmbH directly, or another service provider?</li>
           <li>What goods are being shipped – and who is checking?</li>
+          <li>Are parcels also received from Russia into Germany – and who controls their contents?</li>
           <li>Do revenues from the postal operation flow to Rossotrudnichestvo or to the Russian state postal service?</li>
           <li>Are customs authorities and the Federal Prosecutor's Office aware of the operation?</li>
-          <li>Does the service operate under diplomatic protection – or in a legal grey zone?</li>
+          <li>Is there a connection between the Berlin branch and the Cologne bypass network?</li>
         </ul>
       </div></div>
     </div>
@@ -177,25 +195,20 @@ footer a { color: #7eb8f7; text-decoration: none; }
       <li>Was this authorisation reviewed after the introduction of EU sanctions in 2022?</li>
       <li>Are customs authorities and prosecutors aware of the ongoing postal operations?</li>
       <li>Does the operation violate the Foreign Trade and Payments Act or EU sanctions regulations?</li>
-      <li>Who controls what is inside the parcels being sent to Russia?</li>
+      <li>Who controls what is inside the parcels being sent to Russia – and what arrives from Russia?</li>
+      <li>Is there a connection between the Berlin branch and the Cologne bypass network using Uzbek postal labels?</li>
     </ul>
   </div>
 
   <div class="status-box">
     <div class="status-label">Investigation ongoing</div>
-    <p>This page is updated continuously. Tips and documents welcome at: <a href="mailto:gedenken.start@protonmail.com" style="color:#854F0B;font-weight:600;">gedenken.start@protonmail.com</a></p>
+    <p>This page is updated continuously. Tips and documents welcome at: <a href="/cdn-cgi/l/email-protection#ff989a9b9a91949a91d18c8b9e8d8bbf8f8d908b9091929e9693d19c9092" style="color:#854F0B;font-weight:600;"><span class="__cf_email__" data-cfemail="a5c2c0c1c0cbcec0cb8bd6d1c4d7d1e5d5d7cad1cacbc8c4ccc98bc6cac8">[email&#160;protected]</span></a></p>
   </div>
 
 </div>
 <footer>Press Kit Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to overview</a></footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleAkk(header) {
   const body = header.nextElementSibling;
   const isOpen = body.classList.contains('open');
-  document.querySelectorAll('.akk-body').forEach(b => b.classList.remove('open'));
-  document.querySelectorAll('.akk-header').forEach(h => h.classList.remove('open'));
-  if (!isOpen) { body.classList.add('open'); header.classList.add('open'); }
-}
-</script>
-</body>
-</html>
+  document
