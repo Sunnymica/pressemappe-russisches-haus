@@ -21,7 +21,6 @@ header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-botto
 header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
 header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
-
 .vergleich { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0 36px; }
 .vergleich-box { border-radius: 6px; padding: 20px 24px; }
 .vergleich-box.geschlossen { background: #E8F5E9; border-left: 4px solid var(--gruen); }
@@ -34,7 +33,6 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .vergleich-box ul li:last-child { border-bottom: none; }
 .vergleich-box.geschlossen ul li::before { content: '✓'; position: absolute; left: 0; color: var(--gruen); font-weight: 700; }
 .vergleich-box.offen ul li::before { content: '→'; position: absolute; left: 0; color: var(--rot); font-weight: 700; }
-
 .land-karte { display: flex; flex-direction: column; gap: 16px; margin: 0 0 32px; }
 .land { border-radius: 6px; border: 1px solid var(--linie); overflow: hidden; }
 .land-header { display: flex; align-items: center; gap: 16px; padding: 18px 22px; background: var(--hellgrau); }
@@ -48,20 +46,16 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .land-body { padding: 16px 22px; font-size: 14px; color: var(--grau); line-height: 1.6; }
 .land-body strong { color: var(--dunkel); font-weight: 600; }
 .quelle { font-size: 12px; font-style: italic; margin-top: 6px; display: block; }
-
 .moldau-box { background: var(--dunkel); color: #fff; border-radius: 6px; padding: 22px 28px; margin: 32px 0; }
 .moldau-box h3 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 12px; color: #7eb8f7; }
 .moldau-box p { font-size: 15px; line-height: 1.7; opacity: 0.9; }
 .moldau-box p + p { margin-top: 10px; }
 .moldau-box strong { color: #FFD700; }
-
 .fazit { background: var(--hellgrau); border-left: 4px solid var(--blau); padding: 20px 24px; border-radius: 0 6px 6px 0; margin: 32px 0; }
 .fazit h3 { font-family: 'Playfair Display', serif; font-size: 17px; margin-bottom: 10px; }
 .fazit p { font-size: 14px; color: var(--grau); line-height: 1.6; }
-
 footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
 footer a { color: #7eb8f7; text-decoration: none; }
-
 @media (max-width: 600px) {
   .vergleich { grid-template-columns: 1fr; }
   .main { padding: 0 16px 40px; }
@@ -104,15 +98,13 @@ footer a { color: #7eb8f7; text-decoration: none; }
     </div>
   </div>
 
-  <!-- MOLDAU HERVORGEHOBEN -->
   <div class="moldau-box">
     <h3>Der stärkste Fall: Republik Moldau</h3>
     <p>Die Republik Moldau ist kein EU-Mitglied. Sie grenzt direkt an die Ukraine, hat russische Truppen in Transnistrien stationiert, ist wirtschaftlich weit abhängiger von Russland als Deutschland – und hat das Russische Haus in Chișinău trotzdem geschlossen.</p>
-    <p>Kulturminister Cristian Jardan begründete die Schließung im November 2025 damit, dass das Zentrum von <strong>Rossotrudnitschestwo</strong> finanziert werde – „der Hauptstaatsagentur, die die weiche Macht des Kremls projiziert" – und genutzt werden könnte, um „verzerrte Narrative Russlands zu fördern".</p>
+    <p>Kulturminister Cristian Jardan begründete die Schließung im November 2025 damit, dass das Zentrum von <strong>Rossotrudnitschestwo</strong> finanziert werde – „der Hauptstaatsagentur, die die weiche Macht des Kremls projiziert“ – und genutzt werden könnte, um „verzerrte Narrative Russlands zu fördern“.</p>
     <p>Wenn ein Land unter direktem russischem Druck das schafft, was Deutschland sich nicht traut – dann ist das <strong>kein Argument mehr, sondern eine Entscheidung.</strong></p>
   </div>
 
-  <!-- LÄNDERLISTE -->
   <div class="land-karte">
 
     <div class="land geschlossen">
@@ -125,7 +117,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
       </div>
       <div class="land-body">
         Litauen hat das Rossotrudnitschestwo-Zentrum in Vilnius geschlossen – eines der ersten EU-Länder, das nach dem Angriff auf die Ukraine 2022 konsequent handelte. Litauen expellierte zudem den russischen Botschafter und stufte diplomatische Beziehungen auf ein Minimum herab.
-        <span class="quelle">TAZ, April 2025 / Lithuania–Russia relations, Wikipedia</span>
+        <span class="quelle"><a href="artikel_taz_2025.html" style="color:var(--grau);">TAZ, April 2025</a></span>
       </div>
     </div>
 
@@ -139,7 +131,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
       </div>
       <div class="land-body">
         Polen hat das russische Kulturzentrum in Warschau geschlossen. Das Land gehört zu den entschiedensten Unterstützern der Ukraine und hat russische Kultureinrichtungen konsequent als Propagandainstrumente behandelt.
-        <span class="quelle">TAZ, April 2025</span>
+        <span class="quelle"><a href="artikel_taz_2025.html" style="color:var(--grau);">TAZ, April 2025</a></span>
       </div>
     </div>
 
@@ -153,7 +145,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
       </div>
       <div class="land-body">
         Schweden hat das russische Kulturzentrum in Stockholm geschlossen. Als NATO-Neumitglied hat Schweden seine Haltung gegenüber russischen Staatseinrichtungen grundlegend verändert.
-        <span class="quelle">TAZ, April 2025</span>
+        <span class="quelle"><a href="artikel_taz_2025.html" style="color:var(--grau);">TAZ, April 2025</a></span>
       </div>
     </div>
 
@@ -166,7 +158,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
         </div>
       </div>
       <div class="land-body">
-        Die moldauische Regierung beschloss im November 2025 die Schließung des Russischen Hauses in Chișinău. Kulturminister Cristian Jardan begründete dies damit, dass das Zentrum von der sanktionierten Agentur Rossotrudnitschestwo betrieben werde und genutzt werden könnte, um „verzerrte Narrative Russlands zu fördern". Die Republik Moldau ist kein EU-Mitglied – und hat trotzdem gehandelt.
+        Die moldauische Regierung beschloss im November 2025 die Schließung des Russischen Hauses in Chișinău. Kulturminister Cristian Jardan begründete dies damit, dass das Zentrum von der sanktionierten Agentur Rossotrudnitschestwo betrieben werde und genutzt werden könnte, um „verzerrte Narrative Russlands zu fördern“. Die Republik Moldau ist kein EU-Mitglied – und hat trotzdem gehandelt.
         <span class="quelle">Pravda Deutschland, November 2025</span>
       </div>
     </div>
@@ -181,7 +173,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
       </div>
       <div class="land-body">
         Das Russische Haus in Prag ist noch nicht geschlossen, öffnet jedoch nur noch wenige Male im Monat. Die tschechischen Behörden, einschließlich der Geheimdienste, ermitteln und prüfen, ob das Zentrum auf die nationale Sanktionsliste gesetzt werden soll. Das Zentrum ist bekannt dafür, eine ins Tschechische übersetzte Broschüre mit anti-ukrainischen Themen herauszugeben. Im März 2026 wurde das Gebäude mit Molotow-Cocktails angegriffen – ein Verdächtiger stellte sich und legte ein Geständnis ab.
-        <span class="quelle">EURACTIV, Juli 2023 / Tschechische Polizei, März 2026</span>
+        <span class="quelle"><a href="https://www.euractiv.com/section/politics/news/czech-authorities-considering-putting-russian-house-on-sanctions-list/" target="_blank" style="color:var(--grau);">EURACTIV, Juli 2023</a> / Tschechische Polizei, März 2026</span>
       </div>
     </div>
 
@@ -195,7 +187,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
       </div>
       <div class="land-body">
         Das Russische Haus in Berlin ist das einzige große Rossotrudnitschestwo-Zentrum in der EU, das trotz Sanktionen im Vollbetrieb läuft: täglich geöffnet, Kino, Sprachkurse, Restaurant, Postannahmestelle. Die Bundesregierung verweist auf das bilaterale Abkommen von 2011 und die Sorge um die Goethe-Institute in Russland. Das Tätigkeitsabkommen ist bis zum <strong>7. Dezember 2026</strong> kündbar.
-        <span class="quelle">SZ, Dezember 2025 / Auswärtiges Amt, Mai 2024</span>
+        <span class="quelle"><a href="artikel_sz_2025.html" style="color:var(--grau);">SZ, Dezember 2025</a> / Auswärtiges Amt, Mai 2024</span>
       </div>
     </div>
 
@@ -203,7 +195,7 @@ footer a { color: #7eb8f7; text-decoration: none; }
 
   <div class="fazit">
     <h3>Was das bedeutet</h3>
-    <p>Das Auswärtige Amt räumte in der Bundespressekonferenz vom 8. Mai 2024 ein, dass „in mehreren EU-Ländern Kulturzentren der Russischen Föderation geschlossen" wurden – und erklärte gleichzeitig, warum Deutschland es nicht tut. Das Argument: das bilaterale Abkommen und die Goethe-Institute. Doch Litauen, Polen und Schweden haben keine solchen Abkommen als Schutzschild genutzt. Und die Republik Moldau, die nicht einmal EU-Mitglied ist und russische Truppen im eigenen Land dulden muss, hat trotzdem gehandelt.</p>
+    <p>Das Auswärtige Amt räumte in der Bundespressekonferenz vom 8. Mai 2024 ein, dass „in mehreren EU-Ländern Kulturzentren der Russischen Föderation geschlossen“ wurden – und erklärte gleichzeitig, warum Deutschland es nicht tut. Das Argument: das bilaterale Abkommen und die Goethe-Institute. Doch Litauen, Polen und Schweden haben keine solchen Abkommen als Schutzschild genutzt. Und die Republik Moldau, die nicht einmal EU-Mitglied ist und russische Truppen im eigenen Land dulden muss, hat trotzdem gehandelt.</p>
   </div>
 
 </div>
