@@ -26,32 +26,24 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
-
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
-
 .lang-switch { max-width: 900px; margin: 0 auto; padding: 10px 24px; text-align: right; }
 .lang-switch a { font-size: 13px; font-weight: 600; color: var(--blau); text-decoration: none; border: 1px solid var(--blau); padding: 4px 12px; border-radius: 4px; }
-
 .site-header { background: var(--dunkel); color: #fff; padding: 40px 24px 36px; text-align: center; }
 .site-header .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.5; margin-bottom: 14px; }
 .site-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 5vw, 44px); line-height: 1.15; margin-bottom: 14px; font-weight: 700; }
 .site-header h1 span { color: #7eb8f7; }
 .site-header p { max-width: 560px; margin: 0 auto; font-size: 15px; opacity: 0.7; line-height: 1.6; }
-
 .main { max-width: 900px; margin: 0 auto; padding: 0 24px 48px; }
-
 .section { margin-top: 32px; }
 .section-title { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grau); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--linie); }
-
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-
 .kachel { border-radius: 6px; padding: 16px 18px; background: #fff; border: 1px solid var(--blau-rand); text-decoration: none; color: inherit; display: block; }
 .kachel.rot { border-left: 4px solid var(--rot); border-top: 1px solid var(--rot-rand); border-right: 1px solid var(--rot-rand); border-bottom: 1px solid var(--rot-rand); background: var(--rot-hell); }
 .kachel.grau { border: 1px solid var(--grau-rand); background: var(--grau-hell); }
 .kachel.blau-stark { border-left: 4px solid var(--blau); border-top: 1px solid var(--blau-rand); border-right: 1px solid var(--blau-rand); border-bottom: 1px solid var(--blau-rand); background: var(--blau-hell); }
 .kachel.dunkel { border: 1px solid #333; background: var(--dunkel); }
-
 .countdown-bar { background: #A32D2D; color: #fff; padding: 20px 24px; text-align: center; }
 .countdown-bar .countdown-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; margin-bottom: 10px; }
 .countdown-bar .countdown-zahlen { display: flex; justify-content: center; gap: 24px; margin-bottom: 10px; }
@@ -60,21 +52,17 @@ body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--
 .countdown-bar .countdown-text { font-size: 11px; opacity: 0.7; letter-spacing: 0.06em; text-transform: uppercase; }
 .countdown-bar .countdown-info { font-size: 13px; opacity: 0.85; }
 .countdown-bar .countdown-info a { color: #fff; font-weight: 600; text-decoration: underline; }
-
 .kachel .tag { font-size: 10px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; color: var(--blau); }
 .kachel.rot .tag { color: var(--rot); }
 .kachel.grau .tag { color: var(--grau); }
 .kachel.dunkel .tag { color: #f87171; }
-
 .kachel .titel { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--dunkel); }
 .kachel.rot .titel { color: var(--rot); }
 .kachel.grau .titel { color: var(--grau); }
 .kachel.dunkel .titel { color: #fff; }
-
 .kachel .sub { font-size: 13px; color: var(--grau); line-height: 1.5; }
 .kachel.rot .sub { color: #7a1f1f; }
 .kachel.dunkel .sub { color: #aaa; }
-
 .presseliste { margin-top: 4px; }
 .pressezeile { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--linie); align-items: flex-start; text-decoration: none; color: inherit; }
 .pressezeile:last-child { border-bottom: none; }
@@ -82,11 +70,9 @@ body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--
 .pressezeile .medium { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blau); min-width: 105px; flex-shrink: 0; padding-top: 2px; }
 .pressezeile .info .ptitel { font-size: 14px; font-weight: 600; line-height: 1.3; color: var(--dunkel); transition: color 0.15s; }
 .pressezeile .info .datum { font-size: 12px; color: var(--grau); margin-top: 2px; }
-
 footer { background: var(--dunkel); color: #fff; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 footer span { font-size: 12px; opacity: 0.5; }
 footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
-
 @media (max-width: 640px) {
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
@@ -119,7 +105,7 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
       <span class="countdown-text">Seconds</span>
     </div>
   </div>
-  <div class="countdown-info">until <strong>7 December 2026</strong> – the last day Germany can terminate its treaty with the Russian House. <a href="vertraege_en.html">Why this matters →</a></div>
+  <div class="countdown-info">until <strong>6 December 2026</strong> – the last day Germany can terminate its treaty with the Russian House. <a href="vertraege_en.html">Why this matters →</a></div>
 </div>
 <div class="lang-switch"><a href="index.html">🇩🇪 Deutsche Version</a></div>
 
@@ -135,7 +121,7 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
     <div class="section-title">The political case</div>
     <div class="grid-3">
       <a href="vertraege_en.html" class="kachel rot">
-        <div class="tag">Deadline: 7 December 2026</div>
+        <div class="tag">Deadline: 6 December 2026</div>
         <div class="titel">One treaty is terminable now</div>
         <div class="sub">It determines what is permitted inside the Russian House. Germany could say: nothing more. Goodbye.</div>
       </a>
@@ -266,7 +252,6 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
           <div class="datum">4 February 2026 · Simon Widmer</div>
         </div>
       </a>
-
       <a href="https://antwortseiten.org/widerstandskaempfer-der-weissen-rose-als-waschpulver-der-russischen-seele/" class="pressezeile" target="_blank">
         <span class="medium">antwortseiten.org</span>
         <div class="info">
@@ -289,7 +274,7 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 
 <script>
 function updateCountdown() {
-  const ziel = new Date('2026-12-07T23:59:59');
+  const ziel = new Date('2026-12-06T23:59:59');
   const jetzt = new Date();
   const diff = ziel - jetzt;
   if (diff <= 0) {
