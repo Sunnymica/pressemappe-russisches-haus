@@ -36,6 +36,18 @@
     margin: 0 auto;
   }
 
+  .back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .back-link:hover {
+    color: var(--rh-red);
+  }
+
   .dossier-header {
     border-top: 3px solid var(--ink);
     border-bottom: 1px solid var(--rule);
@@ -169,6 +181,8 @@
 <body>
 <div class="page">
 
+  <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
+
   <div class="dossier-header">
     <span>Pressemappe · Russisches Haus Berlin</span>
     <span>Personalwechsel · Juni 2026</span>
@@ -255,7 +269,6 @@
   </div>
 
   <footer>
-    <span><a href="index.html" style="color:var(--ink-muted); text-decoration:none;">← Zurück zur Pressemappe</a></span>
     <span>pressemappe.antwortseiten.org</span>
   </footer>
 
