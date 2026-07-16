@@ -1,5 +1,3 @@
-Goethe?
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -10,536 +8,536 @@ Goethe?
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --paper: #f4f1ea;
-    --ink: #1a1814;
-    --ink-muted: #5a534a;
-    --rule: #c9c1b1;
-    --rh-red: #b8252f;
-    --rh-red-dark: #8e1a23;
-    --goethe-green: #6b8a6f;
-    --accent: #c8a13a;
-  }
+  :root {
+    --paper: #f4f1ea;
+    --ink: #1a1814;
+    --ink-muted: #5a534a;
+    --rule: #c9c1b1;
+    --rh-red: #b8252f;
+    --rh-red-dark: #8e1a23;
+    --goethe-green: #6b8a6f;
+    --accent: #c8a13a;
+  }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    font-family: 'Inter Tight', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.55;
-    padding: 40px 20px;
-  }
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    padding: 40px 20px;
+  }
 
-  .page {
-    max-width: 920px;
-    margin: 0 auto;
-  }
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+  }
 
-  .back-link {
-    display: inline-block;
-    margin-bottom: 28px;
-    font-size: 14px;
-    color: var(--ink-muted);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .back-link:hover {
-    color: var(--rh-red);
-  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .back-link:hover {
+    color: var(--rh-red);
+  }
 
-  .dossier-header {
-    border-top: 3px solid var(--ink);
-    border-bottom: 1px solid var(--rule);
-    padding: 12px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 36px;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
+  .dossier-header {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 36px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
 
-  .kicker {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--rh-red);
-    margin-bottom: 18px;
-  }
+  .kicker {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rh-red);
+    margin-bottom: 18px;
+  }
 
-  h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 800;
-    font-size: clamp(28px, 4.2vw, 46px);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 22px;
-    max-width: 780px;
-  }
-  h1 em {
-    font-style: normal;
-    color: var(--rh-red-dark);
-  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4.2vw, 46px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 22px;
+    max-width: 780px;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--rh-red-dark);
+  }
 
-  .lede {
-    font-family: 'Fraunces', serif;
-    font-size: 19px;
-    line-height: 1.55;
-    color: var(--ink);
-    max-width: 700px;
-    margin-bottom: 36px;
-  }
+  .lede {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 700px;
+    margin-bottom: 36px;
+  }
 
-  /* Bildblock */
-  .figure {
-    margin: 36px 0 44px 0;
-  }
-  .figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  }
-  .figure figcaption {
-    margin-top: 12px;
-    font-size: 13px;
-    color: var(--ink-muted);
-    font-style: italic;
-    max-width: 700px;
-  }
+  /* Bildblock */
+  .figure {
+    margin: 36px 0 44px 0;
+  }
+  .figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  .figure figcaption {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-style: italic;
+    max-width: 700px;
+  }
 
-  /* Sektion */
-  .section {
-    margin: 56px 0;
-  }
-  .section-title {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 26px;
-    letter-spacing: -0.01em;
-    margin-bottom: 14px;
-  }
-  .section-text {
-    font-family: 'Fraunces', serif;
-    font-size: 17px;
-    line-height: 1.55;
-    color: var(--ink);
-    max-width: 700px;
-    margin-bottom: 18px;
-  }
-  .section-text + .section-text { margin-top: 14px; }
-  .section-text strong { color: var(--rh-red-dark); font-weight: 700; }
+  /* Sektion */
+  .section {
+    margin: 56px 0;
+  }
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+  .section-text {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 700px;
+    margin-bottom: 18px;
+  }
+  .section-text + .section-text { margin-top: 14px; }
+  .section-text strong { color: var(--rh-red-dark); font-weight: 700; }
 
-  /* Aufklapper */
-  .accordion-group {
-    margin-top: 24px;
-  }
-  .accordion-intro {
-    font-size: 13px;
-    color: var(--ink-muted);
-    margin-bottom: 14px;
-    font-style: italic;
-  }
-  details {
-    background: white;
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 0;
-    transition: border-color 0.15s, box-shadow 0.15s;
-  }
-  details:hover { border-color: var(--rh-red); }
-  details[open] {
-    border-color: var(--rh-red);
-    box-shadow: 0 2px 8px rgba(184,37,47,0.08);
-  }
-  summary {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    list-style: none;
-    font-family: 'Fraunces', serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.35;
-    padding: 18px 22px;
-    user-select: none;
-  }
-  summary::-webkit-details-marker { display: none; }
-  summary::after {
-    content: "+";
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: white;
-    background: var(--rh-red);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    line-height: 1;
-    transition: background 0.15s;
-  }
-  details:hover summary::after { background: var(--rh-red-dark); }
-  details[open] summary::after { content: "−"; }
-  details > .body {
-    padding: 4px 22px 22px;
-    max-width: 720px;
-    font-size: 16px;
-    line-height: 1.65;
-    color: var(--ink);
-    border-top: 1px solid var(--rule);
-    padding-top: 18px;
-  }
-  details > .body p + p { margin-top: 12px; }
-  details > .body strong { color: var(--rh-red-dark); font-weight: 700; }
+  /* Aufklapper */
+  .accordion-group {
+    margin-top: 24px;
+  }
+  .accordion-intro {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  details {
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  details:hover { border-color: var(--rh-red); }
+  details[open] {
+    border-color: var(--rh-red);
+    box-shadow: 0 2px 8px rgba(184,37,47,0.08);
+  }
+  summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.35;
+    padding: 18px 22px;
+    user-select: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    background: var(--rh-red);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: background 0.15s;
+  }
+  details:hover summary::after { background: var(--rh-red-dark); }
+  details[open] summary::after { content: "−"; }
+  details > .body {
+    padding: 4px 22px 22px;
+    max-width: 720px;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink);
+    border-top: 1px solid var(--rule);
+    padding-top: 18px;
+  }
+  details > .body p + p { margin-top: 12px; }
+  details > .body strong { color: var(--rh-red-dark); font-weight: 700; }
 
-  /* Vergleichsblöcke innerhalb der Aufklapper */
-  .compare {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin: 14px 0;
-  }
-  .compare-box {
-    padding: 14px 16px;
-    border-radius: 4px;
-    font-size: 15px;
-    line-height: 1.45;
-  }
-  .compare-box.goethe {
-    background: #e6efe7;
-    border-left: 3px solid var(--goethe-green);
-  }
-  .compare-box.rh {
-    background: #f7e0e2;
-    border-left: 3px solid var(--rh-red);
-  }
-  .compare-box .label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-  .compare-box.goethe .label { color: #3d5a40; }
-  .compare-box.rh .label { color: var(--rh-red-dark); }
+  /* Vergleichsblöcke innerhalb der Aufklapper */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 14px 0;
+  }
+  .compare-box {
+    padding: 14px 16px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .compare-box.goethe {
+    background: #e6efe7;
+    border-left: 3px solid var(--goethe-green);
+  }
+  .compare-box.rh {
+    background: #f7e0e2;
+    border-left: 3px solid var(--rh-red);
+  }
+  .compare-box .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .compare-box.goethe .label { color: #3d5a40; }
+  .compare-box.rh .label { color: var(--rh-red-dark); }
 
-  /* Risiko-Boxen */
-  .risk-box {
-    margin: 14px 0;
-    padding: 14px 16px;
-    background: #fbf3f4;
-    border-left: 3px solid var(--rh-red);
-    border-radius: 4px;
-    font-size: 15px;
-    line-height: 1.5;
-  }
-  .risk-box .label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--rh-red-dark);
-    margin-bottom: 6px;
-  }
+  /* Risiko-Boxen */
+  .risk-box {
+    margin: 14px 0;
+    padding: 14px 16px;
+    background: #fbf3f4;
+    border-left: 3px solid var(--rh-red);
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .risk-box .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rh-red-dark);
+    margin-bottom: 6px;
+  }
 
-  /* Kontaktkasten */
-  .contact-box {
-    margin: 64px 0 32px 0;
-    padding: 28px 32px;
-    background: white;
-    border: 2px solid var(--ink);
-    border-radius: 4px;
-  }
-  .contact-box .contact-kicker {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--rh-red);
-    margin-bottom: 10px;
-  }
-  .contact-box h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 12px;
-    letter-spacing: -0.01em;
-  }
-  .contact-box p {
-    font-family: 'Fraunces', serif;
-    font-size: 16px;
-    line-height: 1.55;
-    color: var(--ink);
-    margin-bottom: 14px;
-    max-width: 640px;
-  }
-  .contact-box a {
-    color: var(--rh-red-dark);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid var(--rh-red-dark);
-  }
-  .contact-box a:hover { color: var(--rh-red); border-color: var(--rh-red); }
+  /* Kontaktkasten */
+  .contact-box {
+    margin: 64px 0 32px 0;
+    padding: 28px 32px;
+    background: white;
+    border: 2px solid var(--ink);
+    border-radius: 4px;
+  }
+  .contact-box .contact-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rh-red);
+    margin-bottom: 10px;
+  }
+  .contact-box h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .contact-box p {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-bottom: 14px;
+    max-width: 640px;
+  }
+  .contact-box a {
+    color: var(--rh-red-dark);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--rh-red-dark);
+  }
+  .contact-box a:hover { color: var(--rh-red); border-color: var(--rh-red); }
 
-  footer {
-    margin-top: 56px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
 
-  @media (max-width: 680px) {
-    body { padding: 28px 16px; }
-    .compare { grid-template-columns: 1fr; }
-    summary { font-size: 16px; padding: 16px 18px; }
-    details > .body { padding: 4px 18px 18px; padding-top: 16px; }
-    .contact-box { padding: 22px 20px; }
-  }
+  @media (max-width: 680px) {
+    body { padding: 28px 16px; }
+    .compare { grid-template-columns: 1fr; }
+    summary { font-size: 16px; padding: 16px 18px; }
+    details > .body { padding: 4px 18px 18px; padding-top: 16px; }
+    .contact-box { padding: 22px 20px; }
+  }
 </style>
 </head>
 <body>
 <div class="page">
 
-  <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
+  <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
 
-  <div class="dossier-header">
-    <span>Pressemappe · Russisches Haus Berlin</span>
-    <span>Goethe-Institut im Vergleich</span>
-    <span>Stand 06/2026</span>
-  </div>
+  <div class="dossier-header">
+    <span>Pressemappe · Russisches Haus Berlin</span>
+    <span>Goethe-Institut im Vergleich</span>
+    <span>Stand 06/2026</span>
+  </div>
 
-  <div class="kicker">Strukturanalyse</div>
-  <h1>Zwei Häuser, ein Vertrag, <em>ein kategorialer Unterschied</em></h1>
+  <div class="kicker">Strukturanalyse</div>
+  <h1>Zwei Häuser, ein Vertrag, <em>ein kategorialer Unterschied</em></h1>
 
-  <p class="lede">
-    Das Goethe-Institut und das Russische Haus sehen von außen ähnlich aus. Strukturell sind sie es nicht: Das Goethe-Institut ist ein rechtlich eigenständiger Kulturmittler. Das Russische Haus ist die Berliner Außenstelle einer russischen Bundesbehörde – und Teil einer staatlichen Einflussarchitektur. Deshalb ist auch ein Sprachkurs nicht in demselben institutionellen Kontext zu bewerten. Die behauptete Symmetrie der beiden Häuser ist der Ausgangspunkt der deutschen Vertragslogik – und sie ist falsch. Hier ist der strukturelle Grund.
-  </p>
+  <p class="lede">
+    Das Goethe-Institut und das Russische Haus sehen von außen ähnlich aus. Strukturell sind sie es nicht: Das Goethe-Institut ist ein rechtlich eigenständiger Kulturmittler. Das Russische Haus ist die Berliner Außenstelle einer russischen Bundesbehörde – und Teil einer staatlichen Einflussarchitektur. Deshalb ist auch ein Sprachkurs nicht in demselben institutionellen Kontext zu bewerten. Die behauptete Symmetrie der beiden Häuser ist der Ausgangspunkt der deutschen Vertragslogik – und sie ist falsch. Hier ist der strukturelle Grund.
+  </p>
 
-  <figure class="figure">
-    <img src="img/aufmacher.png" alt="Aufmacher-Grafik: Kultur verbindet. Staaten nutzen Kultur. Das Russische Haus Berlin als Teil der russischen Einflussarchitektur mit den fünf Funktionen Binden, Vermitteln, Vernetzen, Normalisieren, Beeinflussen.">
-  </figure>
+  <figure class="figure">
+    <img src="img/aufmacher.png" alt="Aufmacher-Grafik: Kultur verbindet. Staaten nutzen Kultur. Das Russische Haus Berlin als Teil der russischen Einflussarchitektur mit den fünf Funktionen Binden, Vermitteln, Vernetzen, Normalisieren, Beeinflussen.">
+  </figure>
 
-  <section class="section">
-    <h2 class="section-title">Was als Sprachkurs erscheint, sitzt in einer größeren Architektur</h2>
-    <p class="section-text">
-      Das Russische Haus ist die Berliner Repräsentanz von <strong>Rossotrudnitschestwo</strong>, der Bundesbehörde des russischen Außenministeriums für „Landsleute"-Politik und humanitäre Zusammenarbeit. Daneben – nicht darüber, nicht darunter – arbeitet die Stiftung <strong>Russkiy Mir</strong>, formal eine Nichtregierungsorganisation, tatsächlich aus dem russischen Staatshaushalt finanziert und von den Exekutivbehörden kontrolliert, mit eigenen Zentren und Büros in sechs Bundesländern. Dazu kommen Botschaften, „Landsleute"-Strukturen und Partnerorganisationen. Die Studie des Ukrainischen Instituts (2024) beschreibt dieses System als <em>eher hierarchisch, aber gleichzeitig sehr zerstreut</em> – und nennt das Russische Haus und Russkiy Mir ausdrücklich als die beiden zentralen, nebeneinanderstehenden Institutionen der russischen Kulturdiplomatie in Deutschland.
-    </p>
-    <div class="compare" style="margin:16px 0;">
-      <div class="compare-box" style="grid-column:1 / -1; text-align:center; font-weight:600;">Russische Außen- und „humanitäre" Politik</div>
-      <div class="compare-box rh"><div class="label">Rossotrudnitschestwo</div>Bundesbehörde des Außenministeriums – ihre Berliner Außenstelle ist das <strong>Russische Haus</strong></div>
-      <div class="compare-box rh"><div class="label">Stiftung Russkiy Mir</div>formal NRO, staatsfinanziert und -kontrolliert – eigene Zentren und Büros in Deutschland</div>
-      <div class="compare-box" style="grid-column:1 / -1;">Dazu: Botschaften · „Landsleute"-Strukturen · Partnerorganisationen und GONGOs</div>
-    </div>
-    <p class="section-text">
-      <strong>Der einzelne Sprachkurs muss keine Propaganda enthalten. Entscheidend ist, wer die Infrastruktur betreibt, welche politischen Aufgaben diese Institution offiziell hat – und in welches Netzwerk sie eingebettet ist.</strong>
-    </p>
-  </section>
+  <section class="section">
+    <h2 class="section-title">Was als Sprachkurs erscheint, sitzt in einer größeren Architektur</h2>
+    <p class="section-text">
+      Das Russische Haus ist die Berliner Repräsentanz von <strong>Rossotrudnitschestwo</strong>, der Bundesbehörde des russischen Außenministeriums für „Landsleute“-Politik und humanitäre Zusammenarbeit. Daneben – nicht darüber, nicht darunter – arbeitet die Stiftung <strong>Russkiy&nbsp;Mir</strong>, formal eine Nichtregierungsorganisation, tatsächlich aus dem russischen Staatshaushalt finanziert und von den Exekutivbehörden kontrolliert, mit eigenen Zentren und Büros in sechs Bundesländern. Dazu kommen Botschaften, „Landsleute“-Strukturen und Partnerorganisationen. Die Studie des Ukrainischen Instituts (2024) beschreibt dieses System als <em>eher hierarchisch, aber gleichzeitig sehr zerstreut</em> – und nennt das Russische Haus und Russkiy&nbsp;Mir ausdrücklich als die beiden zentralen, nebeneinanderstehenden Institutionen der russischen Kulturdiplomatie in Deutschland.
+    </p>
+    <div class="compare" style="margin:16px 0;">
+      <div class="compare-box" style="grid-column:1 / -1; text-align:center; font-weight:600;">Russische Außen- und „humanitäre“ Politik</div>
+      <div class="compare-box rh"><div class="label">Rossotrudnitschestwo</div>Bundesbehörde des Außenministeriums – ihre Berliner Außenstelle ist das <strong>Russische Haus</strong></div>
+      <div class="compare-box rh"><div class="label">Stiftung Russkiy Mir</div>formal NRO, staatsfinanziert und -kontrolliert – eigene Zentren und Büros in Deutschland</div>
+      <div class="compare-box" style="grid-column:1 / -1;">Dazu: Botschaften · „Landsleute“-Strukturen · Partnerorganisationen und GONGOs</div>
+    </div>
+    <p class="section-text">
+      <strong>Der einzelne Sprachkurs muss keine Propaganda enthalten. Entscheidend ist, wer die Infrastruktur betreibt, welche politischen Aufgaben diese Institution offiziell hat – und in welches Netzwerk sie eingebettet ist.</strong>
+    </p>
+  </section>
 
-  <section class="section">
-    <h2 class="section-title">Was unterscheidet das Russische Haus vom Goethe-Institut?</h2>
-    <p class="accordion-intro">Vier strukturelle Unterschiede. Auf die Überschriften tippen, um die Details zu öffnen.</p>
+  <section class="section">
+    <h2 class="section-title">Was unterscheidet das Russische Haus vom Goethe-Institut?</h2>
+    <p class="accordion-intro">Vier strukturelle Unterschiede. Auf die Überschriften tippen, um die Details zu öffnen.</p>
 
-    <div class="accordion-group">
+    <div class="accordion-group">
 
-      <details>
-        <summary>Rechtsform und Weisungskette</summary>
-        <div class="body">
-          <div class="compare">
-            <div class="compare-box goethe">
-              <div class="label">Goethe-Institut</div>
-              Eingetragener Verein mit Rahmenvertrag zum Auswärtigen Amt. Außenpolitische Leitlinien sind bindend, Programminhalte werden autonom gestaltet.
-            </div>
-            <div class="compare-box rh">
-              <div class="label">Russisches Haus</div>
-              Direkte Außenstelle von Rossotrudnitschestwo, einer Bundesbehörde des russischen Außenministeriums. Kein eigenständiges Vereinsleben, Weisungen kommen aus Moskau.
-            </div>
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>Rechtsform und Weisungskette</summary>
+        <div class="body">
+          <div class="compare">
+            <div class="compare-box goethe">
+              <div class="label">Goethe-Institut</div>
+              Eingetragener Verein mit Rahmenvertrag zum Auswärtigen Amt. Außenpolitische Leitlinien sind bindend, Programminhalte werden autonom gestaltet.
+            </div>
+            <div class="compare-box rh">
+              <div class="label">Russisches Haus</div>
+              Direkte Außenstelle von Rossotrudnitschestwo, einer Bundesbehörde des russischen Außenministeriums. Kein eigenständiges Vereinsleben, Weisungen kommen aus Moskau.
+            </div>
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>Offizieller Auftrag</summary>
-        <div class="body">
-          <div class="compare">
-            <div class="compare-box goethe">
-              <div class="label">Goethe-Institut</div>
-              Auftrag laut Satzung und Rahmenvertrag: Vermittlung der deutschen Sprache, internationale kulturelle Zusammenarbeit, Informationsarbeit über Deutschland.
-            </div>
-            <div class="compare-box rh">
-              <div class="label">Russisches Haus</div>
-              Auftrag laut Statut der Behörde: „Landsleute"-Arbeit, humanitäre Zusammenarbeit, Verbreitung eines positiven Russlandbildes im Ausland. Die Studie des Ukrainischen Instituts (2024) ordnet dies als staatliche Einflussarbeit ein – die Programmanalyse (unten) zeigt, wie sich das im Berliner Programm niederschlägt.
-            </div>
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>Offizieller Auftrag</summary>
+        <div class="body">
+          <div class="compare">
+            <div class="compare-box goethe">
+              <div class="label">Goethe-Institut</div>
+              Auftrag laut Satzung und Rahmenvertrag: Vermittlung der deutschen Sprache, internationale kulturelle Zusammenarbeit, Informationsarbeit über Deutschland.
+            </div>
+            <div class="compare-box rh">
+              <div class="label">Russisches Haus</div>
+              Auftrag laut Statut der Behörde: „Landsleute“-Arbeit, humanitäre Zusammenarbeit, Verbreitung eines positiven Russlandbildes im Ausland. Die Studie des Ukrainischen Instituts (2024) ordnet dies als staatliche Einflussarbeit ein – die Programmanalyse (unten) zeigt, wie sich das im Berliner Programm niederschlägt.
+            </div>
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>Programm und Narrative seit dem 24. Februar 2022</summary>
-        <div class="body">
-          <div class="compare">
-            <div class="compare-box goethe">
-              <div class="label">Goethe-Institut</div>
-              2022/23: Staatliche Kooperationen eingefroren, öffentliche Veranstaltungen weitgehend eingestellt. Russland erzwang im Mai 2023 eine drastische Personalobergrenze; laut Moskauer Deutscher Zeitung (Juni 2023) wurde die Mitarbeiterzahl von rund 200 auf 13 reduziert. Stand 2026 führt die Website des Goethe-Instituts wieder Standorte in Moskau, St. Petersburg und Nowosibirsk mit Bibliotheks- und Bildungsangeboten – der Betrieb bleibt gegenüber der Vorkriegszeit stark eingeschränkt.
-            </div>
-            <div class="compare-box rh">
-              <div class="label">Russisches Haus</div>
-              Programm unverändert fortgesetzt und narrativ verschärft: WW2-Gedenken, Friedensrhetorik, Puschkin-Aktionen. Keine Unterbrechung – die Krise hat den propagandistischen Charakter verstärkt.
-            </div>
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>Programm und Narrative seit dem 24.&nbsp;Februar 2022</summary>
+        <div class="body">
+          <div class="compare">
+            <div class="compare-box goethe">
+              <div class="label">Goethe-Institut</div>
+              2022/23: Staatliche Kooperationen eingefroren, öffentliche Veranstaltungen weitgehend eingestellt. Russland erzwang im Mai&nbsp;2023 eine drastische Personalobergrenze; laut Moskauer Deutscher Zeitung (Juni&nbsp;2023) wurde die Mitarbeiterzahl von rund 200 auf 13 reduziert. Stand&nbsp;2026 führt die Website des Goethe-Instituts wieder Standorte in Moskau, St.&nbsp;Petersburg und Nowosibirsk mit Bibliotheks- und Bildungsangeboten – der Betrieb bleibt gegenüber der Vorkriegszeit stark eingeschränkt.
+            </div>
+            <div class="compare-box rh">
+              <div class="label">Russisches Haus</div>
+              Programm unverändert fortgesetzt und narrativ verschärft: WW2-Gedenken, Friedensrhetorik, Puschkin-Aktionen. Keine Unterbrechung – die Krise hat den propagandistischen Charakter verstärkt.
+            </div>
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>Rechenschaft und Immunität</summary>
-        <div class="body">
-          <div class="compare">
-            <div class="compare-box goethe">
-              <div class="label">Goethe-Institut</div>
-              Unterliegt parlamentarischer Kontrolle, ist in Deutschland steuerpflichtig und rechenschaftspflichtig, operiert nach Presserecht. Öffentlich und juristisch anfechtbar.
-            </div>
-            <div class="compare-box rh">
-              <div class="label">Russisches Haus</div>
-              Keine deutsche parlamentarische Kontrolle. Direktor und Stellvertretung können nach Notifizierung diplomatischen Status genießen – die Ermittlungen von 2023 wurden mit Verweis auf die Immunität der Verantwortlichen eingestellt. Die Räumlichkeiten selbst genießen laut Abkommen von 2011 ausdrücklich keine diplomatische Immunität.
-            </div>
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>Rechenschaft und Immunität</summary>
+        <div class="body">
+          <div class="compare">
+            <div class="compare-box goethe">
+              <div class="label">Goethe-Institut</div>
+              Unterliegt parlamentarischer Kontrolle, ist in Deutschland steuerpflichtig und rechenschaftspflichtig, operiert nach Presserecht. Öffentlich und juristisch anfechtbar.
+            </div>
+            <div class="compare-box rh">
+              <div class="label">Russisches Haus</div>
+              Keine deutsche parlamentarische Kontrolle. Direktor und Stellvertretung können nach Notifizierung diplomatischen Status genießen – die Ermittlungen von 2023 wurden mit Verweis auf die Immunität der Verantwortlichen eingestellt. Die Räumlichkeiten selbst genießen laut Abkommen von 2011 ausdrücklich keine diplomatische Immunität.
+            </div>
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>Programmanalyse: 179 Veranstaltungen, ein Befund</summary>
-        <div class="body">
-          <p>Erhebung von April bis Mai 2026, Quellen: russisches-haus.de und goethe.ru. Erfasst wurden alle Veranstaltungen beider Häuser, kategorisiert nach Format und inhaltlichem Narrativ.</p>
-          <div class="compare">
-            <div class="compare-box goethe">
-              <div class="label">Goethe-Institut</div>
-              <strong>0 von 68</strong> Veranstaltungen tragen nach dieser Kategorisierung ein Regierungsnarrativ. Sprachunterricht, Lehrerfortbildung, westeuropäische Kunst- und Wissenschaftsvermittlung.
-            </div>
-            <div class="compare-box rh">
-              <div class="label">Russisches Haus</div>
-              <strong>97 von 111</strong> Veranstaltungen lassen sich nach dieser Kategorisierung einem Kreml-Narrativ zuordnen – von Filmreihen über den „Großen Vaterländischen Krieg" bis zu Formaten der Diaspora-Bindung. Kategorien, Einschlussregeln und Einzelzuordnungen sind Teil der Vollanalyse (auf Anfrage); die Einstufung von Sprachkursen als Bindungsformat ist dort begründet.
-            </div>
-          </div>
-          <p>Der Unterschied ist nicht graduell, sondern kategorial. Beim Goethe-Institut ist Kultur das Ziel. Beim Russischen Haus ist Kultur das Mittel.</p>
-        </div>
-      </details>
+      <details>
+        <summary>Programmanalyse: 179 Veranstaltungen, ein Befund</summary>
+        <div class="body">
+          <p>Erhebung von April bis Mai&nbsp;2026, Quellen: russisches-haus.de und goethe.ru. Erfasst wurden alle Veranstaltungen beider Häuser, kategorisiert nach Format und inhaltlichem Narrativ.</p>
+          <div class="compare">
+            <div class="compare-box goethe">
+              <div class="label">Goethe-Institut</div>
+              <strong>0 von 68</strong> Veranstaltungen tragen nach dieser Kategorisierung ein Regierungsnarrativ. Sprachunterricht, Lehrerfortbildung, westeuropäische Kunst- und Wissenschaftsvermittlung.
+            </div>
+            <div class="compare-box rh">
+              <div class="label">Russisches Haus</div>
+              <strong>97 von 111</strong> Veranstaltungen lassen sich nach dieser Kategorisierung einem Kreml-Narrativ zuordnen – von Filmreihen über den „Großen Vaterländischen Krieg“ bis zu Formaten der Diaspora-Bindung. Kategorien, Einschlussregeln und Einzelzuordnungen sind Teil der Vollanalyse (auf Anfrage); die Einstufung von Sprachkursen als Bindungsformat ist dort begründet.
+            </div>
+          </div>
+          <p>Der Unterschied ist nicht graduell, sondern kategorial. Beim Goethe-Institut ist Kultur das Ziel. Beim Russischen Haus ist Kultur das Mittel.</p>
+        </div>
+      </details>
 
-    </div>
-  </section>
+    </div>
+  </section>
 
-  <section class="section">
-    <h2 class="section-title">Welche Sicherheitsrisiken gehen vom Russischen Haus aus?</h2>
-    <p class="accordion-intro">Vier dokumentierte Risikobereiche. Auf die Überschriften tippen, um die Details zu öffnen.</p>
+  <section class="section">
+    <h2 class="section-title">Welche Sicherheitsrisiken gehen vom Russischen Haus aus?</h2>
+    <p class="accordion-intro">Vier dokumentierte Risikobereiche. Auf die Überschriften tippen, um die Details zu öffnen.</p>
 
-    <div class="accordion-group">
+    <div class="accordion-group">
 
-      <details>
-        <summary>1. Aktive Propagandaproduktion</summary>
-        <div class="body">
-          <p>2022 zeigte das Hauskino einen RT-Propagandafilm, der NS-Gräueltaten mit der Ukraine gleichsetzte – Ukrainer als Nazis, Russland als Befreier. Im Buchladen werden Werke russischer Kriegsideologen und Rechtsextremisten sowie Spielzeug verkauft, das den Angriffskrieg verherrlicht.</p>
-          <p>Die Programmanalyse zeigt: WW2-Narrative, Friedensrhetorik und Puschkin als imperiales Symbol sind kein Zufall, sondern koordiniertes Programm einer sanktionierten Behörde.</p>
-          <div class="risk-box">
-            <div class="label">Risiko: Meinungsmanipulation</div>
-            Quellen: Tagesspiegel, Legal Tribune Online, Berliner Kurier · eigene Analyse 179 Veranstaltungen
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>1. Aktive Propagandaproduktion</summary>
+        <div class="body">
+          <p>2022 zeigte das Hauskino einen RT-Propagandafilm, der NS-Gräueltaten mit der Ukraine gleichsetzte – Ukrainer als Nazis, Russland als Befreier. Im Buchladen werden Werke russischer Kriegsideologen und Rechtsextremisten sowie Spielzeug verkauft, das den Angriffskrieg verherrlicht.</p>
+          <p>Die Programmanalyse zeigt: WW2-Narrative, Friedensrhetorik und Puschkin als imperiales Symbol sind kein Zufall, sondern koordiniertes Programm einer sanktionierten Behörde.</p>
+          <div class="risk-box">
+            <div class="label">Risiko: Meinungsmanipulation</div>
+            Quellen: Tagesspiegel, Legal Tribune Online, Berliner Kurier &middot; eigene Analyse von 179&nbsp;Veranstaltungen
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>2. Unterstützung prorussischer Netzwerke</summary>
-        <div class="body">
-          <p>Das Russische Haus finanzierte laut Reuters Flugtickets für einen früheren russischen Luftwaffenoffizier und seine Freundin, die prorussische Autokorsos in Deutschland mitorganisierten – für eine Reise zu einem Kreml-Event in Moskau. Rossotrudnitschestwo soll prorussische Demonstrationen in Deutschland mitkoordiniert haben.</p>
-          <p>Sprachkurse, Kinderclub und Konversationsklub schaffen die Community-Infrastruktur, die politisch mobilisierbar ist – laut BfV ein Standardmuster russischer Einflussnahme.</p>
-          <div class="risk-box">
-            <div class="label">Risiko: Politische Einflussnahme</div>
-            Quellen: Reuters, The Insider, Tagesspiegel, BfV-Bericht 2025
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>2. Unterstützung prorussischer Netzwerke</summary>
+        <div class="body">
+          <p>Das Russische Haus finanzierte laut Reuters Flugtickets für einen früheren russischen Luftwaffenoffizier und seine Freundin, die prorussische Autokorsos in Deutschland mitorganisierten – für eine Reise zu einem Kreml-Event in Moskau. Rossotrudnitschestwo soll prorussische Demonstrationen in Deutschland mitkoordiniert haben.</p>
+          <p>Sprachkurse, Kinderclub und Konversationsklub schaffen die Community-Infrastruktur, die politisch mobilisierbar ist – laut BfV ein Standardmuster russischer Einflussnahme.</p>
+          <div class="risk-box">
+            <div class="label">Risiko: Politische Einflussnahme</div>
+            Quellen: Reuters, The Insider, Tagesspiegel, BfV-Bericht&nbsp;2025
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>3. Mögliche Sanktionsverstöße – bislang ohne Konsequenz</summary>
-        <div class="body">
-          <p>Rossotrudnitschestwo steht seit Juli 2022 auf der EU-Sanktionsliste. Rechtsfolge: Einfrierung von Vermögenswerten und wirtschaftliches Bereitstellungsverbot. Trotzdem laufen täglich Veranstaltungen und Tickets werden verkauft; möglichen Vermietungen gehen Medienberichte und Ermittlungen nach.</p>
-          <p>Die Berliner Staatsanwaltschaft stellte Ermittlungen nach dem Außenwirtschaftsgesetz ein – die Verantwortlichen haben Diplomatenstatus. Gleichzeitig übernimmt Deutschland aufgrund des Liegenschaftsabkommens von 2013 die Grundsteuer für das Gebäude – im Bundeshaushalt 2026 sind dafür rund 70.000 Euro angesetzt.</p>
-          <div class="risk-box">
-            <div class="label">Risiko: Rechtsstaat-Glaubwürdigkeit</div>
-            Quellen: Legal Tribune Online, Auswärtiges Amt, Süddeutsche Zeitung, t-online
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>3. Mögliche Sanktionsverstöße – bislang ohne Konsequenz</summary>
+        <div class="body">
+          <p>Rossotrudnitschestwo steht seit Juli&nbsp;2022 auf der EU-Sanktionsliste. Rechtsfolge: Einfrierung von Vermögenswerten und wirtschaftliches Bereitstellungsverbot. Trotzdem laufen täglich Veranstaltungen und Tickets werden verkauft; möglichen Vermietungen gehen Medienberichte und Ermittlungen nach.</p>
+          <p>Die Berliner Staatsanwaltschaft stellte Ermittlungen nach dem Außenwirtschaftsgesetz ein – die Verantwortlichen haben Diplomatenstatus. Gleichzeitig übernimmt Deutschland aufgrund des Liegenschaftsabkommens von 2013 die Grundsteuer für das Gebäude – im Bundeshaushalt&nbsp;2026 sind dafür rund 70.000&nbsp;Euro angesetzt.</p>
+          <div class="risk-box">
+            <div class="label">Risiko: Rechtsstaat-Glaubwürdigkeit</div>
+            Quellen: Legal Tribune Online, Auswärtiges Amt, Süddeutsche Zeitung, t-online
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>4. Geheimdienstlicher Kontext</summary>
-        <div class="body">
-          <p>Der Berliner Senat bestätigt offiziell: Zwischen PR auf Kulturfesten und nachrichtendienstlichem Sammeln geschützter Informationen verlaufen die Grenzen fließend. Das BfV stellt fest, dass Berlin vorrangiges Ziel russischer Geheimdienste in Europa ist – mit tausenden Zuträgern.</p>
-          <p>Die russische Post unterhält nach eigenen Angaben ihre erste offizielle Auslandsniederlassung in Berlin. Testberichte zeigen vereinfachte Zolldokumente, die den Sendungsinhalt schwer kontrollierbar machen.</p>
-          <div class="risk-box">
-            <div class="label">Risiko: Nachrichtendienstliche Aktivität</div>
-            Quellen: Berliner Senat, Tagesspiegel, BfV-Bericht 2025
-          </div>
-        </div>
-      </details>
+      <details>
+        <summary>4. Geheimdienstlicher Kontext</summary>
+        <div class="body">
+          <p>Der Berliner Senat bestätigt offiziell: Zwischen PR auf Kulturfesten und nachrichtendienstlichem Sammeln geschützter Informationen verlaufen die Grenzen fließend. Das BfV stellt fest, dass Berlin vorrangiges Ziel russischer Geheimdienste in Europa ist – mit tausenden Zuträgern.</p>
+          <p>Die russische Post unterhält nach eigenen Angaben ihre erste offizielle Auslandsniederlassung in Berlin. Testberichte zeigen vereinfachte Zolldokumente, die den Sendungsinhalt schwer kontrollierbar machen.</p>
+          <div class="risk-box">
+            <div class="label">Risiko: Nachrichtendienstliche Aktivität</div>
+            Quellen: Berliner Senat, Tagesspiegel, BfV-Bericht&nbsp;2025
+          </div>
+        </div>
+      </details>
 
-      <details>
-        <summary>Was bisher nicht passiert ist</summary>
-        <div class="body">
-          <p>Trotz laufender Ermittlungen, klarer Sanktionslage und politischer Forderungen aus CDU und Grünen haben die deutschen Behörden bisher keine wirksamen Maßnahmen ergriffen. Das bilaterale Abkommen von 2011 – und die Sorge um das Goethe-Institut in Moskau als Verhandlungsmasse – blockiert eine Schließung.</p>
-          <p>Die Frist für die schriftliche Beendigungsmitteilung zum Tätigkeitsabkommen von 2011 (laufende Fünfjahresperiode bis 6. Juni 2027) endet am <strong>6. Dezember 2026</strong>. Eine Nicht-Kündigung wäre keine juristische Sackgasse, sondern eine politische Entscheidung.</p>
-        </div>
-      </details>
+      <details>
+        <summary>Was bisher nicht passiert ist</summary>
+        <div class="body">
+          <p>Trotz laufender Ermittlungen, klarer Sanktionslage und politischer Forderungen aus CDU und Grünen haben die deutschen Behörden bisher keine wirksamen Maßnahmen ergriffen. Das bilaterale Abkommen von 2011 – und die Sorge um das Goethe-Institut in Moskau als Verhandlungsmasse – blockiert eine Schließung.</p>
+          <p>Die Frist für die schriftliche Beendigungsmitteilung zum Tätigkeitsabkommen von 2011 (laufende Fünfjahresperiode bis zum 6.&nbsp;Juni 2027) endet am <strong>6.&nbsp;Dezember 2026</strong>. Eine Nicht-Kündigung wäre keine juristische Sackgasse, sondern eine politische Entscheidung.</p>
+        </div>
+      </details>
 
-      <details>
-        <summary>Vom Sprachkurs zur militärischen Intervention: die drei Stufen von Russkiy Mir</summary>
-        <div class="body">
-          <p>Analysten beschreiben die Anwendung der „Russischen Welt"-Politik in drei Eskalationsstufen, die historisch nacheinander zu beobachten waren:</p>
-          <figure class="figure" style="margin: 14px 0;">
-            <img src="img/russkiy-mir-stufen.png" alt="Russkiy-Mir-Doktrin in drei Eskalationsstufen: Stufe 1 Kulturelle Präsenz – Stufe 2 Schutzanspruch – Stufe 3 Militärische Intervention." style="box-shadow: none; border: 1px solid var(--rule);">
-          </figure>
-          <p>2008 in Georgien, 2014 auf der Krim und 2022 in der gesamten Ukraine wurde dieselbe Logik angewendet. Putin erklärte in seiner Kriegsrede vom 24. Februar 2022 wörtlich, das Ziel sei der Schutz „russischsprachiger Bewohner des Donbass" – Stufe 2 als Begründung für Stufe 3.</p>
-          <p><strong>Stufe 1 allein wirkt harmlos. In den beschriebenen Fällen war sie der Baustein, auf dem die weiteren Stufen aufsetzten.</strong></p>
-        </div>
-      </details>
+      <details>
+        <summary>Vom Sprachkurs zur militärischen Intervention: die drei Stufen von Russkiy Mir</summary>
+        <div class="body">
+          <p>Analysten beschreiben die Anwendung der „Russischen Welt“-Politik in drei Eskalationsstufen, die historisch nacheinander zu beobachten waren:</p>
+          <figure class="figure" style="margin: 14px 0;">
+            <img src="img/russkiy-mir-stufen.png" alt="Russkiy-Mir-Doktrin in drei Eskalationsstufen: Stufe 1 Kulturelle Präsenz – Stufe 2 Schutzanspruch – Stufe 3 Militärische Intervention." style="box-shadow: none; border: 1px solid var(--rule);">
+          </figure>
+          <p>2008 in Georgien, 2014 auf der Krim und 2022 in der gesamten Ukraine wurde dieselbe Logik angewendet. Putin erklärte in seiner Kriegsrede vom 24.&nbsp;Februar 2022 wörtlich, das Ziel sei der Schutz „russischsprachiger Bewohner des Donbass“ – Stufe&nbsp;2 als Begründung für Stufe&nbsp;3.</p>
+          <p><strong>Stufe&nbsp;1 allein wirkt harmlos. In den beschriebenen Fällen war sie der Baustein, auf dem die weiteren Stufen aufsetzten.</strong></p>
+        </div>
+      </details>
 
-    </div>
-  </section>
+    </div>
+  </section>
 
-  <div class="contact-box">
-    <div class="contact-kicker">Vollanalyse auf Anfrage</div>
-    <h3>Sie wollen tiefer einsteigen?</h3>
-    <p>
-      Die vollständige Strukturanalyse mit allen 179 kategorisierten Veranstaltungen, ausführlicher Sicherheitsbewertung und Quellenapparat ist auf Anfrage erhältlich. Wir geben sie nicht anonym heraus, sondern im direkten Austausch mit Journalist:innen, Politiker:innen und Wissenschaftler:innen, die das Thema weiter bearbeiten möchten.
-    </p>
-    <p>
-      Kontakt: <a href="mailto:gedenken.start@protonmail.com">gedenken.start@protonmail.com</a>
-    </p>
-  </div>
+  <div class="contact-box">
+    <div class="contact-kicker">Vollanalyse auf Anfrage</div>
+    <h3>Sie wollen tiefer einsteigen?</h3>
+    <p>
+      Die vollständige Strukturanalyse mit allen 179 kategorisierten Veranstaltungen, ausführlicher Sicherheitsbewertung und Quellenapparat ist auf Anfrage erhältlich. Wir geben sie nicht anonym heraus, sondern im direkten Austausch mit Journalist:innen, Politiker:innen und Wissenschaftler:innen, die das Thema weiter bearbeiten möchten.
+    </p>
+    <p>
+      Kontakt: <a href="mailto:gedenken.start@protonmail.com">gedenken.start@protonmail.com</a>
+    </p>
+  </div>
 
-  <footer>
-    <span>pressemappe.antwortseiten.org</span>
-    <span>Datenbasis: russisches-haus.de · goethe.ru · Erhebung 04–05/2026</span>
-  </footer>
+  <footer>
+    <span>pressemappe.antwortseiten.org</span>
+    <span>Datenbasis: russisches-haus.de · goethe.ru · Erhebung 04–05/2026</span>
+  </footer>
 
 </div>
 </body>
