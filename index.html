@@ -126,7 +126,7 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 <header class="site-header">
   <div class="label">Pressemappe · Initiative Gedenken Berlin</div>
   <h1>Das <span>Russische Haus</span> Berlin</h1>
-  <p>Eine EU-sanktionierte russische Behörde betreibt mitten in Berlin ein Kulturzentrum in einem 29.000 m² großen Gebäude – unbeschadet der geltenden EU-Sanktionen und des anhaltenden Angriffskrieges.</p>
+  <p>Eine EU-sanktionierte russische Behörde betreibt mitten in Berlin ein Kulturzentrum in einem 29.000 m² großen Gebäude, unbeschadet der geltenden EU-Sanktionen und des anhaltenden Angriffskrieges.</p>
 </header>
 
 <div class="main">
@@ -137,7 +137,7 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
       <a href="vertraege.html" class="kachel rot">
         <div class="tag">Frist: 6. Dezember 2026</div>
         <div class="titel">Ein Vertrag ist jetzt kündbar</div>
-        <div class="sub">Er regelt, was im Russischen Haus erlaubt ist. Deutschland hat jetzt die Chance, den Stecker zu ziehen, rechtssicher und endgültig.</div>
+        <div class="sub">Er regelt, was im Russischen Haus erlaubt ist. Deutschland hat jetzt die Chance, den Stecker rechtssicher und endgültig zu ziehen.</div>
       </a>
       <a href="goethe.html" class="kachel">
         <div class="tag">Argument</div>
@@ -269,7 +269,7 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
       <a href="https://www.antwortseiten.org/widerstandskampfer-der-weissen-rose-als-waschpulver-der-russischen-seele/" class="pressezeile" target="_blank">
         <span class="medium">antwortseiten.org</span>
         <div class="info">
-          <div class="ptitel">Widerstandskämpfer der Weißen Rose als „Waschpulver der russischen Seele" – Wie das Russische Haus Alexander Schmorell für seine Propaganda missbraucht</div>
+          <div class="ptitel">Widerstandskämpfer der Weißen Rose als „Waschpulver der russischen Seele“ – Wie das Russische Haus Alexander Schmorell für seine Propaganda missbraucht</div>
           <div class="datum">19. Juni 2025 · Regina Laska</div>
         </div>
       </a>
@@ -290,22 +290,4 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 function updateCountdown() {
   const ziel = new Date('2026-12-06T23:59:59');
   const jetzt = new Date();
-  const diff = ziel - jetzt;
-  if (diff <= 0) {
-    document.querySelector('.countdown-bar').innerHTML = '<p style="font-size:18px;font-weight:700;">Die Kündigungsfrist ist abgelaufen.</p>';
-    return;
-  }
-  const tage = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const stunden = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minuten = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const sekunden = Math.floor((diff % (1000 * 60)) / 1000);
-  document.getElementById('cd-tage').textContent = String(tage).padStart(2, '0');
-  document.getElementById('cd-stunden').textContent = String(stunden).padStart(2, '0');
-  document.getElementById('cd-minuten').textContent = String(minuten).padStart(2, '0');
-  document.getElementById('cd-sekunden').textContent = String(sekunden).padStart(2, '0');
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
-</script>
-</body>
-</html>
+  const
