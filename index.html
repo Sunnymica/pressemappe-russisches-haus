@@ -288,6 +288,33 @@ footer a { font-size: 12px; color: #7eb8f7; text-decoration: none; }
 
 <script>
 function updateCountdown() {
-  const ziel = new Date('2026-12-06T23:59:59');
+  const ziel = new Date(2026, 11, 6, 23, 59, 59);
   const jetzt = new Date();
-  const
+  const diff = ziel - jetzt;
+  if (diff <= 0) {
+    const bar = document.querySelector('.countdown-bar');
+    if (bar) {
+      bar.innerHTML = '<p style="font-size:18px;font-weight:700;">Die Kündigungsfrist ist abgelaufen.</p>';
+    }
+    return;
+  }
+  const tage = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const stunden = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minuten = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const sekunden = Math.floor((diff % (1000 * 60)) / 1000);
+  
+  const elTage = document.getElementById('cd-tage');
+  const elStunden = document.getElementById('cd-stunden');
+  const elMinuten = document.getElementById('cd-minuten');
+  const elSekunden = document.getElementById('cd-sekunden');
+  
+  if (elTage) elTage.textContent = String(tage).padStart(2, '0');
+  if (elStunden) elStunden.textContent = String(stunden).padStart(2, '0');
+  if (elMinuten) elMinuten.textContent = String(minuten).padStart(2, '0');
+  if (elSekunden) elSekunden.textContent = String(sekunden).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
