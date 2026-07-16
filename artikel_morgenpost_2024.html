@@ -4,232 +4,153 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Berliner Morgenpost · Aug. 2024 · Pressemappe Russisches Haus</title>
-<meta name="description" content="Erstes großes Porträt von Henry Lindemeier – der Mann mit der Ukraine-Flagge vor dem Russischen Haus Berlin.">
+<meta name="description" content="Erstes großes Porträt von Henry Lindemeier. Zusammenfassung und Einordnung.">
 <meta property="og:title" content="Berliner Morgenpost · Aug. 2024 · Pressemappe Russisches Haus">
-<meta property="og:description" content="Erstes großes Porträt von Henry Lindemeier – der Mann mit der Ukraine-Flagge vor dem Russischen Haus Berlin.">
-<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/morgenpost.jpg.png">
+<meta property="og:description" content="Erstes großes Porträt von Henry Lindemeier. Zusammenfassung und Einordnung.">
 <meta property="og:type" content="article">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
-:root {
-  --blau: #005BBB;
-  --gelb: #FFD700;
-  --dunkel: #1a1a1a;
-  --grau: #4a4a4a;
-  --hellgrau: #f4f4f2;
-  --linie: #e0e0e0;
-}
+/* Keine externen Fonts: Google Fonts wurden entfernt (DSGVO). Lokale Systemschriften. */
+:root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
-
-/* HERO */
-.hero {
-  width: 100%;
-  max-height: 480px;
-  overflow: hidden;
-  position: relative;
-}
-.hero img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-.hero-caption {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.75));
-  color: #fff;
-  padding: 32px 24px 16px;
-  font-size: 13px;
-  opacity: 0.85;
-}
-
-/* UKRAINE-STREIFEN */
+body { font-family: 'Source Sans 3', system-ui, sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
 
-/* HEADER */
+/* TYPO-KOPF statt Fremdfoto */
+.typo-hero { background: var(--dunkel); color: #fff; padding: 44px 24px 40px; }
+.typo-hero-inner { max-width: 780px; margin: 0 auto; }
+.typo-hero .medium-gross { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.1; color: var(--gelb); margin-bottom: 10px; }
+.typo-hero .kicker { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.55; }
+
 header { max-width: 780px; margin: 0 auto; padding: 36px 24px 24px; border-bottom: 1px solid var(--linie); }
-.medium-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--hellgrau); padding: 6px 14px; border-radius: 2px;
-  font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--grau); margin-bottom: 16px;
-}
+.medium-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--hellgrau); padding: 6px 14px; border-radius: 2px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grau); margin-bottom: 16px; }
 .medium-badge .dot { width: 8px; height: 8px; background: var(--blau); border-radius: 50%; }
-h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 12px; }
+h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 12px; }
 .meta { font-size: 14px; color: var(--grau); }
 
-/* TABS */
 .tabs-wrapper { max-width: 780px; margin: 0 auto; padding: 0 24px; }
-.tab-nav {
-  display: flex; gap: 0; border-bottom: 2px solid var(--linie);
-  margin-top: 28px; margin-bottom: 0;
-}
-.tab-btn {
-  padding: 12px 24px; background: none; border: none; cursor: pointer;
-  font-family: 'Source Sans 3', sans-serif; font-size: 14px; font-weight: 600;
-  color: var(--grau); letter-spacing: 0.04em; text-transform: uppercase;
-  border-bottom: 3px solid transparent; margin-bottom: -2px;
-  transition: color 0.2s, border-color 0.2s;
-}
+.tab-nav { display: flex; border-bottom: 2px solid var(--linie); margin-top: 28px; }
+.tab-btn { padding: 12px 20px; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 600; color: var(--grau); letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.2s, border-color 0.2s; }
 .tab-btn:hover { color: var(--blau); }
 .tab-btn.active { color: var(--blau); border-bottom-color: var(--blau); }
-
 .tab-content { display: none; padding: 28px 0 48px; }
 .tab-content.active { display: block; }
 
-/* FAKTENBOX */
-.faktenbox {
-  background: var(--hellgrau); border-left: 4px solid var(--blau);
-  padding: 24px 28px; border-radius: 0 4px 4px 0; margin-bottom: 20px;
-}
-.faktenbox h2 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 14px; }
+.faktenbox { background: var(--hellgrau); border-left: 4px solid var(--blau); padding: 24px 28px; border-radius: 0 4px 4px 0; margin-bottom: 20px; }
+.faktenbox h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; margin-bottom: 14px; }
 .faktenbox ul { list-style: none; padding: 0; }
-.faktenbox ul li {
-  padding: 8px 0 8px 22px; position: relative; font-size: 15px;
-  border-bottom: 1px solid var(--linie);
-}
+.faktenbox ul li { padding: 8px 0 8px 22px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); }
 .faktenbox ul li:last-child { border-bottom: none; }
-.faktenbox ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
+.faktenbox ul li::before { content: '\2192'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
 
-/* RELEVANZ */
-.relevanz {
-  background: var(--blau); color: #fff; padding: 18px 24px;
-  border-radius: 4px; font-size: 15px; display: flex; gap: 12px; align-items: flex-start;
-}
-.relevanz .label {
-  font-weight: 600; white-space: nowrap; font-size: 11px;
-  letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px;
-  opacity: 0.8; min-width: 110px;
-}
+.relevanz { background: var(--blau); color: #fff; padding: 18px 24px; border-radius: 4px; font-size: 15px; display: flex; gap: 12px; align-items: flex-start; margin-bottom: 24px; }
+.relevanz .label { font-weight: 600; white-space: nowrap; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; opacity: 0.8; min-width: 110px; }
 
-/* ARTIKEL TEXT */
-.artikel-text p { font-size: 16px; margin-bottom: 18px; }
-.artikel-text blockquote {
-  border-left: 3px solid var(--gelb); margin: 24px 0;
-  padding: 12px 20px; font-style: italic; color: var(--grau); font-size: 17px;
-}
-.original-link { margin-top: 28px; }
-.original-link a {
-  color: var(--blau); font-size: 14px; font-weight: 600;
-  text-decoration: none; border-bottom: 2px solid var(--blau); padding-bottom: 2px;
-}
+.fakten-gruppe { margin-bottom: 24px; }
+.fakten-gruppe h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 15px; color: var(--dunkel); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--gelb); display: inline-block; }
+.fakten-gruppe ul { list-style: none; padding: 0; }
+.fakten-gruppe ul li { padding: 7px 0 7px 22px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); }
+.fakten-gruppe ul li:last-child { border-bottom: none; }
+.fakten-gruppe ul li::before { content: '\2192'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
 
-/* ZURÜCK-LINK */
-.back-link {
-  max-width: 780px; margin: 0 auto; padding: 16px 24px 0;
-  font-size: 13px;
-}
+.zusammenfassung p { font-size: 16px; margin-bottom: 18px; }
+.hinweis { font-size: 13px; color: var(--grau); background: var(--hellgrau); border: 1px solid var(--linie); padding: 12px 16px; border-radius: 4px; margin-bottom: 24px; line-height: 1.5; }
+.anmerkung { border-left: 4px solid #A32D2D; background: #FCEBEB; padding: 18px 22px; border-radius: 0 4px 4px 0; margin: 26px 0; font-size: 15px; }
+.anmerkung strong { font-family: 'Playfair Display', Georgia, serif; display: block; margin-bottom: 6px; color: #A32D2D; }
+.original-link { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--linie); }
+.original-link a { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--blau); color: var(--blau); padding: 12px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; text-decoration: none; }
+.original-link a:hover { background: var(--blau); color: #fff; }
+.original-link .zusatz { font-size: 13px; color: var(--grau); margin-top: 10px; }
+
+.back-link { max-width: 780px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
 .back-link a { color: var(--grau); text-decoration: none; }
 .back-link a:hover { color: var(--blau); }
-
-/* FOOTER */
-footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; margin-top: 0; }
+footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
 footer a { color: var(--gelb); text-decoration: none; }
-
-@media (max-width: 600px) {
-  .tabs-wrapper { padding: 0 16px; }
-  header { padding: 24px 16px; }
-  .tab-btn { padding: 10px 14px; font-size: 12px; }
-  .relevanz { flex-direction: column; gap: 6px; }
-  .relevanz .label { min-width: unset; }
-}
-
-.pdf-download {
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid var(--linie);
-}
-.pdf-download a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--hellgrau);
-  border: 2px solid var(--blau);
-  color: var(--blau);
-  padding: 12px 20px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-.pdf-download a:hover {
-  background: var(--blau);
-  color: #fff;
-}
+@media (max-width: 600px) { .tabs-wrapper { padding: 0 16px; } header { padding: 24px 16px; } .tab-btn { padding: 10px 10px; font-size: 11px; } .relevanz { flex-direction: column; gap: 6px; } .relevanz .label { min-width: unset; } }
 </style>
 </head>
 <body>
 
 <div class="ukraine-bar"></div>
-
 <div class="back-link"><a href="index.html">← Zurück zur Übersicht</a></div>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="img/morgenpost.jpg.png" alt="Henry Lindemeier mit Ukraine-Flagge vor dem Russischen Haus Berlin">
-  <div class="hero-caption">© Dirk Krampitz / Berliner Morgenpost</div>
+<div class="typo-hero">
+  <div class="typo-hero-inner">
+    <div class="kicker">Presseberichterstattung · 7. August 2024</div>
+    <div class="medium-gross">Berliner Morgenpost</div>
+    <div class="kicker">Der Beginn der medialen Chronologie</div>
+  </div>
 </div>
 
-<!-- HEADER -->
 <header>
   <div class="medium-badge"><span class="dot"></span>Berliner Morgenpost</div>
   <h1>Wer ist der Mann mit Ukraine-Flagge vor dem Russischen Haus?</h1>
-  <p class="meta">7. August 2024 &nbsp;·&nbsp; Von Dirk Krampitz &nbsp;·&nbsp; Lesezeit: 4 Min.</p>
+  <p class="meta">7. August 2024 &nbsp;·&nbsp; Von Dirk Krampitz &nbsp;·&nbsp; Berliner Morgenpost</p>
 </header>
 
-<!-- TABS -->
 <div class="tabs-wrapper">
   <nav class="tab-nav">
     <button class="tab-btn active" onclick="showTab('highlights', this)">Auf einen Blick</button>
-    <button class="tab-btn" onclick="showTab('artikel', this)">Artikel-Auszug &amp; PDF</button>
+    <button class="tab-btn" onclick="showTab('zusammenfassung', this)">Zusammenfassung &amp; Quelle</button>
   </nav>
 
-  <!-- TAB 1: HIGHLIGHTS -->
   <div id="highlights" class="tab-content active">
     <div class="faktenbox">
       <h2>Was steht drin</h2>
       <ul>
-        <li>Erstes großes Porträt Henrys in einer Berliner Zeitung – wer er ist, warum er das tut</li>
-        <li>Alltägliche Anfeindungen: Anspucken, Todesdrohungen, körperliche Bedrohungen durch Besucher des Russischen Hauses</li>
-        <li>Henry als Privatier mit Hintergrund in Psychotherapie und Unternehmensberatung – kein Berufsaktivist</li>
-        <li>Materielle Ukraine-Hilfe: Transporter-Übergabe an die Front direkt nach dem Interview</li>
-        <li>Auslöser: Die russischen Feierlichkeiten am 8./9. Mai 2022 – da stand er zum ersten Mal mit Fahne</li>
+        <li>Erstes großes Porträt Henry Lindemeiers in einer Berliner Zeitung</li>
+        <li>Alltägliche Anfeindungen: Anspucken, Drohungen, körperliche Bedrohung durch Besucher des Hauses</li>
+        <li>Lindemeier als Psychologe im Vorruhestand, kein Berufsaktivist</li>
+        <li>Materielle Ukrainehilfe: Übergabe eines Transporters direkt nach dem Interview</li>
+        <li>Auslöser waren die Feierlichkeiten am 8. und 9. Mai 2022</li>
       </ul>
     </div>
     <div class="relevanz">
       <span class="label">Warum relevant</span>
-      <span>Erste öffentliche Aufmerksamkeit für Henrys Protest – der Startpunkt der medialen Chronologie. Das Thema Russisches Haus war bis dahin kaum in der Öffentlichkeit.</span>
+      <span>Der Startpunkt der medialen Chronologie. Bis dahin war das Russische Haus öffentlich praktisch kein Thema, die Berichterstattung beginnt hier mit einer Personengeschichte, nicht mit der Institution.</span>
     </div>
   </div>
 
-  <!-- TAB 2: ARTIKEL -->
-  <div id="artikel" class="tab-content">
-    <div class="artikel-text">
-<p style="font-size:13px;color:var(--grau);font-style:italic;margin-bottom:20px;">Die folgenden Auszüge geben die wesentlichen Inhalte des Artikels wieder. Der vollständige Originalartikel erschien in der jeweiligen Publikation.</p>
+  <div id="zusammenfassung" class="tab-content">
+    <div class="hinweis">Diese Seite fasst den Artikel in eigenen Worten zusammen und ordnet ihn ein. Zitate sind als solche gekennzeichnet und dienen dem Beleg. Der Originaltext ist ausschließlich beim Verlag abrufbar, der Link steht am Ende der Seite.</div>
+    <div class="zusammenfassung">
+      <p>Im August 2024 porträtiert die Berliner Morgenpost als erstes Medium den Mann,
+      der seit Monaten mit einer ukrainischen Fahne und einer Bluetooth-Box in der Friedrichstraße
+      steht. Autor Dirk Krampitz beschreibt Henry Lindemeier zunächst als Straßenbild:
+      als eine jener auffälligen Erscheinungen, an denen man im Berliner Alltag vorbeigeht,
+      bevor er fragt, wer dieser Mann eigentlich ist.</p>
 
-      <p>Berlin. Immer wieder steht er in der Friedrichstraße, spielt ukrainische Lieder, schwenkt die Flagge – und nimmt es hin, dass er bespuckt wird.</p>
-      <p>Seit Monaten steht er immer wieder dort, spielt ukrainische Lieder wie den patriotischen Marsch „Oj, u lusi tscherwona kalyna“ über seine Bluetooth-Box ab – ausgerechnet vor dem Russischen Haus der Kultur in der Friedrichstraße in Berlin-Mitte. Wer die Berliner Einkaufsstraße entlang geht, sieht ihn immer wieder. Fast ist er mittlerweile eines jener Berliner Originale wie einst Helga Götze, die über Jahre vor der Gedächtniskirche stand. Es sind jene auffälligen Menschen, die man in Großstädten oft sieht, an denen man im Alltagstrubel oft vorbeigeht. Manchmal lohnt es sich, stehenzubleiben. Wie bei Henry Lindemeier. So heißt der Mann mit der Flagge.</p>
-      <p>Der 61-Jährige setzt sich irgendwie auch für Liebe ein. Denn er will den russischen Krieg gegen die Ukraine nicht in Vergessenheit geraten lassen. „Ich will ja gerade die Russen erreichen, deshalb stehe ich genau hier", sagt er. Und das klappt wohl auch oft, wenn auch nicht gerade auf liebevolle Weise. „Ich zähle schon nicht mehr, wie oft ich angespuckt werde“, sagt Lindemeier. „Es sind meist die Männer, die mir körperliche Gewalt androhen. Ihre Frauen halten sie zurück.“</p>
-      <blockquote>„Ich möchte nicht, dass dieser Krieg gegen die Ukraine, der täglich Leben kostet, in Vergessenheit gerät und die Unterstützung für die Ukraine nachlässt.“</blockquote>
-      <p>Lindemeier ist Psychologe im Vorruhestand, hat viel für Unternehmen gearbeitet. Nun widmet er einen Großteil seiner Zeit der ideellen Unterstützung der Ukraine – aber auch der ganz praktischen: Am Nachmittag nach dem Gespräch holt er einen Transporter ab, den er günstig bekommen hat. Er wird in die Ukraine an die Front gebracht.</p>
-      <p>Henry Lindemeier wurde durch den Angriff Russlands auf die Ukraine tief in seinem Menschsein erschüttert. Seine Reaktion: „Ich habe zuerst viel geweint und dann angefangen viel zu lesen, viel zu gucken.“ Seine Bewältigungsstrategie ist Verstehen statt Verdrängen.</p>
-      <p>Den Anstoß, aktiv zu werden, gaben die Feierlichkeiten zum Kriegsende am 8. und 9. Mai 2022, bei denen er das Gedenken an die Kapitulation der Nationalsozialisten durch die Russen missbraucht sah. Seitdem ist er mit seiner Fahne unterwegs. Er wird weitermachen. So viel steht fest.</p>    </div>
-  </div>
+      <p>Der Text liefert die biografischen Grundlagen, die in allen späteren Berichten
+      wiederkehren: Lindemeier ist Psychologe im Vorruhestand, hat lange für Unternehmen
+      gearbeitet und widmet inzwischen einen Großteil seiner Zeit der Unterstützung der
+      Ukraine, ideell und praktisch. Am Nachmittag nach dem Gespräch, so berichtet die Zeitung,
+      holt er einen Transporter ab, der an die Front gebracht werden soll.</p>
 
-    <div class="pdf-download">
-      <a href="pdf/morgenpost.pdf" download>📄 Vollständigen Artikel als PDF herunterladen</a>
+      <p>Bemerkenswert ist die Standortbegründung, die Lindemeier gegenüber der Morgenpost
+      gibt. Er stehe nicht zufällig vor diesem Gebäude:
+      „Ich will ja gerade die Russen erreichen, deshalb stehe ich genau hier“.
+      Der Protest ist damit von Anfang an adressiert, nicht allgemein.</p>
+
+      <p>Bereits dieser frühe Text dokumentiert die Anfeindungen, die später Gegenstand von
+      Strafanzeigen und Polizeieinsätzen werden. Lindemeier sagt der Zeitung, er zähle
+      nicht mehr mit, wie oft er angespuckt werde, und beschreibt, dass körperliche Gewalt
+      vor allem von Männern angedroht werde. Als Auslöser seines Protests nennt er die
+      russischen Feierlichkeiten zum Kriegsende am 8. und 9. Mai 2022, bei denen er das Gedenken
+      an die Kapitulation der Nationalsozialisten missbraucht sah.</p>
+
+      <p>Für die Chronologie ist der Artikel vor allem als Nullpunkt wichtig: Das Russische
+      Haus selbst, seine Trägerschaft durch Rossotrudnitschestwo und die Sanktionsfrage
+      spielen hier noch keine Rolle. Die Institution rückt erst in den späteren Berichten
+      in den Vordergrund.</p>
     </div>
+    <div class="original-link">
+      <a href="https://archive.ph/Y3EJb" target="_blank" rel="noopener">→ Zum Originalartikel bei Berliner Morgenpost</a>
+      <div class="zusatz">Archivierte Fassung. Erschienen am 7. August 2024 in der Berliner Morgenpost.</div>
+    </div>
+  </div>
 </div>
 
-<footer>
-  Pressemappe Russisches Haus Berlin &nbsp;·&nbsp;
-  <a href="index.html">Zur Übersicht</a>
-</footer>
-
+<footer>Pressemappe Russisches Haus Berlin &nbsp;·&nbsp; <a href="index.html">Zur Übersicht</a></footer>
 <script>
 function showTab(id, btn) {
   document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
