@@ -1,111 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAZ · April 2025 · Russian House Berlin Press Kit</title>
-<meta name="description" content="TAZ reportage: One-man protest against Russia – Henry Lindemeier and the legal grey zone of the Russian House.">
-<meta property="og:title" content="TAZ · April 2025">
-<meta property="og:description" content="TAZ reportage: One-man protest against Russia – Henry Lindemeier and the legal grey zone of the Russian House.">
-<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/taz.jpg.png">
+<title>taz · April 2025 · Pressemappe Russisches Haus</title>
+<meta name="description" content="taz-Reportage zur rechtlichen Grauzone des Russischen Hauses. Zusammenfassung und Einordnung.">
+<meta property="og:title" content="taz · April 2025 · Pressemappe Russisches Haus">
+<meta property="og:description" content="taz-Reportage zur rechtlichen Grauzone des Russischen Hauses. Zusammenfassung und Einordnung.">
+<meta property="og:type" content="article">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+/* Keine externen Fonts: Google Fonts wurden entfernt (DSGVO). Lokale Systemschriften. */
 :root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
-.hero { width: 100%; max-height: 480px; overflow: hidden; position: relative; }
-.hero img { width: 100%; height: 480px; object-fit: cover; object-position: center top; display: block; }
-.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.75)); color: #fff; padding: 32px 24px 16px; font-size: 13px; opacity: 0.85; }
+body { font-family: 'Source Sans 3', system-ui, sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
+
+/* TYPO-KOPF statt Fremdfoto */
+.typo-hero { background: var(--dunkel); color: #fff; padding: 44px 24px 40px; }
+.typo-hero-inner { max-width: 780px; margin: 0 auto; }
+.typo-hero .medium-gross { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.1; color: var(--gelb); margin-bottom: 10px; }
+.typo-hero .kicker { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.55; }
+
 header { max-width: 780px; margin: 0 auto; padding: 36px 24px 24px; border-bottom: 1px solid var(--linie); }
 .medium-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--hellgrau); padding: 6px 14px; border-radius: 2px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grau); margin-bottom: 16px; }
 .medium-badge .dot { width: 8px; height: 8px; background: var(--blau); border-radius: 50%; }
-h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 12px; }
+h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 12px; }
 .meta { font-size: 14px; color: var(--grau); }
+
 .tabs-wrapper { max-width: 780px; margin: 0 auto; padding: 0 24px; }
 .tab-nav { display: flex; border-bottom: 2px solid var(--linie); margin-top: 28px; }
-.tab-btn { padding: 12px 20px; background: none; border: none; cursor: pointer; font-family: 'Source Sans 3', sans-serif; font-size: 13px; font-weight: 600; color: var(--grau); letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.2s, border-color 0.2s; }
+.tab-btn { padding: 12px 20px; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 600; color: var(--grau); letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.2s, border-color 0.2s; }
 .tab-btn:hover { color: var(--blau); }
 .tab-btn.active { color: var(--blau); border-bottom-color: var(--blau); }
 .tab-content { display: none; padding: 28px 0 48px; }
 .tab-content.active { display: block; }
+
 .faktenbox { background: var(--hellgrau); border-left: 4px solid var(--blau); padding: 24px 28px; border-radius: 0 4px 4px 0; margin-bottom: 20px; }
-.faktenbox h2 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 14px; }
+.faktenbox h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; margin-bottom: 14px; }
 .faktenbox ul { list-style: none; padding: 0; }
 .faktenbox ul li { padding: 8px 0 8px 22px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); }
 .faktenbox ul li:last-child { border-bottom: none; }
-.faktenbox ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
-.relevanz { background: var(--blau); color: #fff; padding: 18px 24px; border-radius: 4px; font-size: 15px; display: flex; gap: 12px; align-items: flex-start; }
+.faktenbox ul li::before { content: '\2192'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
+
+.relevanz { background: var(--blau); color: #fff; padding: 18px 24px; border-radius: 4px; font-size: 15px; display: flex; gap: 12px; align-items: flex-start; margin-bottom: 24px; }
 .relevanz .label { font-weight: 600; white-space: nowrap; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; opacity: 0.8; min-width: 110px; }
-.artikel-text p { font-size: 16px; margin-bottom: 18px; }
-.artikel-text blockquote { border-left: 3px solid var(--gelb); margin: 24px 0; padding: 12px 20px; font-style: italic; color: var(--grau); font-size: 17px; }
-.note-de { background: var(--hellgrau); border-left: 3px solid var(--gelb); padding: 12px 18px; margin-bottom: 20px; font-size: 13px; color: var(--grau); font-style: italic; border-radius: 0 4px 4px 0; }
-.pdf-download { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--linie); }
-.pdf-download a { display: inline-flex; align-items: center; gap: 8px; background: var(--hellgrau); border: 2px solid var(--blau); color: var(--blau); padding: 12px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; text-decoration: none; }
-.pdf-download a:hover { background: var(--blau); color: #fff; }
+
+.fakten-gruppe { margin-bottom: 24px; }
+.fakten-gruppe h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 15px; color: var(--dunkel); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--gelb); display: inline-block; }
+.fakten-gruppe ul { list-style: none; padding: 0; }
+.fakten-gruppe ul li { padding: 7px 0 7px 22px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); }
+.fakten-gruppe ul li:last-child { border-bottom: none; }
+.fakten-gruppe ul li::before { content: '\2192'; position: absolute; left: 0; color: var(--blau); font-weight: 600; }
+
+.zusammenfassung p { font-size: 16px; margin-bottom: 18px; }
+.hinweis { font-size: 13px; color: var(--grau); background: var(--hellgrau); border: 1px solid var(--linie); padding: 12px 16px; border-radius: 4px; margin-bottom: 24px; line-height: 1.5; }
+.anmerkung { border-left: 4px solid #A32D2D; background: #FCEBEB; padding: 18px 22px; border-radius: 0 4px 4px 0; margin: 26px 0; font-size: 15px; }
+.anmerkung strong { font-family: 'Playfair Display', Georgia, serif; display: block; margin-bottom: 6px; color: #A32D2D; }
+.original-link { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--linie); }
+.original-link a { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--blau); color: var(--blau); padding: 12px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; text-decoration: none; }
+.original-link a:hover { background: var(--blau); color: #fff; }
+.original-link .zusatz { font-size: 13px; color: var(--grau); margin-top: 10px; }
+
 .back-link { max-width: 780px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
 .back-link a { color: var(--grau); text-decoration: none; }
 .back-link a:hover { color: var(--blau); }
 footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
 footer a { color: var(--gelb); text-decoration: none; }
-@media (max-width: 600px) { .tabs-wrapper { padding: 0 16px; } header { padding: 24px 16px; } .tab-btn { padding: 10px 10px; font-size: 11px; } .relevanz { flex-direction: column; gap: 6px; } }
+@media (max-width: 600px) { .tabs-wrapper { padding: 0 16px; } header { padding: 24px 16px; } .tab-btn { padding: 10px 10px; font-size: 11px; } .relevanz { flex-direction: column; gap: 6px; } .relevanz .label { min-width: unset; } }
 </style>
 </head>
 <body>
+
 <div class="ukraine-bar"></div>
-<div style="max-width:860px;margin:0 auto;padding:10px 24px;text-align:right;">
-  <a href="artikel_taz_2025.html" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#005BBB;text-decoration:none;border:1px solid #005BBB;padding:5px 12px;border-radius:4px;">🇩🇪 Deutsche Version</a>
+<div class="back-link"><a href="index.html">← Zurück zur Übersicht</a></div>
+
+<div class="typo-hero">
+  <div class="typo-hero-inner">
+    <div class="kicker">Presseberichterstattung · 23. April 2025</div>
+    <div class="medium-gross">taz</div>
+    <div class="kicker">Erste Auseinandersetzung mit der Rechtslage</div>
+  </div>
 </div>
-<div class="back-link"><a href="index_en.html">← Back to overview</a></div>
-<div class="hero">
-  <img src="img/taz.jpg.png" alt="Henry Lindemeier in front of the Russian House – TAZ">
-  <div class="hero-caption">© Julia Baier / TAZ</div>
-</div>
+
 <header>
-  <div class="medium-badge"><span class="dot"></span>TAZ Berlin</div>
-  <h1>One-man protest against Russia</h1>
-  <p class="meta">23 April 2025 &nbsp;·&nbsp; By Tilman Baumgärtel &nbsp;·&nbsp; Reading time: 6 min.</p>
+  <div class="medium-badge"><span class="dot"></span>taz · die tageszeitung</div>
+  <h1>Ein-Mann-Demo gegen Russland</h1>
+  <p class="meta">23. April 2025 &nbsp;·&nbsp; Von Tilman Baumgärtel &nbsp;·&nbsp; taz Berlin</p>
 </header>
+
 <div class="tabs-wrapper">
   <nav class="tab-nav">
-    <button class="tab-btn active" onclick="showTab('highlights', this)">At a Glance</button>
-    
-    <button class="tab-btn" onclick="showTab('artikel', this)">Article Extract &amp; PDF</button>
+    <button class="tab-btn active" onclick="showTab('highlights', this)">Auf einen Blick</button>
+    <button class="tab-btn" onclick="showTab('zusammenfassung', this)">Zusammenfassung &amp; Quelle</button>
   </nav>
-    <div id="highlights" class="tab-content active">
+
+  <div id="highlights" class="tab-content active">
     <div class="faktenbox">
-      <h2>What the article covers</h2>
+      <h2>Was steht drin</h2>
       <ul>
-        <li>In-depth reportage about Lindemeier's daily routine – several times a week, flag, Bluetooth speaker, air raid sirens</li>
-        <li>The Russian House in a legal grey zone: sanctions against Rossotrudnitschestwo since July 2022, but the House continues to operate</li>
-        <li>Scandal in the programme: the bookshop sold soap moulds shaped like grenades, tanks and pistols</li>
-        <li>Illegal surveillance cameras filmed the pavement – footage used as evidence against Lindemeier</li>
-        <li>Lindemeier physically attacked four times – now wears a stab-proof vest and a whistle</li>
-        <li>Lithuania, Poland, Czech Republic and Sweden have already closed comparable Russian institutes</li>
+        <li>Erste ausführliche Reportage über den Protestalltag seit Juni 2024</li>
+        <li>Benennt die Grauzone: Rossotrudnitschestwo sanktioniert, der Betrieb läuft weiter</li>
+        <li>Die Aufsteller „Vorsicht Provokation!“ als Reaktion des Hauses</li>
+        <li>Überwachungskameras nahmen den Bürgersteig auf, Aufnahmen dienten als Beweismittel</li>
+        <li>Verweis auf Schließungen vergleichbarer Institute in anderen EU-Staaten</li>
       </ul>
     </div>
     <div class="relevanz">
-      <span class="label">Why it matters</span>
-      <span>First detailed analysis of the legal contradictions – and evidence that the Russian House actively uses the German legal system against legitimate protest.</span>
+      <span class="label">Warum relevant</span>
+      <span>Der erste Text, der vom Porträt zur Institution wechselt und die Frage stellt, warum ein sanktionierter Betreiber weiterarbeitet, während der Protest dagegen mit Anzeigen überzogen wird.</span>
     </div>
   </div>
-  
-  <div id="artikel" class="tab-content">
-    <div class="note-de">This article was originally published in German. The following is an English summary of the key content.</div>
-    <div class="artikel-text">
-      <p>It must be considered a special honour when the representatives of a rogue state give you your own street sign. When Henry Lindemeier takes up position in front of the Russian House on Friedrichstraße with his Ukrainian flag and speaker, the doorman places two A-boards on the pavement showing a stylised figure with a flag inside a red warning triangle – with the inscription: "Caution: risk of provocation!"</p>
-      <p>And provoke he does: in front of a Russian state institution in the heart of Berlin – whose very existence many consider a provocation – he wants to draw attention to the brutal war of aggression that Russia has been waging against Ukraine for more than three years. Since June 2024 he has been standing on Friedrichstraße several times a week with a large blue-and-yellow flag, playing Ukrainian folk songs, air raid sirens or the sound of bombs.</p>
-      <blockquote>"I want to push back against the collective forgetting. I want the Russians who visit events here to think about the fact that their country is at war – morning and evening."</blockquote>
-      <p>The Russian House was opened in East Berlin in 1984. Its operator, Rossotrudnitschestwo, has been on the EU sanctions list since July 2022. Although the legal basis for closing the House is not clear-cut, Lithuania, Poland, Czech Republic and Sweden have already closed comparable institutions years ago.</p>
-      <p>The Russian House buries Lindemeier under complaints and legal proceedings. Police are regularly called for alleged noise disturbance or harassment of passers-by. Surveillance camera footage – possibly obtained illegally – was used as evidence against him.</p>
-      <p>Having been physically attacked four times, he now wears a stab-proof vest and carries a whistle to raise the alarm during attacks.</p>
-    <div class="pdf-download">
-      <a href="pdf/taz.pdf" download>📄 Download full article as PDF (German)</a>
+
+  <div id="zusammenfassung" class="tab-content">
+    <div class="hinweis">Diese Seite fasst den Artikel in eigenen Worten zusammen und ordnet ihn ein. Zitate sind als solche gekennzeichnet und dienen dem Beleg. Der Originaltext ist ausschließlich beim Verlag abrufbar, der Link steht am Ende der Seite.</div>
+    <div class="zusammenfassung">
+      <p>Im April 2025 verschiebt die taz den Blick. Tilman Baumgärtel beginnt zwar
+      ebenfalls mit der Szene auf der Friedrichstraße, aber der Text handelt nicht mehr
+      primär von Henry Lindemeier, sondern von dem Haus, vor dem er steht.</p>
+
+      <p>Ausgangspunkt ist ein Detail, das die Reaktion der Institution auf den Protest sichtbar
+      macht: Sobald Lindemeier auftaucht, stellt der Pförtner zwei Aufsteller auf den
+      Bürgersteig, die vor einer Provokation warnen, mit einer stilisierten Figur, die eine
+      Fahne hält. Baumgärtel nennt das im Auftakt eine besondere Ehre, vom Vertreter
+      eines „Schurkenstaats“ ein eigenes Straßenschild zu bekommen.</p>
+
+      <p>Der Kern des Textes ist die Beschreibung eines Widerspruchs. Das Russische Haus wurde
+      1984 in Ostberlin eröffnet, Betreiber ist die russische Behörde Rossotrudnitschestwo,
+      die seit Juli 2022 auf der EU-Sanktionsliste steht. Der Betrieb läuft dennoch weiter.
+      Die taz weist darauf hin, dass die rechtlichen Möglichkeiten zur Schließung
+      nicht eindeutig sind, und stellt dem gegenüber, dass Litauen, Polen, Tschechien und
+      Schweden vergleichbare Einrichtungen bereits geschlossen haben.</p>
+
+      <p>Gleichzeitig dokumentiert der Artikel, wie das Haus die Mittel des Rechtsstaats gegen
+      den Protest einsetzt: Beschwerden und Anzeigen wegen angeblicher Ruhestörung, wegen
+      Belästigung von Passanten, wegen des Filmens von Kindern. Als Beweismaterial dienten
+      dabei auch Aufnahmen von Überwachungskameras, die den Bürgersteig aufnahmen, was
+      unzulässig ist. Nach vier körperlichen Angriffen trägt Lindemeier laut taz
+      inzwischen eine stichfeste Weste und eine Trillerpfeife.</p>
+
+      <p>Lindemeier selbst beschreibt sein Motiv gegenüber der Zeitung als Arbeit gegen das
+      Vergessen: „Ich will gegen die Verdrängung angehen“.</p>
     </div>
+    <div class="original-link">
+      <a href="https://taz.de/Ukraine-Protest/!6076905/" target="_blank" rel="noopener">→ Zum Originalartikel bei der taz</a>
+      <div class="zusatz">Erschienen am 23. April 2025 im Berlin-Teil der taz unter dem Titel „Ukraine-Protest: Ein-Mann-Demo gegen Russland“. Frei zugänglich.</div>
     </div>
   </div>
 </div>
-<footer>Press Kit · Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to overview</a></footer>
+
+<footer>Pressemappe Russisches Haus Berlin &nbsp;·&nbsp; <a href="index.html">Zur Übersicht</a></footer>
 <script>
 function showTab(id, btn) {
   document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
