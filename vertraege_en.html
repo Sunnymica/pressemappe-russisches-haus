@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,25 +10,25 @@
 <meta property="og:description" content="The termination window for the treaty governing the Russian House closes on December 6, 2026.">
 <meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+/* No external fonts: Google Fonts removed (GDPR). System typefaces. */
 :root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #c0392b; --orange: #e67e22; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+body { font-family: Arial, Helvetica, sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
 .back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
 .back-link a { color: var(--grau); text-decoration: none; }
 .back-link a:hover { color: var(--blau); }
 header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin-bottom: 10px; }
+header h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin-bottom: 10px; }
 header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* ALARM BANNER */
 .alarm { max-width: 860px; margin: 32px auto 0; padding: 0 24px; }
 .alarm-inner {
-  background: var(--rot); color: #fff;
-  padding: 20px 28px; border-radius: 6px;
-  font-size: 17px; font-weight: 600;
-  display: flex; gap: 16px; align-items: center;
+background: var(--rot); color: #fff;
+padding: 20px 28px; border-radius: 6px;
+font-size: 17px; font-weight: 600;
+display: flex; gap: 16px; align-items: center;
 }
 .alarm-inner .uhr { font-size: 28px; flex-shrink: 0; }
 .alarm-inner .text { line-height: 1.4; }
@@ -35,9 +36,9 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* THREE TILES */
 .kacheln {
-  max-width: 860px; margin: 32px auto; padding: 0 24px;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
+max-width: 860px; margin: 32px auto; padding: 0 24px;
+display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 16px;
 }
 .kachel { border-radius: 6px; overflow: hidden; border: 1px solid var(--linie); }
 .kachel-header { padding: 16px 20px; display: flex; align-items: center; gap: 12px; }
@@ -45,7 +46,7 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .kachel-header .status.rot { background: var(--rot); }
 .kachel-header .status.gelb { background: var(--orange); }
 .kachel-header .status.grau { background: #888; }
-.kachel-header h3 { font-family: 'Playfair Display', serif; font-size: 16px; line-height: 1.2; }
+.kachel-header h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.2; }
 .kachel-datum { padding: 0 20px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
 .kachel-datum.rot { color: var(--rot); }
 .kachel-datum.gelb { color: var(--orange); }
@@ -59,7 +60,7 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* TIMELINE */
 .zeitleiste-wrapper { max-width: 860px; margin: 0 auto 48px; padding: 0 24px; }
-.zeitleiste-wrapper h2 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 24px; padding-bottom: 10px; border-bottom: 2px solid var(--linie); }
+.zeitleiste-wrapper h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; margin-bottom: 24px; padding-bottom: 10px; border-bottom: 2px solid var(--linie); }
 
 .zeitliste { list-style: none; padding: 0; position: relative; }
 .zeitliste::before { content: ''; position: absolute; left: 72px; top: 0; bottom: 0; width: 2px; background: var(--linie); }
@@ -82,12 +83,12 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .akk-container { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
 .akk-item { border: 1px solid var(--linie); border-radius: 6px; overflow: hidden; }
 .akk-header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 18px 22px; cursor: pointer;
-  background: var(--hellgrau); user-select: none;
+display: flex; justify-content: space-between; align-items: center;
+padding: 18px 22px; cursor: pointer;
+background: var(--hellgrau); user-select: none;
 }
 .akk-header:hover { background: #ebebea; }
-.akk-header-text { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; }
+.akk-header-text { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: 700; }
 .akk-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; margin-left: 16px; flex-shrink: 0; }
 .akk-header.open .akk-icon { transform: rotate(45deg); }
 .akk-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fff; }
@@ -99,9 +100,9 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* QUOTE BAGANZ */
 .baganz-zitat {
-  background: #E6F1FB; border-left: 4px solid var(--blau);
-  padding: 18px 22px; border-radius: 0 4px 4px 0;
-  margin-top: 20px; font-size: 14px; color: #042C53; line-height: 1.6;
+background: #E6F1FB; border-left: 4px solid var(--blau);
+padding: 18px 22px; border-radius: 0 4px 4px 0;
+margin-top: 20px; font-size: 14px; color: #042C53; line-height: 1.6;
 }
 .baganz-zitat strong { display: block; margin-bottom: 4px; }
 
@@ -114,13 +115,13 @@ footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24
 footer a { color: var(--gelb); text-decoration: none; }
 
 @media (max-width: 600px) {
-  .kacheln, .alarm, .zeitleiste-wrapper, .hinweis { padding: 0 16px; }
-  header { padding: 24px 16px; }
-  .back-link { padding: 12px 16px 0; }
-  .zeitliste::before { left: 60px; }
-  .zeitliste li .jahr { min-width: 48px; font-size: 12px; }
-}
-</style>
+.kacheln, .alarm, .zeitleiste-wrapper, .hinweis { padding: 0 16px; }
+header { padding: 24px 16px; }
+.back-link { padding: 12px 16px 0; }
+.zeitliste::before { left: 60px; }
+.zeitliste li .jahr { min-width: 48px; font-size: 12px; }
+} </style>
+
 </head>
 <body>
 
@@ -186,76 +187,78 @@ footer a { color: var(--gelb); text-decoration: none; }
   <h2>Overview of All Bilateral Agreements</h2>
   <ul class="zeitliste">
 
-    <li class="inaktiv">
-      <span class="jahr">1982</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">GDR–USSR Treaty: Facility Construction &amp; Land Use Rights</div>
-        <div class="beschreibung">Formally superseded by the 2013 property agreement.</div>
-      </div>
-    </li>
+```
+<li class="inaktiv">
+  <span class="jahr">1982</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">GDR–USSR Treaty: Facility Construction &amp; Land Use Rights</div>
+    <div class="beschreibung">Formally superseded by the 2013 property agreement.</div>
+  </div>
+</li>
 
-    <li class="inaktiv">
-      <span class="jahr">1983</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">GDR–USSR Treaty: Operations of the House of Soviet Science and Culture</div>
-        <div class="beschreibung">Formally superseded by the 2011 operating agreement.</div>
-      </div>
-    </li>
+<li class="inaktiv">
+  <span class="jahr">1983</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">GDR–USSR Treaty: Operations of the House of Soviet Science and Culture</div>
+    <div class="beschreibung">Formally superseded by the 2011 operating agreement.</div>
+  </div>
+</li>
 
-    <li class="inaktiv">
-      <span class="jahr">1984</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Protocol: Transfer of Building Ownership to the Soviet Union</div>
-        <div class="beschreibung">Formally superseded by the 2013 property agreement.</div>
-      </div>
-    </li>
+<li class="inaktiv">
+  <span class="jahr">1984</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Protocol: Transfer of Building Ownership to the Soviet Union</div>
+    <div class="beschreibung">Formally superseded by the 2013 property agreement.</div>
+  </div>
+</li>
 
-    <li class="aktiv">
-      <span class="jahr">1992</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Treaty on Cultural Cooperation between Germany and the Russian Federation</div>
-        <div class="beschreibung">The fundamental cultural agreement, in force since May 18, 1993. It contains no specific operational provisions regarding the Russian House itself.</div>
-        <span class="kuendigung gelb">Termination by November 17, 2027</span>
-        <br><a href="pdf/vertrag_kulturabkommen_1992.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Treaty Text as PDF</a>
-      </div>
-    </li>
+<li class="aktiv">
+  <span class="jahr">1992</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Treaty on Cultural Cooperation between Germany and the Russian Federation</div>
+    <div class="beschreibung">The fundamental cultural agreement, in force since May 18, 1993. It contains no specific operational provisions regarding the Russian House itself.</div>
+    <span class="kuendigung gelb">Termination by November 17, 2027</span>
+    <br><a href="pdf/vertrag_kulturabkommen_1992.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Treaty Text as PDF</a>
+  </div>
+</li>
 
-    <li class="aktiv">
-      <span class="jahr">2003</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Agreement on German and Russian Language Acquisition</div>
-        <div class="beschreibung">Tied directly to the duration of the 1992 treaty, meaning it automatically expires if the foundational 1992 treaty is terminated.</div>
-        <span class="kuendigung gelb">Expires with the 1992 Treaty</span>
-      </div>
-    </li>
+<li class="aktiv">
+  <span class="jahr">2003</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Agreement on German and Russian Language Acquisition</div>
+    <div class="beschreibung">Tied directly to the duration of the 1992 treaty, meaning it automatically expires if the foundational 1992 treaty is terminated.</div>
+    <span class="kuendigung gelb">Expires with the 1992 Treaty</span>
+  </div>
+</li>
 
-    <li class="kritisch">
-      <span class="jahr">2011</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Agreement on the Operations of Cultural and Information Centers</div>
-        <div class="beschreibung">The core operational document, specifying exactly what activities are permitted within the Russian House. It also governs the three Goethe-Instituts in Russia.</div>
-        <span class="kuendigung rot">⚠ Termination by December 6, 2026</span>
-        <br><a href="pdf/vertrag_taetigkeitsabkommen_2011.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Agreement Text as PDF</a>
-      </div>
-    </li>
+<li class="kritisch">
+  <span class="jahr">2011</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Agreement on the Operations of Cultural and Information Centers</div>
+    <div class="beschreibung">The core operational document, specifying exactly what activities are permitted within the Russian House. It also governs the three Goethe-Instituts in Russia.</div>
+    <span class="kuendigung rot">⚠ Termination by December 6, 2026</span>
+    <br><a href="pdf/vertrag_taetigkeitsabkommen_2011.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Agreement Text as PDF</a>
+  </div>
+</li>
 
-    <li class="aktiv">
-      <span class="jahr">2013</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Property Agreement on the Accommodation of the Russian House (Land &amp; Building)</div>
-        <div class="beschreibung">Grants the Russian Federation a rent-free, long-term right of use for the Friedrichstraße property. Signed for a duration of 99 years from its entry into force on June 5, 2013, with no standard clause for early termination. However, legal scholar Jens Baganz argues that a fundamental change of circumstances under Article 62 of the Vienna Convention on the Law of Treaties provides solid legal grounds for termination or suspension.</div>
-        <span class="kuendigung" style="background:#fef3e2;color:#e67e22;display:inline-block;margin-top:6px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:3px;">⚠ Potential Grounds for Termination – See Legal Assessment</span>
-        <br><a href="pdf/vertrag_liegenschaftsabkommen_2013.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Agreement Text as PDF</a>
-        &nbsp;·&nbsp;<a href="pdf/vertrag_wiener_konvention.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vienna Convention (Art. 62)</a>
-      </div>
-    </li>
+<li class="aktiv">
+  <span class="jahr">2013</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Property Agreement on the Accommodation of the Russian House (Land &amp; Building)</div>
+    <div class="beschreibung">Grants the Russian Federation a rent-free, long-term right of use for the Friedrichstraße property. Signed for a duration of 99 years from its entry into force on June 5, 2013, with no standard clause for early termination. However, legal scholar Jens Baganz argues that a fundamental change of circumstances under Article 62 of the Vienna Convention on the Law of Treaties provides solid legal grounds for termination or suspension.</div>
+    <span class="kuendigung" style="background:#fef3e2;color:#e67e22;display:inline-block;margin-top:6px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:3px;">⚠ Potential Grounds for Termination – See Legal Assessment</span>
+    <br><a href="pdf/vertrag_liegenschaftsabkommen_2013.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Agreement Text as PDF</a>
+    &nbsp;·&nbsp;<a href="pdf/vertrag_wiener_konvention.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vienna Convention (Art. 62)</a>
+  </div>
+</li>
+```
 
   </ul>
 </div>
@@ -265,45 +268,47 @@ footer a { color: var(--gelb); text-decoration: none; }
 
   <div class="akk-container">
 
-    <div class="akk-item">
-      <div class="akk-header" onclick="toggleAkk(this)">
-        <span class="akk-header-text">⚖️ What Is a “Fundamental Change of Circumstances”?</span>
-        <span class="akk-icon">+</span>
-      </div>
-      <div class="akk-body">
-        <div class="akk-body-inner">
-          <p>Bilateral treaties between nations rest on shared assumptions about mutual relations, common objectives, and a stable political reality. If this foundation changes unpredictably and fundamentally, a treaty may be adapted or terminated altogether, even in the absence of an explicit termination clause.</p>
-          <p>In international law, this principle is codified in <strong>Article 62 of the Vienna Convention on the Law of Treaties</strong> (VCLT). A state is not bound to a treaty for all eternity under all circumstances, but rather under the conditions that prevailed at the time of its conclusion. This rule applies if the original circumstances constituted an essential basis of the consent of the parties and if the effect of the change is to radically transform the extent of obligations still to be performed.</p>
-        </div>
-      </div>
+```
+<div class="akk-item">
+  <div class="akk-header" onclick="toggleAkk(this)">
+    <span class="akk-header-text">⚖️ What Is a “Fundamental Change of Circumstances”?</span>
+    <span class="akk-icon">+</span>
+  </div>
+  <div class="akk-body">
+    <div class="akk-body-inner">
+      <p>Bilateral treaties between nations rest on shared assumptions about mutual relations, common objectives, and a stable political reality. If this foundation changes unpredictably and fundamentally, a treaty may be adapted or terminated altogether, even in the absence of an explicit termination clause.</p>
+      <p>In international law, this principle is codified in <strong>Article 62 of the Vienna Convention on the Law of Treaties</strong> (VCLT). A state is not bound to a treaty for all eternity under all circumstances, but rather under the conditions that prevailed at the time of its conclusion. This rule applies if the original circumstances constituted an essential basis of the consent of the parties and if the effect of the change is to radically transform the extent of obligations still to be performed.</p>
     </div>
+  </div>
+</div>
 
-    <div class="akk-item">
-      <div class="akk-header" onclick="toggleAkk(this)">
-        <span class="akk-header-text">📋 Why This Applies to the 2013 Agreement</span>
-        <span class="akk-icon">+</span>
-      </div>
-      <div class="akk-body">
-        <div class="akk-body-inner">
-          <p>The 2013 property agreement was drafted during an era when Germany and Russia operated on the assumption of long-term partnership. With Russia’s full-scale invasion of Ukraine on February 24, 2022, this foundational cooperative spirit was permanently shattered.</p>
-          <p>Russia is waging a war of aggression that violates international law. Rossotrudnichestvo, the operating agency of the Russian House, has been on the EU sanctions list since July 2022. Under these circumstances, Germany would never have agreed to grant a rent-free, long-term right of use to prime real estate in central Berlin. Even Russia could not have deemed this outcome possible in 1992, as evidenced by its commitment to Ukrainian sovereignty under the 1994 Budapest Memorandum.</p>
-          <p>Attorney Jens Baganz concludes that these developments satisfy all legal criteria for invoking Article 62 of the Vienna Convention.</p>
-        </div>
-      </div>
+<div class="akk-item">
+  <div class="akk-header" onclick="toggleAkk(this)">
+    <span class="akk-header-text">📋 Why This Applies to the 2013 Agreement</span>
+    <span class="akk-icon">+</span>
+  </div>
+  <div class="akk-body">
+    <div class="akk-body-inner">
+      <p>The 2013 property agreement was drafted during an era when Germany and Russia operated on the assumption of long-term partnership. With Russia’s full-scale invasion of Ukraine on February 24, 2022, this foundational cooperative spirit was permanently shattered.</p>
+      <p>Russia is waging a war of aggression that violates international law. Rossotrudnichestvo, the operating agency of the Russian House, has been on the EU sanctions list since July 2022. Under these circumstances, Germany would never have agreed to grant a rent-free, long-term right of use to prime real estate in central Berlin. Even Russia could not have deemed this outcome possible in 1992, as evidenced by its commitment to Ukrainian sovereignty under the 1994 Budapest Memorandum.</p>
+      <p>Attorney Jens Baganz concludes that these developments satisfy all legal criteria for invoking Article 62 of the Vienna Convention.</p>
     </div>
+  </div>
+</div>
 
-    <div class="akk-item">
-      <div class="akk-header" onclick="toggleAkk(this)">
-        <span class="akk-header-text">💡 Termination or Suspension?</span>
-        <span class="akk-icon">+</span>
-      </div>
-      <div class="akk-body">
-        <div class="akk-body-inner">
-          <p>Article 62 permits both avenues. A formal <strong>termination</strong> would end the treaty completely, thereby revoking the right of use for the property. A <strong>suspension</strong> would temporarily deactivate the agreement while the conflict persists, offering the political advantage of preserving the underlying legal framework for a potential future normalization of diplomatic ties.</p>
-          <p>Baganz regards both paths as legally viable. To date, the German federal government has neither evaluated nor refuted this legal recourse. Its frequent reference to the 99-year term limits itself to the text of the agreement while ignoring the principles of customary international law codified in Article 62 VCLT.</p>
-        </div>
-      </div>
+<div class="akk-item">
+  <div class="akk-header" onclick="toggleAkk(this)">
+    <span class="akk-header-text">💡 Termination or Suspension?</span>
+    <span class="akk-icon">+</span>
+  </div>
+  <div class="akk-body">
+    <div class="akk-body-inner">
+      <p>Article 62 permits both avenues. A formal <strong>termination</strong> would end the treaty completely, thereby revoking the right of use for the property. A <strong>suspension</strong> would temporarily deactivate the agreement while the conflict persists, offering the political advantage of preserving the underlying legal framework for a potential future normalization of diplomatic ties.</p>
+      <p>Baganz regards both paths as legally viable. To date, the German federal government has neither evaluated nor refuted this legal recourse. Its frequent reference to the 99-year term limits itself to the text of the agreement while ignoring the principles of customary international law codified in Article 62 VCLT.</p>
     </div>
+  </div>
+</div>
+```
 
   </div>
 
@@ -341,5 +346,6 @@ function toggleAkk(header) {
   }
 }
 </script>
+
 </body>
 </html>
