@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -9,25 +10,25 @@
 <meta property="og:description" content="Das Kündigungsfenster für das Abkommen zum Russischen Haus schließt sich am 6. Dezember 2026.">
 <meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+/* Keine externen Schriftarten: Google Fonts entfernt (DSGVO). Systemschriften. */
 :root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #c0392b; --orange: #e67e22; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+body { font-family: Arial, Helvetica, sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
 .back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
 .back-link a { color: var(--grau); text-decoration: none; }
 .back-link a:hover { color: var(--blau); }
 header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin-bottom: 10px; }
+header h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin-bottom: 10px; }
 header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* ALARMBANNER */
 .alarm { max-width: 860px; margin: 32px auto 0; padding: 0 24px; }
 .alarm-inner {
-  background: var(--rot); color: #fff;
-  padding: 20px 28px; border-radius: 6px;
-  font-size: 17px; font-weight: 600;
-  display: flex; gap: 16px; align-items: center;
+background: var(--rot); color: #fff;
+padding: 20px 28px; border-radius: 6px;
+font-size: 17px; font-weight: 600;
+display: flex; gap: 16px; align-items: center;
 }
 .alarm-inner .uhr { font-size: 28px; flex-shrink: 0; }
 .alarm-inner .text { line-height: 1.4; }
@@ -35,9 +36,9 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* DREI KACHELN */
 .kacheln {
-  max-width: 860px; margin: 32px auto; padding: 0 24px;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
+max-width: 860px; margin: 32px auto; padding: 0 24px;
+display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 16px;
 }
 .kachel { border-radius: 6px; overflow: hidden; border: 1px solid var(--linie); }
 .kachel-header { padding: 16px 20px; display: flex; align-items: center; gap: 12px; }
@@ -45,7 +46,7 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .kachel-header .status.rot { background: var(--rot); }
 .kachel-header .status.gelb { background: var(--orange); }
 .kachel-header .status.grau { background: #888; }
-.kachel-header h3 { font-family: 'Playfair Display', serif; font-size: 16px; line-height: 1.2; }
+.kachel-header h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.2; }
 .kachel-datum { padding: 0 20px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
 .kachel-datum.rot { color: var(--rot); }
 .kachel-datum.gelb { color: var(--orange); }
@@ -59,7 +60,7 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* ZEITLEISTE */
 .zeitleiste-wrapper { max-width: 860px; margin: 0 auto 48px; padding: 0 24px; }
-.zeitleiste-wrapper h2 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 24px; padding-bottom: 10px; border-bottom: 2px solid var(--linie); }
+.zeitleiste-wrapper h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; margin-bottom: 24px; padding-bottom: 10px; border-bottom: 2px solid var(--linie); }
 
 .zeitliste { list-style: none; padding: 0; position: relative; }
 .zeitliste::before { content: ''; position: absolute; left: 72px; top: 0; bottom: 0; width: 2px; background: var(--linie); }
@@ -82,12 +83,12 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .akk-container { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
 .akk-item { border: 1px solid var(--linie); border-radius: 6px; overflow: hidden; }
 .akk-header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 18px 22px; cursor: pointer;
-  background: var(--hellgrau); user-select: none;
+display: flex; justify-content: space-between; align-items: center;
+padding: 18px 22px; cursor: pointer;
+background: var(--hellgrau); user-select: none;
 }
 .akk-header:hover { background: #ebebea; }
-.akk-header-text { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; }
+.akk-header-text { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: 700; }
 .akk-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; margin-left: 16px; flex-shrink: 0; }
 .akk-header.open .akk-icon { transform: rotate(45deg); }
 .akk-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fff; }
@@ -99,9 +100,9 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 
 /* ZITAT BAGANZ */
 .baganz-zitat {
-  background: #E6F1FB; border-left: 4px solid var(--blau);
-  padding: 18px 22px; border-radius: 0 4px 4px 0;
-  margin-top: 20px; font-size: 14px; color: #042C53; line-height: 1.6;
+background: #E6F1FB; border-left: 4px solid var(--blau);
+padding: 18px 22px; border-radius: 0 4px 4px 0;
+margin-top: 20px; font-size: 14px; color: #042C53; line-height: 1.6;
 }
 .baganz-zitat strong { display: block; margin-bottom: 4px; }
 
@@ -114,13 +115,13 @@ footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24
 footer a { color: var(--gelb); text-decoration: none; }
 
 @media (max-width: 600px) {
-  .kacheln, .alarm, .zeitleiste-wrapper, .hinweis { padding: 0 16px; }
-  header { padding: 24px 16px; }
-  .back-link { padding: 12px 16px 0; }
-  .zeitliste::before { left: 60px; }
-  .zeitliste li .jahr { min-width: 48px; font-size: 12px; }
-}
-</style>
+.kacheln, .alarm, .zeitleiste-wrapper, .hinweis { padding: 0 16px; }
+header { padding: 24px 16px; }
+.back-link { padding: 12px 16px 0; }
+.zeitliste::before { left: 60px; }
+.zeitliste li .jahr { min-width: 48px; font-size: 12px; }
+} </style>
+
 </head>
 <body>
 
@@ -186,76 +187,78 @@ footer a { color: var(--gelb); text-decoration: none; }
   <h2>Alle Abkommen im Überblick</h2>
   <ul class="zeitliste">
 
-    <li class="inaktiv">
-      <span class="jahr">1982</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Abkommen DDR–SU: Bau des Hauses &amp; Nutzungsrecht am Grundstück</div>
-        <div class="beschreibung">Durch Abkommen 2013 außer Kraft gesetzt.</div>
-      </div>
-    </li>
+```
+<li class="inaktiv">
+  <span class="jahr">1982</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Abkommen DDR–SU: Bau des Hauses &amp; Nutzungsrecht am Grundstück</div>
+    <div class="beschreibung">Durch Abkommen 2013 außer Kraft gesetzt.</div>
+  </div>
+</li>
 
-    <li class="inaktiv">
-      <span class="jahr">1983</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Abkommen DDR–SU: Tätigkeit des Hauses der sowjetischen Wissenschaft und Kultur</div>
-        <div class="beschreibung">Durch Abkommen 2011 außer Kraft gesetzt.</div>
-      </div>
-    </li>
+<li class="inaktiv">
+  <span class="jahr">1983</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Abkommen DDR–SU: Tätigkeit des Hauses der sowjetischen Wissenschaft und Kultur</div>
+    <div class="beschreibung">Durch Abkommen 2011 außer Kraft gesetzt.</div>
+  </div>
+</li>
 
-    <li class="inaktiv">
-      <span class="jahr">1984</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Protokoll: Übergabe des Gebäudes in sowjetisches Eigentum</div>
-        <div class="beschreibung">Durch Abkommen 2013 außer Kraft gesetzt.</div>
-      </div>
-    </li>
+<li class="inaktiv">
+  <span class="jahr">1984</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Protokoll: Übergabe des Gebäudes in sowjetisches Eigentum</div>
+    <div class="beschreibung">Durch Abkommen 2013 außer Kraft gesetzt.</div>
+  </div>
+</li>
 
-    <li class="aktiv">
-      <span class="jahr">1992</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Vertrag über kulturelle Zusammenarbeit Deutschland–Russland</div>
-        <div class="beschreibung">Kulturpolitischer Basisvertrag. In Kraft seit 18. Mai 1993. Enthält keine spezifischen Details zum Russischen Haus.</div>
-        <span class="kuendigung gelb">Kündigung bis 17. November 2027</span>
-        <br><a href="pdf/vertrag_kulturabkommen_1992.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vertragstext als PDF</a>
-      </div>
-    </li>
+<li class="aktiv">
+  <span class="jahr">1992</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Vertrag über kulturelle Zusammenarbeit Deutschland–Russland</div>
+    <div class="beschreibung">Kulturpolitischer Basisvertrag. In Kraft seit 18. Mai 1993. Enthält keine spezifischen Details zum Russischen Haus.</div>
+    <span class="kuendigung gelb">Kündigung bis 17. November 2027</span>
+    <br><a href="pdf/vertrag_kulturabkommen_1992.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vertragstext als PDF</a>
+  </div>
+</li>
 
-    <li class="aktiv">
-      <span class="jahr">2003</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Abkommen über das Erlernen der deutschen und russischen Sprache</div>
-        <div class="beschreibung">An die Laufzeit des Vertrags 1992 gebunden – läuft automatisch aus, wenn dieser gekündigt wird.</div>
-        <span class="kuendigung gelb">Endet mit Vertrag 1992</span>
-      </div>
-    </li>
+<li class="aktiv">
+  <span class="jahr">2003</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Abkommen über das Erlernen der deutschen und russischen Sprache</div>
+    <div class="beschreibung">An die Laufzeit des Vertrags 1992 gebunden – läuft automatisch aus, wenn dieser gekündigt wird.</div>
+    <span class="kuendigung gelb">Endet mit Vertrag 1992</span>
+  </div>
+</li>
 
-    <li class="kritisch">
-      <span class="jahr">2011</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Abkommen über die Tätigkeit von Kultur- und Informationszentren</div>
-        <div class="beschreibung">Das Schlüsseldokument: regelt, was im Russischen Haus erlaubt ist – und was nicht. Gilt auch für die drei Goethe-Institute in Russland.</div>
-        <span class="kuendigung rot">⚠ Kündigung bis 6. Dezember 2026</span>
-        <br><a href="pdf/vertrag_taetigkeitsabkommen_2011.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vertragstext als PDF</a>
-      </div>
-    </li>
+<li class="kritisch">
+  <span class="jahr">2011</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Abkommen über die Tätigkeit von Kultur- und Informationszentren</div>
+    <div class="beschreibung">Das Schlüsseldokument: regelt, was im Russischen Haus erlaubt ist – und was nicht. Gilt auch für die drei Goethe-Institute in Russland.</div>
+    <span class="kuendigung rot">⚠ Kündigung bis 6. Dezember 2026</span>
+    <br><a href="pdf/vertrag_taetigkeitsabkommen_2011.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vertragstext als PDF</a>
+  </div>
+</li>
 
-    <li class="aktiv">
-      <span class="jahr">2013</span>
-      <span class="punkt"></span>
-      <div class="inhalt">
-        <div class="titel">Abkommen über die Unterbringung des Russischen Hauses – Grundstück &amp; Gebäude</div>
-        <div class="beschreibung">Räumt Russland das unbefristete und unentgeltliche Nutzungsrecht am Gebäude Friedrichstraße ein. Laufzeit 99 Jahre ab Inkrafttreten 5. Juni 2013. Regulär nicht kündbar. Allerdings argumentiert Rechtsanwalt Jens Baganz, dass der Wegfall der Geschäftsgrundlage gemäß Artikel 62 der Wiener Vertragsrechtskonvention eine Kündigung oder Suspendierung ermöglicht.</div>
-        <span class="kuendigung" style="background:#fef3e2;color:#e67e22;display:inline-block;margin-top:6px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:3px;">⚠ Möglicherweise doch kündbar – siehe Rechtsgutachten</span>
-        <br><a href="pdf/vertrag_liegenschaftsabkommen_2013.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vertragstext als PDF</a>
-        &nbsp;·&nbsp;<a href="pdf/vertrag_wiener_konvention.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Wiener Vertragsrechtskonvention (Art. 62)</a>
-      </div>
-    </li>
+<li class="aktiv">
+  <span class="jahr">2013</span>
+  <span class="punkt"></span>
+  <div class="inhalt">
+    <div class="titel">Abkommen über die Unterbringung des Russischen Hauses – Grundstück &amp; Gebäude</div>
+    <div class="beschreibung">Räumt Russland das unbefristete und unentgeltliche Nutzungsrecht am Gebäude Friedrichstraße ein. Laufzeit 99 Jahre ab Inkrafttreten 5. Juni 2013. Regulär nicht kündbar. Allerdings argumentiert Rechtsanwalt Jens Baganz, dass der Wegfall der Geschäftsgrundlage gemäß Artikel 62 der Wiener Vertragsrechtskonvention eine Kündigung oder Suspendierung ermöglicht.</div>
+    <span class="kuendigung" style="background:#fef3e2;color:#e67e22;display:inline-block;margin-top:6px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:3px;">⚠ Möglicherweise doch kündbar – siehe Rechtsgutachten</span>
+    <br><a href="pdf/vertrag_liegenschaftsabkommen_2013.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Vertragstext als PDF</a>
+    &nbsp;·&nbsp;<a href="pdf/vertrag_wiener_konvention.pdf" target="_blank" style="font-size:12px;color:var(--blau);">📄 Wiener Vertragsrechtskonvention (Art. 62)</a>
+  </div>
+</li>
+```
 
   </ul>
 </div>
@@ -265,45 +268,47 @@ footer a { color: var(--gelb); text-decoration: none; }
 
   <div class="akk-container">
 
-    <div class="akk-item">
-      <div class="akk-header" onclick="toggleAkk(this)">
-        <span class="akk-header-text">⚖️ Was ist der „Wegfall der Geschäftsgrundlage“?</span>
-        <span class="akk-icon">+</span>
-      </div>
-      <div class="akk-body">
-        <div class="akk-body-inner">
-          <p>Völkerrechtliche Verträge zwischen Staaten beruhen auf Annahmen über das Verhältnis der Vertragsparteien, über gemeinsame Interessen und über eine geteilte politische Realität. Ändert sich diese Grundlage fundamental, kann ein Vertrag angepasst oder beendet werden, auch ohne entsprechende Klausel.</p>
-          <p>Im Völkerrecht steht das in <strong>Artikel 62 des Wiener Übereinkommens</strong>: Ein Staat ist nicht für alle Ewigkeit und unter allen Umständen gebunden, sondern unter den Bedingungen, die beim Vertragsschluss galten. Die Regelung greift, wenn die ursprünglichen Umstände eine wesentliche Grundlage für den Vertragsschluss waren und die Änderung das Ausmaß der Verpflichtungen tiefgreifend umgestaltet.</p>
-        </div>
-      </div>
+```
+<div class="akk-item">
+  <div class="akk-header" onclick="toggleAkk(this)">
+    <span class="akk-header-text">⚖️ Was ist der „Wegfall der Geschäftsgrundlage“?</span>
+    <span class="akk-icon">+</span>
+  </div>
+  <div class="akk-body">
+    <div class="akk-body-inner">
+      <p>Völkerrechtliche Verträge zwischen Staaten beruhen auf Annahmen über das Verhältnis der Vertragsparteien, über gemeinsame Interessen und über eine geteilte politische Realität. Ändert sich diese Grundlage fundamental, kann ein Vertrag angepasst oder beendet werden, auch ohne entsprechende Klausel.</p>
+      <p>Im Völkerrecht steht das in <strong>Artikel 62 des Wiener Übereinkommens</strong>: Ein Staat ist nicht für alle Ewigkeit und unter allen Umständen gebunden, sondern unter den Bedingungen, die beim Vertragsschluss galten. Die Regelung greift, wenn die ursprünglichen Umstände eine wesentliche Grundlage für den Vertragsschluss waren und die Änderung das Ausmaß der Verpflichtungen tiefgreifend umgestaltet.</p>
     </div>
+  </div>
+</div>
 
-    <div class="akk-item">
-      <div class="akk-header" onclick="toggleAkk(this)">
-        <span class="akk-header-text">📋 Warum das auf das Abkommen 2013 zutrifft</span>
-        <span class="akk-icon">+</span>
-      </div>
-      <div class="akk-body">
-        <div class="akk-body-inner">
-          <p>Das Liegenschaftsabkommen von 2013 entstand in einer anderen Zeit, als Deutschland und Russland auf der Grundlage gegenseitiger Kooperation agierten. Mit dem russischen Überfall auf die Ukraine am 24. Februar 2022 wurde dieses Fundament irreparabel zerstört.</p>
-          <p>Russland führt einen offenen, völkerrechtswidrigen Angriffskrieg gegen die Ukraine. Rossotrudnitschestwo, der Betreiber des Russischen Hauses, steht seit Juli 2022 auf der EU-Sanktionsliste. Unter diesen Bedingungen hätte Deutschland 2013 niemals ein unentgeltliches, unbefristetes Nutzungsrecht an einem Berliner Innenstadtgrundstück eingeräumt. Selbst Russland hätte das 1992 nicht für möglich gehalten, wie die Unterzeichnung des Budapester Memorandums 1994 zeigt.</p>
-          <p>Rechtsanwalt Jens Baganz sieht darin den Tatbestand des Art. 62 der Wiener Vertragsrechtskonvention als erfüllt an.</p>
-        </div>
-      </div>
+<div class="akk-item">
+  <div class="akk-header" onclick="toggleAkk(this)">
+    <span class="akk-header-text">📋 Warum das auf das Abkommen 2013 zutrifft</span>
+    <span class="akk-icon">+</span>
+  </div>
+  <div class="akk-body">
+    <div class="akk-body-inner">
+      <p>Das Liegenschaftsabkommen von 2013 entstand in einer anderen Zeit, als Deutschland und Russland auf der Grundlage gegenseitiger Kooperation agierten. Mit dem russischen Überfall auf die Ukraine am 24. Februar 2022 wurde dieses Fundament irreparabel zerstört.</p>
+      <p>Russland führt einen offenen, völkerrechtswidrigen Angriffskrieg gegen die Ukraine. Rossotrudnitschestwo, der Betreiber des Russischen Hauses, steht seit Juli 2022 auf der EU-Sanktionsliste. Unter diesen Bedingungen hätte Deutschland 2013 niemals ein unentgeltliches, unbefristetes Nutzungsrecht an einem Berliner Innenstadtgrundstück eingeräumt. Selbst Russland hätte das 1992 nicht für möglich gehalten, wie die Unterzeichnung des Budapester Memorandums 1994 zeigt.</p>
+      <p>Rechtsanwalt Jens Baganz sieht darin den Tatbestand des Art. 62 der Wiener Vertragsrechtskonvention als erfüllt an.</p>
     </div>
+  </div>
+</div>
 
-    <div class="akk-item">
-      <div class="akk-header" onclick="toggleAkk(this)">
-        <span class="akk-header-text">💡 Kündigung oder Suspendierung?</span>
-        <span class="akk-icon">+</span>
-      </div>
-      <div class="akk-body">
-        <div class="akk-body-inner">
-          <p>Art. 62 lässt beides zu. Eine <strong>Kündigung</strong> würde das Abkommen vollständig beenden, wodurch das Nutzungsrecht am Grundstück weg wäre. Eine <strong>Suspendierung</strong> würde es vorübergehend außer Kraft setzen, solange der Krieg andauert, mit dem Vorteil, dass die Rechtsgrundlage für eine spätere Normalisierung erhalten bleibt.</p>
-          <p>Rechtsanwalt Baganz hält beide Wege für juristisch vertretbar. Die Bundesregierung hat dieses Argument bisher weder geprüft noch widerlegt. Ihr Verweis auf die 99-Jahres-Bindung bezieht sich auf den Vertragstext, nicht auf das Völkergewohnheitsrecht, das Art. 62 kodifiziert.</p>
-        </div>
-      </div>
+<div class="akk-item">
+  <div class="akk-header" onclick="toggleAkk(this)">
+    <span class="akk-header-text">💡 Kündigung oder Suspendierung?</span>
+    <span class="akk-icon">+</span>
+  </div>
+  <div class="akk-body">
+    <div class="akk-body-inner">
+      <p>Art. 62 lässt beides zu. Eine <strong>Kündigung</strong> würde das Abkommen vollständig beenden, wodurch das Nutzungsrecht am Grundstück weg wäre. Eine <strong>Suspendierung</strong> würde es vorübergehend außer Kraft setzen, solange der Krieg andauert, mit dem Vorteil, dass die Rechtsgrundlage für eine spätere Normalisierung erhalten bleibt.</p>
+      <p>Rechtsanwalt Baganz hält beide Wege für juristisch vertretbar. Die Bundesregierung hat dieses Argument bisher weder geprüft noch widerlegt. Ihr Verweis auf die 99-Jahres-Bindung bezieht sich auf den Vertragstext, nicht auf das Völkergewohnheitsrecht, das Art. 62 kodifiziert.</p>
     </div>
+  </div>
+</div>
+```
 
   </div>
 
@@ -342,5 +347,6 @@ function toggleAkk(header) {
   }
 }
 </script>
+
 </body>
 </html>
