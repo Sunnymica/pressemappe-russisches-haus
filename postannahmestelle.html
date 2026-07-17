@@ -8,10 +8,9 @@
 <meta property="og:title" content="Postannahmestelle im Russischen Haus – in Betrieb, während die Staatsanwaltschaft ermittelt">
 <meta property="og:description" content="Die einzige ausländische Filiale der russischen Staatspost sitzt im Russischen Haus Berlin. Wer hat das genehmigt?">
 <meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  /* Keine externen Fonts: Google Fonts entfernt (DSGVO). Systemschriften. */
+
   :root {
     --paper: #f4f1ea;
     --ink: #1a1814;
@@ -27,7 +26,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'Inter Tight', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: var(--paper);
     color: var(--ink);
     line-height: 1.55;
@@ -47,6 +46,7 @@
     text-decoration: none;
     font-weight: 500;
   }
+
   .back-link:hover {
     color: var(--rh-red);
   }
@@ -66,7 +66,11 @@
     gap: 16px;
     flex-wrap: wrap;
   }
-  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
+
+  .dossier-header span:nth-child(2) {
+    color: var(--rh-red);
+    font-weight: 700;
+  }
 
   .kicker {
     font-size: 12px;
@@ -78,7 +82,7 @@
   }
 
   h1 {
-    font-family: 'Fraunces', serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-weight: 800;
     font-size: clamp(24px, 4.2vw, 42px);
     line-height: 1.15;
@@ -88,7 +92,7 @@
   }
 
   header p {
-    font-family: 'Fraunces', serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 19px;
     line-height: 1.55;
     color: var(--ink);
@@ -112,15 +116,18 @@
     gap: 20px;
     align-items: flex-start;
   }
+
   .alarm .icon {
     font-size: 28px;
     flex-shrink: 0;
   }
+
   .alarm .text {
     font-size: 15px;
     line-height: 1.6;
     color: var(--ink);
   }
+
   .alarm .text strong {
     display: block;
     font-size: 11px;
@@ -137,6 +144,7 @@
     gap: 16px;
     margin: 36px 0;
   }
+
   .oeff-kachel {
     background: white;
     border: 1px solid var(--rule);
@@ -145,14 +153,16 @@
     padding: 20px;
     text-align: center;
   }
+
   .oeff-kachel .zahl {
-    font-family: 'Fraunces', serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 32px;
     font-weight: 800;
     color: var(--rh-blue);
     line-height: 1.1;
     margin-bottom: 8px;
   }
+
   .oeff-kachel .label {
     font-size: 13px;
     color: var(--ink-muted);
@@ -163,6 +173,7 @@
   .accordion-group {
     margin-top: 24px;
   }
+
   details {
     background: white;
     border: 1px solid var(--rule);
@@ -171,11 +182,16 @@
     padding: 0;
     transition: border-color 0.15s, box-shadow 0.15s;
   }
-  details:hover { border-color: var(--rh-red); }
+
+  details:hover {
+    border-color: var(--rh-red);
+  }
+
   details[open] {
     border-color: var(--rh-red);
     box-shadow: 0 2px 8px rgba(184,37,47,0.08);
   }
+
   summary {
     cursor: pointer;
     display: flex;
@@ -183,17 +199,21 @@
     align-items: center;
     gap: 16px;
     list-style: none;
-    font-family: 'Fraunces', serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.35;
     padding: 18px 22px;
     user-select: none;
   }
-  summary::-webkit-details-marker { display: none; }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
   summary::after {
     content: "+";
-    font-family: 'Inter Tight', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 22px;
     color: white;
@@ -208,8 +228,15 @@
     line-height: 1;
     transition: background 0.15s;
   }
-  details:hover summary::after { background: var(--rh-red-dark); }
-  details[open] summary::after { content: "−"; }
+
+  details:hover summary::after {
+    background: var(--rh-red-dark);
+  }
+
+  details[open] summary::after {
+    content: "−";
+  }
+
   details > .body {
     padding: 4px 22px 22px;
     max-width: 820px;
@@ -219,10 +246,12 @@
     border-top: 1px solid var(--rule);
     padding-top: 18px;
   }
+
   details > .body ul {
     list-style: none;
     padding: 0;
   }
+
   details > .body ul li {
     padding: 10px 0 10px 28px;
     position: relative;
@@ -230,9 +259,11 @@
     border-bottom: 1px solid var(--rule);
     line-height: 1.55;
   }
+
   details > .body ul li:last-child {
     border-bottom: none;
   }
+
   details > .body ul li::before {
     content: "→";
     position: absolute;
@@ -240,10 +271,12 @@
     color: var(--rh-blue);
     font-weight: 700;
   }
+
   details > .body ul li strong {
     color: var(--rh-red-dark);
     font-weight: 700;
   }
+
   .quelle {
     display: block;
     font-size: 11px;
@@ -251,10 +284,12 @@
     margin-top: 4px;
     font-style: italic;
   }
+
   .quelle a {
     color: var(--ink-muted);
     text-decoration: underline;
   }
+
   .quelle a:hover {
     color: var(--rh-red);
   }
@@ -267,16 +302,19 @@
     color: var(--paper);
     border-radius: 4px;
   }
+
   .questions-box h3 {
-    font-family: 'Fraunces', serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 16px;
     letter-spacing: -0.01em;
   }
+
   .questions-box ul {
     list-style: none;
   }
+
   .questions-box ul li {
     padding: 10px 0 10px 24px;
     position: relative;
@@ -284,9 +322,11 @@
     border-bottom: 1px solid rgba(244,241,234,0.15);
     line-height: 1.5;
   }
+
   .questions-box ul li:last-child {
     border-bottom: none;
   }
+
   .questions-box ul li::before {
     content: "?";
     position: absolute;
@@ -303,6 +343,7 @@
     border-left: 4px solid var(--accent);
     border-radius: 4px;
   }
+
   .status-box .status-label {
     font-size: 11px;
     font-weight: 700;
@@ -312,6 +353,7 @@
     margin-bottom: 6px;
     padding: 18px 22px 0;
   }
+
   .status-box p {
     font-size: 14px;
     color: var(--ink);
@@ -332,23 +374,43 @@
     gap: 16px;
     flex-wrap: wrap;
   }
+
   footer a {
     color: var(--ink-muted);
     text-decoration: none;
   }
+
   footer a:hover {
     color: var(--rh-red);
   }
 
   @media (max-width: 768px) {
-    .oeffnung { grid-template-columns: 1fr; }
-    .alarm { flex-direction: column; gap: 12px; }
-    summary { font-size: 16px; padding: 16px 18px; }
-    details > .body { padding: 4px 18px 18px; padding-top: 16px; }
-    .questions-box { padding: 22px 20px; }
+    .oeffnung {
+      grid-template-columns: 1fr;
+    }
+
+    .alarm {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    summary {
+      font-size: 16px;
+      padding: 16px 18px;
+    }
+
+    details > .body {
+      padding: 4px 18px 18px;
+      padding-top: 16px;
+    }
+
+    .questions-box {
+      padding: 22px 20px;
+    }
   }
 </style>
 </head>
+
 <body>
 <div class="page">
 
@@ -383,10 +445,12 @@
         <div class="zahl">2018</div>
         <div class="label">Eröffnung der Postfiliale im ehemaligen Pförtnerzimmer des Russischen Hauses</div>
       </div>
+
       <div class="oeff-kachel">
         <div class="zahl">1</div>
         <div class="label">Nach Unternehmensangaben einzige offizielle Niederlassung der russischen Staatspost außerhalb Russlands. Firmensitz im Handelsregister: Berlin-Tempelhof.</div>
       </div>
+
       <div class="oeff-kachel">
         <div class="zahl">4–5 Tage</div>
         <div class="label">Vom Anbieter beworbene Lieferzeit für den Direkttransport Berlin–Moskau über tägliche Lkw-Fahrten (unbestätigte Eigenwerbung)</div>
@@ -403,20 +467,25 @@
               Im Mai&nbsp;2018 wurde im repräsentativen Eingangsbereich (ehemaliges Pförtnerzimmer) des Russischen Hauses in der Friedrichstraße eine feste <strong>Filiale der russischen Staatspost</strong> in Betrieb genommen.
               <span class="quelle">Ost-Impuls, Mai&nbsp;2018</span>
             </li>
+
             <li>
               Die <strong>RusPost GmbH</strong> agiert als 100%ige Tochtergesellschaft der russischen Staatspost. Sie deklariert sich auf ihrer offiziellen Webpräsenz als einzige eigenständige Auslandsniederlassung außerhalb der Russischen Föderation.
               <span class="quelle"><a href="https://ruspost.eu/de/unsere-geschichte/" target="_blank">RusPost GmbH, eigene Website</a></span>
             </li>
+
             <li>
               Die RusPost GmbH ist im Berliner Handelsregister unverändert als <strong>wirtschaftsaktiv</strong> eingetragen. Zu unterscheiden sind hierbei zwei separate juristische Einheiten: die deutsche RusPost GmbH und die direkte Repräsentanz der russischen Aktiengesellschaft Potschta Rossii.
               <span class="quelle">Handelsregister Berlin</span>
             </li>
+
             <li>
               Nach aktuellen Nutzerberichten und Vor-Ort-Beobachtungen läuft der Schalterbetrieb im Russischen Haus regulär weiter: <strong>Montag bis Freitag&nbsp;12:00–17:30&nbsp;Uhr</strong> (Mittagspause&nbsp;15:00–16:00&nbsp;Uhr).
             </li>
+
             <li>
               Der Aktivist Henry Lindemeier dokumentierte über Monate hinweg die systematische Abfertigung von Kleintransportern vor dem Gebäude, die dort palettenweise Pakete einluden.
             </li>
+
             <li>
               Der tägliche Publikumsverkehr von Privatpersonen, die Pakete und Dokumente zur Abfertigung direkt in das Russische Haus tragen, ist von der Friedrichstraße aus frei einsehbar.
             </li>
@@ -432,21 +501,26 @@
               Deutsche Zollbehörden stellten bei Kontrollen in <strong>Dutzenden für den Weitertransport nach Moskau bestimmten RusPost-Paketen</strong> systematisch sanktionierte und verbotene Güter wie hochwertige Mikroelektronik, Bargeldbestände und Schmuck sicher.
               <span class="quelle">Bild / Focus Online, 27.&nbsp;Januar 2026</span>
             </li>
+
             <li>
               Aufgrund dieser systematischen Funde beabsichtigt die Berliner Staatsanwaltschaft laut Focus Online, Anklage gegen einen führenden Top-Manager der RusPost GmbH wegen gewerbsmäßiger Verstöße gegen das Außenwirtschaftsgesetz zu erheben.
               <span class="quelle">Focus Online, 27.&nbsp;Januar 2026</span>
             </li>
+
             <li>
               Recherchen deckten zudem ein parallel operierendes <strong>Umgehungsnetzwerk mit Sitz in Köln</strong> auf. Eine von ehemaligen Mitarbeitern einer deutschen RusPost-Tochter gegründete Logistikfirma bot gezielt Paketversanddienstleistungen in russischen Spezialitäten-Supermärkten an.
             </li>
+
             <li>
               Die Sendungen wurden dabei mit offiziellen Frachtlabels der <strong>usbekischen Staatspost (UzPost)</strong> versehen – einem Postdienstleister, dem für das Territorium der Bundesrepublik Deutschland laut Bundesnetzagentur keinerlei postalische Betriebsgenehmigung erteilt wurde.
               <span class="quelle">Focus Online, 27.&nbsp;Januar 2026</span>
             </li>
+
             <li>
               Investigativjournalisten gaben präparierte Pakete mit explizit sanktionierten Industrie- und Elektronikteilen ab. Mittels verbauter GPS-Peilsender ließ sich der Transportweg lückenlos <strong>bis zu den Empfängern in der Russischen Föderation</strong> nachweisen.
               <span class="quelle">Bild / Focus Online, 27.&nbsp;Januar 2026</span>
             </li>
+
             <li>
               Brancheninsider berichten von einer vertraulichen logistischen Sondervereinbarung zwischen der russischen und der usbekischen Staatspost, welche von beiden staatlichen Akteuren auf Nachfrage im Kern bestätigt wurde.
               <span class="quelle">Focus Online, 27.&nbsp;Januar 2026</span>
@@ -462,24 +536,30 @@
             <li>
               Die russische Bundesbehörde <strong>Rossotrudnitschestwo</strong> (Betreiberin des Russischen Hauses Berlin) steht seit Juli&nbsp;2022 auf der EU-Sanktionsliste. Die Rechtsfolge sieht das sofortige Einfrieren aller Vermögenswerte sowie ein striktes wirtschaftliches Bereitstellungs- und Kooperationsverbot vor.
             </li>
+
             <li>
               Das Bereitstellungsverbot untersagt jegliche Aktivitäten, die der sanktionierten Organisation direkt oder indirekt wirtschaftliche Ressourcen, Mieteinnahmen oder logistische Vorteile verschaffen.
             </li>
+
             <li>
               Eine kommerzielle Postannahmestelle stellt eine gewerbliche Dienstleistung dar, die signifikante finanzielle Transaktionen auslöst und Einnahmen generiert.
             </li>
+
             <li>
               Die Staatsanwaltschaft Berlin ermittelt seit <strong>April&nbsp;2024</strong> förmlich wegen des Verdachts auf Außenwirtschaftsverstöße „gegen Unbekannt sowie gegen die Mieter im Russischen Haus“.
               <span class="quelle">Tagesspiegel / Berliner Zeitung, April&nbsp;2024</span>
             </li>
+
             <li>
               Ein im <strong>Januar&nbsp;2023</strong> gestartetes Ermittlungsverfahren wegen Sanktionsverstößen musste eingestellt werden, weil die handelnden Akteure der Hausleitung über einen offiziell notifizierten Diplomatenstatus verfügten.
               <span class="quelle">Tagesspiegel, September&nbsp;2023</span>
             </li>
+
             <li>
               Die Zentralstelle für Sanktionsdurchsetzung (ZfS) beim Zoll stuft das Russische Haus explizit als rechtlich „unselbstständige Niederlassung“ von Rossotrudnitschestwo ein – womit die Liegenschaft in vollem Umfang den Sanktionsbestimmungen unterliegt.
               <span class="quelle">Berliner Zeitung, April&nbsp;2024</span>
             </li>
+
             <li>
               Die Muttergesellschaft Potschta Rossii ist kein privates Logistikunternehmen, sondern untersteht als staatliches Unternehmen direkt dem Ministerium für digitale Entwicklung und Massenmedien der Russischen Föderation.
               <span class="quelle">Wikipedia: Potschta Rossii</span>
@@ -495,12 +575,15 @@
             <li>
               Die Eröffnung der Postfiliale erfolgte im Jahr <strong>2018</strong> – vier Jahre nach der völkerrechtswidrigen Annexion der Krim, jedoch vier Jahre vor dem großflächigen Angriffskrieg gegen die Ukraine.
             </li>
+
             <li>
               Ob für die Ansiedlung einer ausländischen Staatsstruktur im Herzen Berlins eine offizielle bundesbehördliche Genehmigung eingeholt wurde – und wer diese erteilte – ist bis heute <strong>nicht öffentlich bekannt</strong>.
             </li>
+
             <li>
               Das Auswärtige Amt und die Bundesnetzagentur haben zu den spezifischen Genehmigungsprozessen der RusPost-Filiale bisher keine detaillierten Stellungnahmen abgegeben.
             </li>
+
             <li>
               Kritiker bemängeln, dass die bestehenden postalischen Betriebsgenehmigungen und Mietverträge nach Inkrafttreten der umfassenden EU-Sanktionspakete ab&nbsp;2022 einer behördlichen Zwangsüberprüfung und sofortigen Stilllegung hätten unterzogen werden müssen.
             </li>
@@ -515,15 +598,19 @@
             <li>
               Über welche vertraglichen und finanziellen Kanäle wird der Schalterbetrieb im Russischen Haus aktuell abgewickelt und wer fungiert formell als Vertragspartner?
             </li>
+
             <li>
               In welchem Umfang findet eine systematische zollrechtliche und sicherheitsbehördliche Kontrolle der im Russischen Haus aufgegebenen Frachtstücke statt?
             </li>
+
             <li>
               Werden über die Berliner Filiale auch Postsendungen und Frachten aus Russland nach Deutschland importiert, und wie wird deren lückenlose Kontrolle gewährleistet?
             </li>
+
             <li>
               Fließen Mieteinnahmen oder Servicegebühren für die Nutzung des Pförtnerzimmers direkt oder indirekt an Rossotrudnitschestwo ab?
             </li>
+
             <li>
               Besteht eine direkte personelle oder logistische Verknüpfung zwischen der Berliner Filiale und dem in Köln aufgedeckten UzPost-Umgehungsnetzwerk?
             </li>
@@ -547,7 +634,8 @@
     <div class="status-box">
       <div class="status-label">Laufende Recherche</div>
       <p>
-        Diese Fallakte wird kontinuierlich fortgeführt. Vertrauliche Hinweise, Dokumente oder Beobachtungen zum Postbetrieb richten Sie bitte an: <a href="mailto:kontakt@antwortseiten.org" style="color:var(--accent-dark); font-weight:700;">kontakt@antwortseiten.org</a>
+        Diese Fallakte wird kontinuierlich fortgeführt. Vertrauliche Hinweise, Dokumente oder Beobachtungen zum Postbetrieb richten Sie bitte an:
+        <a href="mailto:kontakt@antwortseiten.org" style="color:var(--accent-dark); font-weight:700;">kontakt@antwortseiten.org</a>
       </p>
     </div>
 
