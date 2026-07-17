@@ -3,14 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Police &amp; Protest – Press Kit Russian House Berlin</title>
-<meta name="description" content="Documented discrepancies in police operations – Berlin police formally concede the unlawfulness of a protester's arrest.">
+<title>Police &amp; Protest – Press Dossier Russian House Berlin</title>
+<meta name="description" content="Documented inconsistencies in police operations – an unlawful arrest formally conceded by the Berlin police.">
 <meta property="og:title" content="Police &amp; Protest – Russian House Berlin">
-<meta property="og:description" content="Over 33 police deployments in 2024, an unlawful arrest, and the BSW incident – all fully documented.">
-<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/tonline.jpg.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:description" content="33+ police deployments in 2024, an unlawful arrest, and a documented imbalance.">
 <style>
   :root {
     --paper: #f4f1ea;
@@ -20,290 +16,65 @@
     --rh-red: #b8252f;
     --rh-red-dark: #8e1a23;
     --accent: #c8a13a;
-    --accent-dark: #854F0B;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; padding: 40px 20px; }
+  .page { max-width: 920px; margin: 0 auto; }
 
-  body {
-    font-family: 'Inter Tight', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.55;
-    padding: 40px 20px;
-  }
+  .lang-switch { text-align: right; margin-bottom: 14px; }
+  .lang-switch a { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--rh-red-dark); text-decoration: none; border: 1px solid var(--rh-red-dark); padding: 5px 12px; border-radius: 4px; }
+  .lang-switch a:hover { background: var(--rh-red-dark); color: #fff; }
 
-  .page {
-    max-width: 920px;
-    margin: 0 auto;
-  }
+  .back-link { display: inline-block; margin-bottom: 28px; font-size: 14px; color: var(--ink-muted); text-decoration: none; font-weight: 500; }
+  .back-link:hover { color: var(--rh-red); }
 
-  .back-link {
-    display: inline-block;
-    margin-bottom: 28px;
-    font-size: 14px;
-    color: var(--ink-muted);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .back-link:hover {
-    color: var(--rh-red);
-  }
-
-  .dossier-header {
-    border-top: 3px solid var(--ink);
-    border-bottom: 1px solid var(--rule);
-    padding: 12px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 36px;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
+  .dossier-header { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--rule); padding: 12px 0 10px; display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 36px; gap: 16px; flex-wrap: wrap; }
   .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
 
-  .kicker {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--rh-red);
-    margin-bottom: 18px;
-  }
+  .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rh-red); margin-bottom: 18px; }
+  h1 { font-weight: 800; font-size: clamp(28px, 4.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 22px; max-width: 820px; }
+  header p { font-size: 19px; line-height: 1.55; max-width: 720px; margin-bottom: 36px; }
 
-  h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 800;
-    font-size: clamp(24px, 4.2vw, 42px);
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    margin-bottom: 22px;
-    max-width: 820px;
-  }
+  .zahlen { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 36px 0; }
+  .zahl-kachel { background: white; border: 1px solid var(--rule); border-top: 3px solid var(--rh-red); border-radius: 4px; padding: 20px; text-align: center; }
+  .zahl-kachel .zahl { font-size: 42px; font-weight: 800; color: var(--rh-red-dark); line-height: 1; margin-bottom: 8px; }
+  .label { font-size: 13px; color: var(--ink-muted); line-height: 1.45; }
 
-  header p {
-    font-family: 'Fraunces', serif;
-    font-size: 19px;
-    line-height: 1.55;
-    color: var(--ink);
-    max-width: 720px;
-    margin-bottom: 36px;
-  }
-
-  /* Zahlen-Kacheln */
-  .zahlen {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin: 36px 0;
-  }
-  .zahl-kachel {
-    background: white;
-    border: 1px solid var(--rule);
-    border-top: 3px solid var(--rh-red);
-    border-radius: 4px;
-    padding: 20px;
-    text-align: center;
-  }
-  .zahl-kachel .zahl {
-    font-family: 'Fraunces', serif;
-    font-size: 42px;
-    font-weight: 800;
-    color: var(--rh-red-dark);
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-  .zahl-kachel .label {
-    font-size: 13px;
-    color: var(--ink-muted);
-    line-height: 1.45;
-  }
-
-  /* Aufklapper (Akkordeon via details) */
-  .accordion-group {
-    margin-top: 24px;
-  }
-  details {
-    background: white;
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 0;
-    transition: border-color 0.15s, box-shadow 0.15s;
-  }
+  .accordion-group { margin-top: 24px; }
+  details { background: white; border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 10px; transition: border-color 0.15s, box-shadow 0.15s; }
   details:hover { border-color: var(--rh-red); }
-  details[open] {
-    border-color: var(--rh-red);
-    box-shadow: 0 2px 8px rgba(184,37,47,0.08);
-  }
-  summary {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    list-style: none;
-    font-family: 'Fraunces', serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.35;
-    padding: 18px 22px;
-    user-select: none;
-  }
+  details[open] { border-color: var(--rh-red); box-shadow: 0 2px 8px rgba(184,37,47,0.08); }
+  summary { cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; list-style: none; font-size: 18px; font-weight: 600; line-height: 1.35; padding: 18px 22px; user-select: none; }
   summary::-webkit-details-marker { display: none; }
-  summary::after {
-    content: "+";
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: white;
-    background: var(--rh-red);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    line-height: 1;
-    transition: background 0.15s;
-  }
+  summary::after { content: "+"; font-weight: 400; font-size: 22px; color: white; background: var(--rh-red); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1; transition: background 0.15s; }
   details:hover summary::after { background: var(--rh-red-dark); }
-  details[open] summary::after { content: "−"; }
-  details > .body {
-    padding: 4px 22px 22px;
-    max-width: 820px;
-    font-size: 16px;
-    line-height: 1.65;
-    color: var(--ink);
-    border-top: 1px solid var(--rule);
-    padding-top: 18px;
-  }
-  details > .body ul {
-    list-style: none;
-    padding: 0;
-  }
-  details > .body ul li {
-    padding: 10px 0 10px 28px;
-    position: relative;
-    font-size: 15px;
-    border-bottom: 1px solid var(--rule);
-    line-height: 1.55;
-  }
-  details > .body ul li:last-child {
-    border-bottom: none;
-  }
-  details > .body ul li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--rh-red);
-    font-weight: 700;
-  }
-  details > .body ul li strong {
-    color: var(--rh-red-dark);
-    font-weight: 700;
-  }
-  .quelle {
-    display: block;
-    font-size: 11px;
-    color: var(--ink-muted);
-    margin-top: 4px;
-    font-style: italic;
-  }
-  .quelle a {
-    color: var(--ink-muted);
-    text-decoration: underline;
-  }
-  .quelle a:hover {
-    color: var(--rh-red);
-  }
+  details[open] summary::after { content: "\2212"; }
+  details > .body { padding: 4px 22px 22px; max-width: 820px; font-size: 16px; line-height: 1.65; border-top: 1px solid var(--rule); padding-top: 18px; }
+  details > .body ul { list-style: none; padding: 0; }
+  details > .body ul li { padding: 10px 0 10px 28px; position: relative; font-size: 15px; border-bottom: 1px solid var(--rule); line-height: 1.55; }
+  details > .body ul li:last-child { border-bottom: none; }
+  details > .body ul li::before { content: "\2192"; position: absolute; left: 0; color: var(--rh-red); font-weight: 700; }
+  details > .body ul li strong { color: var(--rh-red-dark); font-weight: 700; }
 
-  /* Zitate */
-  .zitat {
-    background: var(--paper);
-    border-left: 4px solid var(--accent);
-    padding: 16px 20px;
-    margin: 20px 0;
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 16px;
-    color: var(--ink);
-    border-radius: 0 4px 4px 0;
-  }
-  .zitat .attribution {
-    font-family: 'Inter Tight', sans-serif;
-    font-style: normal;
-    font-size: 12px;
-    margin-top: 8px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--ink-muted);
-  }
-  .zitat .attribution a {
-    color: var(--ink-muted);
-    text-decoration: underline;
-  }
-  .zitat .attribution a:hover {
-    color: var(--rh-red);
-  }
+  .quelle { display: block; font-size: 11px; color: var(--ink-muted); margin-top: 4px; font-style: italic; }
+  .quelle a { color: var(--ink-muted); text-decoration: underline; }
+  .quelle a:hover { color: var(--rh-red); }
 
-  /* Urteils- / Klage-Box */
-  .urteil {
-    margin: 48px 0 32px;
-    padding: 28px 32px;
-    background: #fbf3f4;
-    border: 1px solid var(--rule);
-    border-left: 4px solid var(--rh-red);
-    border-radius: 4px;
-  }
-  .urteil h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--rh-red-dark);
-    margin-bottom: 10px;
-  }
-  .urteil p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--ink);
-  }
-  .urteil .datum {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--rh-red);
-    margin-bottom: 8px;
-  }
+  .zitat { background: var(--paper); border-left: 4px solid var(--accent); padding: 16px 20px; margin: 20px 0; font-style: italic; font-size: 16px; border-radius: 0 4px 4px 0; }
+  .zitat .attribution { font-style: normal; font-size: 12px; margin-top: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); }
+  .zitat .attribution a { color: var(--ink-muted); text-decoration: underline; }
+  .zitat .attribution a:hover { color: var(--rh-red); }
 
-  footer {
-    margin-top: 56px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  footer a {
-    color: var(--ink-muted);
-    text-decoration: none;
-  }
-  footer a:hover {
-    color: var(--rh-red);
-  }
+  .hinweis { margin: 28px 0; padding: 14px 18px; background: #fff; border: 1px solid var(--rule); border-radius: 4px; font-size: 13px; color: var(--ink-muted); line-height: 1.55; }
+
+  .urteil { margin: 48px 0 32px; padding: 28px 32px; background: #fbf3f4; border: 1px solid var(--rule); border-left: 4px solid var(--rh-red); border-radius: 4px; }
+  .urteil .datum { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rh-red); margin-bottom: 8px; }
+  .urteil h3 { font-weight: 700; font-size: 20px; color: var(--rh-red-dark); margin-bottom: 10px; }
+  .urteil p { font-size: 15px; line-height: 1.6; }
+
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--ink-muted); text-decoration: none; }
+  footer a:hover { color: var(--rh-red); }
 
   @media (max-width: 768px) {
     .zahlen { grid-template-columns: 1fr; }
@@ -316,176 +87,161 @@
 <body>
 <div class="page">
 
-  <a href="index_en.html" class="back-link">← Back to Overview</a>
+  <div class="lang-switch"><a href="polizei.html">&#127465;&#127466; Deutsche Version</a></div>
+  <a href="index_en.html" class="back-link">&larr; Back to Overview</a>
 
   <div class="dossier-header">
-    <span>Press Kit · Russian House Berlin</span>
-    <span>Security Agencies &amp; Freedom of Assembly</span>
+    <span>Press Dossier &middot; Russian House Berlin</span>
+    <span>Police &amp; Assemblies</span>
     <span>Status: 06/2026</span>
   </div>
 
   <header>
     <div class="kicker">Conduct of Authorities</div>
     <h1>Police &amp; Protest</h1>
-    <p>
-      Law enforcement deployments targeting peaceful protests often occur swiftly and with substantial resources, whereas protective measures for the demonstrators have repeatedly failed to materialize. This documented imbalance is increasingly becoming the subject of legal challenges.
-    </p>
+    <p>Deployments against a peaceful protest have been swift and resource-intensive, while protection for the protester has repeatedly failed to materialise. The imbalance is documented, and it is now the subject of legal proceedings.</p>
   </header>
 
-  <div class="main">
-
-    <div class="zahlen">
-      <div class="zahl-kachel">
-        <div class="zahl">33+</div>
-        <div class="label">Police deployments at the Russian House over the course of 2024</div>
-      </div>
-      <div class="zahl-kachel">
-        <div class="zahl">100+</div>
-        <div class="label">Criminal complaints filed by the management against protester Henry Lindemeier</div>
-      </div>
-      <div class="zahl-kachel">
-        <div class="zahl">1</div>
-        <div class="label">Arrest – formally conceded as unlawful by the Berlin Police in court</div>
-      </div>
+  <div class="zahlen">
+    <div class="zahl-kachel">
+      <div class="zahl">33+</div>
+      <div class="label">Police deployments to the Russian House during 2024</div>
     </div>
-
-    <div class="accordion-group">
-
-      <details open>
-        <summary>🚔 The Documented Imbalance</summary>
-        <div class="body">
-          <ul>
-            <li>
-              At least <strong>33 police deployments</strong> were registered in the immediate vicinity of the Russian House in connection with the protests during 2024. Although the identity of the party calling the police in individual instances is not officially documented, reports indicate that the deployments were directed almost exclusively against the protester.
-              <span class="quelle"><a href="artikel_tonline_2025.html">t-online, May 2025</a></span>
-            </li>
-            <li>
-              Over <strong>100 criminal complaints</strong> were filed by the Russian House administration against Henry Lindemeier. In three cases, penal orders (Strafbefehle) were issued, which are currently being challenged legally.
-              <span class="quelle"><a href="artikel_sz_2025.html">Süddeutsche Zeitung, December 2025</a></span>
-            </li>
-            <li>
-              In one criminal complaint alleging incitement to hatred (Volksverhetzung), the State Criminal Police Office (LKA) translated the played Russian song lyrics and reached a definitive finding: <strong>The lyrics did not constitute incitement</strong>. Nevertheless, the investigative proceedings were kept open for several months.
-              <span class="quelle"><a href="artikel_tonline_2025.html">t-online, May 2025</a></span>
-            </li>
-            <li>
-              By May 2025, according to media reports, <strong>none of the allegations raised by the venue's management</strong> regarding verbal insults or threats had been substantiated. In the case of complaints regarding noise disturbance, the police refrained from conducting official sound level measurements and did not state any concrete limit.
-              <span class="quelle"><a href="artikel_tonline_2025.html">t-online, May 2025</a></span>
-            </li>
-          </ul>
-          <div class="zitat">
-            “When a noise disturbance is reported, up to three patrol cars are sometimes dispatched to the Russian House. Yet, when my client was specifically threatened, the dispatch center claimed no officers were available.”
-            <div class="attribution">Attorney Christian Wolf – <a href="artikel_tonline_2025.html">t-online, May 2025</a></div>
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>⚖️ The Unlawful Arrest – December 18, 2024</summary>
-        <div class="body">
-          <ul>
-            <li>
-              Henry Lindemeier was <strong>arrested and handcuffed</strong> outside the Russian House before being taken to a police detention facility.
-            </li>
-            <li>
-              This was followed by a four-hour deprivation of liberty as well as extensive <strong>booking and processing procedures</strong>.
-            </li>
-            <li>
-              The charges cited were alleged insults and noise disturbances from previous weeks. <strong>Both remained entirely unsubstantiated by police records.</strong>
-            </li>
-            <li>
-              Following a written apology from the Berlin police, who sought to consider the matter settled, Lindemeier's attorneys filed a lawsuit.
-            </li>
-            <li>
-              During the initiated <strong>action for a declaratory judgment of an unlawful police measure</strong> (Fortsetzungsfeststellungsklage), the Berlin police formally conceded: <strong>The entire operation and the deprivation of liberty were unlawful.</strong>
-              <span class="quelle"><a href="artikel_tonline_2025.html">t-online, May 2025</a></span>
-            </li>
-            <li>
-              On the day prior to this unlawful arrest, Lindemeier himself had contacted the police after being heavily threatened outside the building (“You will get a knife in your back sooner or later”). In that instance, <strong>no patrol car was dispatched to the scene</strong>.
-              <span class="quelle"><a href="artikel_tonline_2025.html">t-online, May 2025</a></span>
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>🎭 The BSW Incident – May 2025</summary>
-        <div class="body">
-          <ul>
-            <li>
-              During a wreath-laying ceremony by BSW party leader Amira Mohamed Ali at the Soviet War Memorial in Tiergarten, Henry Lindemeier was <strong>physically pushed aside</strong> by several men from her entourage.
-            </li>
-            <li>
-              When Lindemeier loudly called for the nearby police to intervene, the officers instead issued <strong>him</strong> a dispersal order (Platzverweis) and demanded he leave the area, while taking no action against his aggressors.
-            </li>
-            <li>
-              A police spokesperson explained the decision: “The group perceived the gentleman's appearance as a disruption to their silent commemoration.”
-              <span class="quelle"><a href="artikel_tonline_2025.html">t-online, May 2025</a></span>
-            </li>
-            <li>
-              Lindemeier has announced his intention to have this police intervention judicially reviewed as well.
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>📅 December 9, 2025 – Counter-Event Displaces the Protest</summary>
-        <div class="body">
-          <ul>
-            <li>
-              For this date, an official counter-demonstration was registered directly in front of the Russian House under the motto “Do not let yourself be provoked!”. The mobilization relied on a targeted appeal by the association “Integral e.V.” in Russian-language Telegram groups.
-            </li>
-            <li>
-              Lindemeier was only notified by the Berlin police via email the night before regarding the restrictions imposed on his ongoing permanent vigil.
-            </li>
-            <li>
-              Citing the registered counter-event, the police prohibited Lindemeier from holding his vigil at his established location.
-            </li>
-            <li>
-              While approximately <strong>20 police officers</strong> secured the entrance area, Lindemeier's protest was prevented from taking place. In the aftermath, the police even classified a calm conversation between the activist and his supporters as an “unregistered assembly” and threatened criminal charges.
-              <span class="quelle"><a href="artikel_sz_2025.html">Süddeutsche Zeitung, December 2025</a></span>
-            </li>
-          </ul>
-          <div class="zitat">
-            “Whose freedom is the Berlin police actually protecting here?”
-            <div class="attribution">Henry Lindemeier – <a href="artikel_sz_2025.html">Süddeutsche Zeitung, December 2025</a></div>
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>👨‍⚖️ Perspectives from Participating Legal Experts</summary>
-        <div class="body">
-          <div class="zitat">
-            “It raises significant questions as to why the police continuously pursue demonstrably groundless accusations. The moment allegations are raised by circles associated with the Russian House, the police intervene immediately.”
-            <div class="attribution">Attorney Patrick Heinemann – <a href="artikel_tonline_2025.html">t-online, May 2025</a></div>
-          </div>
-          <div class="zitat">
-            “Discussions with the authorities start from scratch with every single deployment, because the police persistently refuse to specify concrete noise limits or perform legally sound decibel measurements.”
-            <div class="attribution">Attorney Patrick Heinemann – <a href="artikel_tonline_2025.html">t-online, May 2025</a></div>
-          </div>
-          <div class="zitat">
-            “We have to take into account the sensibilities of the Russian House here – and yes, yours as well.”
-            <div class="attribution">Police Operations Commander in conversation with Henry Lindemeier – <a href="artikel_sz_2025.html">Süddeutsche Zeitung, December 2025</a></div>
-          </div>
-        </div>
-      </details>
-
+    <div class="zahl-kachel">
+      <div class="zahl">100+</div>
+      <div class="label">Complaints filed by the management against protester Henry Lindemeier</div>
     </div>
-
-    <div class="urteil">
-      <div class="datum">Formally conceded during legal proceedings</div>
-      <h3>The Arrest of December 18, 2024, Was Unlawful</h3>
-      <p>
-        In the legal dispute within the framework of an action for a declaratory judgment, the Berlin police have officially conceded that the arrest and subsequent detention of Henry Lindemeier lacked any legal basis. In the view of the affected party's legal counsel, the rapid succession of these documented incidents strongly suggests that this does not represent an isolated administrative failure, but rather a systematic pattern in the treatment of critics of the state-run Russian institution.
-      </p>
+    <div class="zahl-kachel">
+      <div class="zahl">1</div>
+      <div class="label">Arrest formally conceded as unlawful by the Berlin police</div>
     </div>
+  </div>
+
+  <div class="hinweis">
+    All quotations on this page are translations from the German original reporting and are marked as such. Where the exact wording could not be verified against the source, the statement is given in reported speech rather than in quotation marks.
+  </div>
+
+  <div class="accordion-group">
+
+    <details open>
+      <summary>The documented imbalance</summary>
+      <div class="body">
+        <ul>
+          <li>
+            At least <strong>33 police deployments</strong> took place at the Russian House during 2024 in connection with the protest. They were prompted by reports from inside the House.
+            <span class="quelle"><a href="artikel_tonline_2025_en.html">t-online, May 2025</a></span>
+          </li>
+          <li>
+            The management of the Russian House has filed more than <strong>100 complaints</strong> against Henry Lindemeier. Three penalty orders were issued, and are being contested.
+            <span class="quelle"><a href="artikel_sz_2025_en.html">S&uuml;ddeutsche Zeitung, December 2025</a></span>
+          </li>
+          <li>
+            In one complaint alleging incitement, the state criminal police had the Russian song lyrics translated and found that they <strong>did not constitute incitement</strong>. The investigation nonetheless remained open.
+            <span class="quelle"><a href="artikel_tonline_2025_en.html">t-online, May 2025</a></span>
+          </li>
+          <li>
+            As of May 2025, according to the reporting, <strong>none of the allegations of insult or threat</strong> raised by the management had been substantiated. In the noise complaints, no sound measurements were carried out and no limit value was named.
+            <span class="quelle"><a href="artikel_tonline_2025_en.html">t-online, May 2025</a></span>
+          </li>
+        </ul>
+        <div class="zitat">
+          &ldquo;When a noise nuisance is reported, sometimes three patrol cars turn up at the Russian House. When my client was threatened, nobody was available.&rdquo;
+          <div class="attribution">Attorney Christian Wolf &middot; translated from <a href="artikel_tonline_2025_en.html">t-online, May 2025</a></div>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>The unlawful arrest, 18 December 2024</summary>
+      <div class="body">
+        <ul>
+          <li>
+            Henry Lindemeier was <strong>arrested and handcuffed</strong> outside the Russian House and taken to a police facility.
+          </li>
+          <li>
+            He was held for four hours and subjected to <strong>forensic identification procedures</strong>.
+          </li>
+          <li>
+            The allegations were insult and noise nuisance in the preceding weeks. <strong>Neither was substantiated.</strong>
+          </li>
+          <li>
+            In proceedings to establish the unlawfulness of the measure, the Berlin police formally conceded that <strong>the deployment and the detention had been unlawful</strong>.
+            <span class="quelle"><a href="artikel_tonline_2025_en.html">t-online, May 2025</a></span>
+          </li>
+          <li>
+            On the previous day Lindemeier had called the police himself, after a visitor to the House told him he would get a knife in the back one day. <strong>No patrol car was dispatched.</strong>
+            <span class="quelle"><a href="artikel_tonline_2025_en.html">t-online, May 2025</a></span>
+          </li>
+        </ul>
+        <div class="zitat">
+          &ldquo;It&rsquo;s odd that the police keep chasing nonsense.&rdquo;
+          <div class="attribution">Attorney Patrick Heinemann &middot; translated from <a href="artikel_tonline_2025_en.html">t-online, May 2025</a></div>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>The BSW incident, May 2025</summary>
+      <div class="body">
+        <ul>
+          <li>
+            According to t-online, several men from a BSW delegation <strong>physically pushed Lindemeier aside</strong>.
+          </li>
+          <li>
+            When he called on the police nearby to intervene, the officers instead directed <strong>him</strong> to leave, and took no action against the men.
+            <span class="quelle"><a href="artikel_tonline_2025_en.html">t-online, May 2025</a></span>
+          </li>
+          <li>
+            A police spokesperson explained the decision by saying the group had experienced his presence as a disruption of their commemoration. <em>The exact wording of this statement has not been verified against the German original and is therefore given in reported speech.</em>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>9 December 2025: a counter-event displaces the protest</summary>
+      <div class="body">
+        <ul>
+          <li>
+            For this date an event of their own was registered by the operators of the Russian House, directly outside the building.
+            <span class="quelle"><a href="artikel_sz_2025_en.html">S&uuml;ddeutsche Zeitung, December 2025</a></span>
+          </li>
+          <li>
+            Lindemeier learned of it <strong>the night before</strong>. The police informed him that his assembly could not take place at his established location.
+            <span class="quelle"><a href="artikel_sz_2025_en.html">S&uuml;ddeutsche Zeitung, December 2025</a></span>
+          </li>
+          <li>
+            Around <strong>twenty officers</strong> secured the entrance. His protest did not take place.
+            <span class="quelle"><a href="artikel_sz_2025_en.html">S&uuml;ddeutsche Zeitung, December 2025</a></span>
+          </li>
+          <li>
+            A conversation between Lindemeier and his supporters was subsequently classified by the police as an <strong>unregistered assembly</strong>.
+            <span class="quelle"><a href="artikel_sz_2025_en.html">S&uuml;ddeutsche Zeitung, December 2025</a></span>
+          </li>
+          <li>
+            The SZ reports that Lindemeier wonders at times whose freedom the police are actually defending here. <em>This is the newspaper&rsquo;s narration, not a quotation from him, and is therefore not set in quotation marks.</em>
+          </li>
+        </ul>
+        <div class="zitat">
+          &ldquo;The Russians have won.&rdquo;
+          <div class="attribution">Henry Lindemeier at the end of the day &middot; translated from <a href="artikel_sz_2025_en.html">S&uuml;ddeutsche Zeitung, December 2025</a></div>
+        </div>
+      </div>
+    </details>
 
   </div>
 
+  <div class="urteil">
+    <div class="datum">Formally conceded in legal proceedings</div>
+    <h3>The arrest of 18 December 2024 was unlawful</h3>
+    <p>
+      In proceedings to establish the unlawfulness of the measure, the Berlin police conceded that the arrest and detention of Henry Lindemeier had no legal basis. This remains the only official acknowledgement of error in the entire affair. Whether it indicates an isolated failure or a pattern is a question the documented sequence of incidents raises but does not answer.
+    </p>
+  </div>
+
   <footer>
-    <span>Press Kit Russian House Berlin</span>
-    <span><a href="index_en.html">To Overview</a></span>
+    <span>Press Dossier Russian House Berlin</span>
+    <span><a href="index_en.html">Overview</a></span>
   </footer>
 
 </div>
