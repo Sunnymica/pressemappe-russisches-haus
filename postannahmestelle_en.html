@@ -9,70 +9,254 @@
 <meta property="og:description" content="The only foreign branch of the Russian state postal service operates inside the Russian House Berlin. Who authorized this?">
 <meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+/* No external fonts: Google Fonts removed (GDPR). System typefaces. */
+
 :root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #A32D2D; --orange: #e67e22; }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: var(--dunkel);
+  background: #fff;
+  line-height: 1.7;
+}
+
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
+
 .back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
+
 .back-link a { color: var(--grau); text-decoration: none; }
+
 .back-link a:hover { color: var(--blau); }
+
 header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
+
+header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 4vw, 38px);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
 header p { font-size: 15px; color: var(--grau); max-width: 620px; }
+
 .main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
 
-.alarm { margin: 28px 0 24px; background: var(--rot); color: #fff; padding: 20px 28px; border-radius: 6px; display: flex; gap: 16px; align-items: flex-start; }
-.alarm .icon { font-size: 24px; flex-shrink: 0; }
-.alarm .text { font-size: 16px; line-height: 1.5; }
-.alarm .text strong { display: block; font-size: 13px; letter-spacing: 0.07em; text-transform: uppercase; opacity: 0.8; margin-bottom: 4px; }
+.alarm {
+  margin: 28px 0 24px;
+  background: var(--rot);
+  color: #fff;
+  padding: 20px 28px;
+  border-radius: 6px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
 
-.oeffnung { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 0 0 28px; }
-.oeff-kachel { background: var(--hellgrau); border-radius: 6px; padding: 16px 18px; text-align: center; }
-.oeff-kachel .zahl { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--blau); line-height: 1; margin-bottom: 6px; }
+.alarm .icon { font-size: 24px; flex-shrink: 0; }
+
+.alarm .text { font-size: 16px; line-height: 1.5; }
+
+.alarm .text strong {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.oeffnung {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 12px;
+  margin: 0 0 28px;
+}
+
+.oeff-kachel {
+  background: var(--hellgrau);
+  border-radius: 6px;
+  padding: 16px 18px;
+  text-align: center;
+}
+
+.oeff-kachel .zahl {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--blau);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
 .oeff-kachel .label { font-size: 13px; color: var(--grau); line-height: 1.4; }
 
 .akkordeon { display: flex; flex-direction: column; gap: 10px; }
+
 .akk-item { border: 1px solid var(--linie); border-radius: 6px; overflow: hidden; }
-.akk-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; cursor: pointer; background: var(--hellgrau); transition: background 0.2s; user-select: none; }
+
+.akk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  cursor: pointer;
+  background: var(--hellgrau);
+  transition: background 0.2s;
+  user-select: none;
+}
+
 .akk-header:hover { background: #eaeae8; }
+
 .akk-header.open { background: var(--blau); color: #fff; }
-.akk-titel { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; }
-.akk-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+
+.akk-titel {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.akk-icon {
+  font-size: 22px;
+  font-weight: 300;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
 .akk-header.open .akk-icon { transform: rotate(45deg); }
-.akk-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fff; }
+
+.akk-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #fff;
+}
+
 .akk-body.open { max-height: 2000px; }
+
 .akk-inner { padding: 20px 22px; }
+
 .akk-inner ul { list-style: none; padding: 0; }
-.akk-inner ul li { padding: 9px 0 9px 24px; position: relative; font-size: 15px; border-bottom: 1px solid var(--linie); line-height: 1.5; }
+
+.akk-inner ul li {
+  padding: 9px 0 9px 24px;
+  position: relative;
+  font-size: 15px;
+  border-bottom: 1px solid var(--linie);
+  line-height: 1.5;
+}
+
 .akk-inner ul li:last-child { border-bottom: none; }
-.akk-inner ul li::before { content: '→'; position: absolute; left: 0; color: var(--blau); font-weight: 700; }
+
+.akk-inner ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--blau);
+  font-weight: 700;
+}
+
 .akk-inner ul li strong { font-weight: 600; }
-.quelle { display: block; font-size: 12px; color: var(--grau); margin-top: 3px; font-style: italic; }
 
-.fragen { margin-top: 28px; background: var(--dunkel); color: #fff; padding: 22px 28px; border-radius: 6px; }
-.fragen h3 { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 14px; }
+.quelle {
+  display: block;
+  font-size: 12px;
+  color: var(--grau);
+  margin-top: 3px;
+  font-style: italic;
+}
+
+.fragen {
+  margin-top: 28px;
+  background: var(--dunkel);
+  color: #fff;
+  padding: 22px 28px;
+  border-radius: 6px;
+}
+
+.fragen h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
 .fragen ul { list-style: none; padding: 0; }
-.fragen ul li { padding: 8px 0 8px 22px; position: relative; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); opacity: 0.9; }
-.fragen ul li:last-child { border-bottom: none; }
-.fragen ul li::before { content: '?'; position: absolute; left: 0; color: #7eb8f7; font-weight: 700; }
 
-.status-box { margin: 28px 0 0; background: #FEF3E2; border: 1px solid #F5C4B3; border-left: 4px solid var(--orange); border-radius: 0 6px 6px 0; padding: 18px 22px; }
-.status-box .status-label { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #854F0B; margin-bottom: 6px; }
+.fragen ul li {
+  padding: 8px 0 8px 22px;
+  position: relative;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  opacity: 0.9;
+}
+
+.fragen ul li:last-child { border-bottom: none; }
+
+.fragen ul li::before {
+  content: '?';
+  position: absolute;
+  left: 0;
+  color: #7eb8f7;
+  font-weight: 700;
+}
+
+.status-box {
+  margin: 28px 0 0;
+  background: #FEF3E2;
+  border: 1px solid #F5C4B3;
+  border-left: 4px solid var(--orange);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+}
+
+.status-box .status-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #854F0B;
+  margin-bottom: 6px;
+}
+
 .status-box p { font-size: 14px; color: #633806; line-height: 1.6; }
 
-footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24px; font-size: 13px; }
+footer {
+  background: var(--dunkel);
+  color: #fff;
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+}
+
 footer a { color: #7eb8f7; text-decoration: none; }
-@media (max-width: 600px) { .oeffnung { grid-template-columns: 1fr; } .main { padding: 0 16px 40px; } header { padding: 24px 16px; } .back-link { padding: 12px 16px 0; } .alarm { flex-direction: column; gap: 10px; } .akk-header { padding: 14px 16px; } .akk-inner { padding: 16px; } }
+
+@media (max-width: 600px) {
+  .oeffnung { grid-template-columns: 1fr; }
+  .main { padding: 0 16px 40px; }
+  header { padding: 24px 16px; }
+  .back-link { padding: 12px 16px 0; }
+  .alarm { flex-direction: column; gap: 10px; }
+  .akk-header { padding: 14px 16px; }
+  .akk-inner { padding: 16px; }
+}
 </style>
 </head>
+
 <body>
 <div class="ukraine-bar"></div>
-<div class="back-link"><a href="index_en.html">← Back to Overview</a></div>
+
+<div class="back-link">
+  <a href="index_en.html">← Back to Overview</a>
+</div>
+
 <header>
   <h1>Parcel Collection Point at the Russian House</h1>
   <p>RusPost GmbH – which claims to be the only official branch of the Russian state postal service outside Russia – has been operating a parcel collection point inside the EU-sanctioned Russian House Berlin since 2018. It remains open on weekdays while public prosecutors investigate.</p>
 </header>
+
 <div class="main">
 
   <div class="alarm">
@@ -88,10 +272,12 @@ footer a { color: #7eb8f7; text-decoration: none; }
       <div class="zahl">2018</div>
       <div class="label">Branch opened in the former porter's lodge of the Russian House</div>
     </div>
+
     <div class="oeff-kachel">
       <div class="zahl">1</div>
       <div class="label">The only official branch of the Russian state postal service outside Russia, according to its own claims. Registered business address: Buckower Chaussee, Berlin.</div>
     </div>
+
     <div class="oeff-kachel">
       <div class="zahl">4–5 days</div>
       <div class="label">Advertised Berlin–Moscow delivery time with daily routes and Europe-wide collection (promotional claims, not independently verified)</div>
@@ -105,16 +291,19 @@ footer a { color: #7eb8f7; text-decoration: none; }
         <span class="akk-titel">📬 Verified Facts</span>
         <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body"><div class="akk-inner">
-        <ul>
-          <li>In May 2018, a branch of the Russian state postal service was opened in the former <strong>porter's lodge of the Russian House</strong>.<span class="quelle">Ost-Impuls, May 2018</span></li>
-          <li><strong>RusPost GmbH</strong> is a wholly owned subsidiary of the Russian state postal service. It claims to be <strong>the only official branch outside the Russian Federation</strong>, though Russian Post itself also references transit exchange offices in other European countries.<span class="quelle">RusPost GmbH, official website</span></li>
-          <li>RusPost GmbH is listed as <strong>commercially active</strong> in the company register. Note that two separate legal entities must be distinguished: RusPost GmbH and the branch office of the joint-stock company “Pochta Rossii”.<span class="quelle">Berlin Company Register</span></li>
-          <li>According to on-site observations in March 2026, postal operations at the Russian House continue: <strong>Monday–Friday, 12:00–17:30</strong> (break from 15:00 to 16:00).</li>
-          <li>Activist Henry Lindemeier has documented over an extended period that <strong>delivery vans regularly load large quantities of parcels</strong> directly in front of the Russian House.</li>
-          <li>Individuals entering the Russian House with packages have been clearly documented from the street.</li>
-        </ul>
-      </div></div>
+
+      <div class="akk-body">
+        <div class="akk-inner">
+          <ul>
+            <li>In May 2018, a branch of the Russian state postal service was opened in the former <strong>porter's lodge of the Russian House</strong>.<span class="quelle">Ost-Impuls, May 2018</span></li>
+            <li><strong>RusPost GmbH</strong> is a wholly owned subsidiary of the Russian state postal service. It claims to be <strong>the only official branch outside the Russian Federation</strong>, though Russian Post itself also references transit exchange offices in other European countries.<span class="quelle">RusPost GmbH, official website</span></li>
+            <li>RusPost GmbH is listed as <strong>commercially active</strong> in the company register. Note that two separate legal entities must be distinguished: RusPost GmbH and the branch office of the joint-stock company “Pochta Rossii”.<span class="quelle">Berlin Company Register</span></li>
+            <li>According to on-site observations in March 2026, postal operations at the Russian House continue: <strong>Monday–Friday, 12:00–17:30</strong> (break from 15:00 to 16:00).</li>
+            <li>Activist Henry Lindemeier has documented over an extended period that <strong>delivery vans regularly load large quantities of parcels</strong> directly in front of the Russian House.</li>
+            <li>Individuals entering the Russian House with packages have been clearly documented from the street.</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="akk-item">
@@ -122,18 +311,21 @@ footer a { color: #7eb8f7; text-decoration: none; }
         <span class="akk-titel">⚠️ Sanctions Law Relevance</span>
         <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body"><div class="akk-inner">
-        <ul>
-          <li>Rossotrudnichestvo – the operator of the Russian House – has been on the <strong>EU sanctions list</strong> since July 2022, requiring all assets to be frozen and prohibiting the provision of any funds or economic resources.</li>
-          <li>This legal restriction mandates <strong>no commercial activities</strong>, no revenues, and no financial transactions.</li>
-          <li>A parcel collection service is inherently a <strong>commercial activity</strong> that generates revenue or, at a minimum, facilitates financial flows.</li>
-          <li>Berlin public prosecutors have been investigating since <strong>April 2024</strong>, targeting “unknown individuals and tenants of the Russian House” for suspected violations of the Foreign Trade and Payments Act.<span class="quelle">Tagesspiegel / Berliner Zeitung, April 2024</span></li>
-          <li>An initial investigation launched in <strong>January 2023</strong> was dropped because the operators <strong>hold diplomatic status</strong>, forcing authorities to pursue other legal strategies.<span class="quelle">Tagesspiegel, September 2023</span></li>
-          <li>The Central Sanctions Enforcement Office at German Customs classifies the Russian House as a <strong>“non-independent branch”</strong> of Rossotrudnichestvo, making it directly subject to the sanctions regime.<span class="quelle">Berliner Zeitung, April 2024</span></li>
-          <li>While it is not public knowledge whether the postal operations are a specific subject of this investigation, the connection remains highly evident.</li>
-          <li>The Russian state postal service is directly controlled by the Russian government and is not a private enterprise.</li>
-        </ul>
-      </div></div>
+
+      <div class="akk-body">
+        <div class="akk-inner">
+          <ul>
+            <li>Rossotrudnichestvo – the operator of the Russian House – has been on the <strong>EU sanctions list</strong> since July 2022, requiring all assets to be frozen and prohibiting the provision of any funds or economic resources.</li>
+            <li>This legal restriction mandates <strong>no commercial activities</strong>, no revenues, and no financial transactions.</li>
+            <li>A parcel collection service is inherently a <strong>commercial activity</strong> that generates revenue or, at a minimum, facilitates financial flows.</li>
+            <li>Berlin public prosecutors have been investigating since <strong>April 2024</strong>, targeting “unknown individuals and tenants of the Russian House” for suspected violations of the Foreign Trade and Payments Act.<span class="quelle">Tagesspiegel / Berliner Zeitung, April 2024</span></li>
+            <li>An initial investigation launched in <strong>January 2023</strong> was dropped because the operators <strong>hold diplomatic status</strong>, forcing authorities to pursue other legal strategies.<span class="quelle">Tagesspiegel, September 2023</span></li>
+            <li>The Central Sanctions Enforcement Office at German Customs classifies the Russian House as a <strong>“non-independent branch”</strong> of Rossotrudnichestvo, making it directly subject to the sanctions regime.<span class="quelle">Berliner Zeitung, April 2024</span></li>
+            <li>While it is not public knowledge whether the postal operations are a specific subject of this investigation, the connection remains highly evident.</li>
+            <li>The Russian state postal service is directly controlled by the Russian government and is not a private enterprise.</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="akk-item">
@@ -141,16 +333,19 @@ footer a { color: #7eb8f7; text-decoration: none; }
         <span class="akk-titel">🚨 Seized Goods &amp; Criminal Proceedings</span>
         <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body"><div class="akk-inner">
-        <ul>
-          <li>Customs authorities discovered prohibited and sanctioned goods in <strong>dozens of parcels</strong> transported by RusPost from Germany to Moscow, including <strong>electronic devices, cash, and jewelry</strong>.<span class="quelle">Bild / FOCUS online, January 27, 2026</span></li>
-          <li>According to reports, the <strong>Berlin Public Prosecutor's Office intends to file formal charges against a senior RusPost manager</strong> in connection with these seizures.<span class="quelle">FOCUS online, January 27, 2026</span></li>
-          <li>A parallel <strong>circumvention network based in Cologne</strong> has been identified: a company founded by former employees of a German RusPost subsidiary has been offering shipping services through various Russian supermarkets.</li>
-          <li>Parcels in this network were processed using shipping labels from the <strong>Uzbek state postal service (UzPost)</strong> – a company that <strong>lacks authorization to operate in Germany</strong>, according to the Federal Network Agency.<span class="quelle">FOCUS online, January 27, 2026</span></li>
-          <li>Journalists sent test packages containing sanctioned items; GPS trackers confirmed that the shipments successfully reached <strong>Russia</strong>.<span class="quelle">Bild / FOCUS online, January 27, 2026</span></li>
-          <li>Insiders report a <strong>confidential cooperation agreement between the Russian and Uzbek state postal services</strong>, a partnership subsequently confirmed by both entities.<span class="quelle">FOCUS online, January 27, 2026</span></li>
-        </ul>
-      </div></div>
+
+      <div class="akk-body">
+        <div class="akk-inner">
+          <ul>
+            <li>Customs authorities discovered prohibited and sanctioned goods in <strong>dozens of parcels</strong> transported by RusPost from Germany to Moscow, including <strong>electronic devices, cash, and jewelry</strong>.<span class="quelle">Bild / FOCUS online, January 27, 2026</span></li>
+            <li>According to reports, the <strong>Berlin Public Prosecutor's Office intends to file formal charges against a senior RusPost manager</strong> in connection with these seizures.<span class="quelle">FOCUS online, January 27, 2026</span></li>
+            <li>A parallel <strong>circumvention network based in Cologne</strong> has been identified: a company founded by former employees of a German RusPost subsidiary has been offering shipping services through various Russian supermarkets.</li>
+            <li>Parcels in this network were processed using shipping labels from the <strong>Uzbek state postal service (UzPost)</strong> – a company that <strong>lacks authorization to operate in Germany</strong>, according to the Federal Network Agency.<span class="quelle">FOCUS online, January 27, 2026</span></li>
+            <li>Journalists sent test packages containing sanctioned items; GPS trackers confirmed that the shipments successfully reached <strong>Russia</strong>.<span class="quelle">Bild / FOCUS online, January 27, 2026</span></li>
+            <li>Insiders report a <strong>confidential cooperation agreement between the Russian and Uzbek state postal services</strong>, a partnership subsequently confirmed by both entities.<span class="quelle">FOCUS online, January 27, 2026</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="akk-item">
@@ -158,15 +353,18 @@ footer a { color: #7eb8f7; text-decoration: none; }
         <span class="akk-titel">🏛️ Origin of Authorization</span>
         <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body"><div class="akk-inner">
-        <ul>
-          <li>The branch was established in <strong>2018</strong> – four years after the annexation of Crimea, but four years prior to the full-scale invasion of Ukraine.</li>
-          <li>Which German authorities granted the original authorization – or whether formal approval was even requested – remains <strong>unconfirmed to the public</strong>.</li>
-          <li>The Federal Foreign Office has declined to comment on the matter.</li>
-          <li>Following the 2022 invasion and the introduction of EU sanctions, this authorization <strong>should have been legally reassessed and revoked</strong>.</li>
-          <li>Instead, the branch continues its daily operations unimpeded, as though no sanctions were in place.</li>
-        </ul>
-      </div></div>
+
+      <div class="akk-body">
+        <div class="akk-inner">
+          <ul>
+            <li>The branch was established in <strong>2018</strong> – four years after the annexation of Crimea, but four years prior to the full-scale invasion of Ukraine.</li>
+            <li>Which German authorities granted the original authorization – or whether formal approval was even requested – remains <strong>unconfirmed to the public</strong>.</li>
+            <li>The Federal Foreign Office has declined to comment on the matter.</li>
+            <li>Following the 2022 invasion and the introduction of EU sanctions, this authorization <strong>should have been legally reassessed and revoked</strong>.</li>
+            <li>Instead, the branch continues its daily operations unimpeded, as though no sanctions were in place.</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="akk-item">
@@ -174,16 +372,19 @@ footer a { color: #7eb8f7; text-decoration: none; }
         <span class="akk-titel">🔍 Unresolved Questions</span>
         <span class="akk-icon">+</span>
       </div>
-      <div class="akk-body"><div class="akk-inner">
-        <ul>
-          <li>Who is directly operating the branch today – RusPost GmbH or an external contractor?</li>
-          <li>What specific goods are being shipped, and who is conducting the mandatory customs inspections?</li>
-          <li>Are inbound parcels from Russia also being received in Germany, and what security controls are applied to them?</li>
-          <li>Do the revenues generated by these postal operations flow to Rossotrudnichestvo or directly to the Russian state postal service?</li>
-          <li>Are the Federal Prosecutor's Office and German customs actively monitoring this specific collection point?</li>
-          <li>Is there a direct operational link between the Berlin branch and the Cologne circumvention network?</li>
-        </ul>
-      </div></div>
+
+      <div class="akk-body">
+        <div class="akk-inner">
+          <ul>
+            <li>Who is directly operating the branch today – RusPost GmbH or an external contractor?</li>
+            <li>What specific goods are being shipped, and who is conducting the mandatory customs inspections?</li>
+            <li>Are inbound parcels from Russia also being received in Germany, and what security controls are applied to them?</li>
+            <li>Do the revenues generated by these postal operations flow to Rossotrudnichestvo or directly to the Russian state postal service?</li>
+            <li>Are the Federal Prosecutor's Office and German customs actively monitoring this specific collection point?</li>
+            <li>Is there a direct operational link between the Berlin branch and the Cologne circumvention network?</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -206,17 +407,19 @@ footer a { color: #7eb8f7; text-decoration: none; }
   </div>
 
 </div>
-<footer>Press Kit Russian House Berlin &nbsp;·&nbsp; <a href="index_en.html">Back to Overview</a></footer>
+
+<footer>
+  Press Kit Russian House Berlin &nbsp;·&nbsp;
+  <a href="index_en.html">Back to Overview</a>
+</footer>
 
 <script>
 function toggleAkk(header) {
   const body = header.nextElementSibling;
-  const icon = header.querySelector('.akk-icon');
-  
-  // Toggle active header classes
+
   header.classList.toggle('open');
   body.classList.toggle('open');
-  
+
   if (body.classList.contains('open')) {
     body.style.maxHeight = body.scrollHeight + "px";
   } else {
@@ -224,5 +427,6 @@ function toggleAkk(header) {
   }
 }
 </script>
+
 </body>
 </html>
