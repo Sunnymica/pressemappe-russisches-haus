@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,21 +10,21 @@
 <meta property="og:description" content="State-sponsored films, art house cinema, children's movies, and memorial exhibitions: the Russian House programme is far more deliberate than it appears.">
 <meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+/* No external fonts: Google Fonts removed (GDPR). System typefaces. */
 :root { --blau: #005BBB; --gelb: #FFD700; --dunkel: #1a1a1a; --grau: #4a4a4a; --hellgrau: #f4f4f2; --linie: #e0e0e0; --rot: #A32D2D; --orange: #e67e22; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
+body { font-family: Arial, Helvetica, sans-serif; font-weight: 300; color: var(--dunkel); background: #fff; line-height: 1.7; }
 .ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%); }
 .back-link { max-width: 860px; margin: 0 auto; padding: 16px 24px 0; font-size: 13px; }
 .back-link a { color: var(--grau); text-decoration: none; }
 .back-link a:hover { color: var(--blau); }
 header { max-width: 860px; margin: 0 auto; padding: 32px 24px 24px; border-bottom: 1px solid var(--linie); }
-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
+header h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(24px, 4vw, 38px); line-height: 1.2; margin-bottom: 10px; }
 header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .main { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
 
 .intro { margin: 28px 0 36px; }
-.intro .zitat { font-family: 'Playfair Display', serif; font-size: 22px; line-height: 1.4; color: var(--dunkel); border-left: 4px solid var(--blau); padding-left: 20px; margin-bottom: 20px; }
+.intro .zitat { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.4; color: var(--dunkel); border-left: 4px solid var(--blau); padding-left: 20px; margin-bottom: 20px; }
 .intro p { font-size: 15px; color: var(--grau); line-height: 1.7; margin-bottom: 12px; }
 .intro p strong { color: var(--dunkel); }
 
@@ -42,10 +43,10 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .beispiel-header.mittel { background: #1a1a1a; color: #fff; }
 .beispiel-header.subtil { background: var(--blau); color: #fff; }
 .beispiel-header.ausstellung { background: #5B4A2E; color: #fff; }
-.beispiel-nummer { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; opacity: 0.3; flex-shrink: 0; line-height: 1; }
+.beispiel-nummer { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; font-weight: 700; opacity: 0.3; flex-shrink: 0; line-height: 1; }
 .beispiel-meta { flex: 1; }
 .beispiel-meta .typ { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
-.beispiel-meta .titel { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; line-height: 1.2; margin-bottom: 4px; }
+.beispiel-meta .titel { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; font-weight: 700; line-height: 1.2; margin-bottom: 4px; }
 .beispiel-meta .untertitel { font-size: 13px; opacity: 0.8; }
 .beispiel-body { padding: 20px 22px; background: #fff; }
 .beispiel-body p { font-size: 15px; color: var(--grau); line-height: 1.7; margin-bottom: 10px; }
@@ -55,7 +56,7 @@ header p { font-size: 15px; color: var(--grau); max-width: 620px; }
 .beispiel-body .fakt strong { color: var(--dunkel); }
 
 .fazit-box { background: var(--dunkel); color: #fff; border-radius: 6px; padding: 28px 32px; margin: 0 0 32px; }
-.fazit-box h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 16px; color: #7eb8f7; }
+.fazit-box h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; margin-bottom: 16px; color: #7eb8f7; }
 .fazit-box p { font-size: 15px; line-height: 1.7; opacity: 0.9; margin-bottom: 12px; }
 .fazit-box p:last-child { margin-bottom: 0; }
 .fazit-box strong { color: var(--gelb); }
@@ -67,15 +68,15 @@ footer { background: var(--dunkel); color: #fff; text-align: center; padding: 24
 footer a { color: #7eb8f7; text-decoration: none; }
 
 @media (max-width: 600px) {
-  .spektrum { grid-template-columns: 1fr; }
-  .main { padding: 0 16px 40px; }
-  header { padding: 24px 16px; }
-  .back-link { padding: 12px 16px 0; }
-  .beispiel-header { padding: 14px 16px; }
-  .beispiel-body { padding: 16px; }
-  .fazit-box { padding: 20px; }
-}
-</style>
+.spektrum { grid-template-columns: 1fr; }
+.main { padding: 0 16px 40px; }
+header { padding: 24px 16px; }
+.back-link { padding: 12px 16px 0; }
+.beispiel-header { padding: 14px 16px; }
+.beispiel-body { padding: 16px; }
+.fazit-box { padding: 20px; }
+} </style>
+
 </head>
 <body>
 
@@ -113,70 +114,72 @@ footer a { color: #7eb8f7; text-decoration: none; }
 
   <div class="beispiele">
 
-    <div class="beispiel">
-      <div class="beispiel-header offen">
-        <div class="beispiel-nummer">1</div>
-        <div class="beispiel-meta">
-          <div class="typ">Cinema · April 9, 2026</div>
-          <div class="titel">The Challenge</div>
-          <div class="untertitel">Director: Klim Shipenko · Russia 2023</div>
-        </div>
-      </div>
-      <div class="beispiel-body">
-        <p>Promoted as the first feature film shot on the International Space Station, this movie tells the story of a Russian surgeon who flies to the ISS to perform emergency surgery on a cosmonaut. The film is a high-profile co-production between <strong>Roscosmos and the Russian state broadcaster Channel One</strong>. The underlying message is unmistakable: Russia remains a pioneering global superpower, regardless of international sanctions or geopolitical isolation.</p>
-        <p>Roscosmos described the project as “a unique scientific and educational endeavor.” In reality, the production timeline was aggressively expedited to beat Hollywood and Tom Cruise to this cinematic milestone, mirroring the competitive spirit of the Cold War space race.</p>
-        <div class="fakt"><strong>Verified Fact:</strong> Russian President Vladimir Putin personally awarded director Shipenko and lead actress Peresild a prestigious state prize at the Kremlin on June 12, 2023. The Russian House screened this film on April 9, 2026.</div>
-      </div>
+```
+<div class="beispiel">
+  <div class="beispiel-header offen">
+    <div class="beispiel-nummer">1</div>
+    <div class="beispiel-meta">
+      <div class="typ">Cinema · April 9, 2026</div>
+      <div class="titel">The Challenge</div>
+      <div class="untertitel">Director: Klim Shipenko · Russia 2023</div>
     </div>
+  </div>
+  <div class="beispiel-body">
+    <p>Promoted as the first feature film shot on the International Space Station, this movie tells the story of a Russian surgeon who flies to the ISS to perform emergency surgery on a cosmonaut. The film is a high-profile co-production between <strong>Roscosmos and the Russian state broadcaster Channel One</strong>. The underlying message is unmistakable: Russia remains a pioneering global superpower, regardless of international sanctions or geopolitical isolation.</p>
+    <p>Roscosmos described the project as “a unique scientific and educational endeavor.” In reality, the production timeline was aggressively expedited to beat Hollywood and Tom Cruise to this cinematic milestone, mirroring the competitive spirit of the Cold War space race.</p>
+    <div class="fakt"><strong>Verified Fact:</strong> Russian President Vladimir Putin personally awarded director Shipenko and lead actress Peresild a prestigious state prize at the Kremlin on June 12, 2023. The Russian House screened this film on April 9, 2026.</div>
+  </div>
+</div>
 
-    <div class="beispiel">
-      <div class="beispiel-header mittel">
-        <div class="beispiel-nummer">2</div>
-        <div class="beispiel-meta">
-          <div class="typ">Cinema · 2025/2026 Season</div>
-          <div class="titel">Lermontov</div>
-          <div class="untertitel">Director: Boris Bakuradze · Russia</div>
-        </div>
-      </div>
-      <div class="beispiel-body">
-        <p>A poetic, atmospheric art house portrait of the 19th-century classical poet Mikhail Lermontov. Characterized by long takes and a lack of conventional Hollywood dramaturgy, the film focuses on mood, melancholy, and inner existential torment. This is not an overt, state-directed film, which is precisely what makes its placement so effective.</p>
-        <p>The propagandistic value lies not in what is actively projected, but in <strong>what is deliberately omitted</strong>: the ongoing war, civilian casualties, and international isolation. Instead, the audience is presented with Russia as a sanctuary of towering literary figures, profound emotion, and tragic beauty. This sophisticated cultural image resonates well with international audiences.</p>
-        <div class="fakt"><strong>Contextual Assessment:</strong> No state commission or direct political message. However, it is an integral part of a cultural schedule designed to project normalcy and high culture while Russian missiles target Ukrainian cities.</div>
-      </div>
+<div class="beispiel">
+  <div class="beispiel-header mittel">
+    <div class="beispiel-nummer">2</div>
+    <div class="beispiel-meta">
+      <div class="typ">Cinema · 2025/2026 Season</div>
+      <div class="titel">Lermontov</div>
+      <div class="untertitel">Director: Boris Bakuradze · Russia</div>
     </div>
+  </div>
+  <div class="beispiel-body">
+    <p>A poetic, atmospheric art house portrait of the 19th-century classical poet Mikhail Lermontov. Characterized by long takes and a lack of conventional Hollywood dramaturgy, the film focuses on mood, melancholy, and inner existential torment. This is not an overt, state-directed film, which is precisely what makes its placement so effective.</p>
+    <p>The propagandistic value lies not in what is actively projected, but in <strong>what is deliberately omitted</strong>: the ongoing war, civilian casualties, and international isolation. Instead, the audience is presented with Russia as a sanctuary of towering literary figures, profound emotion, and tragic beauty. This sophisticated cultural image resonates well with international audiences.</p>
+    <div class="fakt"><strong>Contextual Assessment:</strong> No state commission or direct political message. However, it is an integral part of a cultural schedule designed to project normalcy and high culture while Russian missiles target Ukrainian cities.</div>
+  </div>
+</div>
 
-    <div class="beispiel">
-      <div class="beispiel-header subtil">
-        <div class="beispiel-nummer">3</div>
-        <div class="beispiel-meta">
-          <div class="typ">Cinema · 2025/2026 Season</div>
-          <div class="titel">The Adventures of Little Baha</div>
-          <div class="untertitel">Director: Aleksandr Galibin · Russia</div>
-        </div>
-      </div>
-      <div class="beispiel-body">
-        <p>A heartwarming family movie centered on an eight-year-old boy named Baha living in a remote mountain village in Dagestan. The film features no villains, no obvious political agenda, and no ideological rhetoric. Instead, it offers rugged Caucasian landscapes, authentic characters, and a universal story about childhood and growing up.</p>
-        <p>Because the movie is entirely harmless on its own, it disarms suspicion. <strong>A children’s film acts as a disarming agent</strong>: it invites families into the center, builds goodwill, and projects an organic, humanizing image of Russian society. While the depicted reality is not false, the selection of such content within this specific venue is highly strategic.</p>
-        <div class="fakt"><strong>Contextual Assessment:</strong> Not a propaganda film in the classical sense. However, when screened in this building at this particular time, it serves the clear purpose of normalizing the institution.</div>
-      </div>
+<div class="beispiel">
+  <div class="beispiel-header subtil">
+    <div class="beispiel-nummer">3</div>
+    <div class="beispiel-meta">
+      <div class="typ">Cinema · 2025/2026 Season</div>
+      <div class="titel">The Adventures of Little Baha</div>
+      <div class="untertitel">Director: Aleksandr Galibin · Russia</div>
     </div>
+  </div>
+  <div class="beispiel-body">
+    <p>A heartwarming family movie centered on an eight-year-old boy named Baha living in a remote mountain village in Dagestan. The film features no villains, no obvious political agenda, and no ideological rhetoric. Instead, it offers rugged Caucasian landscapes, authentic characters, and a universal story about childhood and growing up.</p>
+    <p>Because the movie is entirely harmless on its own, it disarms suspicion. <strong>A children’s film acts as a disarming agent</strong>: it invites families into the center, builds goodwill, and projects an organic, humanizing image of Russian society. While the depicted reality is not false, the selection of such content within this specific venue is highly strategic.</p>
+    <div class="fakt"><strong>Contextual Assessment:</strong> Not a propaganda film in the classical sense. However, when screened in this building at this particular time, it serves the clear purpose of normalizing the institution.</div>
+  </div>
+</div>
 
-    <div class="beispiel">
-      <div class="beispiel-header ausstellung">
-        <div class="beispiel-nummer">4</div>
-        <div class="beispiel-meta">
-          <div class="typ">Exhibition · Since March 2025</div>
-          <div class="titel">“The Russian Soul of the White Rose”</div>
-          <div class="untertitel">On Alexander Schmorell · Under the Patronage of the Russian Embassy</div>
-        </div>
-      </div>
-      <div class="beispiel-body">
-        <p>Alexander Schmorell was a co-founder of the White Rose (Weiße Rose) anti-Nazi resistance group in Munich, executed by the National Socialists in 1943. Born in Russia, he moved to Germany at the age of four, and Russian remained his mother tongue throughout his life.</p>
-        <p>The Russian House exhibition focuses heavily on the “Russian soul” and Eastern Orthodox faith of this resistance icon, operating under the official patronage of the Russian Embassy. Crucially, this exhibition runs concurrently with the Kremlin’s broader narrative depicting its current military actions in Ukraine as a continuation of the anti-fascist struggle.</p>
-        <p><strong>A historic victim of National Socialism is posthumously instrumentalized as a projection screen for contemporary imperial mythology.</strong> Rather than a mere interpretation, this aligns directly with the narrative logic of the exhibition in this specific context.</p>
-        <div class="fakt"><strong>Verified Fact:</strong> The exhibition has been running at the Russian House Berlin since March 2025 under the official patronage of the Russian Embassy. Analysis by journalist Regina Laska, published on antwortseiten.org, June 19, 2025.</div>
-      </div>
+<div class="beispiel">
+  <div class="beispiel-header ausstellung">
+    <div class="beispiel-nummer">4</div>
+    <div class="beispiel-meta">
+      <div class="typ">Exhibition · Since March 2025</div>
+      <div class="titel">“The Russian Soul of the White Rose”</div>
+      <div class="untertitel">On Alexander Schmorell · Under the Patronage of the Russian Embassy</div>
     </div>
+  </div>
+  <div class="beispiel-body">
+    <p>Alexander Schmorell was a co-founder of the White Rose (Weiße Rose) anti-Nazi resistance group in Munich, executed by the National Socialists in 1943. Born in Russia, he moved to Germany at the age of four, and Russian remained his mother tongue throughout his life.</p>
+    <p>The Russian House exhibition focuses heavily on the “Russian soul” and Eastern Orthodox faith of this resistance icon, operating under the official patronage of the Russian Embassy. Crucially, this exhibition runs concurrently with the Kremlin’s broader narrative depicting its current military actions in Ukraine as a continuation of the anti-fascist struggle.</p>
+    <p><strong>A historic victim of National Socialism is posthumously instrumentalized as a projection screen for contemporary imperial mythology.</strong> Rather than a mere interpretation, this aligns directly with the narrative logic of the exhibition in this specific context.</p>
+    <div class="fakt"><strong>Verified Fact:</strong> The exhibition has been running at the Russian House Berlin since March 2025 under the official patronage of the Russian Embassy. Analysis by journalist Regina Laska, published on antwortseiten.org, June 19, 2025.</div>
+  </div>
+</div>
+```
 
   </div>
 
@@ -187,9 +190,12 @@ footer a { color: #7eb8f7; text-decoration: none; }
     <p>The Russian House is not a crude propaganda machine; <strong>it is a highly sophisticated one</strong>, which is precisely why its influence is so potent.</p>
     <p>A final significant observation: <strong>approximately 90 percent of the films screened at the venue are related to war and historical conflict</strong>, despite the director's persistent claims that the institution is entirely non-political. These films either reinforce a specific Russian historical perspective – framing the Second World War primarily as a Soviet triumph – or portray Russia as a historically resilient, enduring nation. Any critical perspective regarding the current war against Ukraine is entirely absent.</p>
 
-    <div class="autorin">
-      <strong>Regina Laska</strong> is an independent journalist and author. She writes for FOCUS+ and publishes investigative analyses on antwortseiten.org. This report is based on independent research and publicly accessible sources.
-    </div>
+```
+<div class="autorin">
+  <strong>Regina Laska</strong> is an independent journalist and author. She writes for FOCUS+ and publishes investigative analyses on antwortseiten.org. This report is based on independent research and publicly accessible sources.
+</div>
+```
+
   </div>
 
 </div>
