@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Tschechien: Russisches Haus aktiv trotz Sanktionen – Europa-Dossier</title>
+<meta name="description" content="Länderakte Tschechien: Das Russische Haus in Prag arbeitet weiter, obwohl Rossotrudnitschestwo sanktioniert und das Gebäude wirtschaftlich eingefroren ist. Vertrag, Chronologie, Maßnahmen und Quellen.">
+<meta property="og:title" content="Tschechien: Gebäude eingefroren, Russisches Haus weiter aktiv">
+<meta property="og:description" content="Der Vertrag von 1971 ist mit sechs Monaten Frist kündbar. Tschechien hat ihn dennoch nicht beendet.">
+<style>
+:root {
+  --blau: #005BBB;
+  --gelb: #FFD500;
+  --dunkel: #1a1a1a;
+  --grau: #4a4a4a;
+  --grau-mittel: #6b6b6b;
+  --hellgrau: #f4f4f2;
+  --linie: #deded8;
+  --weiss: #fff;
+  --rot: #9f2f2f;
+  --rot-hell: #fbecec;
+  --rot-rand: #e6b8b8;
+  --orange: #9a5a12;
+  --orange-hell: #fff3df;
+  --orange-rand: #e7c18e;
+  --gruen: #2f6b45;
+  --gruen-hell: #eaf5ee;
+  --gruen-rand: #afd1ba;
+  --blau-hell: #eaf3fc;
+  --blau-rand: #b8d3ee;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--dunkel);
+  background: var(--weiss);
+  line-height: 1.68;
+}
+a { color: var(--blau); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+.ukraine-bar { height: 5px; background: linear-gradient(to right, var(--blau) 50%, var(--gelb) 50%); }
+.topbar {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+}
+.topbar a { text-decoration: none; font-weight: 650; }
+.lang-switch {
+  border: 1px solid var(--blau);
+  border-radius: 5px;
+  padding: 5px 11px;
+}
+.hero {
+  background: var(--dunkel);
+  color: var(--weiss);
+  padding: 46px 24px 42px;
+}
+.hero-inner { max-width: 900px; margin: 0 auto; }
+.kicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  opacity: .62;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+.country-line { display: flex; align-items: center; gap: 16px; margin-bottom: 15px; }
+.flag {
+  width: 62px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.25);
+  flex: 0 0 auto;
+}
+h1 {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(34px, 6vw, 58px);
+  line-height: 1.05;
+  font-weight: 700;
+}
+.hero h2 {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(20px, 3.4vw, 29px);
+  line-height: 1.25;
+  color: #9ecbfa;
+  margin-bottom: 16px;
+}
+.hero p { max-width: 760px; color: rgba(255,255,255,.78); font-size: 16px; }
+.status-row { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+.badge.active { color: #dff4e5; background: rgba(62,137,86,.23); border: 1px solid rgba(143,205,162,.48); }
+.badge.limited { color: #ffe8c6; background: rgba(167,101,25,.25); border: 1px solid rgba(231,193,142,.45); }
+.main { max-width: 900px; margin: 0 auto; padding: 0 24px 56px; }
+.lead-box {
+  margin-top: 30px;
+  border-left: 5px solid var(--blau);
+  background: var(--blau-hell);
+  padding: 20px 22px;
+  font-size: 16px;
+}
+.lead-box strong { display: block; font-family: Georgia, Cambria, "Times New Roman", Times, serif; font-size: 20px; margin-bottom: 7px; }
+.section {
+  margin-top: 26px;
+  border: 1px solid var(--linie);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--weiss);
+}
+.section > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 21px;
+  background: var(--hellgrau);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+.section > summary::-webkit-details-marker { display: none; }
+.section > summary::after { content: "+"; font-family: system-ui, sans-serif; color: var(--blau); font-size: 26px; font-weight: 400; }
+.section[open] > summary::after { content: "−"; }
+.section-body { padding: 22px; }
+.section-body > * + * { margin-top: 15px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--linie); border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; min-width: 610px; }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--linie); }
+th { width: 29%; background: var(--hellgrau); font-size: 13px; color: var(--grau); }
+td { font-size: 14px; }
+tr:last-child th, tr:last-child td { border-bottom: 0; }
+.inline-badges { display: flex; flex-wrap: wrap; gap: 7px; }
+.inline-badges .badge.active { color: var(--gruen); background: var(--gruen-hell); border-color: var(--gruen-rand); }
+.inline-badges .badge.limited { color: var(--orange); background: var(--orange-hell); border-color: var(--orange-rand); }
+.source { display: inline; font-size: 12px; margin-left: 5px; white-space: normal; }
+.source a { font-weight: 650; }
+.timeline { list-style: none; position: relative; margin-left: 6px; }
+.timeline::before { content: ""; position: absolute; left: 79px; top: 5px; bottom: 5px; width: 1px; background: var(--linie); }
+.timeline li { display: grid; grid-template-columns: 66px 1fr; gap: 28px; position: relative; padding: 0 0 24px; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before { content: ""; position: absolute; left: 73px; top: 8px; width: 13px; height: 13px; border-radius: 50%; background: var(--blau); box-shadow: 0 0 0 4px var(--weiss); }
+.timeline time { font-size: 12px; font-weight: 750; color: var(--grau); line-height: 1.35; text-align: right; padding-top: 2px; }
+.timeline h3 { font-size: 16px; line-height: 1.35; margin-bottom: 5px; }
+.timeline p { font-size: 14px; color: var(--grau); }
+.contract-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.contract-card { border: 1px solid var(--linie); border-radius: 6px; padding: 16px; background: #fff; }
+.contract-card h3 { font-size: 15px; margin-bottom: 7px; }
+.contract-card p { font-size: 14px; color: var(--grau); }
+.quote-box {
+  border-left: 4px solid var(--blau);
+  background: var(--hellgrau);
+  padding: 18px 20px;
+}
+.quote-box blockquote {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.translation { margin-top: 12px; font-size: 14px; color: var(--grau); }
+.translation strong { color: var(--dunkel); }
+.key-box {
+  border: 1px solid var(--orange-rand);
+  background: var(--orange-hell);
+  padding: 17px 19px;
+  border-radius: 6px;
+}
+.key-box strong { color: var(--orange); }
+.check-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.check-card { border-radius: 6px; padding: 17px; border: 1px solid; }
+.check-card h3 { font-size: 15px; margin-bottom: 9px; }
+.check-card ul { padding-left: 19px; }
+.check-card li { font-size: 14px; margin: 6px 0; }
+.check-card.yes { background: var(--gruen-hell); border-color: var(--gruen-rand); }
+.check-card.no { background: var(--rot-hell); border-color: var(--rot-rand); }
+.analysis-box {
+  border-top: 3px solid var(--dunkel);
+  border-bottom: 1px solid var(--linie);
+  padding: 18px 0;
+}
+.analysis-box h3 { font-family: Georgia, Cambria, "Times New Roman", Times, serif; font-size: 20px; margin-bottom: 9px; }
+.analysis-box p { font-size: 15px; }
+.compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.compare > div { padding: 17px; border-radius: 6px; border: 1px solid var(--linie); }
+.compare h3 { font-size: 15px; margin-bottom: 6px; }
+.compare p { font-size: 14px; color: var(--grau); }
+.editorial {
+  background: var(--dunkel);
+  color: var(--weiss);
+  padding: 22px;
+  border-radius: 7px;
+}
+.editorial .label { font-size: 10px; text-transform: uppercase; letter-spacing: .14em; opacity: .55; margin-bottom: 10px; font-weight: 700; }
+.editorial p { font-family: Georgia, Cambria, "Times New Roman", Times, serif; font-size: 20px; line-height: 1.5; }
+.editorial small { display: block; margin-top: 13px; color: rgba(255,255,255,.65); font-family: system-ui, sans-serif; font-size: 12px; line-height: 1.5; }
+.source-list { padding-left: 21px; }
+.source-list li { margin: 10px 0; font-size: 14px; }
+.source-list strong { display: block; }
+.subheading { font-size: 13px; text-transform: uppercase; letter-spacing: .09em; color: var(--grau-mittel); margin-top: 21px !important; }
+.questions { padding-left: 22px; }
+.questions li { margin: 10px 0; }
+.stand { margin-top: 26px; color: var(--grau-mittel); font-size: 12px; text-align: right; }
+footer { background: var(--dunkel); color: rgba(255,255,255,.72); text-align: center; padding: 25px 18px; font-size: 13px; }
+footer a { color: #8fc5ff; text-decoration: none; }
+@media (max-width: 680px) {
+  .topbar { padding: 12px 16px; }
+  .hero { padding: 34px 18px 32px; }
+  .main { padding: 0 16px 44px; }
+  .country-line { align-items: flex-start; }
+  .flag { width: 52px; height: 35px; margin-top: 3px; }
+  .section-body { padding: 17px; }
+  .section > summary { padding: 16px 17px; font-size: 19px; }
+  .contract-grid, .check-grid, .compare { grid-template-columns: 1fr; }
+  .timeline::before { left: 65px; }
+  .timeline li { grid-template-columns: 52px 1fr; gap: 26px; }
+  .timeline li::before { left: 59px; }
+  .timeline time { font-size: 11px; }
+}
+@media print {
+  .topbar, .ukraine-bar, footer { display: none; }
+  .hero { background: #fff; color: #000; padding: 20px 0; }
+  .hero h2, .hero p { color: #222; }
+  .main { max-width: none; padding: 0; }
+  .section { break-inside: avoid; }
+  .section > summary::after { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="ukraine-bar"></div>
+<div class="topbar">
+  <a href="eu-laender.html">← Zurück zu den Länderakten</a>
+  <a class="lang-switch" href="eu-tschechien_en.html" lang="en">English</a>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Europa-Dossier · Länderakte Tschechien</div>
+    <div class="country-line">
+      <img class="flag" src="img/flags/cz.svg" alt="Flagge Tschechiens">
+      <h1>Tschechien</h1>
+    </div>
+    <h2>Gebäude eingefroren. Vertrag kündbar. Russisches Haus weiter aktiv.</h2>
+    <p>Die tschechischen Behörden haben die Verbindung des Prager Zentrums zur sanktionierten russischen Staatsagentur Rossotrudnitschestwo festgestellt und das Gebäude wirtschaftlich eingefroren. Geschlossen wurde das Haus jedoch nicht. Auch das seit 1971 geltende und mit sechs Monaten Frist kündbare Regierungsabkommen blieb bestehen.</p>
+    <div class="status-row" aria-label="Status">
+      <span class="badge active">● Aktiver offizieller Standort</span>
+      <span class="badge limited">● Finanziell oder praktisch beschränkt</span>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="lead-box">
+    <strong>Der Kernbefund</strong>
+    Tschechien hat das Russische Haus nicht politisch beendet, sondern sein Gebäude als Sanktionsfall behandelt. Die wirtschaftliche Nutzung ist blockiert; Veranstaltungen, Sprachkurse, Bibliothek und Onlineangebote laufen weiter. Die Rechtsgrundlage erklärt diesen Zustand – sie erzwingt ihn nicht.
+  </div>
+
+  <details class="section" open>
+    <summary>Kurzbefund</summary>
+    <div class="section-body">
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><th>Zentrum</th><td>Russisches Zentrum für Wissenschaft und Kultur / Ruský dům v Praze</td></tr>
+            <tr><th>Träger</th><td>Offizielle Vertretung der russischen Staatsagentur Rossotrudnitschestwo</td></tr>
+            <tr><th>Ort</th><td>Na Zátorce 16, 160 00 Prag 6</td></tr>
+            <tr><th>Rechtsgrundlage</th><td>Regierungsabkommen zwischen der ČSSR und der UdSSR vom 12. Mai 1971</td></tr>
+            <tr><th>Eröffnung</th><td>1971 als „Haus der sowjetischen Wissenschaft und Kultur“; feierliche Eröffnung unter Beteiligung Leonid Breschnews</td></tr>
+            <tr><th>Staatliche Maßnahme</th><td>Gebäude am 14. November 2024 wirtschaftlich eingefroren; Widerspruch am 27. Februar 2025 zurückgewiesen</td></tr>
+            <tr><th>Aktueller Betrieb</th><td>Weiterhin Präsenz- und Onlineveranstaltungen, Sprachkurse und Bibliothek; Stand Juli 2026</td></tr>
+            <tr><th>Status</th><td><div class="inline-badges"><span class="badge active">Aktiver offizieller Standort</span><span class="badge limited">Finanziell oder praktisch beschränkt</span></div></td></tr>
+            <tr><th>Rechtlicher Ausstieg</th><td>Einseitige Kündigung des Abkommens mit sechsmonatiger Frist ausdrücklich möglich</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Die aktuelle Website des Hauses weist die Prager Adresse, laufende Programme, Kurse und Bibliotheksangebote aus. Der Veranstaltungskalender enthält auch im Juli 2026 neue Termine. <span class="source"><a href="https://rsvk.cz/cs/" target="_blank" rel="noopener noreferrer">Russisches Haus Prag</a> · <a href="https://rsvk.cz/cs/kalendar/" target="_blank" rel="noopener noreferrer">Kalender</a></span></p>
+    </div>
+  </details>
+
+  <details class="section" open>
+    <summary>Chronologie</summary>
+    <div class="section-body">
+      <ol class="timeline">
+        <li>
+          <time datetime="1971-05-12">12. Mai<br>1971</time>
+          <div><h3>Regierungsabkommen tritt sofort in Kraft</h3><p>Die Regierungen der Tschechoslowakischen Sozialistischen Republik und der Sowjetunion unterzeichnen in Prag das Abkommen über Errichtung und Tätigkeit des Hauses. Es tritt am selben Tag in Kraft. <span class="source"><a href="https://www.zakonyprolidi.cz/cs/1971-81" target="_blank" rel="noopener noreferrer">Verordnung Nr. 81/1971</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="1971">1971</time>
+          <div><h3>Eröffnung im Schatten des Prager Frühlings</h3><p>Das Haus wird zunächst in der Rytířská-Straße eröffnet. Gustáv Husák und Leonid Breschnew nehmen an der Feier teil. Die Einrichtung steht für die demonstrative sowjetisch-tschechoslowakische „Freundschaft“ nach der Niederschlagung des Prager Frühlings. <span class="source"><a href="https://www.ceskatelevize.cz/porady/10195164142-vypravej/13547-ve-stopach-doby/7027-v-praze-byl-otevren-dum-sovetske-vedy-a-kultury/" target="_blank" rel="noopener noreferrer">Česká televize</a></span></p></div>
+        </li>
+        <li>
+          <time>Nach<br>1991</time>
+          <div><h3>Fortführung als russisches Kulturzentrum</h3><p>Nach dem Zerfall der Sowjetunion wird das Zentrum unter russischer Trägerschaft weitergeführt. Das tschechische Außenministerium führt das Abkommen von 1971 weiterhin als gültigen Vertrag mit Russland. <span class="source"><a href="https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/rusko/smlouvy/" target="_blank" rel="noopener noreferrer">Tschechisches Außenministerium</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2022-07-21">21. Juli<br>2022</time>
+          <div><h3>EU sanktioniert Rossotrudnitschestwo</h3><p>Die EU nimmt die Betreiberagentur auf die Sanktionsliste. Die amtliche Begründung nennt unter anderem Propaganda- und Public-Diplomacy-Projekte, Kreml-Narrative sowie Aktivitäten in besetzten ukrainischen Gebieten. <span class="source"><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX%3A32022D1272" target="_blank" rel="noopener noreferrer">EU-Beschluss 2022/1272</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2022">2022–<br>2023</time>
+          <div><h3>Propaganda unter dem Etikett der Kultur</h3><p>Investigative Recherchen dokumentieren tschechische Übersetzungen russischer Propagandabroschüren. Darin werden ukrainische Streitkräfte und angebliche „Nazi-Einheiten“ für zivile Opfer in Mariupol verantwortlich gemacht; die Annexion der Krim erscheint als „Wiedervereinigung“. <span class="source"><a href="https://www.investigace.cz/rusky-dum/" target="_blank" rel="noopener noreferrer">investigace.cz, 3. Mai 2023</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2023-06">Juni<br>2023</time>
+          <div><h3>Behörden prüfen – das Haus bleibt</h3><p>Der Finanzanalytische Dienst untersucht mögliche Berührungspunkte mit den EU-Sanktionen. Das Zentrum arbeitet zu diesem Zeitpunkt nur eingeschränkt und öffnet nach Angaben des tschechischen Fernsehens vor allem für einzelne Veranstaltungen. Eine staatliche Schließungsanordnung ist nicht belegt. <span class="source"><a href="https://ct24.ceskatelevize.cz/clanek/domaci/ruske-centrum-v-praze-pomahalo-se-sirenim-valecne-propagandy-zajimaji-se-o-nej-urady-5884" target="_blank" rel="noopener noreferrer">ČT24, 5. Juni 2023</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2024-11-14">14. Nov.<br>2024</time>
+          <div><h3>Das Gebäude wird wirtschaftlich eingefroren</h3><p>Der Finanzanalytische Dienst stuft das Gebäude Na Zátorce als von den Sanktionen erfasste wirtschaftliche Ressource ein. Eigentümer ist die Russische Föderation; das Zentrum hat dort seinen formalen und tatsächlichen Sitz. <span class="source"><a href="https://mf.gov.cz/assets/attachments/2025-11-03_Priloha-k-Info-106-99-MF-53645-2025-74.pdf" target="_blank" rel="noopener noreferrer">Entscheidung des Finanzministeriums, S. 1–4</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2025-02-27">27. Feb.<br>2025</time>
+          <div><h3>Finanzministerium bestätigt die Sperre</h3><p>Das Ministerium weist den russischen Widerspruch zurück. Rossotrudnitschestwo, das Zentrum und die Russische Föderation dürfen das Gebäude insbesondere nicht verkaufen, vermieten, verpfänden oder zur Erlangung von Geld, Waren oder Dienstleistungen einsetzen. Zugleich stellt die Entscheidung fest: Das Gebäude gehört nicht zur diplomatischen Mission und genießt keine diplomatische Immunität. <span class="source"><a href="https://mf.gov.cz/assets/attachments/2025-11-03_Priloha-k-Info-106-99-MF-53645-2025-74.pdf" target="_blank" rel="noopener noreferrer">Finanzministerium, 27. Februar 2025</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2025-05">Mai<br>2025</time>
+          <div><h3>Tschechische Schüler besuchen das Haus</h3><p>Eine Gymnasialgruppe nimmt an einer Veranstaltung über Alexander Puschkin teil. Nach Angaben der Schule wird den Jugendlichen dabei auch ein Studium in Russland angeboten. Die zuständige Regionalpräsidentin nennt die Exkursion angesichts des Angriffskrieges „absoluten Wahnsinn“. <span class="source"><a href="https://ct24.ceskatelevize.cz/clanek/domaci/studenti-sli-na-exkurzi-ruskeho-domu-absolutni-silenstvi-mini-hejtmanka-361680" target="_blank" rel="noopener noreferrer">ČT24, 4. Juni 2025</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2026-03-26">26. März<br>2026</time>
+          <div><h3>Angriff mit Brandsätzen</h3><p>Unbekannte werfen Brandsätze auf das Gebäude. Die tschechischen Behörden verurteilen den gewaltsamen Angriff; die Polizei nimmt Ermittlungen auf. Der Vorfall ändert nichts an der rechtlichen und politischen Bewertung des Zentrums. <span class="source"><a href="https://ct24.ceskatelevize.cz/clanek/domaci/policie-vysetruje-utok-zapalnymi-lahvemi-na-rusky-dum-v-praze-371763" target="_blank" rel="noopener noreferrer">ČT24, 27. März 2026</a></span></p></div>
+        </li>
+        <li>
+          <time datetime="2026-07">Juli<br>2026</time>
+          <div><h3>Weiterhin aktiver Betrieb</h3><p>Das Haus veröffentlicht laufende Veranstaltungen, Sprachkurse, Bibliotheksangebote und eigene geschichtspolitische Inhalte. Die Vermögenssperre hat den Veranstaltungsbetrieb nicht beendet. <span class="source"><a href="https://rsvk.cz/cs/cely-program/" target="_blank" rel="noopener noreferrer">Aktuelles Gesamtprogramm</a></span></p></div>
+        </li>
+      </ol>
+    </div>
+  </details>
+
+  <details class="section" open>
+    <summary>Rechtsgrundlage</summary>
+    <div class="section-body">
+      <p>Rechtsgrundlage ist das Regierungsabkommen vom 12. Mai 1971, veröffentlicht als Verordnung Nr. 81/1971. Das tschechische Außenministerium führt es weiterhin unter den gültigen Verträgen mit Russland. <span class="source"><a href="https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/rusko/smlouvy/" target="_blank" rel="noopener noreferrer">Vertragsverzeichnis</a> · <a href="https://www.zakonyprolidi.cz/cs/1971-81" target="_blank" rel="noopener noreferrer">Volltext</a></span></p>
+
+      <div class="contract-grid">
+        <div class="contract-card"><h3>Politische Information war Vertragszweck</h3><p>Das Haus sollte die „ewige und unzerstörbare Freundschaft“ festigen, über die Erfolge des sowjetischen Kommunismus informieren und die sowjetische Außenpolitik darstellen.</p></div>
+        <div class="contract-card"><h3>Propagandamaterial ausdrücklich vorgesehen</h3><p>Artikel 6 erlaubt Vorträge, politische Informationsarbeit, Pressekonferenzen sowie die Verbreitung sowjetischer Nachrichten, Veröffentlichungen und Informationsmaterialien.</p></div>
+        <div class="contract-card"><h3>Dem Recht des Gastlandes unterworfen</h3><p>Nach Artikel 3 ist das Haus eine selbstständige juristische Person. Seine Tätigkeit unterliegt dem Recht des Gastlandes; der Direktor ist für dessen Einhaltung verantwortlich.</p></div>
+        <div class="contract-card"><h3>Keine diplomatische Immunität</h3><p>Der Vertrag verleiht dem Haus keine diplomatische Immunität. Das Finanzministerium bestätigte zudem, dass das heutige Gebäude nicht Teil der russischen diplomatischen Mission ist.</p></div>
+      </div>
+
+      <div class="quote-box">
+        <blockquote lang="cs">„Tato dohoda se uzavírá na neomezenou dobu a může být písemně vypovězena každou ze smluvních stran na základě šestiměsíční výpovědní lhůty.“</blockquote>
+        <div class="translation"><strong>Deutsche Übersetzung:</strong> „Dieses Abkommen wird auf unbestimmte Zeit geschlossen und kann von jeder Vertragspartei schriftlich mit einer Kündigungsfrist von sechs Monaten gekündigt werden.“</div>
+        <div class="source"><a href="https://www.zakonyprolidi.cz/cs/1971-81" target="_blank" rel="noopener noreferrer">Artikel 11 des Abkommens</a></div>
+      </div>
+
+      <div class="key-box"><strong>Entscheidend:</strong> Tschechien ist nicht dauerhaft an den Vertrag gebunden. Die Regierung könnte ihn nach seinem Wortlaut einseitig kündigen; sechs Monate später wäre er beendet.</div>
+    </div>
+  </details>
+
+  <details class="section" open>
+    <summary>Maßnahmen seit 2022</summary>
+    <div class="section-body">
+      <p>Die Behörden haben den Sanktionsbezug geprüft und das Gebäude als wirtschaftliche Ressource eingefroren. Die amtliche Entscheidung ordnet das Zentrum Rossotrudnitschestwo vollständig zu: Die Agentur übe hundertprozentige Kontrolle im sanktionsrechtlichen Sinn aus. Das Gebäude selbst gehört dagegen der Russischen Föderation. <span class="source"><a href="https://mf.gov.cz/assets/attachments/2025-11-03_Priloha-k-Info-106-99-MF-53645-2025-74.pdf" target="_blank" rel="noopener noreferrer">Finanzministerium: Widerspruchsentscheidung</a></span></p>
+
+      <div class="check-grid">
+        <div class="check-card yes">
+          <h3>Belegt</h3>
+          <ul>
+            <li>Prüfung möglicher Sanktionsverstöße</li>
+            <li>Wirtschaftliches Einfrieren des Gebäudes</li>
+            <li>Verbot von Verkauf, Vermietung, Verpfändung und wirtschaftlicher Verwertung</li>
+            <li>Feststellung der Kontrolle durch Rossotrudnitschestwo</li>
+            <li>Keine diplomatische Immunität des Gebäudes</li>
+            <li>Politische und öffentliche Forderungen nach Schließung</li>
+          </ul>
+        </div>
+        <div class="check-card no">
+          <h3>Nicht belegt</h3>
+          <ul>
+            <li>Formale Schließung des Russischen Hauses</li>
+            <li>Allgemeines Veranstaltungs- oder Betriebsverbot</li>
+            <li>Kündigung oder Suspendierung des Abkommens von 1971</li>
+            <li>Aufnahme des Prager Hauses selbst auf eine tschechische Sanktionsliste</li>
+            <li>Abschließendes Gerichtsurteil zur Klage gegen die Gebäudesperre</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>Die Vermögenssperre ist daher keine Schließung. Sie verhindert die wirtschaftliche Verwertung des Gebäudes, untersagt aber nicht automatisch jede unentgeltliche Veranstaltung im eigenen Haus. Ende 2025 war gegen die Entscheidung ein Verfahren beim Prager Stadtgericht anhängig; ein späteres abschließendes Urteil konnten wir bis zum Redaktionsstand nicht feststellen. <span class="source"><a href="https://www.irozhlas.cz/zpravy-domov/moskva-jde-proti-cesku-chce-zrusit-sankce-na-budovu-v-praze-odkud-rusove-siri_2511120500_hrk" target="_blank" rel="noopener noreferrer">iROZHLAS, 12. November 2025</a></span></p>
+    </div>
+  </details>
+
+  <details class="section" open>
+    <summary>Begründung des Außenministeriums im Original</summary>
+    <div class="section-body">
+      <p>Eine förmliche Regierungsentscheidung, das Haus geöffnet zu lassen, ist nicht bekannt. Im Juni 2023 erklärte der Sprecher des tschechischen Außenministeriums Daniel Drake jedoch:</p>
+      <div class="quote-box">
+        <blockquote lang="cs">„Ruské kulturní centrum má statut objektu pro státní neobchodní účely, je vázané mezinárodní dohodou, která je stále platná. Diplomatický servis tuto dohodu respektuje a neúčtuje si žádné nájemné.“</blockquote>
+        <div class="translation"><strong>Deutsche Übersetzung:</strong> „Das Russische Kulturzentrum hat den Status eines Objekts für staatliche, nichtkommerzielle Zwecke und ist an ein internationales Abkommen gebunden, das weiterhin gültig ist. Der diplomatische Dienst respektiert dieses Abkommen und erhebt keine Miete.“</div>
+        <div class="source"><a href="https://ct24.ceskatelevize.cz/clanek/domaci/ruske-centrum-v-praze-pomahalo-se-sirenim-valecne-propagandy-zajimaji-se-o-nej-urady-5884" target="_blank" rel="noopener noreferrer">ČT24, 5. Juni 2023</a></div>
+      </div>
+      <div class="analysis-box">
+        <h3>Was diese Erklärung sagt – und was nicht</h3>
+        <p>Das Ministerium erklärte, warum der bestehende Vertrag administrativ respektiert wird. Es erklärte nicht, dass Tschechien ihn nicht kündigen könne. Artikel 11 erlaubt die einseitige Kündigung ausdrücklich. Der Vertrag ist daher eine fortbestehende Rechtsgrundlage, aber kein rechtliches Hindernis für seine Beendigung.</p>
+      </div>
+    </div>
+  </details>
+
+  <details class="section" open>
+    <summary>Einordnung</summary>
+    <div class="section-body">
+      <p>Tschechien ist ein besonders aufschlussreicher Fall. Das Land erkennt den Propagandacharakter der Tätigkeit, prüft die Einhaltung der Sanktionen und friert das Gebäude ein – beendet aber das zugrunde liegende Abkommen nicht.</p>
+      <p>Hinzu kommt: Die politische Einflussarbeit ist hier nicht nur eine spätere Zweckentfremdung eines neutralen Kulturauftrags. Der Vertrag von 1971 sah die Darstellung sowjetischer Außenpolitik und die Verbreitung politischer Informationsmaterialien ausdrücklich vor. Was heute als Vermischung von Kultur und Propaganda kritisiert wird, gehörte von Anfang an zum institutionellen Auftrag.</p>
+
+      <div class="compare">
+        <div><h3>Rumänien</h3><p>Die Regierung erklärte, das Zentrum habe seinen Kulturauftrag verlassen und sei zu einem Instrument für Propaganda, Desinformation und die Rechtfertigung russischer Kriegsverbrechen geworden. Der Betrieb wurde ausgesetzt.</p></div>
+        <div><h3>Tschechien</h3><p>Der historische Vertrag selbst sieht politische Informations- und Propagandaarbeit vor. Trotzdem blieb er in Kraft; der Staat beschränkte sich bislang auf Sanktionen gegen die wirtschaftliche Nutzung des Gebäudes.</p></div>
+      </div>
+
+      <h3 class="subheading">Politische Verantwortung</h3>
+      <p>Unter Petr Fiala gehörte Tschechien zu den entschiedensten Unterstützern der Ukraine. Seine Regierung organisierte militärische und humanitäre Hilfe und trieb die internationale Munitionsinitiative voran. Dennoch kündigte gerade diese Regierung das Abkommen von 1971 nicht. <span class="source"><a href="https://vlada.gov.cz/en/media-centrum/aktualne/prime-minister-fiala-following-meeting-with-president-zelenskyy-czech-republic-will-continue-to-stand-firmly-on-ukraine_s-side-220222/" target="_blank" rel="noopener noreferrer">Tschechische Regierung, 5. Mai 2025</a></span></p>
+      <p>Unter Andrej Babiš ist ein entschlossenerer Schritt noch weniger wahrscheinlich. Seine Regierung lässt die Munitionsinitiative nur weiterlaufen, solange andere Staaten sie finanzieren, und lehnt tschechische Steuermittel sowie tschechische Soldaten für die Ukraine ab. Ein persönliches Eingreifen Babišs zugunsten des Russischen Hauses ist allerdings nicht belegt. <span class="source"><a href="https://vlada.gov.cz/en/media-centrum/aktualne/prime-minister-babis-after-the-meeting-of-the-coalition-of-the-willing-the-ammunition-initiative-can-continue-as-long-as-other-countries-fund-it-224959/" target="_blank" rel="noopener noreferrer">Tschechische Regierung, 6. Januar 2026</a></span></p>
+      <p>Präsident Petr Pavel hält am pro-ukrainischen Kurs fest. Eine Kündigung kann er jedoch nicht allein gegen die Regierung durchsetzen: Außenpolitische Entscheidungen des Präsidenten nach Artikel 63 bedürfen grundsätzlich der Gegenzeichnung des Regierungschefs oder eines beauftragten Regierungsmitglieds. Eine öffentliche Initiative Pavels speziell zur Kündigung des Abkommens oder zur Schließung des Russischen Hauses haben wir nicht gefunden. <span class="source"><a href="https://www.hrad.cz/en/president-of-the-cr/current-president-of-the-cr/public-addresses-and-interviews/speech-by-the-president-pavel-at-harvard-university-18790" target="_blank" rel="noopener noreferrer">Pavel zur Ukraine, 24. September 2025</a> · <a href="https://www.hrad.cz/en/czech-republic/constitution-of-the-cr" target="_blank" rel="noopener noreferrer">Verfassung, Art. 63</a></span></p>
+
+      <div class="editorial">
+        <div class="label">Redaktionelle Einordnung</div>
+        <p>Tschechien ist rechtlich nicht gebunden, sondern politisch blockiert. Fiala hätte kündigen können, tat es aber nicht. Babiš dürfte es nicht wollen. Pavel könnte öffentlichen Druck erzeugen, kann die Kündigung jedoch nicht allein verfügen – und hat diesen konkreten Konflikt bislang offenbar nicht gesucht.</p>
+        <small>Die rechtlichen Befugnisse und politischen Entscheidungen sind belegt. Die Bewertung der Motive ist eine aus dem dokumentierten Vorgehen abgeleitete Einordnung; eine klare öffentliche Regierungsantwort auf die Frage nach der unterlassenen Kündigung liegt nicht vor.</small>
+      </div>
+    </div>
+  </details>
+
+  <details class="section">
+    <summary>Quellen</summary>
+    <div class="section-body">
+      <h3 class="subheading">Amtliche Quellen</h3>
+      <ul class="source-list">
+        <li><strong>Tschechisches Außenministerium</strong><a href="https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/rusko/smlouvy/" target="_blank" rel="noopener noreferrer">Liste der gültigen internationalen Verträge mit Russland</a></li>
+        <li><strong>Verordnung Nr. 81/1971</strong><a href="https://www.zakonyprolidi.cz/cs/1971-81" target="_blank" rel="noopener noreferrer">Vollständiger Text des Regierungsabkommens vom 12. Mai 1971</a></li>
+        <li><strong>Europäische Union</strong><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX%3A32022D1272" target="_blank" rel="noopener noreferrer">Beschluss (GASP) 2022/1272 vom 21. Juli 2022</a></li>
+        <li><strong>Tschechisches Finanzministerium</strong><a href="https://mf.gov.cz/assets/attachments/2025-11-03_Priloha-k-Info-106-99-MF-53645-2025-74.pdf" target="_blank" rel="noopener noreferrer">Widerspruchsentscheidung zur Gebäudesperre vom 27. Februar 2025</a></li>
+        <li><strong>Russisches Haus Prag</strong><a href="https://rsvk.cz/cs/" target="_blank" rel="noopener noreferrer">Aktuelle Website</a> · <a href="https://rsvk.cz/cs/cely-program/" target="_blank" rel="noopener noreferrer">Gesamtprogramm</a></li>
+        <li><strong>Tschechische Regierung</strong><a href="https://vlada.gov.cz/en/media-centrum/aktualne/prime-minister-fiala-following-meeting-with-president-zelenskyy-czech-republic-will-continue-to-stand-firmly-on-ukraine_s-side-220222/" target="_blank" rel="noopener noreferrer">Fiala und die Unterstützung der Ukraine, 5. Mai 2025</a></li>
+        <li><strong>Tschechische Regierung</strong><a href="https://vlada.gov.cz/en/media-centrum/aktualne/prime-minister-babis-after-the-meeting-of-the-coalition-of-the-willing-the-ammunition-initiative-can-continue-as-long-as-other-countries-fund-it-224959/" target="_blank" rel="noopener noreferrer">Babiš zur Munitionsinitiative, 6. Januar 2026</a></li>
+        <li><strong>Präsident der Tschechischen Republik</strong><a href="https://www.hrad.cz/en/president-of-the-cr/current-president-of-the-cr/public-addresses-and-interviews/speech-by-the-president-pavel-at-harvard-university-18790" target="_blank" rel="noopener noreferrer">Petr Pavel zur Unterstützung der Ukraine</a> · <a href="https://www.hrad.cz/en/czech-republic/constitution-of-the-cr" target="_blank" rel="noopener noreferrer">Verfassung der Tschechischen Republik</a></li>
+      </ul>
+
+      <h3 class="subheading">Ergänzende Quellen</h3>
+      <ul class="source-list">
+        <li><strong>Česká televize</strong><a href="https://www.ceskatelevize.cz/porady/10195164142-vypravej/13547-ve-stopach-doby/7027-v-praze-byl-otevren-dum-sovetske-vedy-a-kultury/" target="_blank" rel="noopener noreferrer">Eröffnung des Hauses 1971</a></li>
+        <li><strong>investigace.cz, 3. Mai 2023</strong><a href="https://www.investigace.cz/rusky-dum/" target="_blank" rel="noopener noreferrer">Propaganda unter dem Deckmantel der Kultur</a></li>
+        <li><strong>ČT24, 5. Juni 2023</strong><a href="https://ct24.ceskatelevize.cz/clanek/domaci/ruske-centrum-v-praze-pomahalo-se-sirenim-valecne-propagandy-zajimaji-se-o-nej-urady-5884" target="_blank" rel="noopener noreferrer">Behördenprüfung und Stellungnahme des Außenministeriums</a></li>
+        <li><strong>ČT24, 4. Juni 2025</strong><a href="https://ct24.ceskatelevize.cz/clanek/domaci/studenti-sli-na-exkurzi-ruskeho-domu-absolutni-silenstvi-mini-hejtmanka-361680" target="_blank" rel="noopener noreferrer">Schülerbesuch und politische Kritik</a></li>
+        <li><strong>iROZHLAS, 12. November 2025</strong><a href="https://www.irozhlas.cz/zpravy-domov/moskva-jde-proti-cesku-chce-zrusit-sankce-na-budovu-v-praze-odkud-rusove-siri_2511120500_hrk" target="_blank" rel="noopener noreferrer">Klage gegen die Sanktion und fehlende diplomatische Immunität</a></li>
+        <li><strong>ČT24, 27. März 2026</strong><a href="https://ct24.ceskatelevize.cz/clanek/domaci/policie-vysetruje-utok-zapalnymi-lahvemi-na-rusky-dum-v-praze-371763" target="_blank" rel="noopener noreferrer">Angriff mit Brandsätzen und staatliche Verurteilung</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="section">
+    <summary>Offene Fragen</summary>
+    <div class="section-body">
+      <ol class="questions">
+        <li>Warum hat Tschechien das Abkommen trotz der ausdrücklich vorgesehenen sechsmonatigen Kündigungsfrist nicht beendet?</li>
+        <li>Welches abschließende Ergebnis hatte die behördliche Prüfung möglicher Sanktionsverstöße im laufenden Betrieb?</li>
+        <li>Wie werden Gehälter, Kurse, Veranstaltungen und Veröffentlichungen eines von einer sanktionierten Organisation kontrollierten Hauses finanziert?</li>
+        <li>Erhebt das Zentrum weiterhin Gebühren oder andere Gegenleistungen – und wie werden diese sanktionsrechtlich behandelt?</li>
+        <li>Wie ist die Rechtsnachfolge von der im Vertrag genannten sowjetischen Freundschaftsorganisation zu Rossotrudnitschestwo genau begründet?</li>
+        <li>Wann zog das Zentrum von der Rytířská-Straße an die heutige Adresse Na Zátorce 16?</li>
+        <li>Welche Steuer-, Miet- oder sonstigen Privilegien bestehen neben der mietfreien Nutzung fort?</li>
+        <li>Wie ist das Gerichtsverfahren gegen die Gebäudesperre ausgegangen?</li>
+        <li>Hat die Regierung Babiš den Vertrag oder die Tätigkeit des Hauses seit ihrem Amtsantritt offiziell neu bewertet?</li>
+        <li>Hat Präsident Pavel intern auf eine Kündigung gedrängt, obwohl er sie nicht allein durchsetzen kann?</li>
+      </ol>
+    </div>
+  </details>
+
+  <p class="stand">Redaktionsstand: 18. Juli 2026</p>
+</main>
+
+<footer>
+  Pressemappe Russisches Haus Berlin &nbsp;·&nbsp; <a href="eu-laender.html">Russische Häuser in Europa</a> &nbsp;·&nbsp; <a href="index.html">Zur Übersicht</a>
+</footer>
+</body>
+</html>
