@@ -1,25 +1,44 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Russian Houses in Europe: Which ones have already closed? · Press Kit Russian House Berlin</title>
-<meta name="description" content="Lithuania, Poland, Sweden, and the Republic of Moldova have all shut down their Rossotrudnichestvo centres. Germany, however, is hesitating.">
-<meta property="og:title" content="Russian Houses in Europe: Which ones have already closed?">
-<meta property="og:description" content="Lithuania, Poland, Sweden, and the Republic of Moldova have all shut down their Rossotrudnichestvo centres. Germany, however, is hesitating.">
-<meta property="og:image" content="https://sunnymica.github.io/pressemappe-russisches-haus/img/warnschild.png">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="eu-laender.html" hreflang="de" rel="alternate"/>
+<link href="eu-laender_en.html" hreflang="en" rel="alternate"/>
+<title>Russian Houses in Europe – how other countries have responded · Press kit</title>
+<meta content="How European countries have dealt with Russian Houses, Rossotrudnichestvo representations and substitute networks – with country files, timelines and sources." name="description"/>
+<meta content="Russian Houses in Europe – how other countries have responded" property="og:title"/>
+<meta content="Germany continues to allow the Russian House in Berlin to operate. These country files examine the tools other European governments have used." property="og:description"/>
+<meta content="https://sunnymica.github.io/pressemappe-russisches-haus/img/rossotrudnitschestwo-karte-europa-2026-07-18.png" property="og:image"/>
 <style>
 :root {
-  --blau: #005BBB;
-  --gelb: #FFD700;
-  --dunkel: #1a1a1a;
-  --grau: #4a4a4a;
-  --hellgrau: #f4f4f2;
-  --linie: #e0e0e0;
-  --rot: #A32D2D;
-  --gruen: #2d7a3a;
-  --orange: #e67e22;
+  --paper: #f4f1ea;
+  --white: #ffffff;
+  --ink: #1a1814;
+  --ink-muted: #5a534a;
+  --rule: #c9c1b1;
+
+  --blue: #005bbb;
+  --blue-dark: #07477f;
+  --blue-soft: #e6f1fb;
+
+  --red: #a32d2d;
+  --red-dark: #7f2020;
+  --red-soft: #f8e8e8;
+
+  --green: #2d7040;
+  --green-soft: #e8f3eb;
+
+  --orange: #a35d13;
+  --orange-soft: #f8eee1;
+
+  --violet: #67538f;
+  --violet-soft: #eeeaf7;
+
+  --grey-soft: #eeece7;
 
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Arial, Helvetica, sans-serif;
@@ -33,439 +52,786 @@
   padding: 0;
 }
 
-body {
-  font-family: var(--font-sans);
-  font-weight: 300;
-  color: var(--dunkel);
-  background: #fff;
-  line-height: 1.7;
+html {
+  scroll-behavior: smooth;
 }
 
-.ukraine-bar {
-  height: 5px;
-  background: linear-gradient(to right, var(--blau) 50%, var(--dunkel) 50%);
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  padding: 36px 20px;
+}
+
+a {
+  color: var(--blue-dark);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
 }
 
 .back-link {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 16px 24px 0;
-  font-size: 13px;
-}
-
-.back-link a {
-  color: var(--grau);
+  display: inline-block;
+  color: var(--ink-muted);
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.back-link a:hover {
-  color: var(--blau);
+.lang-switch {
+  display: inline-block;
+  padding: 5px 11px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  color: var(--blue-dark);
+  background: var(--white);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
 }
 
-header {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 32px 24px 24px;
-  border-bottom: 1px solid var(--linie);
+.lang-switch:hover {
+  color: var(--white);
+  background: var(--blue);
 }
 
-header h1 {
-  font-family: var(--font-serif);
-  font-size: clamp(24px, 4vw, 38px);
-  line-height: 1.2;
-  margin-bottom: 10px;
+.back-link:hover {
+  color: var(--red);
 }
 
-header p {
-  font-size: 15px;
-  color: var(--grau);
-  max-width: 620px;
-}
-
-.main {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 24px 60px;
-}
-
-.vergleich {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.dossier-header {
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 12px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   gap: 16px;
-  margin: 28px 0 36px;
-}
-
-.vergleich-box {
-  border-radius: 6px;
-  padding: 20px 24px;
-}
-
-.vergleich-box.geschlossen {
-  background: #E8F5E9;
-  border-left: 4px solid var(--gruen);
-}
-
-.vergleich-box.offen {
-  background: #FCEBEB;
-  border-left: 4px solid var(--rot);
-}
-
-.vergleich-box .label {
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  color: var(--ink-muted);
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  margin-bottom: 8px;
 }
 
-.vergleich-box.geschlossen .label {
-  color: var(--gruen);
+.dossier-header .accent {
+  color: var(--red);
+  font-weight: 800;
 }
 
-.vergleich-box.offen .label {
-  color: var(--rot);
+.kicker {
+  margin-bottom: 15px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
-.vergleich-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.vergleich-box ul li {
-  padding: 5px 0 5px 20px;
-  position: relative;
-  font-size: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-}
-
-.vergleich-box ul li:last-child {
-  border-bottom: none;
-}
-
-.vergleich-box.geschlossen ul li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--gruen);
-  font-weight: 700;
-}
-
-.vergleich-box.offen ul li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--rot);
-  font-weight: 700;
-}
-
-.land-karte {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 0 0 32px;
-}
-
-.land {
-  border-radius: 6px;
-  border: 1px solid var(--linie);
-  overflow: hidden;
-}
-
-.land-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 18px 22px;
-  background: var(--hellgrau);
-}
-
-.land-flag {
-  font-size: 28px;
-  flex-shrink: 0;
-}
-
-.land-info {
-  flex: 1;
-}
-
-.land-info .name {
+h1,
+h2,
+h3 {
   font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 700;
 }
 
-.land-info .status {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-top: 2px;
+h1 {
+  max-width: 820px;
+  margin-bottom: 22px;
+  font-size: clamp(31px, 5vw, 51px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
 }
 
-.land.geschlossen .land-info .status {
-  color: var(--gruen);
+h1 em {
+  color: var(--red-dark);
+  font-style: normal;
 }
 
-.land.offen .land-info .status {
-  color: var(--rot);
+.lede {
+  max-width: 790px;
+  margin-bottom: 38px;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.58;
 }
 
-.land.pruefung .land-info .status {
-  color: var(--orange);
+.figure {
+  max-width: 780px;
+  margin: 38px auto 46px;
 }
 
-.land-body {
-  padding: 16px 22px;
-  font-size: 14px;
-  color: var(--grau);
-  line-height: 1.6;
-}
-
-.land-body strong {
-  color: var(--dunkel);
-  font-weight: 600;
-}
-
-.quelle {
-  font-size: 12px;
-  font-style: italic;
-  margin-top: 6px;
+.figure img {
+  width: 100%;
+  height: auto;
   display: block;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
 }
 
-.moldau-box {
-  background: var(--dunkel);
-  color: #fff;
-  border-radius: 6px;
-  padding: 22px 28px;
-  margin: 32px 0;
+.figure figcaption {
+  max-width: 850px;
+  margin-top: 12px;
+  color: var(--ink-muted);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
-.moldau-box h3 {
+.figure figcaption strong {
+  color: var(--ink);
+}
+
+.figure figcaption a {
+  overflow-wrap: anywhere;
+}
+
+.section {
+  margin: 56px 0;
+}
+
+.section-title {
+  margin-bottom: 14px;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.subsection-title {
+  margin: 34px 0 14px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.section-text {
+  max-width: 780px;
+  margin-bottom: 16px;
   font-family: var(--font-serif);
-  font-size: 20px;
-  margin-bottom: 12px;
-  color: #7eb8f7;
+  font-size: 17px;
+  line-height: 1.62;
 }
 
-.moldau-box p {
+.section-text strong {
+  color: var(--red-dark);
+}
+
+.method-box {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 5px 5px 0;
+  background: var(--blue-soft);
+}
+
+.method-box h3 {
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+
+.method-box p {
   font-size: 15px;
-  line-height: 1.7;
-  opacity: 0.9;
+  line-height: 1.62;
 }
 
-.moldau-box p + p {
+.method-box p + p {
   margin-top: 10px;
 }
 
-.moldau-box strong {
-  color: #FFD700;
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 10px;
 }
 
-.fazit {
-  background: var(--hellgrau);
-  border-left: 4px solid var(--blau);
-  padding: 20px 24px;
-  border-radius: 0 6px 6px 0;
-  margin: 32px 0;
+.status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.fazit h3 {
+.status.closed {
+  color: var(--green);
+  border-color: #a8cfb1;
+  background: var(--green-soft);
+}
+
+.status.active {
+  color: var(--red-dark);
+  border-color: #e6b2b2;
+  background: var(--red-soft);
+}
+
+.status.restricted {
+  color: var(--orange);
+  border-color: #dec09e;
+  background: var(--orange-soft);
+}
+
+.status.vanished {
+  color: var(--violet);
+  border-color: #c9bde1;
+  background: var(--violet-soft);
+}
+
+.status.network {
+  color: var(--blue-dark);
+  border-color: #b4d1ed;
+  background: var(--blue-soft);
+}
+
+.status.unproven {
+  color: var(--ink-muted);
+  border-color: var(--rule);
+  background: var(--grey-soft);
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 25px 0 8px;
+}
+
+.overview-card {
+  min-height: 154px;
+  padding: 18px;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.overview-country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 11px;
+}
+
+.overview-flag {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.overview-country h3 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.overview-card .status {
+  margin: 0 4px 6px 0;
+}
+
+.overview-note {
+  margin-top: 5px;
+  color: var(--ink-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.accordion-intro {
+  margin-bottom: 15px;
+  color: var(--ink-muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.country-list {
+  margin-top: 22px;
+}
+
+details.country {
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+details.country:hover,
+details.country[open] {
+  border-color: var(--red);
+}
+
+details.country[open] {
+  box-shadow: 0 3px 11px rgba(163, 45, 45, 0.08);
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 92px;
+  padding: 16px 20px;
+  user-select: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-flag-img {
+  flex-shrink: 0;
+  width: 36px;
+  height: 24px;
+  margin-top: 2px;
+  object-fit: cover;
+  border: 1px solid rgba(26, 24, 20, 0.22);
+  border-radius: 2px;
+  background: #fff;
+}
+
+.summary-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.summary-title {
+  display: block;
+  margin-bottom: 6px;
   font-family: var(--font-serif);
-  font-size: 17px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.fazit p {
+.summary-statuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.summary-note {
+  display: block;
+  margin-top: 7px;
+  color: var(--ink-muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.summary-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--red);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+details[open] .summary-icon::before {
+  content: "−";
+}
+
+details:not([open]) .summary-icon::before {
+  content: "+";
+}
+
+.country-body {
+  padding: 21px 22px 23px;
+  border-top: 1px solid var(--rule);
+}
+
+.country-body p {
+  max-width: 800px;
+  font-size: 15px;
+  line-height: 1.68;
+}
+
+.country-body p + p {
+  margin-top: 12px;
+}
+
+.country-body strong {
+  color: var(--red-dark);
+}
+
+.key-fact {
+  margin: 16px 0;
+  padding: 13px 15px;
+  border-left: 3px solid var(--blue);
+  border-radius: 0 4px 4px 0;
+  background: var(--blue-soft);
   font-size: 14px;
-  color: var(--grau);
+  line-height: 1.55;
+}
+
+.country-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--red-dark);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  border-bottom: 1px solid var(--red-dark);
+}
+
+.country-link:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.interim {
+  margin: 48px 0 30px;
+  padding: 24px 26px;
+  border: 2px solid var(--ink);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.interim .label {
+  margin-bottom: 8px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.interim h2 {
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.interim p {
+  max-width: 760px;
+  font-family: var(--font-serif);
+  font-size: 16px;
   line-height: 1.6;
 }
 
+.work-in-progress {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+
+.work-in-progress h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.work-in-progress p {
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+
 footer {
-  background: var(--dunkel);
-  color: #fff;
-  text-align: center;
-  padding: 24px;
-  font-size: 13px;
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 footer a {
-  color: #7eb8f7;
+  color: var(--ink-muted);
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  .vergleich {
+footer a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 800px) {
+  .overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    padding: 26px 15px;
+  }
+
+  .overview {
     grid-template-columns: 1fr;
   }
 
-  .main {
-    padding: 0 16px 40px;
+  h1 {
+    font-size: clamp(30px, 11vw, 42px);
   }
 
-  header {
-    padding: 24px 16px;
+  .lede {
+    font-size: 18px;
   }
 
-  .back-link {
-    padding: 12px 16px 0;
+  summary {
+    align-items: flex-start;
+    min-height: 0;
+    padding: 16px;
   }
 
-  .land-header {
-    padding: 14px 16px;
+  .summary-flag-img {
+    width: 33px;
+    height: 22px;
+    margin-top: 3px;
   }
 
-  .land-body {
-    padding: 14px 16px;
+  .summary-title {
+    font-size: 18px;
+  }
+
+  .summary-icon {
+    width: 29px;
+    height: 29px;
+    font-size: 20px;
+  }
+
+  .country-body {
+    padding: 18px 17px 20px;
+  }
+
+  .method-box,
+  .interim {
+    padding: 20px 18px;
   }
 }
 </style>
 </head>
-
 <body>
-
-<div class="ukraine-bar"></div>
-
-<div class="back-link">
-  <a href="index_en.html">← Back to overview</a>
+<div class="page">
+<div class="top-row">
+<a class="back-link" href="index_en.html">← Back to overview</a>
+<a class="lang-switch" href="eu-laender.html" lang="de">🇩🇪 Deutsch</a>
 </div>
-
-<header>
-  <h1>Russian Houses in Europe: Which ones have already closed?</h1>
-  <p>Several European nations closed their Rossotrudnichestvo centres following the 2022 EU sanctions—including the Republic of Moldova, which is not an EU member. Germany, meanwhile, remains hesitant.</p>
-</header>
-
-<div class="main">
-
-  <div class="vergleich">
-    <div class="vergleich-box geschlossen">
-      <div class="label">Closed</div>
-      <ul>
-        <li>Lithuania</li>
-        <li>Poland</li>
-        <li>Sweden</li>
-        <li>Republic of Moldova</li>
-      </ul>
-    </div>
-
-    <div class="vergleich-box offen">
-      <div class="label">Still open / Under review</div>
-      <ul>
-        <li>Germany (open despite sanctions)</li>
-        <li>Czech Republic (operating occasionally, under review)</li>
-        <li>France (open)</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="moldau-box">
-    <h3>The strongest case: Republic of Moldova</h3>
-    <p>The Republic of Moldova is not an EU member state. It shares a direct border with Ukraine, has Russian troops permanently stationed on its territory in Transnistria, and is economically far more dependent on Moscow than Germany. Yet, Chișinău decided to shut down its Russian House.</p>
-    <p>Moldovan Culture Minister Cristian Jardan justified the closure in November 2025, stating that the centre was funded by <strong>Rossotrudnichestvo</strong>—described as “the main state agency exerting the Kremlin’s soft power”—and was actively being used to propagate “distorted Russian narratives.”</p>
-    <p>When a nation under direct, existential Russian pressure achieves what Germany hesitates to do, it is no longer a matter of feasibility. It is a political choice.</p>
-  </div>
-
-  <div class="land-karte">
-
-    <div class="land geschlossen">
-      <div class="land-header">
-        <span class="land-flag">🇱🇹</span>
-        <div class="land-info">
-          <div class="name">Lithuania</div>
-          <div class="status">Closed</div>
-        </div>
-      </div>
-      <div class="land-body">
-        Lithuania was one of the first EU countries to act decisively after the 2022 invasion of Ukraine, shutting down the Rossotrudnichestvo centre in Vilnius. Additionally, Vilnius expelled the Russian ambassador and downgraded diplomatic relations to an absolute minimum.
-        <span class="quelle">TAZ, April 2025 / Lithuania–Russia relations, Wikipedia</span>
-      </div>
-    </div>
-
-    <div class="land geschlossen">
-      <div class="land-header">
-        <span class="land-flag">🇵🇱</span>
-        <div class="land-info">
-          <div class="name">Poland</div>
-          <div class="status">Closed</div>
-        </div>
-      </div>
-      <div class="land-body">
-        Poland closed the Russian cultural centre in Warsaw. As one of Ukraine’s most committed allies, Warsaw has consistently treated Russian state cultural institutions as direct instruments of state propaganda.
-        <span class="quelle">TAZ, April 2025</span>
-      </div>
-    </div>
-
-    <div class="land geschlossen">
-      <div class="land-header">
-        <span class="land-flag">🇸🇪</span>
-        <div class="land-info">
-          <div class="name">Sweden</div>
-          <div class="status">Closed</div>
-        </div>
-      </div>
-      <div class="land-body">
-        Sweden closed the Russian cultural centre in Stockholm. Following its accession to NATO, Stockholm fundamentally reassessed its national security approach toward Russian state-run institutions.
-        <span class="quelle">TAZ, April 2025</span>
-      </div>
-    </div>
-
-    <div class="land geschlossen">
-      <div class="land-header">
-        <span class="land-flag">🇲🇩</span>
-        <div class="land-info">
-          <div class="name">Republic of Moldova</div>
-          <div class="status">Closed — November 2025</div>
-        </div>
-      </div>
-      <div class="land-body">
-        The Moldovan government decided in November 2025 to dissolve the Russian House in Chișinău. Culture Minister Cristian Jardan stated that the centre, operated by the sanctioned agency Rossotrudnichestvo, served to spread “distorted Russian narratives.” Despite not being an EU member, Moldova took decisive action.
-        <span class="quelle">Pravda Deutschland, November 2025</span>
-      </div>
-    </div>
-
-    <div class="land pruefung">
-      <div class="land-header">
-        <span class="land-flag">🇨🇿</span>
-        <div class="land-info">
-          <div class="name">Czech Republic</div>
-          <div class="status">Open — Under review</div>
-        </div>
-      </div>
-      <div class="land-body">
-        While the Russian House in Prague has not been fully closed, it now operates only a few days per month. Czech authorities, including intelligence services, are reviewing whether to add the centre to the national sanctions list. The institution has been criticized for distributing translated anti-Ukrainian materials. In March 2026, the building was targeted in a Molotov cocktail attack; a suspect subsequently surrendered to police and confessed.
-        <span class="quelle">EURACTIV, July 2023 / Czech Police, March 2026</span>
-      </div>
-    </div>
-
-    <div class="land offen">
-      <div class="land-header">
-        <span class="land-flag">🇩🇪</span>
-        <div class="land-info">
-          <div class="name">Germany</div>
-          <div class="status">Open — Despite sanctions</div>
-        </div>
-      </div>
-      <div class="land-body">
-        The Russian House in Berlin remains the only major Rossotrudnichestvo branch in the EU operating at full capacity. It continues to run daily, offering a cinema, language courses, a restaurant, and a parcel collection service. The German Federal Government cites the bilateral agreement of 2011 and expresses concerns over the status of the Goethe-Instituts in Russia. However, the current operational agreement can be terminated as of <strong>7 December 2026</strong>.
-        <span class="quelle">SZ, December 2025 / Federal Foreign Office, May 2024</span>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="fazit">
-    <h3>What this means</h3>
-    <p>During the Federal Press Conference on 8 May 2024, the German Federal Foreign Office acknowledged that several EU member states had closed Russian cultural institutions on their soil, justifying Germany’s inaction by pointing to the bilateral agreement and the protection of the Goethe-Instituts. Yet nations like Lithuania, Poland, and Sweden did not allow such agreements to serve as a diplomatic shield. Meanwhile, the Republic of Moldova—confronted with Russian troops on its own territory and operating outside the EU—chose to act anyway.</p>
-  </div>
-
+<div class="dossier-header">
+<span>Press kit · Russian House Berlin</span>
+<span class="accent">Europe dossier</span>
+<span>Research status: 18 July 2026</span>
 </div>
+<div class="kicker">A European comparison</div>
+<h1>Russian Houses across Europe: <em>How other countries have responded</em></h1>
+<p class="lede">Germany continues to allow the Russian House in Berlin to operate. Elsewhere in Europe, governments have closed Russian cultural centres, suspended their activities or curtailed official representations. Yet the picture is more complicated than Rossotrudnichestvo’s official presentation suggests. Some countries never had a public-facing Russian House; in others, earlier structures quietly disappeared, or Russia continued its outreach through embassies, associations, schools and hubs in neighbouring countries. These country files examine which tools other governments have used — and what those choices imply for Germany’s handling of the Russian House in Berlin.</p><section class="section">
+<h2 class="section-title">Country files at a glance</h2>
+<p class="accordion-intro">The key finding is visible before each panel is opened. Select a country for the fuller summary; the linked country files provide the complete timeline, legal basis, official statements and source list in German.</p>
+<div class="country-list">
+<details class="country">
+<summary>
+<img alt="Flag of Romania" class="summary-flag-img" height="24" src="img/flags/ro.svg" width="36"/>
+<span class="summary-main">
+<span class="summary-title">Romania</span>
+<span class="summary-statuses">
+<span class="status closed">Operations ended</span>
+</span>
+<span class="summary-note">The Bucharest centre was required to cease operations in 2023.</span></span>
+<span aria-hidden="true" class="summary-icon"></span>
+</summary>
+<div class="country-body">
+<p>
+            Bucharest hosted an official Russian Centre for Science and Culture under a bilateral agreement signed in 2013. On 21 February 2023, Romania’s Foreign Ministry summoned the Russian ambassador and informed him that the centre’s activities were being suspended. Operations had to end by 20 August 2023.
+          </p>
+<p>
+            The government justified the decision not only by reference to Russia’s war of aggression, but specifically cited repeated disinformation, distorted presentations of historical facts and attempts to justify Russian war crimes. The remaining legal question is how the agreement itself was formally wound down.
+          </p>
+<div class="key-fact"><strong>Key finding:</strong> Romania did not treat the bilateral agreement as an excuse for inaction. It opened a formal procedure and set a clear end date for the centre’s operations.</div>
+<a class="country-link" href="eu-rumaenien.html">Full country file with sources (German) →</a>
+</div>
+</details>
+<details class="country">
+<summary>
+<img alt="Flag of Czechia" class="summary-flag-img" height="24" src="img/flags/cz.svg" width="36"/>
+<span class="summary-main">
+<span class="summary-title">Czechia</span>
+<span class="summary-statuses">
+<span class="status active">Official site active</span>
+<span class="status restricted">Government scrutiny</span>
+</span>
+<span class="summary-note">The Prague centre remains open; no closure has been ordered.</span></span>
+<span aria-hidden="true" class="summary-icon"></span>
+</summary>
+<div class="country-body">
+<p>
+            The Russian House in Prague remains an official Rossotrudnichestvo site. It was neither closed nor dissolved after 2022, and it was still advertising events in 2025. Czechia therefore does not belong among the countries that ended their centre’s operations.
+          </p>
+<p>
+            At the same time, the house came under official scrutiny over propaganda material and possible sanctions implications. Czech authorities considered adding it to the national sanctions list. No final ban or closure order has been documented.
+          </p>
+<div class="key-fact"><strong>Key finding:</strong> Prague illustrates the difference between subjecting a centre to security scrutiny and actually shutting it down.</div>
+<a class="country-link" href="eu-tschechien.html">Full country file with sources (German) →</a>
+</div>
+</details>
+<details class="country">
+<summary>
+<img alt="Flag of Poland" class="summary-flag-img" height="24" src="img/flags/pl.svg" width="36"/>
+<span class="summary-main">
+<span class="summary-title">Poland</span>
+<span class="summary-statuses">
+<span class="status active">Official site active</span>
+</span>
+<span class="summary-note">The earlier closure claim was wrong: the Warsaw centre remains active.</span></span>
+<span aria-hidden="true" class="summary-icon"></span>
+</summary>
+<div class="country-body">
+<p>
+            Contrary to an earlier version of this press kit, Poland did not close the Russian Centre for Science and Culture in Warsaw. Rossotrudnichestvo continues to list the site, and its management was still appearing at events in Poland in 2025.
+          </p>
+<p>
+            Since 2022, Poland has taken forceful action against other Russian diplomatic and state structures. Yet no reliable government decision to close the Warsaw cultural centre itself has been found. The Polish case is a reminder that a hard line on Russia in general does not automatically determine the legal status of a particular Russian House.
+          </p>
+<div class="key-fact"><strong>Key finding:</strong> Even a government with an uncompromising Russia policy may leave its Russian House in operation.</div>
+<a class="country-link" href="eu-polen.html">Full country file with sources (German) →</a>
+</div>
+</details>
+<details class="country">
+<summary>
+<img alt="Flag of Finland" class="summary-flag-img" height="24" src="img/flags/fi.svg" width="36"/>
+<span class="summary-main">
+<span class="summary-title">Finland</span>
+<span class="summary-statuses">
+<span class="status active">Official site active</span>
+<span class="status restricted">Financial restrictions</span>
+</span>
+<span class="summary-note">Sanctions affected its accounts and property, but the centre remained in place.</span></span>
+<span aria-hidden="true" class="summary-icon"></span>
+</summary>
+<div class="country-body">
+<p>
+            The Russian House in Helsinki, opened in 1977, remained an official site after 2022. Its bank accounts were frozen as part of sanctions enforcement. In April 2023, Finnish authorities temporarily seized the land and building, but lifted the measure after a legal review.
+          </p>
+<p>
+            Arrangements were later made for property-tax payments, and public activity was again documented in 2025. Finland therefore did not close the house, but it did apply EU sanctions directly to its financial and property-related structures.
+          </p>
+<div class="key-fact"><strong>Key finding:</strong> Helsinki shows the difference between sanctions enforcement and closure: a centre can be hit hard financially and still continue to exist.</div>
+<a class="country-link" href="eu-finnland.html">Full country file with sources (German) →</a>
+</div>
+</details>
+<details class="country">
+<summary>
+<img alt="Flag of Croatia" class="summary-flag-img" height="24" src="img/flags/hr.svg" width="36"/>
+<span class="summary-main">
+<span class="summary-title">Croatia</span>
+<span class="summary-statuses">
+<span class="status unproven">No official house established</span>
+<span class="status vanished">Former partner structure disappeared</span>
+</span>
+<span class="summary-note">The name “Russian House Zagreb” carried more weight than its legal basis.</span></span>
+<span aria-hidden="true" class="summary-icon"></span>
+</summary>
+<div class="country-body">
+<p>
+            For a time, a Zagreb-based structure used the name “Russian House” and organised cultural events with local partners. However, no regular Rossotrudnichestvo centre backed by a valid government agreement can be documented. The name therefore projected more institutional weight than the legal structure appears to have possessed.
+          </p>
+<p>
+            After Russia’s full-scale invasion in 2022, that public-facing structure largely disappeared. No major closure procedure appears to have been necessary: once political and institutional support fell away, the loosely rooted partner structure largely vanished from public view.
+          </p>
+<div class="key-fact"><strong>Key finding:</strong> Where there is no robust agreement and no protected official house, a Russian cultural brand can quietly vanish without a formal closure process.</div>
+<a class="country-link" href="eu-kroatien.html">Full country file with sources (German) →</a>
+</div>
+</details>
+<details class="country">
+<summary>
+<img alt="Flag of the Netherlands" class="summary-flag-img" height="24" src="img/flags/nl.svg" width="36"/>
+<span class="summary-main">
+<span class="summary-title">Netherlands</span>
+<span class="summary-statuses">
+<span class="status vanished">Former representation disappeared</span>
+<span class="status network">Partner network active</span>
+</span>
+<span class="summary-note">No current house, but a decentralised network spanning the embassy, associations and Brussels.</span></span>
+<span aria-hidden="true" class="summary-icon"></span>
+</summary>
+<div class="country-body">
+<p>
+            There is no public Russian House in the Netherlands today. An official Rossotrudnichestvo representation can, however, be documented in 2013 and 2014. It appears to have operated without a dedicated cultural building, relying instead on the Russian embassy, the former trade mission, honorary consulates and local partners.
+          </p>
+<p>
+            By 2017 at the latest, the country representation had disappeared. Its functions were then spread across a decentralised network: the embassy, the KCOPC/KSORS compatriot council, Russian-language schools and cultural associations, and the Russian House in Brussels. In 2023, the Netherlands also closed the Russian trade mission, one of the venues through which Rossotrudnichestvo had previously operated.
+          </p>
+<div class="key-fact"><strong>Key finding:</strong> The absence of a sign on the door does not mean the absence of a structure. The Dutch model is smaller, more decentralised and harder to see.</div>
+<a class="country-link" href="eu-niederlande.html">Full country file with sources (German) →</a>
+</div>
+</details>
+</div>
+</section><section class="section"><h2 class="section-title">Russia’s own picture of its European network</h2><p class="section-text">Rossotrudnichestvo publishes a map of its Russian Houses and overseas representations on its own website. It shows how the agency presents its presence in Europe — and provides the starting point for comparing that presentation with the structures that can actually be documented.</p><figure class="figure">
+<img alt="Official map of Russian Houses and overseas representations in Europe as listed by Rossotrudnichestvo, 18 July 2026" loading="eager" src="img/rossotrudnitschestwo-karte-europa-2026-07-18.png"/>
+<figcaption>
+<strong>Rossotrudnichestvo’s official location map, European section, accessed 18 July 2026.</strong>
+      The map shows the sites the Russian agency currently lists. It does not capture every former representation, partner organisation or substitute network.
+      Source:
+      <a href="https://rs.gov.ru/kontakty/predstavitelstva-za-rubezhom/represents-with-map/" rel="noopener noreferrer" target="_blank">https://rs.gov.ru/kontakty/predstavitelstva-za-rubezhom/represents-with-map/</a>
+</figcaption>
+</figure><h3 class="subsection-title">Russia’s official map of Russian Houses — fact-checked</h3><p class="section-text">The red dots are meant to identify cities where Rossotrudnichestvo says it operates a Russian House or overseas representation. The map is not, however, a complete or consistently reliable directory.</p><p class="section-text">Comparing it with the agency’s own country pages already reveals discrepancies. Warsaw, for example, has no red dot, even though Rossotrudnichestvo continues to maintain a dedicated website for the Russian House there, complete with an address, contact details and programme areas.</p><p class="section-text">A missing dot therefore does not prove that no Russian structure exists in a country. A centre may have been closed; an earlier representation may have disappeared; or Russia may continue its work through an embassy, schools, associations, partner organisations or a Russian House in a neighbouring country. Conversely, a dot tells us little about the site’s legal form, size, diplomatic status or current level of activity.</p><p class="section-text">That is why the country files go beyond the current location list. They distinguish between <strong>official Russian Houses, Rossotrudnichestvo representations, embassy-based structures, Russkiy Mir centres, “compatriot” networks and local partner organisations</strong>.</p><div class="method-box">
+<h3>The legal baseline since 2022</h3>
+<p>
+        The European Union added Rossotrudnichestvo to its sanctions list on 21 July 2022. That did not amount to an automatic EU-wide closure order. Whether a centre could keep operating also depended on property rights, diplomatic status, bilateral agreements and the measures taken by each host state.
+      </p>
+<p>
+        The status labels on this page therefore describe what can be documented on the ground — not the label Russia gives an organisation.
+      </p>
+</div><div aria-label="Status key" class="legend">
+<span class="status closed">Operations ended</span>
+<span class="status active">Official site active</span>
+<span class="status restricted">Financially or operationally restricted</span>
+<span class="status vanished">Former representation disappeared</span>
+<span class="status network">Partner network active</span>
+<span class="status unproven">No official house established</span>
+</div></section>
 
+
+
+
+<div class="interim">
+<div class="label">Interim findings after six country files</div>
+<h2>The European comparison does not let Germany off the hook — but it must be made precisely</h2>
+<p>
+      Other governments have used very different tools: suspending an operating agreement, blocking financial flows, reviewing property, reducing diplomatic staffing, or simply allowing a weakly rooted partner structure to wither. Conversely, several official Russian Houses continue to operate despite EU sanctions. The key question is therefore not merely “Who closed?” but: <strong>Which legal and political options existed — and which were actually used?</strong>
+</p>
+<div class="work-in-progress">
+<h3>More country files to follow</h3>
+<p>The research is ongoing. Countries are added only after their location history, legal basis, government measures and source record have been reviewed from scratch.</p>
+</div>
+</div>
 <footer>
-  Press Kit Russian House Berlin &nbsp;·&nbsp;
-  <a href="index_en.html">Back to overview</a>
-  <a href="impressum_en.html">Legal Notice</a> · <a href="datenschutz_en.html">Privacy Policy</a>
+<span>pressemappe.antwortseiten.org · Europe dossier</span>
+<span>
+<a href="index_en.html">Overview</a>
+       · 
+      <a href="impressum.html">Legal notice</a>
+       · 
+      <a href="datenschutz.html">Privacy</a>
+</span>
 </footer>
-
+</div>
 </body>
 </html>
