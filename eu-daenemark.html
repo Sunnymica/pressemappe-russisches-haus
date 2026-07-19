@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dänemark – Russische Häuser in Europa</title>
+<meta name="description" content="Länderakte Dänemark: Das Russische Zentrum für Wissenschaft und Kultur in Kopenhagen, seine Rechtsgrundlage, die Personalbegrenzung von 2023 und der heutige Reststatus.">
+<style>
+:root{
+  --blau:#005BBB;
+  --gelb:#FFD500;
+  --dunkel:#172033;
+  --text:#263044;
+  --grau:#667085;
+  --hell:#f6f7f9;
+  --linie:#dfe3e8;
+  --weiss:#ffffff;
+  --orange:#b76000;
+  --orange-bg:#fff1df;
+  --rot:#9f1f1f;
+  --rot-bg:#fdeaea;
+  --gelb-status:#7a5a00;
+  --gelb-bg:#fff7cc;
+  --blau-status:#0b5ca8;
+  --blau-bg:#e8f2fb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--hell);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  line-height:1.68;
+}
+a{color:var(--blau);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+.topbar{
+  background:var(--dunkel);
+  color:var(--weiss);
+  border-bottom:4px solid var(--gelb);
+}
+.topbar-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:14px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+.brand{
+  color:var(--weiss);
+  text-decoration:none;
+  font-weight:750;
+  letter-spacing:.01em;
+}
+.lang-switch{
+  color:var(--weiss);
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:999px;
+  padding:6px 11px;
+  text-decoration:none;
+  font-size:.9rem;
+}
+.lang-switch:hover{background:rgba(255,255,255,.08)}
+main{
+  max-width:1000px;
+  margin:0 auto;
+  padding:34px 20px 70px;
+}
+.breadcrumb{
+  margin-bottom:20px;
+  font-size:.94rem;
+}
+.hero{
+  background:var(--weiss);
+  border:1px solid var(--linie);
+  border-radius:18px;
+  padding:32px;
+  box-shadow:0 10px 30px rgba(23,32,51,.06);
+}
+.country-head{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:18px;
+}
+.flag{
+  width:64px;
+  height:auto;
+  border:1px solid var(--linie);
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.eyebrow{
+  margin:0 0 4px;
+  color:var(--blau);
+  font-weight:750;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  font-size:.78rem;
+}
+h1,h2,h3{
+  color:var(--dunkel);
+  line-height:1.22;
+}
+h1{
+  margin:0;
+  font-size:clamp(2rem,5vw,3.2rem);
+}
+.subtitle{
+  margin:6px 0 0;
+  color:var(--grau);
+  font-size:1.08rem;
+}
+.status-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:20px 0 24px;
+}
+.status{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:.87rem;
+  font-weight:700;
+}
+.status.restricted{background:var(--orange-bg);color:var(--orange)}
+.status.unclear{background:var(--gelb-bg);color:var(--gelb-status)}
+.status.network{background:var(--blau-bg);color:var(--blau-status)}
+.lead{
+  font-size:1.08rem;
+  margin-bottom:0;
+}
+.factbox{
+  margin-top:24px;
+  padding:18px 20px;
+  background:#f1f6fb;
+  border-left:5px solid var(--blau);
+  border-radius:8px;
+}
+section{
+  margin-top:34px;
+  background:var(--weiss);
+  border:1px solid var(--linie);
+  border-radius:16px;
+  padding:28px;
+}
+h2{
+  margin:0 0 18px;
+  font-size:1.55rem;
+}
+h3{
+  margin:28px 0 8px;
+  font-size:1.12rem;
+}
+.summary-table{
+  width:100%;
+  border-collapse:collapse;
+}
+.summary-table th,
+.summary-table td{
+  padding:13px 14px;
+  border-bottom:1px solid var(--linie);
+  vertical-align:top;
+  text-align:left;
+}
+.summary-table th{
+  width:180px;
+  color:var(--dunkel);
+  background:#fafbfc;
+}
+.summary-table tr:last-child th,
+.summary-table tr:last-child td{border-bottom:0}
+.timeline{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.timeline li{
+  position:relative;
+  padding:0 0 22px 30px;
+  border-left:2px solid #d8dee7;
+  margin-left:7px;
+}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";
+  position:absolute;
+  left:-7px;
+  top:.4em;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--blau);
+}
+.timeline time{
+  display:block;
+  font-weight:800;
+  color:var(--dunkel);
+  margin-bottom:3px;
+}
+blockquote{
+  margin:16px 0 8px;
+  padding:16px 18px;
+  background:#fafafa;
+  border-left:4px solid var(--blau);
+  font-family:Georgia,Cambria,"Times New Roman",Times,serif;
+}
+.translation{
+  color:var(--grau);
+  font-size:.96rem;
+  margin-top:8px;
+}
+.source-note{
+  color:var(--grau);
+  font-size:.92rem;
+}
+.sources{
+  padding-left:20px;
+}
+.sources li{
+  margin-bottom:12px;
+}
+.open-questions{
+  padding-left:22px;
+}
+.open-questions li{
+  margin-bottom:10px;
+}
+footer{
+  max-width:1000px;
+  margin:0 auto;
+  padding:0 20px 38px;
+  color:var(--grau);
+  font-size:.9rem;
+}
+@media(max-width:700px){
+  .topbar-inner{align-items:flex-start}
+  .hero,section{padding:22px}
+  .country-head{align-items:flex-start}
+  .flag{width:52px}
+  .summary-table,
+  .summary-table tbody,
+  .summary-table tr,
+  .summary-table th,
+  .summary-table td{
+    display:block;
+    width:100%;
+  }
+  .summary-table th{
+    border-bottom:0;
+    padding-bottom:4px;
+  }
+  .summary-table td{
+    padding-top:4px;
+  }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="eu-laender.html">Russische Häuser in Europa</a>
+    <a class="lang-switch" href="eu-daenemark_en.html" lang="en" hreflang="en">English</a>
+  </div>
+</header>
+
+<main>
+  <nav class="breadcrumb" aria-label="Brotkrümelnavigation">
+    <a href="eu-laender.html">Europa-Dossier</a> → Dänemark
+  </nav>
+
+  <article>
+    <header class="hero">
+      <div class="country-head">
+        <img class="flag" src="img/flags/dk.svg" alt="Flagge Dänemarks" width="64" height="48">
+        <div>
+          <p class="eyebrow">Länderakte</p>
+          <h1>Dänemark</h1>
+          <p class="subtitle">Regulärer Betrieb beendet – später nach russischen Angaben punktuell genutzt</p>
+        </div>
+      </div>
+
+      <div class="status-row" aria-label="Status">
+        <span class="status restricted">Regulärer Präsenzbetrieb beendet</span>
+        <span class="status network">Botschafts- und Partnernetzwerk aktiv</span>
+        <span class="status unclear">Formaler Reststatus ungeklärt</span>
+      </div>
+
+      <p class="lead">
+        In Kopenhagen bestand ein offizielles Russisches Zentrum für Wissenschaft und Kultur von Rossotrudnitschestwo.
+        Der reguläre Betrieb endete Ende September 2023, nachdem Dänemark die Personalstärke der gesamten russischen
+        Mission begrenzt hatte. Einen unmittelbar gegen das Zentrum gerichteten dänischen Schließungsakt gab es nicht.
+        Seit 2025 meldet die russische Botschaft wieder einzelne Veranstaltungen an einem Ort, den sie weiterhin als
+        Russisches Haus beziehungsweise RCSC bezeichnet. Eine Wiederaufnahme des früheren regulären Zentrumsbetriebs
+        ist damit nicht belegt.
+      </p>
+
+      <div class="factbox">
+        <strong>Kernbefund:</strong> Dänemark legte das Zentrum durch eine diplomatische Personalmaßnahme praktisch still,
+        kündigte aber weder das zugrunde liegende Kulturabkommen noch schloss es das Haus ausdrücklich. Die spätere
+        punktuelle Nutzung zeigt die Grenzen dieses Vorgehens.
+      </div>
+    </header>
+
+    <section aria-labelledby="kurzuebersicht">
+      <h2 id="kurzuebersicht">Kurzüberblick</h2>
+      <table class="summary-table">
+        <tbody>
+          <tr>
+            <th>Zentrum</th>
+            <td>Russisches Zentrum für Wissenschaft und Kultur, auch „Russisches Haus“</td>
+          </tr>
+          <tr>
+            <th>Träger</th>
+            <td>Rossotrudnitschestwo bis zum Ende des regulären Betriebs; spätere Nutzung nach Angaben der russischen Botschaft</td>
+          </tr>
+          <tr>
+            <th>Ort</th>
+            <td>Vester Voldgade 11, 1552 Kopenhagen</td>
+          </tr>
+          <tr>
+            <th>Abkommen</th>
+            <td>Abkommen über Zusammenarbeit in Kultur, Wissenschaft und Bildung vom 4. November 1993; in Kraft seit 12. Februar 1994; mit sechsmonatiger Frist kündbar</td>
+          </tr>
+          <tr>
+            <th>Eröffnung</th>
+            <td>Vorgängerstruktur seit den 1970er-Jahren; Gebäude 1975 vom sowjetischen Staat erworben, „Venskabshuset“ 1977 eröffnet</td>
+          </tr>
+          <tr>
+            <th>Maßnahme</th>
+            <td>Begrenzung der russischen Mission auf fünf Diplomaten sowie 20 Verwaltungs- und technische Beschäftigte im September 2023</td>
+          </tr>
+          <tr>
+            <th>Status</th>
+            <td>Regulärer Betrieb beendet; seit 2024 nicht mehr in der dänischen Diplomatenliste; nach russischen Angaben seit 2025 punktuelle Veranstaltungsnutzung</td>
+          </tr>
+          <tr>
+            <th>Begründung</th>
+            <td>Russische Versuche, Visa für Geheimdienstoffiziere in die Verhandlungen einzubeziehen, sowie Angleichung an die Personalstärke der dänischen Botschaft in Moskau</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="kurzbefund">
+      <h2 id="kurzbefund">Kurzbefund</h2>
+      <p>
+        Noch Anfang 2023 führte das dänische Außenministerium das Russische Zentrum für Wissenschaft und Kultur als
+        gesonderte Einrichtung der russischen Auslandsstruktur auf. Genannt wurden die Adresse Vester Voldgade 11,
+        eine staatliche E-Mail-Adresse unter <code>rs.gov.ru</code> und eine eigene Rossotrudnitschestwo-Website.
+        <a href="https://um.dk/media/u4phlqxc/2jan23-copenhagen-diplomatic-list-002.pdf">Dänische Diplomatenliste, Januar 2023</a>
+      </p>
+      <p>
+        Am 1. September 2023 begrenzte Dänemark die russische Mission auf fünf Diplomaten sowie 20 Verwaltungs- und
+        technische Beschäftigte. Der letzte reguläre Arbeitstag des Zentrums war nach eigener Darstellung der
+        26. September; als Schließungsdatum wurde der 27. September genannt. Die Maßnahme galt der gesamten russischen
+        Mission und war kein gesonderter kulturpolitischer Schließungsakt.
+      </p>
+      <p>
+        Seit Januar 2024 erscheint das Zentrum nicht mehr in den dänischen Diplomatenlisten. Russische Botschaftskanäle
+        berichteten jedoch seit Mai 2025 wieder über einzelne Veranstaltungen an einem Ort, den sie weiterhin als
+        Russisches Zentrum für Wissenschaft und Kultur beziehungsweise Russisches Haus bezeichnen. Diese Meldungen
+        belegen eine von russischer Seite dokumentierte Nutzung, nicht aber die Wiederherstellung einer eigenständigen
+        Rossotrudnitschestwo-Vertretung mit regulärem Publikumsbetrieb.
+      </p>
+    </section>
+
+    <section aria-labelledby="chronologie">
+      <h2 id="chronologie">Chronologie</h2>
+      <ol class="timeline">
+        <li>
+          <time>1975</time>
+          Nach dänischen historischen Darstellungen erwirbt der sowjetische Staat das Gebäude Vester Voldgade 11.
+        </li>
+        <li>
+          <time>1977</time>
+          Eröffnung des „Venskabshuset“. Die dänisch-sowjetische Freundschaftsgesellschaft erhält das Nutzungsrecht.
+        </li>
+        <li>
+          <time>4. November 1993</time>
+          Dänemark und Russland unterzeichnen ein Abkommen über Zusammenarbeit in Kultur, Wissenschaft und Bildung.
+        </li>
+        <li>
+          <time>12. Februar 1994</time>
+          Das Abkommen tritt in Kraft.
+        </li>
+        <li>
+          <time>April 2022</time>
+          Dänemark weist 15 russische Geheimdienstoffiziere aus.
+        </li>
+        <li>
+          <time>21. Juli 2022</time>
+          Die Europäische Union sanktioniert Rossotrudnitschestwo.
+        </li>
+        <li>
+          <time>2. Januar 2023</time>
+          Das Zentrum steht weiterhin mit Adresse und Kontaktdaten in der dänischen Diplomatenliste.
+        </li>
+        <li>
+          <time>27. März 2023</time>
+          Die dänische Wirtschaftsbehörde bestätigt die monatliche Freigabe von rund 26.000 DKK aus eingefrorenen
+          russischen Mitteln für notwendige Betriebsausgaben.
+        </li>
+        <li>
+          <time>1. September 2023</time>
+          Dänemark begrenzt die russische Mission auf fünf Diplomaten sowie 20 Verwaltungs- und technische Beschäftigte.
+        </li>
+        <li>
+          <time>26./27. September 2023</time>
+          Nach eigener Darstellung des Zentrums ist der 26. September der letzte reguläre Arbeitstag; als
+          Schließungsdatum wird der 27. September genannt.
+        </li>
+        <li>
+          <time>4. Januar 2024</time>
+          Das RCSC fehlt in der neuen dänischen Diplomatenliste.
+        </li>
+        <li>
+          <time>Seit Mai 2025</time>
+          Die russische Botschaft dokumentiert wieder einzelne Veranstaltungen im als RCSC beziehungsweise
+          Russisches Haus bezeichneten Gebäude.
+        </li>
+        <li>
+          <time>16. Juli 2026</time>
+          Auch die aktuelle dänische Diplomatenliste führt kein Russisches Zentrum mehr auf.
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="rechtsgrundlage">
+      <h2 id="rechtsgrundlage">Rechtsgrundlage</h2>
+      <p>
+        Grundlage ist das <strong>Abkommen zwischen dem Königreich Dänemark und der Russischen Föderation über
+        Zusammenarbeit in Kultur, Wissenschaft und Bildung</strong> vom 4. November 1993. Es trat am
+        12. Februar 1994 in Kraft und ersetzte ein sowjetisch-dänisches Kulturabkommen von 1962.
+        <a href="https://treaties.un.org/doc/Publication/UNTS/Volume%201787/v1787.pdf">Vertragstext in der United Nations Treaty Series</a>
+      </p>
+
+      <h3>Artikel 21: Kulturzentren</h3>
+      <p>
+        Artikel 21 sieht vor, dass beide Seiten die Errichtung eines dänischen Kulturzentrums in Russland und eines
+        russischen Kulturzentrums in Dänemark unterstützen. Rechtsstellung und Tätigkeitsbedingungen sollten gesondert
+        vereinbart werden. Ein veröffentlichtes Zusatz-, Status- oder Durchführungsabkommen konnte bislang nicht
+        gefunden werden. Daraus folgt nicht, dass niemals eine ergänzende administrative Vereinbarung oder ein
+        Notenwechsel bestand.
+      </p>
+
+      <h3>Artikel 26: Kündigung</h3>
+      <blockquote lang="da">
+        Denne overenskomst vil forblive gyldig indtil 6 måneder efter at en af parterne skriftligt giver den anden
+        part meddelelse om sit ønske om at opsige den.
+      </blockquote>
+      <p class="translation">
+        Deutsche Übersetzung: Dieses Abkommen bleibt bis sechs Monate nach dem Tag in Kraft, an dem eine Vertragspartei
+        der anderen schriftlich ihre Kündigungsabsicht mitteilt.
+      </p>
+      <p>
+        Das Abkommen ist damit mit sechsmonatiger Frist kündbar. Eine Kündigung durch Dänemark ist nicht nachgewiesen.
+        Dänemark wählte 2023 nicht den Vertragsweg, sondern begrenzte die Personalstärke der russischen Mission.
+      </p>
+    </section>
+
+    <section aria-labelledby="massnahmen">
+      <h2 id="massnahmen">Maßnahmen seit 2022</h2>
+
+      <h3>Ausweisung russischer Geheimdienstoffiziere</h3>
+      <p>
+        Im April 2022 wies Dänemark 15 russische Geheimdienstoffiziere aus. Der dänische Nachrichtendienst PET
+        erklärte später, die russischen Fähigkeiten zur Informationsbeschaffung auf dänischem Boden seien dadurch
+        erheblich geschwächt worden.
+        <a href="https://pet.dk/-/media/mediefiler/pet/dokumenter/aarlig-redegoerelse/aarlig-redegoerelse-2022.pdf">PET-Jahresbericht 2022</a>
+      </p>
+      <p>
+        Ein unmittelbarer Zusammenhang zwischen den ausgewiesenen Personen und dem Kulturzentrum ist amtlich nicht
+        belegt. Aus der allgemeinen Beschreibung russischer nachrichtendienstlicher Methoden darf nicht abgeleitet
+        werden, das RCSC selbst sei nachweislich eine Geheimdiensteinrichtung gewesen.
+      </p>
+
+      <h3>EU-Sanktionen gegen Rossotrudnitschestwo</h3>
+      <p>
+        Am 21. Juli 2022 nahm die Europäische Union Rossotrudnitschestwo in ihre Sanktionsliste auf. Die Sanktion führte
+        auch in Dänemark zum Einfrieren von Geldern und wirtschaftlichen Ressourcen. Sie bedeutete jedoch nicht
+        automatisch die Schließung des Zentrums.
+        <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=OJ:L:2022:193:FULL">Amtsblatt der Europäischen Union vom 21. Juli 2022</a>
+      </p>
+
+      <h3>Freigabe notwendiger Betriebsausgaben</h3>
+      <p>
+        Im März 2023 bestätigte die dänische Wirtschaftsbehörde, dass monatlich etwa 26.000 DKK aus eingefrorenen
+        russischen Mitteln für notwendige Ausgaben des Russischen Hauses freigegeben wurden. Dabei handelte es sich
+        nicht um eine dänische Subvention, sondern um eine nach dem EU-Sanktionsrecht zulässige Verwendung weiterhin
+        russischer Gelder.
+        <a href="https://www.ft.dk/samling/20222/almdel/eru/spm/78/svar/1943866/2682289/index.htm">Antwort des dänischen Wirtschaftsministeriums</a>
+      </p>
+
+      <blockquote lang="da">
+        I den konkrete sag vedrørende Ruslands Hus […] udstedt en sådan tilladelse til frigivelse af ca. 26.000 kr.
+        hver måned.
+      </blockquote>
+      <p class="translation">
+        Deutsche Übersetzung: Im konkreten Fall des Russischen Hauses wurde eine entsprechende Genehmigung zur
+        monatlichen Freigabe von etwa 26.000 Kronen erteilt.
+      </p>
+
+      <h3>Personalobergrenze für die russische Mission</h3>
+      <p>
+        Am 1. September 2023 teilte das dänische Außenministerium dem russischen Botschafter mit, dass die
+        Personalstärke der russischen Vertretung an diejenige der dänischen Botschaft in Moskau angeglichen werde.
+        Die Reduzierung musste bis zum 29. September umgesetzt werden.
+        <a href="https://via.ritzau.dk/pressemeddelelse/13718338/pressemeddelelse-den-russiske-ambassades-bemanding-reduceres?lang=da&publisherId=2012662">Pressemitteilung des dänischen Außenministeriums</a>
+      </p>
+      <blockquote lang="da">
+        Konkret betyder det et loft på 5 diplomater og 20 administrativt og teknisk personale.
+      </blockquote>
+      <p class="translation">
+        Deutsche Übersetzung: Konkret bedeutet dies eine Obergrenze von fünf Diplomaten sowie 20 Verwaltungs- und
+        technischen Beschäftigten.
+      </p>
+      <p>
+        Die Maßnahme richtete sich gegen die gesamte russische Mission und nicht ausdrücklich gegen Kulturarbeit oder
+        das RCSC. Der reguläre Betrieb des Zentrums endete als praktische Folge dieser Personalbegrenzung.
+      </p>
+    </section>
+
+    <section aria-labelledby="begruendung">
+      <h2 id="begruendung">Regierungsbegründung im Original</h2>
+      <p>
+        Das dänische Außenministerium begründete die Entscheidung mit ergebnislosen Visaverhandlungen und russischen
+        Versuchen, Visa für Geheimdienstoffiziere in diese Verhandlungen einzubeziehen.
+      </p>
+      <blockquote lang="da">
+        Rusland har gentagne gange forsøgt at få visum til efterretningsofficerer som en del af forhandlingerne.
+      </blockquote>
+      <p class="translation">
+        Deutsche Übersetzung: Russland hat wiederholt versucht, Visa für Geheimdienstoffiziere zum Bestandteil der
+        Verhandlungen zu machen.
+      </p>
+      <p>
+        Die amtliche Begründung war damit sicherheits- und diplomatiepolitisch. Eine gesonderte dänische Feststellung,
+        das Kulturzentrum müsse wegen Propaganda oder Desinformation geschlossen werden, ist nicht nachgewiesen.
+      </p>
+    </section>
+
+    <section aria-labelledby="spaetere-nutzung">
+      <h2 id="spaetere-nutzung">Russische Angaben zur späteren Nutzung</h2>
+      <p>
+        Die russische Botschaft berichtete seit Mai 2025 über mehrere Veranstaltungen an einem Ort, den sie weiterhin
+        als Russisches Zentrum für Wissenschaft und Kultur beziehungsweise Russisches Haus bezeichnet. Dokumentiert
+        wurden unter anderem ein Festakt zum Jahrestag des Kriegsendes, eine Ausstellung und Kulturveranstaltungen.
+        <a href="https://denmark.mid.ru/ru/novosti/kontsert_po_sluchayu_dnya_pobedy_v_rtsnk_/">Bericht der russischen Botschaft vom 7. Mai 2025</a>
+      </p>
+      <p>
+        Diese russischen Regierungsquellen belegen, dass der Ort wieder öffentlich für einzelne Veranstaltungen
+        verwendet und entsprechend bezeichnet wurde. Sie belegen allein jedoch weder regelmäßige Öffnungszeiten noch
+        Sprachkurse, Bibliotheksbetrieb, eigenes Rossotrudnitschestwo-Personal oder die Wiederaufnahme in die dänische
+        Diplomatenliste.
+      </p>
+      <p>
+        Der belastbare Status lautet deshalb nicht „wiedereröffnet“, sondern:
+        <strong>Nach russischen Angaben punktuelle Veranstaltungsnutzung; institutioneller Reststatus ungeklärt.</strong>
+      </p>
+    </section>
+
+    <section aria-labelledby="parallelstrukturen">
+      <h2 id="parallelstrukturen">Parallelstrukturen</h2>
+
+      <h3>Botschaftsschule</h3>
+      <p>
+        Neben dem früheren RCSC besteht eine Schule bei der russischen Botschaft. Sie ist eine eigenständige russische
+        staatliche Bildungsstruktur und darf nicht mit dem Kulturzentrum gleichgesetzt werden.
+      </p>
+
+      <h3>Landsleuteorganisation und Russkiy Mir</h3>
+      <p>
+        In Kopenhagen existiert außerdem eine gesellschaftliche Organisation mit der Bezeichnung „Russisches Haus“.
+        Die Stiftung Russkiy Mir berichtete 2021 über die Eröffnung eines „Kabinet Russkogo Mira“ bei dieser
+        Organisation. Sie ist weder eine diplomatische Vertretung noch automatisch eine Rossotrudnitschestwo-
+        Niederlassung.
+        <a href="https://russkiymir.ru/news/293091/">Russkiy Mir, Meldung von 2021</a>
+      </p>
+      <p>
+        Kooperation und materielle Unterstützung durch Russkiy Mir belegen institutionelle Einbindung, aber nicht
+        ohne Weiteres eine vollständige staatliche Steuerung sämtlicher Tätigkeiten.
+      </p>
+
+      <h3>Keine nachgewiesene Verlagerung</h3>
+      <p>
+        Eine formale Übertragung der dänischen Rossotrudnitschestwo-Zuständigkeit auf Stockholm, Oslo, Helsinki oder
+        einen anderen Standort ist bislang nicht nachgewiesen. Die Fortsetzung russischer Aktivitäten scheint vielmehr
+        über Botschaft, Schule, Landsleutenetzwerk, Russkiy-Mir-Partner und einzelne Veranstaltungen im früheren
+        Zentrumsgebäude erfolgt zu sein.
+      </p>
+    </section>
+
+    <section aria-labelledby="immobilie">
+      <h2 id="immobilie">Immobilie und Rechtsstatus</h2>
+      <p>
+        Nach dänischen historischen Darstellungen erwarb der sowjetische Staat das Gebäude Vester Voldgade 11 im Jahr
+        1975. Ab 1977 nutzte die dänisch-sowjetische Freundschaftsgesellschaft es als „Venskabshuset“. Später übernahm
+        der russische Staat den Betrieb des Kulturzentrums.
+        <a href="https://sfah.dk/assets/uploads/tidsskrift/Aargang-2011/nr2/ABH2-11-KimFrederichsen.pdf">Historische Darstellung von Kim Frederichsen</a>
+      </p>
+      <p>
+        Der aktuelle Grundbucheintrag konnte in frei zugänglichen amtlichen Quellen nicht verifiziert werden. Ebenso
+        ist ein besonderer diplomatischer, konsularischer oder völkervertraglicher Immunitätsstatus der Immobilie
+        bislang nicht nachgewiesen. Die frühere Aufnahme des Zentrums in die Diplomatenliste beweist allein keine
+        Unverletzlichkeit des Grundstücks.
+      </p>
+    </section>
+
+    <section aria-labelledby="einordnung">
+      <h2 id="einordnung">Einordnung</h2>
+      <p>
+        Dänemark bildet einen eigenen Typus innerhalb des Europa-Dossiers. Das offizielle Zentrum wurde weder durch
+        eine Vertragskündigung wie in der Republik Moldau noch durch einen unmittelbar gegen das Haus gerichteten
+        Schließungsakt beendet. Stattdessen entzog eine allgemeine diplomatische Personalmaßnahme dem regulären Betrieb
+        praktisch die personelle Grundlage.
+      </p>
+      <p>
+        Dieses Vorgehen war zunächst deutlich wirksam: Das Zentrum stellte seinen regulären Betrieb ein und verschwand
+        aus der dänischen Diplomatenliste. Weil das Kulturabkommen bestehen blieb und das Gebäude offenbar weiterhin
+        verfügbar war, konnte die russische Seite später wieder einzelne Veranstaltungen dort dokumentieren.
+      </p>
+      <div class="factbox">
+        <strong>Lehre für Berlin:</strong> Eine Personal- oder Finanzmaßnahme kann den laufenden Betrieb stark treffen.
+        Dauerhafte institutionelle Klarheit entsteht aber erst, wenn auch Abkommen, Rechtsstatus, Personalstruktur und
+        Immobilie geklärt werden.
+      </div>
+    </section>
+
+    <section aria-labelledby="offene-fragen">
+      <h2 id="offene-fragen">Offene Fragen</h2>
+      <ol class="open-questions">
+        <li>Wer ist aktuell im dänischen Grundbuch als Eigentümer von Vester Voldgade 11 eingetragen?</li>
+        <li>Besitzt das Gebäude einen besonderen diplomatischen oder völkerrechtlichen Status?</li>
+        <li>Existiert ein gesondertes Durchführungsabkommen oder ein Notenwechsel zu Artikel 21?</li>
+        <li>Wann endete die monatliche Freigabe von rund 26.000 DKK aus eingefrorenen Mitteln?</li>
+        <li>Wer finanziert heute Betrieb, Versicherung, Heizung und Instandhaltung des Gebäudes?</li>
+        <li>Unter welcher organisatorischen Verantwortung finden die seit 2025 gemeldeten Veranstaltungen statt?</li>
+        <li>Gibt es wieder regelmäßige Kurse, Bibliothekszeiten oder öffentlich zugängliche Bildungsprogramme?</li>
+        <li>Wurden Aufgaben des früheren Zentrums offiziell auf einen Standort in einem Nachbarland übertragen?</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="quellen">
+      <h2 id="quellen">Quellen</h2>
+      <ul class="sources">
+        <li><a href="https://um.dk/media/u4phlqxc/2jan23-copenhagen-diplomatic-list-002.pdf">Dänisches Außenministerium: Copenhagen Diplomatic List, Januar 2023</a></li>
+        <li><a href="https://um.dk/media/sdxhuj5a/copenhagen-diplomatic-list-2024-drawn-4-january-2024-1.pdf">Dänisches Außenministerium: Copenhagen Diplomatic List, 4. Januar 2024</a></li>
+        <li><a href="https://um.dk/media/halp5ejv/copenhagen-diplomatic-list-16072026.pdf">Dänisches Außenministerium: Copenhagen Diplomatic List, 16. Juli 2026</a></li>
+        <li><a href="https://via.ritzau.dk/pressemeddelelse/13718338/pressemeddelelse-den-russiske-ambassades-bemanding-reduceres?lang=da&publisherId=2012662">Dänisches Außenministerium: Reduzierung der russischen Botschaftsbelegschaft, 1. September 2023</a></li>
+        <li><a href="https://www.ft.dk/samling/20222/almdel/eru/spm/78/svar/1943866/2682289/index.htm">Dänisches Parlament: Antwort zur Freigabe eingefrorener Mittel für das Russische Haus, März 2023</a></li>
+        <li><a href="https://pet.dk/-/media/mediefiler/pet/dokumenter/aarlig-redegoerelse/aarlig-redegoerelse-2022.pdf">PET: Årlig redegørelse 2022</a></li>
+        <li><a href="https://pet.dk/en/-/media/mediefiler/pet/dokumenter/analyser-og-vurderinger/vurdering-af-spionagetruslen-mod-danmark/vurdering-af-spionagetruslen-mod-danmark-2023_uk_web.pdf">PET: Assessment of the Espionage Threat to Denmark 2023</a></li>
+        <li><a href="https://treaties.un.org/doc/Publication/UNTS/Volume%201787/v1787.pdf">United Nations Treaty Series: Kultur-, Wissenschafts- und Bildungsabkommen Dänemark–Russland von 1993</a></li>
+        <li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=OJ:L:2022:193:FULL">Europäische Union: Sanktionen gegen Rossotrudnitschestwo, 21. Juli 2022</a></li>
+        <li><a href="https://denmark.mid.ru/da/press-centre/nyheder/ambassadekommentar_om_lukningen_af_det_russiske_hus/">Russische Botschaft in Dänemark: Kommentar zur Schließung des Russischen Hauses, September 2023</a></li>
+        <li><a href="https://denmark.mid.ru/ru/novosti/kontsert_po_sluchayu_dnya_pobedy_v_rtsnk_/">Russische Botschaft in Dänemark: Veranstaltung im RCSC, 7. Mai 2025</a></li>
+        <li><a href="https://rs.gov.ru/en/kontakty/russian-houses-abroad/">Rossotrudnitschestwo: Russian Houses abroad</a></li>
+        <li><a href="https://russkiymir.ru/news/293091/">Russkiy Mir: Eröffnung eines Russkiy-Mir-Kabinetts bei einer Kopenhagener Landsleuteorganisation, 2021</a></li>
+        <li><a href="https://sfah.dk/assets/uploads/tidsskrift/Aargang-2011/nr2/ABH2-11-KimFrederichsen.pdf">Kim Frederichsen: historische Darstellung des Venskabshuset</a></li>
+        <li><a href="https://dkrus.dk/nydkrus/DRF-forlag/forlag-pdf/Mellemfolkelige_kontakter.pdf">Dänisch-Russische Vereinigung: historische Darstellung der dänisch-russischen Kontakte</a></li>
+      </ul>
+      <p class="source-note">
+        Russische Botschafts- und Rossotrudnitschestwo-Quellen werden ausschließlich als Primärquellen für die
+        Selbstdarstellung und für von russischer Seite dokumentierte Aktivitäten verwendet. Sie bestimmen nicht allein
+        den neutralen institutionellen Status des Zentrums.
+      </p>
+    </section>
+  </article>
+</main>
+
+<footer>
+  Europa-Dossier „Russische Häuser in Europa“ · Stand: 19. Juli 2026
+</footer>
+</body>
+</html>
