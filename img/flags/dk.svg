@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 28" role="img" aria-labelledby="title desc">
+  <title id="title">Flagge Dänemarks</title>
+  <desc id="desc">Rote Flagge mit weißem skandinavischem Kreuz</desc>
+  <rect width="37" height="28" fill="#C8102E"/>
+  <rect x="12" width="4" height="28" fill="#FFFFFF"/>
+  <rect y="12" width="37" height="4" fill="#FFFFFF"/>
+</svg>
