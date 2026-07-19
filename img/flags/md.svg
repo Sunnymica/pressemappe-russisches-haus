@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+<title id="t">Flagge der Republik Moldau</title>
+<desc id="d">Blau-gelb-rote Trikolore mit stilisiertem moldauischem Staatswappen in der Mitte.</desc>
+<rect width="300" height="600" fill="#0046AE"/>
+<rect x="300" width="300" height="600" fill="#FFD200"/>
+<rect x="600" width="300" height="600" fill="#CC092F"/>
+<g transform="translate(450 300)">
+  <path d="M0-128c-21 0-37 16-37 37 0 12 6 24 15 31-42 13-74 45-83 87l43 16c7-28 30-51 59-58v95h-34v37h74V-15c29 7 52 30 59 58l43-16c-9-42-41-74-83-87 9-7 15-19 15-31 0-21-16-37-37-37-14 0-26 8-33 19-7-11-19-19-34-19z" fill="#8B5A2B"/>
+  <path d="M-83-22c-42-18-75-16-96 3 31 8 54 27 67 56z" fill="#8B5A2B"/>
+  <path d="M83-22c42-18 75-16 96 3-31 8-54 27-67 56z" fill="#8B5A2B"/>
+  <path d="M-61 2h122v116c0 54-61 77-61 77s-61-23-61-77z" fill="#D71920" stroke="#F4C430" stroke-width="8"/>
+  <path d="M0 6h57v109c0 34-31 54-57 65z" fill="#0057B8"/>
+  <path d="M-28 47c16-18 40-18 56 0l-10 10c-11-11-25-11-36 0z" fill="#F4C430"/>
+  <circle cx="0" cy="62" r="15" fill="#F4C430"/>
+  <path d="M-37 91c17-14 57-14 74 0l-12 13c-12-8-38-8-50 0z" fill="#F4C430"/>
+  <path d="M-32 120h64l-8 20h-48z" fill="#F4C430"/>
+  <path d="M0-160v42M-21-139h42" stroke="#F4C430" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="-112" cy="70" r="15" fill="#F4C430"/>
+  <path d="M-112 35v70M-137 70h50" stroke="#F4C430" stroke-width="7"/>
+  <path d="M112 35c-32 17-43 50-23 78 31-15 43-49 23-78z" fill="#4C8C2B"/>
+  <path d="M95 49l28 50" stroke="#F4C430" stroke-width="5"/>
+</g>
+</svg>
