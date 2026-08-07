@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iswolski geht, Nekrasova kommt – Pressemappe Russisches Haus Berlin</title>
-<meta name="description" content="Der Direktor des Russischen Hauses ist über Nacht verschwunden. Was sein Abgang über diplomatische Immunität verrät – und wer die Nachfolgerin ist.">
-<meta property="og:title" content="Iswolski geht, Nekrasova kommt – das Problem bleibt">
-<meta property="og:description" content="Der Direktor des Russischen Hauses ist über Nacht verschwunden. Was sein Abgang über diplomatische Immunität verrät – und wer die Nachfolgerin ist.">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Iswolski geht, Nekrasova übernimmt kommissarisch – Pressemappe Russisches Haus Berlin</title>
+<meta name="description" content="Pawel Iswolski ist als Leiter des Russischen Hauses ausgeschieden. Svetlana Nekrasova führt die Einrichtung kommissarisch. Was über Diplomatenstatus, Immunität und den Personalwechsel belegt ist.">
+<meta property="og:title" content="Iswolski geht, Nekrasova übernimmt kommissarisch – das Problem bleibt">
+<meta property="og:description" content="Der Personalwechsel fällt mit dem Ende von Iswolskis dokumentierter Diplomatenkarte zusammen. Ein Zusammenhang ist nicht bestätigt.">
 
 <style>
   :root {
@@ -16,26 +17,17 @@
     --rule: #c9c1b1;
     --rh-red: #b8252f;
     --rh-red-dark: #8e1a23;
-    --accent: #c8a13a;
-
-    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Arial, Helvetica, sans-serif;
-
-    --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+    --footer-link: #7eb8f7;
   }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: var(--font-sans);
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
     background: var(--paper);
     color: var(--ink);
-    line-height: 1.55;
-    padding: 40px 20px;
+    line-height: 1.6;
+    padding: 40px 20px 0;
   }
 
   .page {
@@ -46,15 +38,13 @@
   .back-link {
     display: inline-block;
     margin-bottom: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: var(--ink-muted);
     text-decoration: none;
     font-weight: 500;
   }
-
-  .back-link:hover {
-    color: var(--rh-red);
-  }
+  .back-link:hover { color: var(--rh-red); }
 
   .dossier-header {
     border-top: 3px solid var(--ink);
@@ -63,45 +53,40 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 11px;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--ink-muted);
     margin-bottom: 36px;
     gap: 16px;
     flex-wrap: wrap;
   }
-
-  .dossier-header span:nth-child(2) {
-    color: var(--rh-red);
-    font-weight: 700;
-  }
+  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
 
   .kicker {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--rh-red);
     margin-bottom: 18px;
   }
 
   h1 {
-    font-family: var(--font-serif);
-    font-weight: 800;
+    font-weight: 700;
     font-size: clamp(28px, 4.2vw, 44px);
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 22px;
   }
-
   h1 em {
     font-style: normal;
     color: var(--rh-red-dark);
   }
 
   .standfirst {
-    font-family: var(--font-serif);
     font-size: 19px;
     line-height: 1.55;
     color: var(--ink);
@@ -110,17 +95,15 @@
   }
 
   h2 {
-    font-family: var(--font-serif);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
     letter-spacing: -0.01em;
-    margin: 44px 0 16px 0;
+    margin: 44px 0 16px;
   }
 
   p {
-    font-family: var(--font-serif);
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.65;
     color: var(--ink);
     margin-bottom: 16px;
   }
@@ -134,80 +117,88 @@
     margin: 32px 0;
     padding: 18px 0 18px 22px;
     border-left: 4px solid var(--rh-red);
-    font-family: var(--font-serif);
     font-style: italic;
     font-size: 19px;
     line-height: 1.45;
     color: var(--ink);
   }
 
-  .link-box {
-    margin: 44px 0 24px 0;
+  .box, .link-box {
+    margin: 36px 0 24px;
     padding: 22px 26px;
     background: white;
     border: 1px solid var(--rule);
     border-left: 4px solid var(--ink);
     border-radius: 4px;
   }
-
-  .link-box .label {
+  .box .label, .link-box .label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--rh-red);
     margin-bottom: 8px;
   }
-
-  .link-box p {
+  .box p, .link-box p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 8px;
   }
+  .box p:last-child, .link-box p:last-child { margin-bottom: 0; }
 
-  .link-box a {
+  .link-box a, .quellen a {
     color: var(--rh-red-dark);
     font-weight: 600;
     text-decoration: none;
     border-bottom: 1px solid var(--rh-red-dark);
   }
+  .link-box a:hover, .quellen a:hover { color: var(--rh-red); border-color: var(--rh-red); }
 
-  .link-box a:hover {
-    color: var(--rh-red);
-    border-color: var(--rh-red);
+  .quellen {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--ink-muted);
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
   }
+  .quellen h2 {
+    font-family: inherit;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .quellen ul { padding-left: 18px; }
+  .quellen li { margin-bottom: 8px; }
 
   footer {
     margin-top: 56px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: var(--ink);
+    color: #fff;
+    padding: 20px 24px;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
+  footer span { font-size: 12px; opacity: 0.5; }
+  footer div { display: flex; gap: 20px; flex-wrap: wrap; }
+  footer a { font-size: 12px; color: var(--footer-link); text-decoration: none; }
 
   @media (max-width: 680px) {
-    body {
-      padding: 28px 16px;
-    }
-
-    .pull {
-      font-size: 17px;
-      padding-left: 18px;
-    }
-
-    .link-box {
-      padding: 18px 20px;
-    }
+    body { padding: 28px 16px 0; }
+    .pull { font-size: 17px; padding-left: 18px; }
+    .box, .link-box { padding: 18px 20px; }
   }
 </style>
 </head>
-
 <body>
 <div class="page">
 
@@ -216,15 +207,14 @@
   <div class="dossier-header">
     <span>Pressemappe · Russisches Haus Berlin</span>
     <span>Personalwechsel · Juni 2026</span>
-    <span>Stand 06/2026</span>
+    <span>Stand 07.08.2026</span>
   </div>
 
   <div class="kicker">Hintergrund</div>
-
-  <h1>Iswolski geht, Nekrasova kommt – <em>das Problem bleibt</em></h1>
+  <h1>Iswolski geht, Nekrasova übernimmt kommissarisch – <em>das Problem bleibt</em></h1>
 
   <p class="standfirst">
-    Der Direktor des Russischen Hauses ist über Nacht verschwunden. Sein stiller Abgang könnte das erste Mal sein, dass das Auswärtige Amt einen Hebel gezogen hat, den es seit Jahren in der Hand hält.
+    Pawel Iswolski ist als Leiter des Russischen Hauses ausgeschieden. Sein stiller Abgang fällt mit dem Ende seiner dokumentierten Diplomatenkarte zusammen. Ob beides miteinander zusammenhängt, ist offiziell nicht bestätigt.
   </p>
 
   <p>
@@ -236,7 +226,7 @@
   </p>
 
   <p>
-    Keine Ankündigung, keine Verabschiedung, keine Erklärung. In seiner Instagram-Biografie steht plötzlich „Former Director“, sein letzter Beitrag ist ein Video mit dem Titel „Neun Jahre in neun Minuten. Ohne Worte.“ Der Chef des nach übereinstimmenden Medienberichten größten russischen Kulturzentrums außerhalb Russlands ist über Nacht verschwunden – und kaum jemand weiß, warum.
+    Keine Ankündigung, keine Verabschiedung, keine öffentliche Erklärung. In seiner Instagram-Biografie steht plötzlich „Former Director”, sein letzter Beitrag ist ein Video mit dem Titel „Neun Jahre in neun Minuten. Ohne Worte.” Der langjährige Chef des Russischen Hauses ist weg – und öffentlich bleibt offen, warum.
   </p>
 
   <h2>Eine Diplomatenkarte und ihre Wirkung</h2>
@@ -250,67 +240,104 @@
   </p>
 
   <p>
-    Genau dieser Diplomatenstatus hat die Verantwortlichen des Russischen Hauses jahrelang vor Strafverfolgung geschützt. Als die Berliner Staatsanwaltschaft 2023, nach einer Strafanzeige des früheren Grünen-Politikers Volker Beck, wegen möglicher Sanktionsverstöße ermittelte, wurde das Verfahren eingestellt. Begründung: Die Verantwortlichen genießen diplomatische Immunität. Man kommt nicht an sie heran.
+    Diplomatische Immunität kann für strafrechtliche Ermittlungen ein Verfahrenshindernis sein. Als die Berliner Staatsanwaltschaft nach einer Strafanzeige des früheren Grünen-Politikers Volker Beck wegen möglicher Sanktionsverstöße ermittelte, spielte genau diese Frage eine zentrale Rolle. Die Juristen Patrick Heinemann und Felix W. Zimmermann wiesen bereits 2023 darauf hin, dass gegen Personen mit diplomatischer Immunität ein Verfahrenshindernis besteht.
   </p>
 
   <p>
-    Fällt der Status, fällt dieses Verfahrenshindernis. Genau diese Möglichkeit hatten die Juristen Patrick Heinemann und Felix W. Zimmermann schon Anfang 2023 in der Legal Tribune Online benannt: Bei Diplomaten, die mit Straftaten auffallen, könne das Auswärtige Amt erwägen, sie zur persona non grata zu erklären – mit der Folge, dass sie Deutschland verlassen müssen. Damals war das eine theoretische Option.
+    Fällt der Status, fällt dieses Verfahrenshindernis. Heinemann und Zimmermann nannten zugleich eine politische Möglichkeit: Bei Diplomaten, die mit Straftaten auffallen, könne das Auswärtige Amt erwägen, sie zu <em>personae non gratae</em> zu erklären – mit der Folge, dass sie Deutschland verlassen müssen.
   </p>
 
   <div class="pull">
-    Möglicheweise ist Iswolskis stiller Abgang das erste Mal, dass das Auswärtige Amt in dieser Sache überhaupt Konsequenz gezeigt hat – falls sein diplomatischer Status tatsächlich nicht verlängert wurde.
+    Möglicherweise ist Iswolskis stiller Abgang ein Hinweis darauf, dass beim Diplomatenstatus erstmals ein Hebel wirksam geworden ist. Belegt ist das bislang nicht.
   </div>
 
-  <h2>Die Nachfolgerin: eine deutsche Bildungslaufbahn</h2>
+  <h2>Die Nachfolgerin: kommissarisch im Amt</h2>
 
   <p>
-    Sie steht schon bereit. Svetlana Nekrasova, bisher Iswolskis Stellvertreterin, übernimmt die Leitung. Auf der Diplomatenliste des Auswärtigen Amts war sie mit Meldedatum 24. Oktober 2020 verzeichnet (Stand der eingesehenen Fassung: Mai 2022); ihr aktueller Status ist öffentlich nicht bestätigt. Ihr Profil unterscheidet sich grundlegend von dem ihres Vorgängers – und genau das macht den Fall so brisant.
+    Svetlana Nekrasova, bisher Iswolskis Stellvertreterin, führt das Russische Haus inzwischen kommissarisch. Das eigene Impressum der Einrichtung bezeichnet sie aktuell ausdrücklich als „Kommissarische Leiterin”. Eine endgültige Ernennung zur Direktorin ist damit nicht belegt.
+  </p>
+
+  <div class="box">
+    <div class="label">Korrekturhinweis</div>
+    <p>Das russische Exilmedium Echo berichtete am 31. Mai 2026 unter Berufung auf Wolna, Nekrasova sei neue Direktorin des Russischen Hauses geworden. Diese Darstellung wurde in einer früheren Fassung dieser Seite übernommen. Sie deckt sich nicht mit der aktuellen Eigenangabe des Russischen Hauses und nicht mit der Berichterstattung von WDR und Süddeutscher Zeitung vom 6. August 2026, die von einer kommissarischen Leitung sprechen. Die Seite wurde entsprechend korrigiert.</p>
+  </div>
+
+  <p>
+    Auf einer eingesehenen Diplomatenliste des Auswärtigen Amts war Nekrasova mit Meldedatum 24. Oktober 2020 verzeichnet (Stand der eingesehenen Fassung: Mai 2022); ihr aktueller diplomatischer Status ist öffentlich nicht bestätigt.
   </p>
 
   <p>
-    Öffentliche Belege für eine nachrichtendienstliche Funktion Nekrasovas liegen nicht vor. Ihr dokumentierter Werdegang ist der einer klassischen Kulturwissenschaftlerin. In den frühen 2000er-Jahren leitete sie die Museumsabteilung im Kulturministerium der Russischen Föderation. 2012 wechselte sie zu Rossotrudnitschestwo und übernahm dort die Abteilung für Museums- und Bibliotheksprogramme. Ab 2018 war sie für die russische Bundesbehörde in Wien tätig, ab 2021/22 in Berlin – zunächst in leitender Stellvertreterrolle, seit 2023 ausdrücklich als stellvertretende Direktorin für Kultur. In dieser Funktion organisierte sie Ausstellungen und Filmreihen.
+    Öffentliche Belege für eine nachrichtendienstliche Funktion Nekrasovas liegen nicht vor. Ihr dokumentierter Werdegang ist der einer Kulturwissenschaftlerin und Kulturfunktionärin. In den frühen 2000er-Jahren leitete sie die Museumsabteilung im Kulturministerium der Russischen Föderation. Später wechselte sie zu Rossotrudnitschestwo und war für die Agentur unter anderem in Wien und Berlin tätig.
   </p>
 
   <p>
-    Bemerkenswert ist, wer ihre Laufbahn über weite Strecken mitfinanziert hat: <strong>Deutschland.</strong>
+    Teile ihrer Laufbahn wurden aus deutschen Fördermitteln mitfinanziert. Nekrasova war 2002 Bundeskanzler-Stipendiatin der Alexander-von-Humboldt-Stiftung. Zudem arbeitete sie als wissenschaftliche Mitarbeiterin am deutsch-russischen Forschungsprojekt „Russische Museen im Zweiten Weltkrieg”, das unter anderem von der VolkswagenStiftung gefördert wurde. 2006 veröffentlichte sie in der Fachzeitschrift <em>Osteuropa</em> einen Aufsatz über die Restitution von Kulturgütern zwischen Russland und der Ukraine.
   </p>
 
   <p>
-    Nekrasova war Bundeskanzler-Stipendiatin der Alexander-von-Humboldt-Stiftung, ein exklusives Programm für angehende Führungskräfte, finanziert aus Mitteln des Auswärtigen Amts. Zudem arbeitete sie als wissenschaftliche Mitarbeiterin am Projekt „Russische Museen im Zweiten Weltkrieg“, gefördert von der VolkswagenStiftung. Vor 20 Jahren veröffentlichte sie einen deutschen Aufsatz in der Fachzeitschrift „Osteuropa“ zur Restitution von Kulturgütern – mit der heute fast surreal wirkenden Pointe, dass Russland und die Ukraine in dieser Frage eng zusammenarbeiten sollten. Sie war überdies Mitglied im Deutsch-Russischen Museumsdialog.
+    Das ist zunächst eine wissenschaftlich-kulturpolitische Biografie. Heute führt Nekrasova jedoch kommissarisch die Berliner Einrichtung von Rossotrudnitschestwo – jener russischen föderalen Agentur im Geschäftsbereich des Außenministeriums, die seit Juli 2022 auf der EU-Sanktionsliste steht.
+  </p>
+
+  <h2>Eine offene Stelle und eine Bewerberin</h2>
+
+  <p>
+    Dass die Leitung nicht endgültig neu besetzt ist, gewinnt durch eine Entwicklung im Juli 2026 zusätzliche Bedeutung. WDR und Süddeutscher Zeitung liegt die französische Ausweisungsanordnung gegen die frühere RT-France-Chefin Xenia Fedorova vor. Darin heißt es nach ihrer übereinstimmenden Berichterstattung, Fedorova habe „kürzlich den Posten der Direktorin des Russischen Hauses der Wissenschaften und Kultur in Berlin angestrebt”.
   </p>
 
   <p>
-    Mit anderen Worten: Deutschland hat über Jahre hinweg eine russische Kulturfunktionärin systematisch in seine wissenschaftlichen und kulturpolitischen Netzwerke integriert. Heute leitet sie die Außenstelle einer Behörde, die seit Juli 2022 auf der EU-Sanktionsliste steht.
+    Das Russische Haus erklärte auf Anfrage, ihm lägen keine Informationen darüber vor, dass Fedorova Direktorin werden solle. WDR und Süddeutsche Zeitung berichten zugleich, dass die Leitung inzwischen kommissarisch von Iswolskis bisheriger Stellvertreterin Nekrasova übernommen wurde.
   </p>
+
+  <div class="link-box">
+    <div class="label">Neue französische Einstufung</div>
+    <p>Was die Ausweisungsanordnung außerdem über das Russische Haus sagt: <a href="frankreich-geheimdienste.html">Frankreich: „Tarnung für Geheimdienste”</a></p>
+  </div>
 
   <h2>Das Haus bleibt, das Personal wechselt</h2>
 
   <p>
-    Ob Iswolski das Haus führt oder Nekrasova, ändert am Kernproblem nichts. Es wechselt der Hausherr, nicht das Haus. Es liegt weiterhin in der Friedrichstraße und gilt weiterhin als der größte Auslandsableger von Rossotrudnitschestwo, der Bundesbehörde des russischen Außenministeriums. Die EU hat diese im Juli 2022 sanktioniert – als wichtigen Kanal für staatliche Kreml-Propaganda.
+    Ob Iswolski das Haus führt oder Nekrasova es kommissarisch leitet, ändert am strukturellen Kern nichts. Die Einrichtung in der Friedrichstraße wird weiterhin von Rossotrudnitschestwo betrieben. Die EU sanktionierte die Agentur im Juli 2022 und bezeichnete sie in der Begründung als wichtiges Instrument für die Verbreitung von Kreml-Narrativen und Propaganda.
   </p>
 
   <p>
-    Die entscheidende Frage dreht sich daher nicht um die Personalie an der Spitze, sondern um den völkerrechtlichen Vertrag, der dieses Haus überhaupt erst ermöglicht. Und dieser ist kündbar. Die Frist läuft bis zum <strong>6. Dezember 2026</strong>.
+    Die entscheidende politische Frage dreht sich deshalb nicht nur um die Personalie an der Spitze, sondern um den rechtlichen Rahmen des Hauses. Er besteht aus fünf Vereinbarungen. Das Tätigkeitsabkommen von 2011 kann ordentlich beendet werden; für eine Beendigung zum 6. Juni 2027 muss Deutschland die schriftliche Mitteilung spätestens bis zum <strong>6. Dezember 2026</strong> übermitteln.
   </p>
+
+  <div class="box">
+    <div class="label">Rechtliche Präzisierung</div>
+    <p>Das Immobilienabkommen von 2013 mit seiner vorgesehenen Laufzeit von 99 Jahren enthält kein einseitiges ordentliches Kündigungsrecht. Das ist nicht gleichbedeutend mit „unter keinen Umständen kündbar”: Fragen einer außerordentlichen Beendigung oder Suspendierung sind davon zu trennen.</p>
+  </div>
 
   <div class="link-box">
     <div class="label">Weiterführend in der Pressemappe</div>
-
-    <p>
-      Warum der Vertrag kündbar ist und welche Frist läuft:
-      <a href="fakten.html">Alle verifizierten Fakten und Rechtslage</a>
-    </p>
-
-    <p>
-      Strukturvergleich zum Goethe-Institut:
-      <a href="goethe.html">Zwei Häuser, ein Vertrag, ein kategorialer Unterschied</a>
-    </p>
+    <p>Die französische Behördenbewertung: <a href="frankreich-geheimdienste.html">Frankreich: „Tarnung für Geheimdienste”</a></p>
+    <p>Die fünf Vereinbarungen und die laufende Frist: <a href="vertraege.html">Ein Vertrag ist jetzt kündbar</a></p>
+    <p>Strukturvergleich zum Goethe-Institut: <a href="goethe.html">Russisches Haus vs. Goethe-Institut</a></p>
   </div>
 
-  <footer>
-    <span>pressemappe.antwortseiten.org</span>
-  </footer>
+  <div class="quellen">
+    <h2>Quellen</h2>
+    <ul>
+      <li><a href="https://www.tagesschau.de/investigativ/russisches-haus-104.html" target="_blank" rel="noopener">Florian Flade / Roman Lehberger (WDR): „Russisches Haus in Berlin – Tarnung für Geheimdienste?”, tagesschau.de, 6. August 2026</a></li>
+      <li><a href="https://www.russisches-haus.de/impressum" target="_blank" rel="noopener">Russisches Haus Berlin, Impressum: Svetlana Nekrasova als „Kommissarische Leiterin”</a></li>
+      <li><a href="https://t.me/s/echoonline_news?before=26177" target="_blank" rel="noopener">Echo, 31. Mai 2026: Bericht zum Abgang Iswolskis und zur zunächst als endgültig dargestellten Nachfolge Nekrasovas</a></li>
+      <li><a href="https://www.lto.de/recht/hintergruende/h/rt-russia-today-lto-russisches-haus-sanktionen-einfrieren" target="_blank" rel="noopener">Patrick Heinemann / Felix W. Zimmermann, Legal Tribune Online, 19. Januar 2023</a></li>
+      <li><a href="https://www.humboldt-foundation.de/vernetzen/recherche-im-humboldt-netzwerk/einzelansicht/1085406/swetlana-nekrasova" target="_blank" rel="noopener">Alexander von Humboldt-Stiftung: Swetlana Nekrasova, Bundeskanzler-Stipendium 2002</a></li>
+      <li><a href="https://www.kulturstiftung.de/unter-dem-titel-russische-museen-im-zweiten-weltkrieg-2/" target="_blank" rel="noopener">Kulturstiftung der Länder: Forschungsprojekt „Russische Museen im Zweiten Weltkrieg”</a></li>
+      <li><a href="https://zeitschrift-osteuropa.de/hefte/2006/1-2/kooperation-und-ihre-grenzen/" target="_blank" rel="noopener">Svetlana Nekrasova: „Kooperation und ihre Grenzen”, Osteuropa 1–2/2006</a></li>
+    </ul>
+  </div>
 
 </div>
+
+<footer>
+  <span>Pressemappe Russisches Haus Berlin · Antwortseiten</span>
+  <div>
+    <a href="mailto:kontakt@antwortseiten.org">Kontakt &amp; Presseanfragen</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+
 </body>
 </html>
