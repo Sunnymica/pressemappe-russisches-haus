@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Two Treaties, One Statement — Press Dossier Russian House Berlin</title>
+<meta name="description" content="The Federal Foreign Office invokes a complicated legal situation. The treaties themselves are remarkably clear: the 2011 Activities Agreement and the 2013 Accommodation Agreement are two separate instruments with different termination periods.">
+<meta property="og:title" content="Two Treaties, One Statement">
+<meta property="og:description" content="Title, date and termination clause of two separate agreements — combined into a single statement.">
+
+<style>
+  :root {
+    --paper: #f4f1ea;
+    --ink: #1a1814;
+    --ink-muted: #5a534a;
+    --rule: #c9c1b1;
+    --rh-red: #b8252f;
+    --rh-red-dark: #8e1a23;
+    --footer-link: #7eb8f7;
+
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Arial, Helvetica, sans-serif;
+    --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--rh-red); }
+
+  .dossier-header {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 36px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
+
+  .kicker {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rh-red);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 800;
+    font-size: clamp(28px, 4.2vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 22px;
+  }
+  h1 em { font-style: normal; color: var(--rh-red-dark); }
+
+  .standfirst {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    line-height: 1.55;
+    margin-bottom: 36px;
+    font-style: italic;
+  }
+
+  h2 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    margin: 44px 0 16px 0;
+  }
+
+  p {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  p strong { color: var(--rh-red-dark); font-weight: 700; }
+
+  .pull {
+    margin: 32px 0;
+    padding: 18px 0 18px 22px;
+    border-left: 4px solid var(--rh-red);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .vergleich {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .vertrag {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 20px 22px;
+  }
+  .vertrag.kuendbar { border-left: 4px solid var(--rh-red); }
+  .vertrag.lang { border-left: 4px solid var(--ink-muted); }
+  .vertrag .jahr {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--rh-red);
+    margin-bottom: 6px;
+  }
+  .vertrag.lang .jahr { color: var(--ink-muted); }
+  .vertrag .titel {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .vertrag dl { font-size: 14px; line-height: 1.5; }
+  .vertrag dt {
+    font-weight: 700;
+    color: var(--ink-muted);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .vertrag dd { font-family: var(--font-serif); font-size: 15px; }
+
+  .box {
+    margin: 32px 0;
+    padding: 20px 24px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--ink);
+    border-radius: 4px;
+  }
+  .box .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rh-red);
+    margin-bottom: 10px;
+  }
+  .box p { font-size: 15px; line-height: 1.55; margin-bottom: 10px; }
+  .box p:last-child { margin-bottom: 0; }
+  .box a {
+    color: var(--rh-red-dark);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--rh-red-dark);
+  }
+
+  .zitat {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.55;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+  .zitat .original {
+    font-size: 15px;
+    color: var(--ink-muted);
+    margin-top: 10px;
+    display: block;
+  }
+  .zitat .quelle {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 10px;
+    display: block;
+  }
+
+  .quellen {
+    font-size: 14px;
+    color: var(--ink-muted);
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  .quellen h2 {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+  }
+  .quellen ul { padding-left: 18px; margin: 0 0 16px; }
+  .quellen li { margin-bottom: 8px; line-height: 1.5; }
+  .quellen a { color: var(--rh-red-dark); }
+  .stand { font-size: 13px; margin-top: 16px; }
+
+  footer {
+    background: var(--ink);
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 40px;
+  }
+  footer span { font-size: 12px; opacity: 0.5; }
+  footer div { display: flex; gap: 20px; flex-wrap: wrap; }
+  footer a { font-size: 12px; color: var(--footer-link); text-decoration: none; }
+
+  @media (max-width: 680px) {
+    .page { padding: 28px 16px 16px; }
+    .pull { font-size: 17px; padding-left: 18px; }
+    .vergleich { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <a href="index_en.html" class="back-link">← Back to Overview</a>
+
+  <div class="dossier-header">
+    <span>Press Dossier · Russian House Berlin</span>
+    <span>Treaty Analysis</span>
+    <span>Status: 08/2026</span>
+  </div>
+
+  <div class="kicker">Legal Situation</div>
+
+  <h1>Two Treaties, <em>One Statement</em></h1>
+
+  <p class="standfirst">
+    On the Russian House, the German Federal Foreign Office invokes a complicated legal situation. The treaties themselves are remarkably clear on this point — and they expressly delimit themselves from one another.
+  </p>
+
+  <p>
+    On 10 August 2026, a spokesperson for the Federal Foreign Office told the German Press Agency that a closure of the Russian House was not foreseeable. Germany and Russia were bound by “the two bilateral agreements on property matters”, which had to be observed and could not simply be set aside. These also covered the Goethe-Institut in Moscow.
+  </p>
+
+  <p>
+    Anyone consulting the Federal Law Gazette will indeed find two agreements — but only one of them governs property.
+  </p>
+
+  <h2>The two treaties in the official record</h2>
+
+  <div class="vergleich">
+    <div class="vertrag kuendbar">
+      <div class="jahr">4 February 2011</div>
+      <div class="titel">Agreement on the Activities of Cultural and Information Centres</div>
+      <dl>
+        <dt>Signed</dt>
+        <dd>Munich, 4 February 2011</dd>
+        <dt>In force</dt>
+        <dd>7 June 2012</dd>
+        <dt>Citation</dt>
+        <dd>Federal Law Gazette (BGBl.) 2013 II No. 28, p. 1355</dd>
+        <dt>Governs</dt>
+        <dd>The activities of the Russian House in Berlin and of the Goethe-Instituts in Moscow, St Petersburg and Novosibirsk: programme, revenue, staffing, status of personnel, subletting, customs exemptions.</dd>
+        <dt>Duration</dt>
+        <dd>Five years, automatically renewed for successive five-year periods (Article 12)</dd>
+        <dt>Termination</dt>
+        <dd>Written notice through diplomatic channels, at the latest six months before the end of the current period</dd>
+      </dl>
+    </div>
+
+    <div class="vertrag lang">
+      <div class="jahr">15 May 2013</div>
+      <div class="titel">Agreement on the Conditions for Accommodating the Russian House of Science and Culture in Berlin and the Goethe-Institut in Moscow</div>
+      <dl>
+        <dt>Signed</dt>
+        <dd>Berlin, 15 May 2013</dd>
+        <dt>In force</dt>
+        <dd>5 June 2013</dd>
+        <dt>Citation</dt>
+        <dd>Federal Law Gazette (BGBl.) 2013 II No. 31, p. 1447</dd>
+        <dt>Governs</dt>
+        <dd>The site at Friedrichstraße 176–179, a building complex of 29,000 m², the plots in Moscow, ownership and use rights, taxation, immunity from enforcement.</dd>
+        <dt>Duration</dt>
+        <dd>99 years, automatically renewed for successive 99-year periods (Article 5)</dd>
+        <dt>Termination</dt>
+        <dd>Written notice, at the latest twelve months before the end of the current period</dd>
+      </dl>
+    </div>
+  </div>
+
+  <h2>The treaties delimit themselves from one another</h2>
+
+  <p>
+    That these are two distinct instruments is not a matter of interpretation. It is stated in the treaties themselves — and reciprocally so.
+  </p>
+
+  <div class="zitat">
+    “Questions concerning the provision of the land for use by the said centres and questions of ownership and possession of the buildings located on that land shall be governed by a separate agreement.”
+    <span class="original">Original: „Fragen der Überlassung der Grundstücke zur Nutzung durch die genannten Zentren und Fragen der Eigentums- und Besitzrechte an den auf den Grundstücken befindlichen Bauten werden durch ein gesondertes Abkommen geregelt.“</span>
+    <span class="quelle">Agreement of 4 February 2011, Article 1 (2) — translation by the editor</span>
+  </div>
+
+  <p>
+    The Activities Agreement therefore expressly assigns property matters to a different treaty. Conversely, the 2013 Agreement refers in its preamble expressly to the Agreement of 4 February 2011 as a separate instrument, and states in Article 4 that its provisions remain “unaffected”.
+  </p>
+
+  <p>
+    The separation is thus established twice over: one treaty refers property questions to the other, and the other leaves the first untouched.
+  </p>
+
+  <h2>Why the distinction is decisive</h2>
+
+  <p>
+    The 99 years regularly cited in public debate appear in Article 5 of the 2013 Accommodation Agreement. They concern land and buildings.
+  </p>
+
+  <p>
+    The 2011 Activities Agreement — the treaty governing the Russian House’s specific operational regime, including events, revenue, subletting and personnel matters — contains an entirely different duration rule. Article 12 provides for five-year periods which renew automatically unless one party gives written notice six months before expiry that it intends to terminate the agreement.
+  </p>
+
+  <p>
+    The agreement entered into force on 7 June 2012. The current five-year period therefore ends at the close of <strong>6 June 2027</strong>. Notice would have to be given by <strong>6 December 2026</strong> at the latest.
+  </p>
+
+  <div class="pull">
+    Ordinary unilateral termination of the Activities Agreement is not merely legally possible. Germany is currently within the very window in which it can give notice.
+  </div>
+
+  <h2>Pacta sunt servanda does not mean perpetual</h2>
+
+  <p>
+    Statements by the Federal Foreign Office refer to Article 26 of the Vienna Convention on the Law of Treaties: every treaty in force is binding upon the parties and must be performed by them in good faith.
+  </p>
+
+  <p>
+    That is correct — but it does not answer the question. Article 54 of the same Convention provides that the termination of a treaty may take place in conformity with the provisions of the treaty itself. The termination clause is part of the treaty. A party invoking it does not breach the treaty; it applies it.
+  </p>
+
+  <p>
+    Treaties are to be honoured, not made everlasting.
+  </p>
+
+  <h2>Four provisions that are rarely quoted</h2>
+
+  <p>
+    <strong>The premises enjoy no diplomatic inviolability.</strong> Article 4 (3) of the Activities Agreement states expressly: “The premises of the centres shall not enjoy diplomatic immunity or inviolability.” This does not mean that authorities may enter without a legal basis — the general rules of German law apply. But it refutes any notion that the building is inviolable territory under international law.
+  </p>
+
+  <p>
+    <strong>Immunity from enforcement is purpose-bound.</strong> Article 3 (1) of the Accommodation Agreement grants immunity from measures of enforcement expressly only “in so far as they serve sovereign purposes”. The qualification appears in the treaty text itself.
+  </p>
+
+  <p>
+    <strong>Subletting only under German law.</strong> Article 7 (4) of the Activities Agreement grants the centres the right to let part of their premises — but “in accordance with the law of the receiving state”. That includes the EU sanctions in force.
+  </p>
+
+  <p>
+    <strong>Diplomatic status of the leadership.</strong> Article 8 (4) of the Activities Agreement allows directors of the centres and their deputies to be accorded a status under the Vienna Conventions following notification. Termination of the agreement would remove this specific treaty basis; whether an individual might hold such status on another legal ground would have to be examined separately.
+  </p>
+
+  <h2>The property tax payment is conditional</h2>
+
+  <p>
+    The German federal budget for 2026 provides €70,000 for the property tax on the Russian House. The basis is Article 4 (3) of the Accommodation Agreement. However, the German assumption of these payments is not unconditional: it applies expressly “by way of ensuring reciprocity” and only “as long as neither a property tax nor a comparable tax or other charge” is levied in the Russian Federation on the Moscow plots.
+  </p>
+
+  <p>
+    Whether this condition is currently met is a verifiable question of fact. It has not been answered publicly.
+  </p>
+
+  <h2>What termination would mean — and what it would not</h2>
+
+  <p>
+    On the wording of the treaties, termination of the Activities Agreement would not automatically bring the 2013 Accommodation Agreement to an end. Land and buildings would initially remain governed by the separate 2013 agreement.
+  </p>
+
+  <p>
+    What would fall away is the specific treaty regime of 2011 with its concrete rights and privileges for the operation of the Russian House: provisions on language courses and examinations, events, revenue, cafeterias and sales stands, subletting, customs concessions, and the position of personnel.
+  </p>
+
+  <p>
+    Alongside it, the 1992 Agreement on Cultural Cooperation would remain in force, containing general provisions on cultural institutions in Article 14 and its Annex. Which activities would still be permissible on that basis alone and under German law would require separate examination. That agreement is likewise terminable; notice for the current period would have to be given by 17 November 2027.
+  </p>
+
+  <div class="box">
+    <div class="label">On the link to the Goethe-Institut</div>
+    <p>The connection between the two institutions is not a political invention. Article 1 (1) of the Activities Agreement expressly names together the Russian House in Berlin and the Goethe-Instituts in Moscow, St Petersburg and Novosibirsk. Termination would also affect their treaty basis.</p>
+    <p>The question is therefore not whether this coupling exists, but why it should politically rule out any termination — when the treaty itself contains a termination clause, and when Russia unilaterally reduced the operations of the Goethe-Institut to a fraction as early as 2023.</p>
+  </div>
+
+  <h2>Open questions to the Federal Government</h2>
+
+  <p>
+    Which “two bilateral agreements on property matters” does the Federal Foreign Office mean in its public statement of 10 August 2026 — with full title, date and article? What legal effect does it attribute to each agreement in relation to a possible closure of the Russian House? Does the Federal Government acknowledge that Article 12 of the Activities Agreement permits termination at the end of the current five-year period? Does it intend to make use of that possibility by 6 December 2026? What legal consequences would termination have, in its view, for programme, personnel, revenue and subletting? And is a property tax or comparable charge currently levied in the Russian Federation on the Moscow plots?
+  </p>
+
+  <div class="box">
+    <div class="label">Further reading in this dossier</div>
+    <p>The treaties at a glance: <a href="vertraege_en.html">Which agreements govern the Russian House</a></p>
+    <p>The French assessment: <a href="frankreich-geheimdienste_en.html">“Cover for the Russian intelligence services”</a></p>
+    <p>The reciprocity argument: <a href="goethe_en.html">Goethe-Institut — no longer a bargaining chip</a></p>
+  </div>
+
+  <div class="quellen">
+    <h2>Sources</h2>
+    <ul>
+      <li>Agreement between the Government of the Federal Republic of Germany and the Government of the Russian Federation on the Activities of Cultural and Information Centres of 4 February 2011, Federal Law Gazette 2013 Part II No. 28, issued 14 October 2013, pp. 1355 ff.</li>
+      <li>Agreement between the Government of the Federal Republic of Germany and the Government of the Russian Federation on the Conditions for Accommodating the Russian House of Science and Culture in Berlin and the Goethe-Institut in Moscow of 15 May 2013, Federal Law Gazette 2013 Part II No. 31, issued 25 October 2013, pp. 1447 ff.</li>
+      <li>Agreement between the Government of the Federal Republic of Germany and the Government of the Russian Federation on Cultural Cooperation of 16 December 1992, Federal Law Gazette 1993 Part II No. 29, pp. 1256 ff.</li>
+      <li>Vienna Convention on the Law of Treaties of 23 May 1969, Articles 26 and 54</li>
+      <li>German Press Agency (dpa): “Interior Ministry: Russian House ‘under observation’”, 10 August 2026</li>
+    </ul>
+
+    <p class="stand">Status: 11 August 2026. All treaty citations follow the official publication in the German Federal Law Gazette; the authoritative texts are those in German and Russian. English renderings of treaty provisions are translations by the editor and are provided for information only. The calculation of periods follows the dates of entry into force stated in the agreements.</p>
+  </div>
+
+</div>
+
+<footer>
+  <span>Press Dossier Russian House Berlin · Antwortseiten</span>
+  <div>
+    <a href="mailto:kontakt@antwortseiten.org">Contact &amp; Press Enquiries</a>
+    <a href="impressum_en.html">Legal Notice</a>
+    <a href="datenschutz_en.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
