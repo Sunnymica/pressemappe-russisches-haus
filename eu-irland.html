@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="alternate" hreflang="de" href="eu-irland.html">
+<link rel="alternate" hreflang="en" href="eu-irland_en.html">
+
+<title>Irland: Ein Netzwerkfall ohne Standort · Pressemappe</title>
+<meta name="description" content="Länderakte Irland: Ein offizielles Rossotrudnitschestwo-Büro ist nicht nachweisbar. Belegt sind Verhandlungen von 2010, private Kulturvereine und ein Landsleutenetzwerk.">
+
+<meta property="og:title" content="Irland: Ein Netzwerkfall ohne Standort">
+<meta property="og:description" content="In Irland ließ sich kein offizieller russischer Standort verifizieren – wohl aber ein aktives Partner- und Diasporanetzwerk.">
+
+<style>
+:root {
+  --paper: #f4f1ea;
+  --white: #ffffff;
+  --ink: #1a1814;
+  --ink-muted: #5a534a;
+  --rule: #c9c1b1;
+
+  --blue: #005bbb;
+  --blue-dark: #07477f;
+  --blue-soft: #e6f1fb;
+
+  --red: #a32d2d;
+  --red-dark: #7f2020;
+  --red-soft: #f8e8e8;
+
+  --green: #2d7040;
+  --green-soft: #e8f3eb;
+
+  --orange: #a35d13;
+  --orange-soft: #f8eee1;
+
+  --violet: #67538f;
+  --violet-soft: #eeeaf7;
+
+  --grey-soft: #eeece7;
+
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Arial, Helvetica, sans-serif;
+
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+  padding: 36px 20px;
+}
+
+a {
+  color: var(--blue-dark);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+.page {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.back-link {
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.back-link:hover {
+  color: var(--red);
+}
+
+.lang-switch {
+  display: inline-block;
+  padding: 5px 11px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  color: var(--blue-dark);
+  background: var(--white);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.lang-switch:hover {
+  color: var(--white);
+  background: var(--blue);
+}
+
+.dossier-header {
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 12px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.dossier-header .accent {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.country-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.country-flag {
+  width: 58px;
+  height: 39px;
+  margin-top: 5px;
+  object-fit: cover;
+  border: 1px solid rgba(26, 24, 20, 0.25);
+  border-radius: 3px;
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.kicker {
+  margin-bottom: 12px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+}
+
+h1 {
+  max-width: 800px;
+  margin-bottom: 20px;
+  font-size: clamp(31px, 5vw, 49px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+h1 em {
+  color: var(--red-dark);
+  font-style: normal;
+}
+
+.lede {
+  max-width: 790px;
+  margin: 8px 0 28px 75px;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.58;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 34px 75px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 29px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.status.closed,
+.status.suspended {
+  color: var(--green);
+  border-color: #a8cfb1;
+  background: var(--green-soft);
+}
+
+.status.active {
+  color: var(--red-dark);
+  border-color: #e6b2b2;
+  background: var(--red-soft);
+}
+
+.status.restricted {
+  color: var(--orange);
+  border-color: #dec09e;
+  background: var(--orange-soft);
+}
+
+.status.vanished,
+.status.open {
+  color: var(--violet);
+  border-color: #c9bde1;
+  background: var(--violet-soft);
+}
+
+.status.network,
+.status.pending {
+  color: var(--blue-dark);
+  border-color: #b4d1ed;
+  background: var(--blue-soft);
+}
+
+.status.unproven {
+  color: var(--ink-muted);
+  border-color: var(--rule);
+  background: var(--grey-soft);
+}
+
+.section {
+  margin: 54px 0;
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.section-text {
+  max-width: 790px;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.64;
+}
+
+.section-text + .section-text {
+  margin-top: 15px;
+}
+
+.section-text strong {
+  color: var(--red-dark);
+}
+
+.source-url {
+  max-width: 820px;
+  margin-top: 8px;
+  color: var(--ink-muted);
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.source-url + .section-text {
+  margin-top: 19px;
+}
+
+.fact-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.fact-table th,
+.fact-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+.fact-table tr:last-child th,
+.fact-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fact-table th {
+  width: 185px;
+  color: var(--ink-muted);
+  background: var(--grey-soft);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.fact-table td strong {
+  color: var(--red-dark);
+}
+
+.key-box {
+  margin: 26px 0 0;
+  padding: 22px 24px;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 5px 5px 0;
+  background: var(--blue-soft);
+}
+
+.key-box h3 {
+  margin-bottom: 9px;
+  font-size: 20px;
+}
+
+.key-box p {
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 24px;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 8px;
+  width: 2px;
+  background: var(--rule);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 7px;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 1px var(--red);
+}
+
+.timeline-date {
+  margin-bottom: 5px;
+  color: var(--red-dark);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.timeline-text {
+  max-width: 780px;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.quote-box {
+  margin: 24px 0;
+  padding: 28px 30px;
+  border: 2px solid var(--ink);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.quote-box .label {
+  margin-bottom: 13px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.quote-box blockquote {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.quote-box .translation {
+  margin-top: 18px;
+  padding-top: 17px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.analysis-box {
+  margin-top: 24px;
+  padding: 24px 26px;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.analysis-box h3 {
+  margin-bottom: 11px;
+  font-size: 21px;
+}
+
+.analysis-box p {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.64;
+}
+
+.analysis-box p + p {
+  margin-top: 13px;
+}
+
+.sources {
+  counter-reset: source;
+  list-style: none;
+}
+
+.sources li {
+  counter-increment: source;
+  position: relative;
+  padding: 14px 0 14px 38px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sources li:last-child {
+  border-bottom: none;
+}
+
+.sources li::before {
+  content: counter(source);
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--red);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.sources strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.sources a {
+  overflow-wrap: anywhere;
+}
+
+.questions {
+  list-style: none;
+}
+
+.questions li {
+  position: relative;
+  padding: 11px 0 11px 27px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.questions li:last-child {
+  border-bottom: none;
+}
+
+.questions li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  color: var(--red);
+  font-family: var(--font-sans);
+  font-weight: 900;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 660px) {
+  body {
+    padding: 26px 15px;
+  }
+
+  .country-heading {
+    gap: 12px;
+  }
+
+  .country-flag {
+    width: 45px;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: clamp(29px, 10vw, 41px);
+  }
+
+  .lede,
+  .status-row {
+    margin-left: 0;
+  }
+
+  .fact-table th {
+    width: 135px;
+  }
+
+  .fact-table th,
+  .fact-table td {
+    padding: 10px 11px;
+  }
+
+  .quote-box {
+    padding: 22px 20px;
+  }
+
+  .quote-box blockquote {
+    font-size: 18px;
+  }
+
+  .key-box,
+  .analysis-box {
+    padding: 20px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <div class="top-row">
+    <a href="eu-laender.html" class="back-link">← Zurück zum Europa-Dossier</a>
+    <a href="eu-irland_en.html" class="lang-switch" lang="en">🇬🇧 English</a>
+  </div>
+
+  <div class="dossier-header">
+    <span>Pressemappe · Russisches Haus Berlin</span>
+    <span class="accent">Europa-Dossier · Irland</span>
+    <span>Recherchestand 15.08.2026</span>
+  </div>
+
+  <div class="country-heading">
+    <img src="img/flags/ie.svg" alt="Flagge Irlands" class="country-flag" width="58" height="39">
+    <div>
+      <div class="kicker">Länderakte Irland</div>
+      <h1>Ein Netzwerkfall <em>ohne Standort</em></h1>
+    </div>
+  </div>
+
+  <p class="lede">
+    Für Irland wurde kein belastbarer Nachweis eines offiziellen Rossotrudnitschestwo-Büros, Russischen Hauses oder formalen Russkiy-Mir-Zentrums gefunden. Belegt sind dagegen fortgeschrittene Verhandlungen des Trinity College über Irlands erstes Russisches Kulturzentrum im Jahr 2010, private Kulturorganisationen und ein botschaftsnahes Landsleutenetzwerk. Der korrekte Statusbegriff lautet deshalb Partner- und Diasporanetz.
+  </p>
+
+  <div class="status-row">
+    <span class="status unproven">Kein offizieller Standort nachgewiesen</span>
+    <span class="status network">Partner- und Diasporanetz aktiv</span>
+  </div>
+
+  <section class="section">
+    <h2 class="section-title">Kurzbefund</h2>
+
+    <div class="fact-table-wrap">
+      <table class="fact-table">
+        <tbody>
+          <tr>
+            <th>Offizieller Standort</th>
+            <td><strong>Nicht verifiziert.</strong> Weder Rossotrudnitschestwos Partnerliste noch der Russkiy-Mir-Zentrenkatalog enthalten einen Irland-Eintrag. Das ist ein dokumentierter Negativbefund, kein Existenz-Negativbeweis</td>
+          </tr>
+          <tr>
+            <th>Belegtes Projekt</th>
+            <td>Trinity College kündigte am 10. September 2010 fortgeschrittene Verhandlungen über Irlands erstes Russisches Kulturzentrum an – mit Russkiy Mir, Dublin City Public Libraries und dem Stadtrat</td>
+          </tr>
+          <tr>
+            <th>Ergebnis</th>
+            <td>Eröffnung, Anschrift, Rechtsträgerschaft oder spätere Schließung ließen sich in den geprüften Quellen nicht verifizieren</td>
+          </tr>
+          <tr>
+            <th>Vertragslage</th>
+            <td>Allgemeines Abkommen über kulturelle Zusammenarbeit zwischen Irland und der UdSSR vom 22. Juli 1991; kein Zentrumsvertrag gefunden</td>
+          </tr>
+          <tr>
+            <th>Netzwerkstrukturen</th>
+            <td>Private Kulturorganisationen, eine russischsprachige Kinderbibliothek in Galway (2014) sowie ein botschaftsnahes Landsleutenetzwerk</td>
+          </tr>
+          <tr>
+            <th>„Matrёshka“</th>
+            <td>Taucht 2026 in Russkiy-Mir-Berichten auf. Das ist Aktivitätsevidenz – im offiziellen Zentrenkatalog ist es <strong>nicht</strong> als formale Vertretung ausgewiesen</td>
+          </tr>
+          <tr>
+            <th>Maßnahmen</th>
+            <td>Ausweisung von vier hochrangigen russischen Botschaftsangehörigen am 29. März 2022 unter Artikel 9 des Wiener Übereinkommens</td>
+          </tr>
+          <tr>
+            <th>Status April 2025</th>
+            <td>Die amtliche Diplomatenübersicht führt die russische Botschaft; ein eigenes Kulturzentrum erscheint in den geprüften Einträgen nicht</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="source-url">
+      Quellen:
+      <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a><br>
+      <a href="https://rs.gov.ru" target="_blank" rel="noopener noreferrer">https://rs.gov.ru</a><br>
+      <a href="https://russkiymir.ru" target="_blank" rel="noopener noreferrer">https://russkiymir.ru</a><br>
+      <a href="https://www.tcd.ie" target="_blank" rel="noopener noreferrer">https://www.tcd.ie</a>
+    </div>
+
+    <div class="key-box">
+      <h3>Aktivität ist kein Status</h3>
+      <p>
+        Das Zentrum „Matrёshka“ zeigt das Kernproblem des irischen Falls: Eine russische Stiftungsseite berichtet über seine Aktivitäten, doch im formalen Zentrenkatalog ist es nicht aufgeführt. <strong>Aktivitätsevidenz begründet keinen Vertretungsstatus.</strong> Ebenso wenig belegt eine Landsleutekonferenz mit Botschaftsbeteiligung, dass das Netzwerk offiziell vertreten ist. <strong>Leseregel:</strong> „Offen“ bedeutet, dass eine Aussage in den geprüften öffentlichen Quellen nicht belegt ist. Das ist kein Beweis des Gegenteils. EU-Listung, nationaler Vollzug, politische Nichtkooperation, Vertragskündigung und tatsächliche Betriebsschließung werden getrennt bewertet.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Chronologie</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">22. Juli 1991</div>
+        <div class="timeline-text">
+          Irland und die UdSSR schließen in Moskau ein allgemeines Abkommen über kulturelle Zusammenarbeit (Irish Treaty Series No. 15/1991). Es errichtet kein Zentrum.
+        </div>
+        <div class="source-url">
+          <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a><br>
+          <a href="https://www.bailii.org" target="_blank" rel="noopener noreferrer">https://www.bailii.org</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">10. September 2010</div>
+        <div class="timeline-text">
+          Trinity College erklärt, es stehe mit Dublin City Public Libraries und dem Stadtrat sowie der Stiftung Russkiy Mir kurz vor Abschluss von Verhandlungen über Irlands erstes Russian Cultural Centre. Ein Abschluss ist nicht belegt.
+        </div>
+        <div class="source-url">
+          <a href="https://www.tcd.ie" target="_blank" rel="noopener noreferrer">https://www.tcd.ie</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">13. September 2014</div>
+        <div class="timeline-text">
+          In Galway eröffnet eine russischsprachige Kinderbibliothek durch eine lokale Russian Cultural Centre Alliance, finanziert durch die gemeinnützige Russian Cultural Foundation. Das ist eine Community-Initiative, keine nachgewiesene Rossotrudnitschestwo-Vertretung.
+        </div>
+        <div class="source-url">
+          <a href="https://www.irishtimes.com" target="_blank" rel="noopener noreferrer">https://www.irishtimes.com</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">29. März 2022</div>
+        <div class="timeline-text">
+          Irland weist vier hochrangige russische Botschaftsangehörige unter Artikel 9 des Wiener Übereinkommens über diplomatische Beziehungen aus.
+        </div>
+        <div class="source-url">
+          <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a><br>
+          <a href="https://www.irishtimes.com" target="_blank" rel="noopener noreferrer">https://www.irishtimes.com</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">21. Juli 2022</div>
+        <div class="timeline-text">
+          Die EU listet Rossotrudnitschestwo. Die irische Zentralbank und das Außenministerium veröffentlichen allgemeine Hinweise zur Umsetzung der restriktiven Maßnahmen.
+        </div>
+        <div class="source-url">
+          <a href="https://www.centralbank.ie" target="_blank" rel="noopener noreferrer">https://www.centralbank.ie</a><br>
+          <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">12. April 2025</div>
+        <div class="timeline-text">
+          Die amtliche irische Übersicht der akkreditierten diplomatischen Missionen führt die russische Botschaft; ein eigenes russisches Kulturzentrum erscheint in den geprüften Einträgen nicht.
+        </div>
+        <div class="source-url">
+          <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">10. Dezember 2025</div>
+        <div class="timeline-text">
+          Eine russische Landsleutekonferenz in Dublin findet mit Beteiligung des Botschafters beziehungsweise der Botschaft statt. Das belegt ein aktives Netzwerk, nicht dessen offiziellen Vertretungsstatus. Die Quelle ist interessengeleitet.
+        </div>
+        <div class="source-url">
+          <a href="https://vseruss.com" target="_blank" rel="noopener noreferrer">https://vseruss.com</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2026</div>
+        <div class="timeline-text">
+          Russkiy Mir berichtet über Aktivitäten des Zentrums „Matrёshka“ in Irland. Im formalen Zentrenkatalog der Stiftung ist es weiterhin nicht aufgeführt.
+        </div>
+        <div class="source-url">
+          <a href="https://russkiymir.ru" target="_blank" rel="noopener noreferrer">https://russkiymir.ru</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Rechtsgrundlage</h2>
+
+    <p class="section-text">
+      Das allgemeine Abkommen über kulturelle Zusammenarbeit zwischen Irland und der UdSSR vom 22. Juli 1991 bildet einen bilateralen Rahmen. Es errichtet <strong>kein</strong> Zentrum und begründet keinen Standortstatus. Volltext und heutige Wirksamkeit sind offen.
+    </p>
+    <div class="source-url">
+      <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a><br>
+      <a href="https://www.bailii.org" target="_blank" rel="noopener noreferrer">https://www.bailii.org</a>
+    </div>
+    <p class="section-text">
+      Ein Zentrumsvertrag wurde nicht gefunden. Die Ankündigung des Trinity College von 2010 belegt eine Absicht und fortgeschrittene Verhandlungen – nicht deren Abschluss. Ob die Verhandlungen förmlich beendet wurden oder zu einer kurzlebigen, heute nicht mehr sichtbaren Einrichtung führten, ist offen.
+    </p>
+    <div class="source-url">
+      <a href="https://www.tcd.ie" target="_blank" rel="noopener noreferrer">https://www.tcd.ie</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Maßnahmen seit 2022</h2>
+
+    <p class="section-text">
+      Irland wies am 29. März 2022 vier hochrangige russische Botschaftsangehörige aus. Die Maßnahme richtet sich gegen Personen und ist keinem Kulturstandort zugeordnet.
+    </p>
+    <div class="source-url">
+      <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+    </div>
+    <p class="section-text">
+      Die irische Zentralbank und das Außenministerium veröffentlichen allgemeine Hinweise zur Umsetzung der EU-Sanktionen. Ob nach Juli 2022 Genehmigungsanträge für Zahlungen an Rossotrudnitschestwo gestellt wurden, ist offen.
+    </p>
+    <div class="source-url">
+      <a href="https://www.centralbank.ie" target="_blank" rel="noopener noreferrer">https://www.centralbank.ie</a><br>
+      <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Einordnung</h2>
+
+    <div class="analysis-box">
+      <h3>Netzwerk statt Standort</h3>
+      <p>
+        Irland ist ein Netzwerk- und kein Standortfall. Es gibt keine offizielle Immobilie, die man schließen könnte – und dennoch bestehen Förder- und Partnerstrukturen mit Bezug zu russischen staatsnahen Stiftungen.
+      </p>
+      <p>
+        Für Deutschland folgt daraus eine doppelte Anforderung: Eine Bestandsaufnahme darf nicht jedes russischsprachige Kulturzentrum als staatliche Auslandsvertretung behandeln. Zuerst sind Rechtsträger, offizielle Katalogisierung, Verträge, Geldflüsse und Botschaftssteuerung zu belegen.
+      </p>
+      <p>
+        Umgekehrt gilt: Förder- und Partnernetzwerke können politisch relevant sein, auch wenn keine schließbare offizielle Immobilie existiert. Der irische Fall warnt vor beiden Fehlschlüssen zugleich.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Quellen</h2>
+
+    <p class="section-text">
+      Wo sich das Einzeldokument eindeutig belegen ließ, verweist der Link unmittelbar darauf – etwa auf Gesetzblätter, Vertragsveröffentlichungen und Parlamentsdokumente. Die Ausgangsakte dokumentiert für die übrigen Belege nur Herausgeber, Titel und Datum, nicht die vollständige Dokumentadresse; dort führt der Link auf die belegte Quelldomain. <strong>Diese Tiefenlinks sind ausdrücklich offen</strong> und werden nachgetragen, sobald die Fundstelle eindeutig ist.
+    </p>
+
+    <ol class="sources">
+      <li>
+        <strong>Rossotrudnitschestwo – Partnerorganisationen</strong>
+        Abgerufen am 14. August 2026; kein Irland-Eintrag gefunden. Eigenquelle, Negativsuche.<br>
+        <a href="https://rs.gov.ru" target="_blank" rel="noopener noreferrer">https://rs.gov.ru</a>
+      </li>
+
+      <li>
+        <strong>Russkiy Mir Foundation – Katalog der Russischen Zentren</strong>
+        Abgerufen am 14. August 2026; kein Irland-Eintrag gefunden. Eigenquelle, Negativsuche.<br>
+        <a href="https://russkiymir.ru" target="_blank" rel="noopener noreferrer">https://russkiymir.ru</a>
+      </li>
+
+      <li>
+        <strong>Trinity College Dublin – Verhandlungen über Irlands erstes Russisches Kulturzentrum, 10. September 2010</strong>
+        Primärquelle zur Verhandlungsankündigung.<br>
+        <a href="https://www.tcd.ie" target="_blank" rel="noopener noreferrer">https://www.tcd.ie</a>
+      </li>
+
+      <li>
+        <strong>Russkiy Mir Foundation – Bericht über das irische Zentrum „Matrёshka“, 2026</strong>
+        Eigenquelle, direkt für die Stiftungsdarstellung; kein Nachweis eines formalen Vertretungsstatus.<br>
+        <a href="https://russkiymir.ru" target="_blank" rel="noopener noreferrer">https://russkiymir.ru</a>
+      </li>
+
+      <li>
+        <strong>Government of Ireland – Irish Treaty Series No. 15/1991</strong>
+        Abkommen zwischen Irland und der UdSSR über kulturelle Zusammenarbeit, unterzeichnet in Moskau am 22. Juli 1991. Primärquelle für die Metadaten.<br>
+        <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+      </li>
+
+      <li>
+        <strong>BAILII – Metadaten zum Abkommen von 1991</strong>
+        Ergänzende Fundstelle.<br>
+        <a href="https://www.bailii.org" target="_blank" rel="noopener noreferrer">https://www.bailii.org</a>
+      </li>
+
+      <li>
+        <strong>Government of Ireland – Erklärung des Außenministers, 29. März 2022</strong>
+        Ausweisung von vier russischen Botschaftsangehörigen. Primärquelle.<br>
+        <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+      </li>
+
+      <li>
+        <strong>Government of Ireland – Diplomatische Missionen in Irland, aktualisiert 12. April 2025</strong>
+        Führt die russische Botschaft; kein eigenes Kulturzentrum in den geprüften Einträgen. Primärquelle und Negativbefund.<br>
+        <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+      </li>
+
+      <li>
+        <strong>Vseruss – Landsleutekonferenz in Dublin, 10. Dezember 2025</strong>
+        Interessengeleitete Quelle; belegt Netzwerkaktivität, nicht offiziellen Status.<br>
+        <a href="https://vseruss.com" target="_blank" rel="noopener noreferrer">https://vseruss.com</a>
+      </li>
+
+      <li>
+        <strong>Russian Bridge Ireland – Information in englischer Sprache</strong>
+        Abgerufen am 14. August 2026; Eigenquelle, direkt für den privaten Status der Organisation.<br>
+        <a href="https://russianbridge.ie" target="_blank" rel="noopener noreferrer">https://russianbridge.ie</a>
+      </li>
+
+      <li>
+        <strong>The Irish Times – „Russian-language library for children opens in Galway school“, 13. September 2014</strong>
+        Sekundärquelle zur Community-Initiative.<br>
+        <a href="https://www.irishtimes.com" target="_blank" rel="noopener noreferrer">https://www.irishtimes.com</a>
+      </li>
+
+      <li>
+        <strong>Central Bank of Ireland – EU-Restriktionsmaßnahmen zur Ukraine</strong>
+        Abgerufen am 14. August 2026; allgemeine Vollzugshinweise. Primärquelle.<br>
+        <a href="https://www.centralbank.ie" target="_blank" rel="noopener noreferrer">https://www.centralbank.ie</a>
+      </li>
+
+      <li>
+        <strong>Russkiy Mir Foundation – „What is a Russian Center?“</strong>
+        Abgerufen am 14. August 2026; Definition des formalen Zentrumsbegriffs. Eigenquelle.<br>
+        <a href="https://russkiymir.ru" target="_blank" rel="noopener noreferrer">https://russkiymir.ru</a>
+      </li>
+
+      <li>
+        <strong>Government of Ireland – Restriktive Maßnahmen (Sanktionen)</strong>
+        Veröffentlicht am 13. April 2023, aktualisiert am 12. April 2025. Primärquelle.<br>
+        <a href="https://www.gov.ie" target="_blank" rel="noopener noreferrer">https://www.gov.ie</a>
+      </li>
+
+      <li>
+        <strong>EUR-Lex – Durchführungsverordnung (EU) 2022/1270</strong>
+        EU-Listung Rossotrudnitschestwos vom 21. Juli 2022.<br>
+        <a href="https://eur-lex.europa.eu/eli/reg_impl/2022/1270/oj/deu" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg_impl/2022/1270/oj/deu</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Offene Fragen</h2>
+
+    <ul class="questions">
+      <li>Wurden die Verhandlungen von 2010 formal beendet, oder führte das Projekt zu einer nur kurzlebigen, heute nicht mehr sichtbaren Einrichtung?</li>
+      <li>Welche Rechtsform und Finanzierungsquellen hat „Matrёshka“, und bestehen direkte Verträge oder Zahlungen mit Russkiy Mir, Rossotrudnitschestwo oder der Botschaft?</li>
+      <li>Enthalten die Archive von Dublin City Council und Public Libraries einen finalen Partnerschaftsvertrag oder Beschluss?</li>
+      <li>Wurden nach Juli 2022 Genehmigungsanträge für Zahlungen an Rossotrudnitschestwo gestellt?</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>pressemappe.antwortseiten.org · Länderakte Irland</span>
+    <span>
+      <a href="eu-laender.html">Europa-Dossier</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Übersicht</a>
+      &nbsp;·&nbsp;
+      <a href="impressum.html">Impressum</a>
+      &nbsp;·&nbsp;
+      <a href="datenschutz.html">Datenschutz</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>

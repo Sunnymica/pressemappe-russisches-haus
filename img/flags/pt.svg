@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 30 20" role="img" aria-label="Flagge Portugals">
+<title>Flagge Portugals</title>
+<rect width="30" height="20" fill="#DA291C"/>
+<rect width="12" height="20" fill="#046A38"/>
+<g transform="translate(12 10)">
+  <circle r="4.1" fill="none" stroke="#FFE900" stroke-width="0.9"/>
+  <ellipse rx="4.1" ry="1.7" fill="none" stroke="#FFE900" stroke-width="0.55"/>
+  <ellipse rx="1.7" ry="4.1" fill="none" stroke="#FFE900" stroke-width="0.55"/>
+  <rect x="-2.1" y="-3" width="4.2" height="6" rx="0.5" fill="#FFFFFF" stroke="#DA291C" stroke-width="0.5"/>
+  <rect x="-1.15" y="-2" width="2.3" height="4" rx="0.35" fill="#1B3F94"/>
+</g>
+</svg>

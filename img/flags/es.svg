@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 30 20" role="img" aria-label="Flagge Spaniens">
+<title>Flagge Spaniens</title>
+<rect width="30" height="20" fill="#AA151B"/>
+<rect y="5" width="30" height="10" fill="#F1BF00"/>
+<g transform="translate(9 10)">
+  <rect x="-2.3" y="-3.1" width="4.6" height="5" fill="#FFFFFF" stroke="#AA151B" stroke-width="0.4"/>
+  <rect x="-2.3" y="-3.1" width="2.3" height="2.5" fill="#AA151B"/>
+  <rect x="0" y="-0.6" width="2.3" height="2.5" fill="#AA151B"/>
+  <path d="M-2.3 1.9 C-2.3 3.4 -1.2 4.3 0 4.8 C1.2 4.3 2.3 3.4 2.3 1.9 Z" fill="#F1BF00" stroke="#AA151B" stroke-width="0.4"/>
+  <rect x="-3.6" y="-3.6" width="1" height="8.4" fill="#AA151B"/>
+  <rect x="2.6" y="-3.6" width="1" height="8.4" fill="#AA151B"/>
+</g>
+</svg>
