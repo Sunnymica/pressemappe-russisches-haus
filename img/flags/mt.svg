@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 30 20" role="img" aria-label="Flagge Maltas">
+<title>Flagge Maltas</title>
+<rect width="30" height="20" fill="#CF142B"/>
+<rect width="15" height="20" fill="#FFFFFF"/>
+<g transform="translate(4.6 4.2)" stroke="#A0A0A0" stroke-width="0.28">
+  <rect x="-2.5" y="-0.85" width="5" height="1.7" fill="#FFFFFF"/>
+  <rect x="-0.85" y="-2.5" width="1.7" height="5" fill="#FFFFFF"/>
+</g>
+</svg>

@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="alternate" hreflang="de" href="eu-portugal.html">
+<link rel="alternate" hreflang="en" href="eu-portugal_en.html">
+
+<title>Portugal: Ein Vertreter in der Botschaft statt eines eigenen Hauses · Pressemappe</title>
+<meta name="description" content="Länderakte Portugal: Rossotrudnitschestwo ist in Lissabon durch einen Vertreter innerhalb der Botschaft präsent. Ein eigenständiges Zentrum ist nicht verifiziert.">
+
+<meta property="og:title" content="Portugal: Ein Vertreter in der Botschaft statt eines eigenen Hauses">
+<meta property="og:description" content="Portugal ist der wichtigste Organisationsform-Kontrast: ein Rossotrudnitschestwo-Vertreter innerhalb der Botschaft statt eines verselbständigten Zentrums.">
+
+<style>
+:root {
+  --paper: #f4f1ea;
+  --white: #ffffff;
+  --ink: #1a1814;
+  --ink-muted: #5a534a;
+  --rule: #c9c1b1;
+
+  --blue: #005bbb;
+  --blue-dark: #07477f;
+  --blue-soft: #e6f1fb;
+
+  --red: #a32d2d;
+  --red-dark: #7f2020;
+  --red-soft: #f8e8e8;
+
+  --green: #2d7040;
+  --green-soft: #e8f3eb;
+
+  --orange: #a35d13;
+  --orange-soft: #f8eee1;
+
+  --violet: #67538f;
+  --violet-soft: #eeeaf7;
+
+  --grey-soft: #eeece7;
+
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Arial, Helvetica, sans-serif;
+
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+  padding: 36px 20px;
+}
+
+a {
+  color: var(--blue-dark);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+.page {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.back-link {
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.back-link:hover {
+  color: var(--red);
+}
+
+.lang-switch {
+  display: inline-block;
+  padding: 5px 11px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  color: var(--blue-dark);
+  background: var(--white);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.lang-switch:hover {
+  color: var(--white);
+  background: var(--blue);
+}
+
+.dossier-header {
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 12px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.dossier-header .accent {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.country-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.country-flag {
+  width: 58px;
+  height: 39px;
+  margin-top: 5px;
+  object-fit: cover;
+  border: 1px solid rgba(26, 24, 20, 0.25);
+  border-radius: 3px;
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.kicker {
+  margin-bottom: 12px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+}
+
+h1 {
+  max-width: 800px;
+  margin-bottom: 20px;
+  font-size: clamp(31px, 5vw, 49px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+h1 em {
+  color: var(--red-dark);
+  font-style: normal;
+}
+
+.lede {
+  max-width: 790px;
+  margin: 8px 0 28px 75px;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.58;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 34px 75px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 29px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.status.closed,
+.status.suspended {
+  color: var(--green);
+  border-color: #a8cfb1;
+  background: var(--green-soft);
+}
+
+.status.active {
+  color: var(--red-dark);
+  border-color: #e6b2b2;
+  background: var(--red-soft);
+}
+
+.status.restricted {
+  color: var(--orange);
+  border-color: #dec09e;
+  background: var(--orange-soft);
+}
+
+.status.vanished,
+.status.open {
+  color: var(--violet);
+  border-color: #c9bde1;
+  background: var(--violet-soft);
+}
+
+.status.network,
+.status.pending {
+  color: var(--blue-dark);
+  border-color: #b4d1ed;
+  background: var(--blue-soft);
+}
+
+.status.unproven {
+  color: var(--ink-muted);
+  border-color: var(--rule);
+  background: var(--grey-soft);
+}
+
+.section {
+  margin: 54px 0;
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.section-text {
+  max-width: 790px;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.64;
+}
+
+.section-text + .section-text {
+  margin-top: 15px;
+}
+
+.section-text strong {
+  color: var(--red-dark);
+}
+
+.source-url {
+  max-width: 820px;
+  margin-top: 8px;
+  color: var(--ink-muted);
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.source-url + .section-text {
+  margin-top: 19px;
+}
+
+.fact-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.fact-table th,
+.fact-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+.fact-table tr:last-child th,
+.fact-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fact-table th {
+  width: 185px;
+  color: var(--ink-muted);
+  background: var(--grey-soft);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.fact-table td strong {
+  color: var(--red-dark);
+}
+
+.key-box {
+  margin: 26px 0 0;
+  padding: 22px 24px;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 5px 5px 0;
+  background: var(--blue-soft);
+}
+
+.key-box h3 {
+  margin-bottom: 9px;
+  font-size: 20px;
+}
+
+.key-box p {
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 24px;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 8px;
+  width: 2px;
+  background: var(--rule);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 7px;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 1px var(--red);
+}
+
+.timeline-date {
+  margin-bottom: 5px;
+  color: var(--red-dark);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.timeline-text {
+  max-width: 780px;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.quote-box {
+  margin: 24px 0;
+  padding: 28px 30px;
+  border: 2px solid var(--ink);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.quote-box .label {
+  margin-bottom: 13px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.quote-box blockquote {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.quote-box .translation {
+  margin-top: 18px;
+  padding-top: 17px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.analysis-box {
+  margin-top: 24px;
+  padding: 24px 26px;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.analysis-box h3 {
+  margin-bottom: 11px;
+  font-size: 21px;
+}
+
+.analysis-box p {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.64;
+}
+
+.analysis-box p + p {
+  margin-top: 13px;
+}
+
+.sources {
+  counter-reset: source;
+  list-style: none;
+}
+
+.sources li {
+  counter-increment: source;
+  position: relative;
+  padding: 14px 0 14px 38px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sources li:last-child {
+  border-bottom: none;
+}
+
+.sources li::before {
+  content: counter(source);
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--red);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.sources strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.sources a {
+  overflow-wrap: anywhere;
+}
+
+.questions {
+  list-style: none;
+}
+
+.questions li {
+  position: relative;
+  padding: 11px 0 11px 27px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.questions li:last-child {
+  border-bottom: none;
+}
+
+.questions li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  color: var(--red);
+  font-family: var(--font-sans);
+  font-weight: 900;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 660px) {
+  body {
+    padding: 26px 15px;
+  }
+
+  .country-heading {
+    gap: 12px;
+  }
+
+  .country-flag {
+    width: 45px;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: clamp(29px, 10vw, 41px);
+  }
+
+  .lede,
+  .status-row {
+    margin-left: 0;
+  }
+
+  .fact-table th {
+    width: 135px;
+  }
+
+  .fact-table th,
+  .fact-table td {
+    padding: 10px 11px;
+  }
+
+  .quote-box {
+    padding: 22px 20px;
+  }
+
+  .quote-box blockquote {
+    font-size: 18px;
+  }
+
+  .key-box,
+  .analysis-box {
+    padding: 20px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <div class="top-row">
+    <a href="eu-laender.html" class="back-link">← Zurück zum Europa-Dossier</a>
+    <a href="eu-portugal_en.html" class="lang-switch" lang="en">🇬🇧 English</a>
+  </div>
+
+  <div class="dossier-header">
+    <span>Pressemappe · Russisches Haus Berlin</span>
+    <span class="accent">Europa-Dossier · Portugal</span>
+    <span>Recherchestand 15.08.2026</span>
+  </div>
+
+  <div class="country-heading">
+    <img src="img/flags/pt.svg" alt="Flagge Portugals" class="country-flag" width="58" height="39">
+    <div>
+      <div class="kicker">Länderakte Portugal</div>
+      <h1>Ein Vertreter in der Botschaft – <em>kein eigenes Haus</em></h1>
+    </div>
+  </div>
+
+  <p class="lede">
+    Portugal weist eine besondere Organisationsform auf. Die offizielle Rossotrudnitschestwo-Seite nennt keinen als eigene juristische Person ausgewiesenen Hausbetrieb, sondern einen Vertreter im Bestand der russischen Botschaft – führt aber eine eigene Lissabonner Kontaktadresse und nutzt die Marke „Russisches Haus“. Die belastbare Klassifikation lautet deshalb: offizielle Vertretung innerhalb der diplomatischen Mission, kein eigenständiges Zentrum verifiziert.
+  </p>
+
+  <div class="status-row">
+    <span class="status network">Botschaftsvertretung belegt</span>
+    <span class="status unproven">Kein eigenes Haus nachgewiesen</span>
+  </div>
+
+  <section class="section">
+    <h2 class="section-title">Kurzbefund</h2>
+
+    <div class="fact-table-wrap">
+      <table class="fact-table">
+        <tbody>
+          <tr>
+            <th>Organisationsform</th>
+            <td><strong>Rossotrudnitschestwo-Vertreter im Bestand der russischen Botschaft.</strong> Ein selbständiges Kulturzentrum als eigene juristische Person ist nicht verifiziert</td>
+          </tr>
+          <tr>
+            <th>Kontaktadresse</th>
+            <td>Avenida Duque de Ávila 185, 6C, Lissabon – ob dort regelmäßiger Publikumsbetrieb besteht, blieb offen</td>
+          </tr>
+          <tr>
+            <th>Markenverwendung</th>
+            <td>Die Website nutzt die Marke „Russisches Haus“, ohne einen eigenständigen Zentrumstatus zu belegen</td>
+          </tr>
+          <tr>
+            <th>Abkommen</th>
+            <td>Kultur- und Wissenschaftsabkommen unterzeichnet am 22. Juli 1994; Ratifikation am 21. Juni 1995, Dekret 22/95 veröffentlicht am 15. Juli 1995</td>
+          </tr>
+          <tr>
+            <th>Inkrafttreten</th>
+            <td>20. Juli 1995 nach Mitteilung Nr. 208/95</td>
+          </tr>
+          <tr>
+            <th>Dauer der Präsenz</th>
+            <td>Nach heutiger Eigendarstellung arbeitet ein Vertreter seit mehr als 20 Jahren in Portugal; ein genaues Anfangsdatum wurde nicht gefunden</td>
+          </tr>
+          <tr>
+            <th>Maßnahme 2022</th>
+            <td>Am 5. April 2022 erklärte Portugal zehn Mitarbeiter der russischen Mission zu personae non gratae, mit zwei Wochen Ausreisefrist</td>
+          </tr>
+          <tr>
+            <th>Betroffenheit</th>
+            <td><strong>Offen.</strong> Weil ein Rossotrudnitschestwo-Vertreter organisatorisch zur Mission gehört, ist eine Betroffenheit denkbar – ohne Namens- oder Funktionsliste wäre jede Zuordnung jedoch Spekulation</td>
+          </tr>
+          <tr>
+            <th>Status 2026</th>
+            <td>Website, Kontaktseite und Dokumentangebote bleiben erreichbar. Ein datierter Publikumstermin am Kontaktbüro für 2026 wurde nicht gefunden</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="source-url">
+      Quellen:
+      <a href="https://www.instituto-camoes.pt" target="_blank" rel="noopener noreferrer">https://www.instituto-camoes.pt</a><br>
+      <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a><br>
+      <a href="https://www.portaldiplomatico.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://www.portaldiplomatico.mne.gov.pt</a>
+    </div>
+
+    <div class="key-box">
+      <h3>„Casa da Rússia“ ist nicht gleich Botschaftsvertretung</h3>
+      <p>
+        Nicht jede portugiesisch als „Casa da Rússia“ bezeichnete Struktur ist die offizielle Vertretung. PÚBLICO beschrieb 2022 Igor Khashin als früheren Leiter eines so bezeichneten Kulturzentrums und zugleich als Funktionär von Landsleutevereinen; CNN Portugal identifizierte dagegen Vladimir Iaroshevskii ausdrücklich als Rossotrudnitschestwo-Vertreter. <strong>Die Beziehung dieser Akteure wurde nicht verifiziert.</strong> <strong>Leseregel:</strong> „Offen“ bedeutet, dass eine Aussage in den geprüften öffentlichen Quellen nicht belegt ist. Das ist kein Beweis des Gegenteils. EU-Listung, nationaler Vollzug, politische Nichtkooperation, Vertragskündigung und tatsächliche Betriebsschließung werden getrennt bewertet.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Chronologie</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">22. Juli 1994</div>
+        <div class="timeline-text">
+          Portugal und Russland unterzeichnen in Moskau ein Kultur- und Wissenschaftsabkommen.
+        </div>
+        <div class="source-url">
+          <a href="https://www.instituto-camoes.pt" target="_blank" rel="noopener noreferrer">https://www.instituto-camoes.pt</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">21. Juni / 15. Juli 1995</div>
+        <div class="timeline-text">
+          Ratifikation und Veröffentlichung des portugiesischen Dekrets 22/95.
+        </div>
+        <div class="source-url">
+          <a href="https://www.instituto-camoes.pt" target="_blank" rel="noopener noreferrer">https://www.instituto-camoes.pt</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">20. Juli 1995</div>
+        <div class="timeline-text">
+          Inkrafttreten des Abkommens nach Mitteilung Nr. 208/95.
+        </div>
+        <div class="source-url">
+          <a href="https://www.instituto-camoes.pt" target="_blank" rel="noopener noreferrer">https://www.instituto-camoes.pt</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Spätestens frühe 2000er Jahre</div>
+        <div class="timeline-text">
+          Nach heutiger Eigendarstellung arbeitet ein Rossotrudnitschestwo-Vertreter seit mehr als 20 Jahren in Portugal. Ein genaues Anfangsdatum wurde nicht gefunden.
+        </div>
+        <div class="source-url">
+          <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">5. April 2022</div>
+        <div class="timeline-text">
+          Portugal erklärt zehn Mitarbeiter der russischen diplomatischen Mission zu personae non gratae und setzt eine Ausreisefrist von zwei Wochen. Die Begründung nennt die nationale Sicherheit. Eine Namens- oder Funktionsliste wurde nicht veröffentlicht.
+        </div>
+        <div class="source-url">
+          <a href="https://www.portaldiplomatico.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://www.portaldiplomatico.mne.gov.pt</a><br>
+          <a href="https://eurocid.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://eurocid.mne.gov.pt</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">19. Mai 2022</div>
+        <div class="timeline-text">
+          Russland weist im Gegenzug fünf portugiesische Diplomaten aus.
+        </div>
+        <div class="source-url">
+          <a href="https://www.reuters.com" target="_blank" rel="noopener noreferrer">https://www.reuters.com</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">21. Juli 2022</div>
+        <div class="timeline-text">
+          Die EU listet Rossotrudnitschestwo.
+        </div>
+        <div class="source-url">
+          <a href="https://eur-lex.europa.eu/eli/reg_impl/2022/1270/oj/deu" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg_impl/2022/1270/oj/deu</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2024 bis 2025</div>
+        <div class="timeline-text">
+          Eigenseite sowie russische Außenministeriums- und Veranstaltungsberichte dokumentieren Botschaftsveranstaltungen unter Beteiligung der Rossotrudnitschestwo-Vertretung. Am 14. Juni 2025 fand eine Präsenzveranstaltung zum Russlandtag statt.
+        </div>
+        <div class="source-url">
+          <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2026</div>
+        <div class="timeline-text">
+          Website, Kontaktseite und Dokument- beziehungsweise Aktivitätsangebote bleiben erreichbar. Ein datierter Publikumstermin am Kontaktbüro wurde für 2026 nicht gefunden; der Präsenzbetrieb ist damit offen.
+        </div>
+        <div class="source-url">
+          <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Rechtsgrundlage</h2>
+
+    <p class="section-text">
+      Das Kultur- und Wissenschaftsabkommen vom 22. Juli 1994 ist vollständig dokumentiert: Ratifikation am 21. Juni 1995, Dekret 22/95 vom 15. Juli 1995, Inkrafttreten am 20. Juli 1995. Es errichtet jedoch kein eigenständiges Zentrum.
+    </p>
+    <div class="source-url">
+      <a href="https://www.instituto-camoes.pt" target="_blank" rel="noopener noreferrer">https://www.instituto-camoes.pt</a>
+    </div>
+    <p class="section-text">
+      Die Vertretung stützt sich organisatorisch auf russisches Recht – die Eigenseite verweist auf den Präsidialerlass Nr. 1283 vom 13. November 2009. Das ist eine russische Organisationsnorm, kein portugiesischer Statusakt.
+    </p>
+    <div class="source-url">
+      <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+    </div>
+    <p class="section-text">
+      Ob die Vertretung eigene Konten, Mietverträge oder Vermögenswerte besitzt, ist offen. Ebenso offen ist, ob die Adresse Avenida Duque de Ávila 185, 6C ein öffentlich zugängliches Büro, eine reine Post- und Verwaltungsadresse oder ein Partnerraum ist.
+    </p>
+    <div class="source-url">
+      <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Maßnahmen seit 2022</h2>
+
+    <p class="section-text">
+      Am 5. April 2022 erklärte Portugal zehn Mitarbeiter der russischen Mission zu personae non gratae. Weil ein Rossotrudnitschestwo-Vertreter organisatorisch zur Mission gehört, ist eine Betroffenheit denkbar – <strong>ohne Namens- oder Funktionsliste wäre jede Zuordnung jedoch Spekulation</strong>.
+    </p>
+    <div class="source-url">
+      <a href="https://www.portaldiplomatico.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://www.portaldiplomatico.mne.gov.pt</a><br>
+      <a href="https://eurocid.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://eurocid.mne.gov.pt</a>
+    </div>
+    <p class="section-text">
+      Die Vertretungswebsite und die spätere Beteiligung an Veranstaltungen sprechen dafür, dass die Funktion fortbestand oder nachbesetzt wurde. Ein zentrumsspezifischer Vollzugsakt wurde nicht gefunden.
+    </p>
+    <div class="source-url">
+      <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+    </div>
+    <p class="section-text">
+      Der von PÚBLICO beschriebene Setúbal-Komplex darf ohne zusätzlichen Register- oder Behördenbeleg <strong>nicht</strong> als staatliche Maßnahme gegen die hier untersuchte offizielle Vertretung eingeordnet werden.
+    </p>
+    <div class="source-url">
+      <a href="https://www.publico.pt" target="_blank" rel="noopener noreferrer">https://www.publico.pt</a><br>
+      <a href="https://cnnportugal.iol.pt" target="_blank" rel="noopener noreferrer">https://cnnportugal.iol.pt</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Einordnung</h2>
+
+    <div class="analysis-box">
+      <h3>Der wichtigste Organisationsform-Kontrast</h3>
+      <p>
+        Portugal ist der wichtigste Organisationsform-Kontrast dieser Sammlung: ein Vertreter innerhalb einer Botschaft statt eines klar verselbständigten Zentrums. Damit fehlt der Anknüpfungspunkt, den Maßnahmen gegen ein Haus üblicherweise brauchen.
+      </p>
+      <p>
+        Für Deutschland folgt daraus, vor jeder Maßnahme präzise zwischen Behörde, Botschaft, akkreditiertem Personal, separater juristischer Person und Partnernetzwerk zu unterscheiden. Diplomatische Fragen können hier stärker wiegen als bei einem eigenständigen Haus; die EU-Listung bleibt dennoch gesondert zu prüfen.
+      </p>
+      <p>
+        Der portugiesische Fall mahnt außerdem zur Vorsicht bei Namensgleichheit: Eine als „Casa da Rússia“ bezeichnete Vereinsstruktur und die offizielle Botschaftsvertretung dürfen nicht ohne Registerbeleg gleichgesetzt werden.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Quellen</h2>
+
+    <p class="section-text">
+      Wo sich das Einzeldokument eindeutig belegen ließ, verweist der Link unmittelbar darauf – etwa auf Gesetzblätter, Vertragsveröffentlichungen und Parlamentsdokumente. Die Ausgangsakte dokumentiert für die übrigen Belege nur Herausgeber, Titel und Datum, nicht die vollständige Dokumentadresse; dort führt der Link auf die belegte Quelldomain. <strong>Diese Tiefenlinks sind ausdrücklich offen</strong> und werden nachgetragen, sobald die Fundstelle eindeutig ist.
+    </p>
+
+    <ol class="sources">
+      <li>
+        <strong>Camões – Instituto da Cooperação e da Língua, amtliche Vertragsseite</strong>
+        Dekret 22/95 vom 15. Juli 1995; Unterzeichnung 22. Juli 1994, Inkrafttreten 20. Juli 1995. Amtliche Primärquelle.<br>
+        <a href="https://www.instituto-camoes.pt" target="_blank" rel="noopener noreferrer">https://www.instituto-camoes.pt</a>
+      </li>
+
+      <li>
+        <strong>Portugiesisches Außenministerium – bilaterale Länderseite Russland</strong>
+        Abgerufen am 14. August 2026. Amtliche Primärquelle.<br>
+        <a href="https://www.portaldiplomatico.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://www.portaldiplomatico.mne.gov.pt</a>
+      </li>
+
+      <li>
+        <strong>Russisches Haus / Vertretung Portugal – „Über uns“</strong>
+        Abgerufen am 14. August 2026; Vertreter innerhalb der Botschaft, mehr als 20 Jahre Tätigkeit. Eigenquelle.<br>
+        <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+      </li>
+
+      <li>
+        <strong>Russisches Haus / Vertretung Portugal – Kontaktseite</strong>
+        Abgerufen am 14. August 2026; Avenida Duque de Ávila 185, 6C. Eigenquelle.<br>
+        <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+      </li>
+
+      <li>
+        <strong>Russisches Haus / Vertretung Portugal – Dokumentenseite</strong>
+        Zum russischen Präsidialerlass Nr. 1283 vom 13. November 2009. Eigenquelle für die russische Organisationsnorm.<br>
+        <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+      </li>
+
+      <li>
+        <strong>Portugiesisches Außenministerium – zehn Missionsmitarbeiter persona non grata, 5. April 2022</strong>
+        Begründung nationale Sicherheit. Regierungsquelle.<br>
+        <a href="https://www.portaldiplomatico.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://www.portaldiplomatico.mne.gov.pt</a>
+      </li>
+
+      <li>
+        <strong>Eurocid / MNE – portugiesischer Originaltext derselben Entscheidung, 5. April 2022</strong>
+        Amtliche Fundstelle.<br>
+        <a href="https://eurocid.mne.gov.pt" target="_blank" rel="noopener noreferrer">https://eurocid.mne.gov.pt</a>
+      </li>
+
+      <li>
+        <strong>Reuters – russische Gegenausweisung von fünf portugiesischen Diplomaten, 19. Mai 2022</strong>
+        Ergänzende Quelle zum Kontext.<br>
+        <a href="https://www.reuters.com" target="_blank" rel="noopener noreferrer">https://www.reuters.com</a>
+      </li>
+
+      <li>
+        <strong>Embassy Life – Präsenzveranstaltung der Botschaft, 18. Juni 2025</strong>
+        Veranstaltung am 14. Juni 2025. Russische staatsnahe Quelle, direkt für die Veranstaltung.<br>
+        <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+      </li>
+
+      <li>
+        <strong>Russisches Haus / Vertretung Portugal – aktuelle Nachrichtenübersicht</strong>
+        Abgerufen am 14. August 2026; direkt für die digitale Präsenz. Die Datierung einzelner Beiträge ist uneinheitlich.<br>
+        <a href="https://portugal.rs.gov.ru" target="_blank" rel="noopener noreferrer">https://portugal.rs.gov.ru</a>
+      </li>
+
+      <li>
+        <strong>PÚBLICO – Bericht zu Igor Khashin, 6. Mai 2022</strong>
+        Zum als „Casa da Rússia“ bezeichneten Kulturzentrum sowie zu Migranten- und Landsleutevereinen. Sekundärquelle; kein Beleg für rechtliche Identität mit der offiziellen Botschaftsvertretung.<br>
+        <a href="https://www.publico.pt" target="_blank" rel="noopener noreferrer">https://www.publico.pt</a>
+      </li>
+
+      <li>
+        <strong>CNN Portugal – Identifikation Vladimir Iaroshevskiis, 20. April 2023</strong>
+        Bezeichnet ihn für eine Veranstaltung 2020 ausdrücklich als Rossotrudnitschestwo-Vertreter in Portugal. Sekundärquelle, nur zur Entitätenabgrenzung.<br>
+        <a href="https://cnnportugal.iol.pt" target="_blank" rel="noopener noreferrer">https://cnnportugal.iol.pt</a>
+      </li>
+
+      <li>
+        <strong>EUR-Lex – Durchführungsverordnung (EU) 2022/1270</strong>
+        EU-Listung Rossotrudnitschestwos vom 21. Juli 2022.<br>
+        <a href="https://eur-lex.europa.eu/eli/reg_impl/2022/1270/oj/deu" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg_impl/2022/1270/oj/deu</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Offene Fragen</h2>
+
+    <ul class="questions">
+      <li>Wer war vor dem 5. April 2022 der Rossotrudnitschestwo-Vertreter, und gehörte diese Person zu den zehn Ausgewiesenen?</li>
+      <li>Wer nimmt die Funktion aktuell wahr, und ist die Person diplomatisch akkreditiert?</li>
+      <li>Ist Avenida Duque de Ávila 185, 6C ein öffentlich zugängliches Büro, eine reine Post- und Verwaltungsadresse oder ein Partnerraum?</li>
+      <li>Gibt es eigene Konten, Mietverträge oder Vermögenswerte der Vertretung?</li>
+      <li>Wurde eine nationale Ausnahmegenehmigung für notwendige Botschafts- und Vertretungsausgaben erteilt?</li>
+      <li>Welche Rechtseinheit stand hinter dem von PÚBLICO als „Centro Cultural Russo“ beziehungsweise „Casa da Rússia“ bezeichneten Umfeld, und bestand eine formale Beziehung zur Vertretung?</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>pressemappe.antwortseiten.org · Länderakte Portugal</span>
+    <span>
+      <a href="eu-laender.html">Europa-Dossier</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Übersicht</a>
+      &nbsp;·&nbsp;
+      <a href="impressum.html">Impressum</a>
+      &nbsp;·&nbsp;
+      <a href="datenschutz.html">Datenschutz</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
