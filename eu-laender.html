@@ -5,11 +5,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="favicon.png" rel="icon" type="image/png"/>
 <link href="eu-laender.html" hreflang="de" rel="alternate"/>
-<link href="eu-laender_en.html" hreflang="en" rel="alternate"/>
-<title>Russische Häuser in Europa – was andere Staaten getan haben · Pressemappe</title>
-<meta content="Wie europäische Staaten mit Russischen Häusern, Rossotrudnitschestwo-Vertretungen und russischen Ersatznetzwerken umgehen – mit Länderakten, Chronologie und Quellen." name="description"/>
-<meta content="Russische Häuser in Europa – was andere Staaten getan haben" property="og:title"/>
-<meta content="Deutschland hält am Russischen Haus Berlin fest. Die Länderakten zeigen, welche Handlungsmöglichkeiten andere europäische Staaten genutzt haben." property="og:description"/>
+<title>Russlands Netz in Europa – Recherche-Dossier Russisches Haus Berlin</title>
+<meta content="Deutschland hat das Tätigkeitsabkommen zum Russischen Haus gekündigt. Das Europa-Dossier zeigt, wo russische Kultur- und Einflussstrukturen offen, eingeschränkt oder in anderer Form weiterbestehen." name="description"/>
+<meta content="Russlands Netz in Europa" property="og:title"/>
+<meta content="Deutschland steigt aus. Doch Rossotrudnitschestwo, Botschaftsstrukturen und Partnernetzwerke bleiben in Teilen Europas präsent." property="og:description"/>
 <meta content="https://sunnymica.github.io/pressemappe-russisches-haus/img/rossotrudnitschestwo-karte-europa-2026-07-18.png" property="og:image"/>
 <style>
 :root {
@@ -18,1263 +17,148 @@
   --ink: #1a1814;
   --ink-muted: #5a534a;
   --rule: #c9c1b1;
-
   --blue: #005bbb;
   --blue-dark: #07477f;
   --blue-soft: #e6f1fb;
-
   --red: #a32d2d;
   --red-dark: #7f2020;
   --red-soft: #f8e8e8;
-
   --green: #2d7040;
   --green-soft: #e8f3eb;
-
   --orange: #a35d13;
   --orange-soft: #f8eee1;
-
   --violet: #67538f;
   --violet-soft: #eeeaf7;
-
   --grey-soft: #eeece7;
-
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Arial, Helvetica, sans-serif;
-
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
   --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans);
-  color: var(--ink);
-  background: var(--paper);
-  line-height: 1.6;
-  padding: 36px 20px;
-}
-
-a {
-  color: var(--blue-dark);
-}
-
-a:hover {
-  color: var(--red);
-}
-
-.page {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.top-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 26px;
-}
-
-.back-link {
-  display: inline-block;
-  color: var(--ink-muted);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.lang-switch {
-  display: inline-block;
-  padding: 5px 11px;
-  border: 1px solid var(--blue);
-  border-radius: 4px;
-  color: var(--blue-dark);
-  background: var(--white);
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-}
-
-.lang-switch:hover {
-  color: var(--white);
-  background: var(--blue);
-}
-
-.back-link:hover {
-  color: var(--red);
-}
-
-.dossier-header {
-  border-top: 3px solid var(--ink);
-  border-bottom: 1px solid var(--rule);
-  padding: 12px 0 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-  color: var(--ink-muted);
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.dossier-header .accent {
-  color: var(--red);
-  font-weight: 800;
-}
-
-.kicker {
-  margin-bottom: 15px;
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-serif);
-}
-
-h1 {
-  max-width: 820px;
-  margin-bottom: 22px;
-  font-size: clamp(31px, 5vw, 51px);
-  font-weight: 800;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
-}
-
-h1 em {
-  color: var(--red-dark);
-  font-style: normal;
-}
-
-.lede {
-  max-width: 790px;
-  margin-bottom: 38px;
-  font-family: var(--font-serif);
-  font-size: 19px;
-  line-height: 1.58;
-}
-
-.figure {
-  max-width: 780px;
-  margin: 38px auto 46px;
-}
-
-.figure img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid var(--rule);
-  border-radius: 5px;
-  background: var(--white);
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
-}
-
-.figure figcaption {
-  max-width: 850px;
-  margin-top: 12px;
-  color: var(--ink-muted);
-  font-size: 13px;
-  line-height: 1.55;
-}
-
-.figure figcaption strong {
-  color: var(--ink);
-}
-
-.figure figcaption a {
-  overflow-wrap: anywhere;
-}
-
-.section {
-  margin: 56px 0;
-}
-
-.section-title {
-  margin-bottom: 14px;
-  font-size: 27px;
-  line-height: 1.2;
-}
-
-.subsection-title {
-  margin: 34px 0 14px;
-  font-size: 22px;
-  line-height: 1.25;
-}
-
-.section-text {
-  max-width: 780px;
-  margin-bottom: 16px;
-  font-family: var(--font-serif);
-  font-size: 17px;
-  line-height: 1.62;
-}
-
-.section-text strong {
-  color: var(--red-dark);
-}
-
-.method-box {
-  margin-top: 24px;
-  padding: 22px 24px;
-  border-left: 4px solid var(--blue);
-  border-radius: 0 5px 5px 0;
-  background: var(--blue-soft);
-}
-
-.method-box h3 {
-  margin-bottom: 9px;
-  font-size: 19px;
-}
-
-.method-box p {
-  font-size: 15px;
-  line-height: 1.62;
-}
-
-.method-box p + p {
-  margin-top: 10px;
-}
-
-.legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 24px 0 10px;
-}
-
-.status {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  padding: 5px 10px;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.045em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.status.closed {
-  color: var(--green);
-  border-color: #a8cfb1;
-  background: var(--green-soft);
-}
-
-.status.active {
-  color: var(--red-dark);
-  border-color: #e6b2b2;
-  background: var(--red-soft);
-}
-
-.status.restricted {
-  color: var(--orange);
-  border-color: #dec09e;
-  background: var(--orange-soft);
-}
-
-.status.vanished {
-  color: var(--violet);
-  border-color: #c9bde1;
-  background: var(--violet-soft);
-}
-
-.status.network {
-  color: var(--blue-dark);
-  border-color: #b4d1ed;
-  background: var(--blue-soft);
-}
-
-.status.unproven {
-  color: var(--ink-muted);
-  border-color: var(--rule);
-  background: var(--grey-soft);
-}
-
-.status.pending {
-  color: var(--blue-dark);
-  border-color: #b4d1ed;
-  background: var(--blue-soft);
-}
-
-.overview {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 25px 0 8px;
-}
-
-.overview-card {
-  min-height: 154px;
-  padding: 18px;
-  border: 1px solid var(--rule);
-  border-radius: 5px;
-  background: var(--white);
-}
-
-.overview-country {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 11px;
-}
-
-.overview-flag {
-  font-size: 24px;
-  line-height: 1;
-}
-
-.overview-country h3 {
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-.overview-card .status {
-  margin: 0 4px 6px 0;
-}
-
-.overview-note {
-  margin-top: 5px;
-  color: var(--ink-muted);
-  font-size: 13px;
-  line-height: 1.45;
-}
-
-.accordion-intro {
-  margin-bottom: 15px;
-  color: var(--ink-muted);
-  font-size: 13px;
-  font-style: italic;
-}
-
-.country-list {
-  margin-top: 22px;
-}
-
-details.country {
-  margin-bottom: 12px;
-  overflow: hidden;
-  border: 1px solid var(--rule);
-  border-radius: 5px;
-  background: var(--white);
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-details.country:hover,
-details.country[open] {
-  border-color: var(--red);
-}
-
-details.country[open] {
-  box-shadow: 0 3px 11px rgba(163, 45, 45, 0.08);
-}
-
-summary {
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  min-height: 92px;
-  padding: 16px 20px;
-  user-select: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.summary-flag-img {
-  flex-shrink: 0;
-  width: 36px;
-  height: 24px;
-  margin-top: 2px;
-  object-fit: cover;
-  border: 1px solid rgba(26, 24, 20, 0.22);
-  border-radius: 2px;
-  background: #fff;
-}
-
-.summary-main {
-  min-width: 0;
-  flex: 1;
-}
-
-.summary-title {
-  display: block;
-  margin-bottom: 6px;
-  font-family: var(--font-serif);
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.summary-statuses {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.summary-note {
-  display: block;
-  margin-top: 7px;
-  color: var(--ink-muted);
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.4;
-}
-
-.summary-icon {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  background: var(--red);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-details[open] .summary-icon::before {
-  content: "−";
-}
-
-details:not([open]) .summary-icon::before {
-  content: "+";
-}
-
-.country-body {
-  padding: 21px 22px 23px;
-  border-top: 1px solid var(--rule);
-}
-
-.country-body p {
-  max-width: 800px;
-  font-size: 15px;
-  line-height: 1.68;
-}
-
-.country-body p + p {
-  margin-top: 12px;
-}
-
-.country-body strong {
-  color: var(--red-dark);
-}
-
-.key-fact {
-  margin: 16px 0;
-  padding: 13px 15px;
-  border-left: 3px solid var(--blue);
-  border-radius: 0 4px 4px 0;
-  background: var(--blue-soft);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.country-link {
-  display: inline-block;
-  margin-top: 16px;
-  color: var(--red-dark);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 800;
-  border-bottom: 1px solid var(--red-dark);
-}
-
-.country-link:hover {
-  color: var(--red);
-  border-color: var(--red);
-}
-
-.interim {
-  margin: 48px 0 30px;
-  padding: 24px 26px;
-  border: 2px solid var(--ink);
-  border-radius: 5px;
-  background: var(--white);
-}
-
-.interim .label {
-  margin-bottom: 8px;
-  color: var(--red);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.interim h2 {
-  margin-bottom: 10px;
-  font-size: 23px;
-}
-
-.interim p {
-  max-width: 760px;
-  font-family: var(--font-serif);
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.work-in-progress {
-  margin-top: 24px;
-  padding-top: 18px;
-  border-top: 1px solid var(--rule);
-}
-
-.work-in-progress h3 {
-  margin-bottom: 8px;
-  font-size: 18px;
-}
-
-.work-in-progress p {
-  color: var(--ink-muted);
-  font-size: 14px;
-}
-
-footer {
-  margin-top: 56px;
-  padding-top: 20px;
-  border-top: 1px solid var(--rule);
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
-  color: var(--ink-muted);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-footer a {
-  color: var(--ink-muted);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: var(--red);
-}
-
-@media (max-width: 800px) {
-  .overview {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 620px) {
-  body {
-    padding: 26px 15px;
-  }
-
-  .overview {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: clamp(30px, 11vw, 42px);
-  }
-
-  .lede {
-    font-size: 18px;
-  }
-
-  summary {
-    align-items: flex-start;
-    min-height: 0;
-    padding: 16px;
-  }
-
-  .summary-flag-img {
-    width: 33px;
-    height: 22px;
-    margin-top: 3px;
-  }
-
-  .summary-title {
-    font-size: 18px;
-  }
-
-  .summary-icon {
-    width: 29px;
-    height: 29px;
-    font-size: 20px;
-  }
-
-  .country-body {
-    padding: 18px 17px 20px;
-  }
-
-  .method-box,
-  .interim {
-    padding: 20px 18px;
-  }
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); color: var(--ink); background: var(--paper); line-height: 1.6; padding: 36px 20px; }
+a { color: var(--blue-dark); }
+a:hover { color: var(--red); }
+.page { max-width: 960px; margin: 0 auto; }
+.top-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 26px; }
+.back-link { display: inline-block; color: var(--ink-muted); text-decoration: none; font-size: 14px; font-weight: 600; }
+.back-link:hover { color: var(--red); }
+.dossier-header { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--rule); padding: 12px 0 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 36px; color: var(--ink-muted); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+.dossier-header .accent { color: var(--red); font-weight: 800; }
+.kicker { margin-bottom: 15px; color: var(--red); font-size: 12px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; }
+h1,h2,h3 { font-family: var(--font-serif); }
+h1 { max-width: 820px; margin-bottom: 22px; font-size: clamp(31px, 5vw, 51px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; }
+h1 em { color: var(--red-dark); font-style: normal; }
+.lede { max-width: 790px; margin-bottom: 38px; font-family: var(--font-serif); font-size: 19px; line-height: 1.58; }
+.figure { max-width: 780px; margin: 38px auto 46px; }
+.figure img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); border-radius: 5px; background: var(--white); box-shadow: 0 2px 14px rgba(0,0,0,.08); }
+.figure figcaption { max-width: 850px; margin-top: 12px; color: var(--ink-muted); font-size: 13px; line-height: 1.55; }
+.figure figcaption strong { color: var(--ink); }
+.figure figcaption a { overflow-wrap: anywhere; }
+.section { margin: 56px 0; }
+.section-title { margin-bottom: 14px; font-size: 27px; line-height: 1.2; }
+.subsection-title { margin: 34px 0 14px; font-size: 22px; line-height: 1.25; }
+.section-text { max-width: 780px; margin-bottom: 16px; font-family: var(--font-serif); font-size: 17px; line-height: 1.62; }
+.section-text strong { color: var(--red-dark); }
+.method-box { margin-top: 24px; padding: 22px 24px; border-left: 4px solid var(--blue); border-radius: 0 5px 5px 0; background: var(--blue-soft); }
+.method-box h3 { margin-bottom: 9px; font-size: 19px; }
+.method-box p { font-size: 15px; line-height: 1.62; }
+.method-box p + p { margin-top: 10px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 10px; }
+.status { display: inline-flex; align-items: center; min-height: 28px; padding: 5px 10px; border: 1px solid transparent; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .045em; line-height: 1.2; text-transform: uppercase; }
+.status.closed { color: var(--green); border-color: #a8cfb1; background: var(--green-soft); }
+.status.active { color: var(--red-dark); border-color: #e6b2b2; background: var(--red-soft); }
+.status.restricted { color: var(--orange); border-color: #dec09e; background: var(--orange-soft); }
+.status.vanished { color: var(--violet); border-color: #c9bde1; background: var(--violet-soft); }
+.status.network { color: var(--blue-dark); border-color: #b4d1ed; background: var(--blue-soft); }
+.status.unproven { color: var(--ink-muted); border-color: var(--rule); background: var(--grey-soft); }
+.status.pending { color: var(--blue-dark); border-color: #b4d1ed; background: var(--blue-soft); }
+.overview { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:25px 0 8px; }
+.overview-card { min-height:154px; padding:18px; border:1px solid var(--rule); border-radius:5px; background:var(--white); }
+.overview-country { display:flex; align-items:center; gap:10px; margin-bottom:11px; }
+.overview-flag { font-size:24px; line-height:1; }
+.overview-country h3 { font-size:18px; line-height:1.2; }
+.overview-card .status { margin:0 4px 6px 0; }
+.overview-note { margin-top:5px; color:var(--ink-muted); font-size:13px; line-height:1.45; }
+.accordion-intro { margin-bottom:15px; color:var(--ink-muted); font-size:13px; font-style:italic; }
+.country-list { margin-top:22px; }
+details.country { margin-bottom:12px; overflow:hidden; border:1px solid var(--rule); border-radius:5px; background:var(--white); transition:border-color .15s,box-shadow .15s; }
+details.country:hover, details.country[open] { border-color:var(--red); }
+details.country[open] { box-shadow:0 3px 11px rgba(163,45,45,.08); }
+summary { cursor:pointer; list-style:none; display:flex; align-items:center; gap:15px; min-height:92px; padding:16px 20px; user-select:none; }
+summary::-webkit-details-marker { display:none; }
+.summary-flag-img { flex-shrink:0; width:36px; height:24px; margin-top:2px; object-fit:cover; border:1px solid rgba(26,24,20,.22); border-radius:2px; background:#fff; }
+.summary-main { min-width:0; flex:1; }
+.summary-title { display:block; margin-bottom:6px; font-family:var(--font-serif); font-size:20px; font-weight:800; line-height:1.2; }
+.summary-statuses { display:flex; flex-wrap:wrap; gap:5px; }
+.summary-note { display:block; margin-top:7px; color:var(--ink-muted); font-size:13px; font-weight:400; line-height:1.4; }
+.summary-icon { flex-shrink:0; width:32px; height:32px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:var(--white); background:var(--red); font-size:22px; font-weight:400; line-height:1; }
+details[open] .summary-icon::before { content:"−"; }
+details:not([open]) .summary-icon::before { content:"+"; }
+.country-body { padding:21px 22px 23px; border-top:1px solid var(--rule); }
+.country-body p { max-width:800px; font-size:15px; line-height:1.68; }
+.country-body p + p { margin-top:12px; }
+.country-body strong { color:var(--red-dark); }
+.key-fact { margin:16px 0; padding:13px 15px; border-left:3px solid var(--blue); border-radius:0 4px 4px 0; background:var(--blue-soft); font-size:14px; line-height:1.55; }
+.country-link { display:inline-block; margin-top:16px; color:var(--red-dark); text-decoration:none; font-size:14px; font-weight:800; border-bottom:1px solid var(--red-dark); }
+.country-link:hover { color:var(--red); border-color:var(--red); }
+.interim { margin:48px 0 30px; padding:24px 26px; border:2px solid var(--ink); border-radius:5px; background:var(--white); }
+.interim .label { margin-bottom:8px; color:var(--red); font-size:11px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.interim h2 { margin-bottom:10px; font-size:23px; }
+.interim p { max-width:760px; font-family:var(--font-serif); font-size:16px; line-height:1.6; }
+.work-in-progress { margin-top:24px; padding-top:18px; border-top:1px solid var(--rule); }
+.work-in-progress h3 { margin-bottom:8px; font-size:18px; }
+.work-in-progress p { color:var(--ink-muted); font-size:14px; }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; color:var(--ink-muted); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+footer a { color:var(--ink-muted); text-decoration:none; }
+footer a:hover { color:var(--red); }
+@media (max-width:800px){ .overview{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:620px){ body{padding:26px 15px}.overview{grid-template-columns:1fr}h1{font-size:clamp(30px,11vw,42px)}.lede{font-size:18px}summary{align-items:flex-start;min-height:0;padding:16px}.summary-flag-img{width:33px;height:22px;margin-top:3px}.summary-title{font-size:18px}.summary-icon{width:29px;height:29px;font-size:20px}.country-body{padding:18px 17px 20px}.method-box,.interim{padding:20px 18px} }
 </style>
-<script data-goatcounter="https://pressemappe-russisches-haus.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://pressemappe-russisches-haus.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div class="page">
-<div class="top-row">
-<a class="back-link" href="index.html">← Zurück zur Übersicht</a>
-<a class="lang-switch" href="eu-laender_en.html" lang="en">🇬🇧 English</a>
-</div>
-<div class="dossier-header">
-<span>Pressemappe · Russisches Haus Berlin</span>
-<span class="accent">Europa-Dossier</span>
-<span>Recherchestand 15.08.2026</span>
-</div>
+<div class="top-row"><a class="back-link" href="index.html">← Zurück zum Dossier</a></div>
+<div class="dossier-header"><span>Recherche-Dossier · Russisches Haus Berlin</span><span class="accent">Europa-Dossier</span><span>Aktualisiert 14.09.2026</span></div>
 <div class="kicker">Europäischer Vergleich</div>
-<h1>Russische Häuser in Europa: <em>Was andere Staaten getan haben</em></h1>
-<p class="lede">Deutschland hält am Russischen Haus Berlin fest. Andere europäische Staaten haben russische Kulturzentren geschlossen, ihre Tätigkeit ausgesetzt oder offizielle Vertretungen zurückgedrängt. Doch der Vergleich ist komplizierter, als die offizielle Selbstdarstellung Rossotrudnitschestwos vermuten lässt: Mancherorts gab es nie ein öffentliches Russisches Haus, anderswo verschwanden frühere Strukturen oder Russland arbeitet über Botschaften, Vereine, Schulen und Standorte im Nachbarland weiter. Diese Länderakten zeigen, welche Handlungsmöglichkeiten andere Staaten genutzt haben – und was daraus für den deutschen Umgang mit dem Russischen Haus Berlin folgt.</p><section class="section">
+<h1>Deutschland steigt aus. <em>Russlands Netz bleibt in Europa.</em></h1>
+<p class="lede">Mit der Kündigung des Tätigkeitsabkommens von 2011 hat Deutschland den entscheidenden politischen Schritt vollzogen. Damit endet aber weder sofort jede rechtliche Bindung rund um das Berliner Gebäude noch verschwindet Russlands Kultur- und Einflussinfrastruktur aus Europa. Die Länderakten fragen deshalb nicht mehr, was andere Staaten Deutschland vormachen. Sie zeigen, wo offizielle Russische Häuser weiterarbeiten, wo Staaten sie eingeschränkt oder geschlossen haben – und wo Funktionen über Botschaften, Vereine, Schulen, Partnerorganisationen oder Standorte im Nachbarland fortbestehen.</p>
+<section class="section">
 <h2 class="section-title">Die Länderakten im Kurzüberblick</h2>
-<p class="accordion-intro">Alle 26 EU-Staaten mit einer eigenen Länderakte und die Republik Moldau sind inzwischen erfasst; Deutschland ist als Gegenstand der Pressemappe nicht als Länderakte geführt. Bei einzelnen Staaten sind Vertrags- und Registerdetails ausdrücklich als offen gekennzeichnet. Die wichtigsten Befunde sind bereits in der geschlossenen Ansicht sichtbar. Auf ein Land klicken, um den Kurzbefund zu öffnen; die verlinkten Länderakten enthalten Chronologie, Rechtsgrundlage, Regierungszitate und vollständige Quellen.</p>
+<p class="accordion-intro">Alle 26 EU-Staaten mit einer eigenen Länderakte und die Republik Moldau sind erfasst; Deutschland ist als Gegenstand des Dossiers nicht als Länderakte geführt. Bei einzelnen Staaten sind Vertrags- und Registerdetails ausdrücklich als offen gekennzeichnet. Die wichtigsten Befunde sind bereits in der geschlossenen Ansicht sichtbar. Auf ein Land klicken, um den Kurzbefund zu öffnen; die verlinkten Länderakten enthalten Chronologie, Rechtsgrundlage, Regierungszitate und vollständige Quellen.</p>
 <div class="country-list">
-<details class="country">
-<summary>
-<img alt="Flagge Belgiens" class="summary-flag-img" height="24" src="img/flags/be.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Belgien</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status unproven">Rechtsstatus offen</span>
-</span>
-<span class="summary-note">Belgien wies 21 russische Diplomaten aus – das Haus in Brüssel blieb geöffnet.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Russische Haus in Brüssel ordnet sich nach eigener Darstellung seit Mitte der 1990er Jahre der russischen Botschaft zu. Eine belgische Statusurkunde, ein besonderer Zentrumvertrag und ein hausbezogener Sanktionsvollzug sind öffentlich nicht belegt.</p>
-<p>Belgien wies am 29. März 2022 21 russische Botschafts- und Konsulatsangehörige aus und setzt die EU-Sanktionen um. Beide Maßnahmen sind belegt – keine ist dem Haus zugeordnet. Im April 2026 fanden dort weiterhin Veranstaltungen statt.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Ausweisung und Kulturbetrieb sind getrennte Hebel. Belgien zeigt operative Kontinuität des Hauses trotz weitreichender personenbezogener Diplomatenmaßnahmen.</div>
-<a class="country-link" href="eu-belgien.html">Zur vollständigen Länderakte mit Quellen →</a>
+<details class="country"><summary><img alt="Flagge Belgiens" class="summary-flag-img" height="24" src="img/flags/be.svg" width="36"/><span class="summary-main"><span class="summary-title">Belgien</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status unproven">Rechtsstatus offen</span></span><span class="summary-note">Belgien wies 21 russische Diplomaten aus – das Haus in Brüssel blieb geöffnet.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Russische Haus in Brüssel ordnet sich nach eigener Darstellung seit Mitte der 1990er Jahre der russischen Botschaft zu. Eine belgische Statusurkunde, ein besonderer Zentrumvertrag und ein hausbezogener Sanktionsvollzug sind öffentlich nicht belegt.</p><p>Belgien wies am 29. März 2022 21 russische Botschafts- und Konsulatsangehörige aus und setzt die EU-Sanktionen um. Beide Maßnahmen sind belegt – keine ist dem Haus zugeordnet. Im April 2026 fanden dort weiterhin Veranstaltungen statt.</p><div class="key-fact"><strong>Kernbefund:</strong> Ausweisung und Kulturbetrieb sind getrennte Hebel. Belgien zeigt operative Kontinuität des Hauses trotz weitreichender personenbezogener Diplomatenmaßnahmen.</div><a class="country-link" href="eu-belgien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Bulgariens" class="summary-flag-img" height="24" src="img/flags/bg.svg" width="36"/><span class="summary-main"><span class="summary-title">Bulgarien</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status pending">Steuerverfahren anhängig</span></span><span class="summary-note">Sofia erkannte 2024 die mögliche sanktionsrechtliche Erfassung an; 2026 blieb eine Steuerrevision zunächst ohne Vollzug.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Russische Kultur- und Informationszentrum in Sofia arbeitet weiter. Bulgarien erkannte 2024 die mögliche sanktionsrechtliche Erfassung ausdrücklich an, vollzog entsprechende Maßnahmen aber nicht. 2026 stellte die Steuerbehörde steuerpflichtige wirtschaftliche Tätigkeit ohne entsprechende Steuererklärungen und Steuerzahlungen fest.</p><p>Eine Recherche von <em>Sega</em> dokumentierte außerdem zahlreiche Besuche städtischer Schulen und Kindergärten im Zentrum nach dem 24. Februar 2022. Im Untergeschoss befindet sich zudem der von einem Drittanbieter betriebene Kampfflugzeug-Simulator „Fotonika“, mit Angeboten ausdrücklich ab sechs Jahren.</p><div class="key-fact"><strong>Kernbefund:</strong> Bulgarien ist bislang kein Schließungsfall. Die Problemlage wurde politisch und steuerrechtlich erkannt, doch das offizielle Zentrum blieb in Betrieb.</div><a class="country-link" href="eu-bulgarien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Dänemarks" class="summary-flag-img" height="24" src="img/flags/dk.svg" width="36"/><span class="summary-main"><span class="summary-title">Dänemark</span><span class="summary-statuses"><span class="status restricted">Regulärer Präsenzbetrieb beendet</span><span class="status network">Punktuelle Nutzung dokumentiert</span></span><span class="summary-note">Eine Personalobergrenze legte den regulären Betrieb 2023 still; seit 2025 meldet die russische Botschaft einzelne Veranstaltungen.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>In Kopenhagen bestand ein offizielles Russisches Zentrum für Wissenschaft und Kultur. Dänemark schloss es nicht durch einen eigenen kulturpolitischen Akt, sondern begrenzte im September 2023 die gesamte russische Mission auf fünf Diplomaten sowie 20 Verwaltungs- und technische Beschäftigte. Danach endete der reguläre Betrieb.</p><p>Seit 2024 fehlt das Zentrum in der dänischen Diplomatenliste. Russische Botschaftskanäle berichteten ab Mai 2025 dennoch wieder über einzelne Veranstaltungen an einem Ort, den sie weiterhin als Russisches Haus oder RCSC bezeichneten. Das belegt eine punktuelle Nutzung, aber keine Wiederaufnahme des früheren regulären Rossotrudnitschestwo-Betriebs.</p><div class="key-fact"><strong>Kernbefund:</strong> Dänemark legte den regulären Betrieb durch eine allgemeine diplomatische Personalmaßnahme praktisch still. Weil das kündbare Kulturabkommen bestehen blieb, ist der institutionelle Reststatus jedoch nicht vollständig geklärt.</div><a class="country-link" href="eu-daenemark.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Estlands" class="summary-flag-img" height="24" src="img/flags/ee.svg" width="36"/><span class="summary-main"><span class="summary-title">Estland</span><span class="summary-statuses"><span class="status unproven">Kein offizielles Haus nachgewiesen</span><span class="status network">Partnerstrukturen abgegrenzt</span></span><span class="summary-note">Kein Rossotrudnitschestwo-Zentrum nachweisbar – dafür drei verwechselbare Strukturen.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Für Estland ließ sich kein offizielles Rossotrudnitschestwo-Zentrum verifizieren. Die Tallinner Diplomatenliste vom Juni 2026 führt die Botschaft, aber kein Wissenschafts- und Kulturzentrum.</p><p>Abzugrenzen sind drei Strukturen: das kommunale Vene Kultuurikeskus der Stadt Tallinn, ein Russkiy-Mir-Zentrum an einer privaten Sprachschule und die Botschaft. Ihre Zusammenführung 2025 war eine städtische Organisationsentscheidung.</p><div class="key-fact"><strong>Kernbefund:</strong> Eine Umbenennung oder Fusion einer kommunalen Einrichtung ist kein Ersatzbegriff für die Schließung eines Russischen Hauses. Erst der Rechtsträger, dann die Statusbehauptung.</div><a class="country-link" href="eu-estland.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Finnlands" class="summary-flag-img" height="24" src="img/flags/fi.svg" width="36"/><span class="summary-main"><span class="summary-title">Finnland</span><span class="summary-statuses"><span class="status restricted">Finanziell und vermögensrechtlich beschränkt</span><span class="status active">Organisatorisch weiter aktiv</span></span><span class="summary-note">Konten wurden eingefroren, die Immobilie juristisch arrestiert – die Institution blieb bestehen.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Finnland setzte die EU-Sanktionen gegen Rossotrudnitschestwo um und fror Konten ein. Grundstück und Gebäude des Russischen Hauses wurden im Zusammenhang mit ukrainischen Entschädigungsansprüchen im Naftogaz-Verfahren beschlagnahmt beziehungsweise juristisch arrestiert.</p><p>Die Vollstreckung wurde angeordnet, ist wegen russischer Rechtsmittel aber noch nicht endgültig abgeschlossen. Zugleich blieb die Institution organisatorisch und digital aktiv. Auch das mit sechs Monaten Frist kündbare Kulturabkommen wurde nicht beendet.</p><div class="key-fact"><strong>Kernbefund:</strong> Helsinki zeigt, wie weit Sanktionen und Vollstreckungsmaßnahmen reichen können, ohne dass der Staat den zugrunde liegenden Vertrag kündigt oder die Institution politisch beendet.</div><a class="country-link" href="eu-finnland.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Frankreichs" class="summary-flag-img" height="24" src="img/flags/fr.svg" width="36"/><span class="summary-main"><span class="summary-title">Frankreich</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status restricted">Staatliche Kooperation ausgesetzt</span></span><span class="summary-note">Paris setzte die Kooperation aus, kündigte den Vertrag von 1992 aber nicht.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Regierungsabkommen von 1992 errichtet reziprok ein französisches Zentrum in Moskau und ein russisches in Paris und ordnet letzteres der Botschaft zu. Frankreich setzte 2022 die staatliche Kultur-, Hochschul- und Wissenschaftskooperation aus.</p><p>Das Abkommen wurde nach den geprüften amtlichen Fundstellen nicht gekündigt, die Maison russe nicht geschlossen; im Juli 2026 war sie geöffnet. Eine Kontensperre Ende 2024 wurde ausschließlich in russischer Berichterstattung behauptet und ist amtlich nicht bestätigt.</p><div class="key-fact"><strong>Kernbefund:</strong> Frankreich trennt vier Ebenen sauber: Programmkooperation, Finanzsanktionsvollzug, diplomatischer Personalstatus und Vertragskündigung. Ausgesetzt ist nicht gekündigt.</div><a class="country-link" href="eu-frankreich.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Griechenlands" class="summary-flag-img" height="24" src="img/flags/gr.svg" width="36"/><span class="summary-main"><span class="summary-title">Griechenland</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status restricted">Kulturkooperation ausgesetzt</span></span><span class="summary-note">Die Kulturministerin stellte klar: Aussetzung, nicht Annullierung.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das 2001 unterzeichnete und 2005 ratifizierte Abkommen gibt beiden Zentren Rechtsfähigkeit und unterstellt sie dem Recht des Gaststaats. Das internationale Inkrafttreten blieb offen, weil die nach Artikel 16 maßgebliche letzte Notifikation nicht gefunden wurde.</p><p>Das Kulturministerium setzte ab Februar 2022 die Kooperation mit russischen Kulturorganisationen aus. Nach Berichten über ihre Antwort im Parlament betonte die Ministerin, die Aussetzung sei keine Annullierung. Im Juli 2026 fanden im Haus staatliche Sprachprüfungen statt.</p><div class="key-fact"><strong>Kernbefund:</strong> Eine belegte Zwischenstufe: staatliche Kooperation suspendiert, ohne Schließung und ohne auffindbare Kündigung. Ratifikation und internationales Inkrafttreten sind zweierlei.</div><a class="country-link" href="eu-griechenland.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Irlands" class="summary-flag-img" height="24" src="img/flags/ie.svg" width="36"/><span class="summary-main"><span class="summary-title">Irland</span><span class="summary-statuses"><span class="status unproven">Kein offizieller Standort nachgewiesen</span><span class="status network">Partner- und Diasporanetz aktiv</span></span><span class="summary-note">Verhandlungen von 2010 führten nicht nachweisbar zu einem Zentrum.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Ein offizielles Rossotrudnitschestwo-Büro oder formales Russkiy-Mir-Zentrum ließ sich für Irland nicht nachweisen. Belegt ist, dass das Trinity College 2010 fortgeschrittene Verhandlungen über Irlands erstes Russisches Kulturzentrum ankündigte – ein Abschluss ist es nicht.</p><p>Sichtbar sind private Kulturorganisationen und ein botschaftsnahes Landsleutenetzwerk. Das 2026 in Stiftungsberichten auftauchende Zentrum „Matrёshka“ ist Aktivitätsevidenz, im formalen Zentrenkatalog aber nicht als Vertretung ausgewiesen.</p><div class="key-fact"><strong>Kernbefund:</strong> Irland ist ein Netzwerk- statt Standortfall. Aktivitätsevidenz begründet keinen Vertretungsstatus – und das Fehlen einer Immobilie macht ein Netzwerk nicht politisch irrelevant.</div><a class="country-link" href="eu-irland.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Italiens" class="summary-flag-img" height="24" src="img/flags/it.svg" width="36"/><span class="summary-main"><span class="summary-title">Italien</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status unproven">Vertragsgeltung offen</span></span><span class="summary-note">Das Haus in Rom arbeitet seit 2011 – die Vertragsgeltung ist ungeklärt.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Russische Haus in Rom ist eine offizielle Rossotrudnitschestwo-Einrichtung und arbeitet seit November 2011 in einem historischen Palazzo. Die Einordnung des Gebäudes als Privateigentum beruht auf der Eigendarstellung und wurde nicht unabhängig verifiziert.</p><p>Rechtlich bleiben zwei Inkrafttretensfragen offen: für das allgemeine Abkommen von 1998 fehlt die letzte Notifikation, für das spezifische Zentrumsabkommen ein italienischer Ratifikations- oder Inkrafttretensnachweis.</p><div class="key-fact"><strong>Kernbefund:</strong> Tatsächlicher Betrieb beweist nicht den rechtlichen Bestand eines Vertrags. Eigentum am Gebäude und wirtschaftliches Nutzungsrecht sind zudem getrennt zu prüfen.</div><a class="country-link" href="eu-italien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Kroatiens" class="summary-flag-img" height="24" src="img/flags/hr.svg" width="36"/><span class="summary-main"><span class="summary-title">Kroatien</span><span class="summary-statuses"><span class="status unproven">Kein offizielles Haus nachgewiesen</span><span class="status pending">Steuerverfahren anhängig</span><span class="status vanished">Frühere Struktur nicht mehr nachweisbar</span></span><span class="summary-note">Das geplante Zentrum wurde nie vertraglich umgesetzt; eine spätere Ersatzvertretung verschwand nach 2022.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das allgemeine Kulturabkommen zwischen Kroatien und Russland errichtete kein Zentrum. Ein 2013 vorgesehenes Sonderabkommen über Informations- und Kulturzentren wurde 2015 ausdrücklich als nicht umgesetzt geführt.</p><p>Trotzdem ist spätestens 2018 eine Rossotrudnitschestwo-Vertretung und spätestens 2021 die öffentliche Marke „Russisches Haus Zagreb“ nachweisbar. Nach der drastischen Verkleinerung der russischen Botschaft 2022 ist keine reguläre Tätigkeit mehr öffentlich belegt. Spätere Quellen sprechen von Suspendierung; einen kroatischen Schließungsakt fanden wir nicht.</p><div class="key-fact"><strong>Kernbefund:</strong> Kroatien ist kein klassischer Schließungsfall. Ein nie vollständig institutionalisiertes Zentrum wurde durch eine spätere Ersatzvertretung ersetzt, die anschließend aus der Öffentlichkeit verschwand.</div><a class="country-link" href="eu-kroatien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Lettlands" class="summary-flag-img" height="24" src="img/flags/lv.svg" width="36"/><span class="summary-main"><span class="summary-title">Lettland</span><span class="summary-statuses"><span class="status closed">Tätigkeit beendet</span><span class="status restricted">Immobilie gesetzlich übertragen</span></span><span class="summary-note">Das Moskauer Haus war eine Stadtvertretung – kein Rossotrudnitschestwo-Zentrum.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Moskauer Haus in Riga war nach Angaben des Staatssicherheitsdienstes die Repräsentanz eines staatlich-städtischen Moskauer Unternehmens, dessen alleiniger Anteilseigner die Moskauer Immobilienbehörde war – keine Rossotrudnitschestwo-Vertretung.</p><p>Seit 2022 durchlief es vier zu trennende Stadien: eingefrorene wirtschaftliche Ressource, Gegenstand eines Strafverfahrens, durch Spezialgesetz lastenfrei auf den Staat übertragen, zum Verkauf gestellt. Ende September 2025 war noch kein Käufer gefunden.</p><div class="key-fact"><strong>Kernbefund:</strong> Der weitestgehende Vollzugsfall dieser Sammlung – und zugleich der am leichtesten falsch etikettierte. Eine Verurteilung im beantragten Strafverfahren ist nicht belegt.</div><a class="country-link" href="eu-lettland.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Litauens" class="summary-flag-img" height="24" src="img/flags/lt.svg" width="36"/><span class="summary-main"><span class="summary-title">Litauen</span><span class="summary-statuses"><span class="status unproven">Nie regulär eröffnet</span><span class="status pending">Abrissverfahren offen</span></span><span class="summary-note">Nie eröffnet – und am 1. August 2026 immer noch nicht abgerissen.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Moskauer Haus in Vilnius wurde nie regulär eröffnet. Es darf deshalb weder als nach Februar 2022 geschlossenes Russisches Haus noch als früherer Rossotrudnitschestwo-Betrieb beschrieben werden. Die Baugenehmigung wurde 2017 endgültig unwirksam.</p><p>Der Abriss ist rechtskräftig angeordnet, aber nicht vollzogen: Ein Gericht stoppte im Juli 2026 die geplante Übertragung an die Stadt; am 1. August 2026 fehlten Unterschriften und gerichtliche Bestätigung einer privat finanzierten Vereinbarung.</p><div class="key-fact"><strong>Kernbefund:</strong> Bau- und Planungsrecht kann ein Projekt dauerhaft stoppen. Aber ein rechtskräftiges Abrissziel ist kein vollzogener Abriss – und „nie eröffnet“ ist keine Schließung.</div><a class="country-link" href="eu-litauen.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Luxemburgs" class="summary-flag-img" height="24" src="img/flags/lu.svg" width="36"/><span class="summary-main"><span class="summary-title">Luxemburg</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status unproven">Statusabkommen nicht öffentlich</span></span><span class="summary-note">Das Statusabkommen von 2010 ist belegt – sein Wortlaut nicht auffindbar.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Zwei Rechtsakte stützen das Zentrum: das 1996 gebilligte allgemeine Abkommen von 1993 mit ausdrücklicher Kündigungsregel und ein spezielles Abkommen vom 16. März 2010 über Status und Funktionsweise, das nach dem Jahresbericht des Außenministeriums sofort in Kraft trat.</p><p>Luxemburg vollzieht die Sanktionen robust und wies 2022 einen Diplomaten aus; weder die Ausweisung noch die veröffentlichten Einfrierungszahlen sind dem Haus zugeordnet. Im April 2026 fanden dort mehrere Veranstaltungen statt.</p><div class="key-fact"><strong>Kernbefund:</strong> Aus dem Bestehen eines Statusvertrags folgt nicht die Kenntnis seines Inhalts. Rechtspersönlichkeit, Steuerregeln, Kündigungsfrist und Personalprivilegien bleiben unbekannt.</div><a class="country-link" href="eu-luxemburg.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Maltas" class="summary-flag-img" height="24" src="img/flags/mt.svg" width="36"/><span class="summary-main"><span class="summary-title">Malta</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status restricted">2022 zeitweise geschlossen</span></span><span class="summary-note">Die Schließung 2022 erfolgte aus Schutzgründen – nicht auf staatliche Anordnung.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Zentrum in Valletta besteht seit 1990. Die Rechtsspur reicht bis zu einem Notenwechsel von 1987 zurück, ist aber überwiegend durch russische Regierungsbeschlüsse über <em>Entwürfe</em> dokumentiert; unterzeichnete Endtexte und Inkrafttreten wurden nicht gefunden.</p><p>Ab dem 3. März 2022 schloss das Zentrum nach Drohungen und polizeilicher Intervention vorübergehend selbst. Ein Beleg für eine staatliche Schließungsanordnung existiert nicht. Veranstaltungen 2024 bis 2026 belegen den wiederaufgenommenen Präsenzbetrieb.</p><div class="key-fact"><strong>Kernbefund:</strong> Eine sicherheitsbedingte Eigenschließung ist keine staatliche Suspendierung. Das genaue Datum der Wiedereröffnung wurde nicht gefunden.</div><a class="country-link" href="eu-malta.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge der Niederlande" class="summary-flag-img" height="24" src="img/flags/nl.svg" width="36"/><span class="summary-main"><span class="summary-title">Niederlande</span><span class="summary-statuses"><span class="status vanished">Frühere Vertretung verschwunden</span><span class="status network">Partnernetzwerk aktiv</span></span><span class="summary-note">Kein heutiges Haus – aber ein dezentrales Netz aus Botschaft, Vereinen, Schulen und Brüssel.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Ein heutiges offizielles Russisches Haus existiert in den Niederlanden nicht. Eine Rossotrudnitschestwo-Landesvertretung ist jedoch für 2013 und 2014 belegt. Sie besaß offenbar kein eigenes öffentliches Zentrumgebäude und war spätestens 2017 verschwunden – lange vor dem russischen Großangriff.</p><p>Funktionen blieben dezentral erhalten: über die russische Botschaft, den Landsleuterat KCOPC/KSORS, Schulen, Kulturvereine, Honorarkonsulate, die Universität Groningen und das Russische Haus in Brüssel. Kooperationen örtlicher Vereine mit Rossotrudnitschestwo beweisen dabei nicht automatisch Finanzierung, Trägerschaft oder Weisungsabhängigkeit.</p><div class="key-fact"><strong>Kernbefund:</strong> Kein Schild an der Tür bedeutet nicht, dass keine Struktur existiert. Die niederländische Architektur ist kleiner, dezentraler und schwerer sichtbar.</div><a class="country-link" href="eu-niederlande.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Österreichs" class="summary-flag-img" height="24" src="img/flags/at.svg" width="36"/><span class="summary-main"><span class="summary-title">Österreich</span><span class="summary-statuses"><span class="status active">Aktiver Botschaftsteil</span><span class="status restricted">Staatliche Kooperation ausgesetzt</span></span><span class="summary-note">Artikel 15 des Kulturabkommens nennt das Wiener Zentrum ausdrücklich.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Artikel 15 des Kulturabkommens von 1998 nennt das Wiener Zentrum ausdrücklich als Kulturzentrum bei der russischen Botschaft. Das Außenministerium ordnete es 2023 als notifizierten Botschaftsteil ein und wandte das Wiener Übereinkommen an.</p><p>Seit Februar 2022 sind alle bilateralen staatlichen Kulturaktivitäten suspendiert – eine Kooperationssuspendierung, keine Schließung. Das Institut war bis Sommer 2026 mit Veranstaltungen und Unterricht tätig.</p><div class="key-fact"><strong>Kernbefund:</strong> Rechtsform und Notifikation wiegen schwerer als das Etikett „Russisches Haus“: Die Schließung eines Missionsbestandteils wäre völkerrechtlich anders zu bewerten als die Auflösung eines Vereins.</div><a class="country-link" href="eu-oesterreich.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Polens" class="summary-flag-img" height="24" src="img/flags/pl.svg" width="36"/><span class="summary-main"><span class="summary-title">Polen</span><span class="summary-statuses"><span class="status restricted">Präsenzbetrieb ausgesetzt</span><span class="status network">Digitale Struktur weiter aktiv</span></span><span class="summary-note">Nicht Polen schloss: Rossotrudnitschestwo setzte den Warschauer Präsenzbetrieb 2026 selbst aus.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>In Warschau bestand ein offizielles Russisches Zentrum. Polen erkannte dessen Propaganda- und Desinformationsfunktion, verzichtete aber auf eine staatliche Schließung – auch aus Sorge um das Polnische Institut in Moskau und wegen des Gegenseitigkeitsprinzips.</p><p>Im Februar 2026 setzte Rossotrudnitschestwo den Präsenzbetrieb selbst aus und verlagerte Aufgaben nach Budapest. Digitale Kanäle blieben aktiv. Ein belegter Kausalzusammenhang zwischen einer polnischen Maßnahme und dem russischen Rückzug wurde nicht gefunden; das Abkommen wurde nicht gekündigt.</p><div class="key-fact"><strong>Kernbefund:</strong> Warschau ist kein polnischer Schließungsfall, sondern ein staatlich tolerierter Standort, aus dem Russland später selbst den Präsenzbetrieb zurückzog.</div><a class="country-link" href="eu-polen.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Portugals" class="summary-flag-img" height="24" src="img/flags/pt.svg" width="36"/><span class="summary-main"><span class="summary-title">Portugal</span><span class="summary-statuses"><span class="status network">Botschaftsvertretung belegt</span><span class="status unproven">Kein eigenes Haus nachgewiesen</span></span><span class="summary-note">Ein Vertreter innerhalb der Botschaft statt eines verselbständigten Zentrums.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Die offizielle Rossotrudnitschestwo-Seite nennt für Portugal keinen als eigene juristische Person ausgewiesenen Hausbetrieb, sondern einen Vertreter im Bestand der russischen Botschaft – führt aber eine eigene Lissabonner Kontaktadresse und nutzt die Marke „Russisches Haus“.</p><p>Portugal wies am 5. April 2022 zehn Missionsmitarbeiter aus. Eine Betroffenheit des Vertreters ist denkbar, ohne Namensliste aber Spekulation. Ob am Kontaktbüro regelmäßiger Publikumsbetrieb besteht, blieb offen.</p><div class="key-fact"><strong>Kernbefund:</strong> Der wichtigste Organisationsform-Kontrast: Nicht jede als „Casa da Rússia“ bezeichnete Struktur ist die offizielle Vertretung – ohne Registerbeleg bleiben beide getrennt.</div><a class="country-link" href="eu-portugal.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Rumäniens" class="summary-flag-img" height="24" src="img/flags/ro.svg" width="36"/><span class="summary-main"><span class="summary-title">Rumänien</span><span class="summary-statuses"><span class="status closed">Tätigkeit beendet</span><span class="status unproven">Formaler Reststatus ungeklärt</span></span><span class="summary-note">Bukarest setzte den Betrieb 2023 aus; einzelne Registereinträge blieben bestehen.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>In Bukarest bestand ein offiziell eröffnetes Russisches Zentrum für Wissenschaft und Kultur auf Grundlage eines 2013 geschlossenen Regierungsabkommens. Am 21. Februar 2023 teilte das rumänische Außenministerium dem russischen Botschafter mit, dass die Tätigkeit des Zentrums ausgesetzt werde. Der Betrieb musste spätestens am 20. August 2023 enden.</p><p>Die Regierung begründete den Schritt ausdrücklich mit Propaganda, Desinformation, der verzerrten Darstellung historischer Tatsachen und der Rechtfertigung russischer Kriegsverbrechen. Bukarest fehlt auf der aktuellen Rossotrudnitschestwo-Karte; wegen fortbestehender Einträge ist der formale Reststatus dennoch nicht in allen Einzelheiten geklärt.</p><div class="key-fact"><strong>Kernbefund:</strong> Rumänien setzte ein förmlich eröffnetes Zentrum staatlich außer Betrieb. Die Tätigkeit endete; die vollständige vertrags- und registerrechtliche Abwicklung bleibt gesondert zu beurteilen.</div><a class="country-link" href="eu-rumaenien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Schwedens" class="summary-flag-img" height="24" src="img/flags/se.svg" width="36"/><span class="summary-main"><span class="summary-title">Schweden</span><span class="summary-statuses"><span class="status unproven">Kein offizielles Haus nachgewiesen</span><span class="status vanished">Frühere Struktur nicht mehr belegt</span></span><span class="summary-note">Ein Kontrollfall: „nicht gefunden“ ist etwas anderes als „existiert nicht“.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Die Stockholmer Diplomatenliste vom Februar 2026 nennt Botschaft, Konsularabteilung und Handelsvertretung, aber kein russisches Kulturzentrum. Weil sie Kulturinstitute anderer Staaten ausdrücklich führt, stärkt das den Negativbefund – ohne Nichtexistenz zu beweisen.</p><p>Belegt ist nur ein historisches „Kabinett für russische Sprache und Literatur“ in Göteborg, eröffnet mit Stadtteilverwaltung und Generalkonsulat. Das Eröffnungsjahr ließ sich nicht verifizieren; ein heutiger Betrieb ebenso wenig.</p><div class="key-fact"><strong>Kernbefund:</strong> Ein „Kabinett“ einer gelisteten Stiftung ist kein diplomatisches Kulturzentrum. Schweden ist der Prüfstein für sauber formulierte Negativbefunde.</div><a class="country-link" href="eu-schweden.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge der Slowakei" class="summary-flag-img" height="24" src="img/flags/sk.svg" width="36"/><span class="summary-main"><span class="summary-title">Slowakei</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status unproven">Rechtsform und Vertragslage offen</span></span><span class="summary-note">Der Kooperationsstopp von 2022 wurde im Januar 2024 wieder aufgehoben.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>In Bratislava besteht eine offizielle Rossotrudnitschestwo-Vertretung. Das staatliche Transparenzportal führt sie mit Namen und Adresse, nennt aber keine Rechtsform; ein unterzeichnetes Zentrumsabkommen wurde nicht gefunden – nur ein russischer Entwurf von 1996.</p><p>Das Kulturministerium untersagte im März 2022 seinen eigenen Organisationen die Zusammenarbeit und hob dies im Januar 2024 wieder auf. Präsenzveranstaltungen 2025 und 2026 belegen laufenden Betrieb.</p><div class="key-fact"><strong>Kernbefund:</strong> Eine reversible faktische Einschränkung ohne rechtliche Schließung. Der Zusatz „Vollbetrieb seit Juni 2025“ bleibt Selbstdarstellung Rossotrudnitschestwos.</div><a class="country-link" href="eu-slowakei.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Sloweniens" class="summary-flag-img" height="24" src="img/flags/si.svg" width="36"/><span class="summary-main"><span class="summary-title">Slowenien</span><span class="summary-statuses"><span class="status closed">Physisch geschlossen</span><span class="status pending">Vertragsende offen</span></span><span class="summary-note">Gekündigt und geschlossen – die sofortige Rechtswirkung bleibt offen.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Slowenien leitete am 22. März 2022 die Kündigung des Abkommens von 2011 ein; nach Auskunft des Außenministeriums ging die Note am 1. April zu. Das Zentrum in Ljubljana schloss am 8. April 2022, eine Woche vor Ablauf der Frist.</p><p>Die Note selbst, eine russische Antwort und eine amtliche Bekanntmachung des Beendigungsdatums wurden nicht gefunden. Bei rein ordentlicher Anwendung von Artikel 17 wäre das nächste Periodenende der 19. September 2026.</p><div class="key-fact"><strong>Kernbefund:</strong> Slowenien gehört zu den Fällen mit tatsächlicher Kündigungserklärung; anders als Deutschland war die physische Schließung dort bereits 2022 vollzogen. Kündigungserklärung, physische Schließung und völkerrechtliches Vertragsende bleiben dennoch drei verschiedene Daten – und in Maribor besteht ein Partnernetz fort.</div><a class="country-link" href="eu-slowenien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Spaniens" class="summary-flag-img" height="24" src="img/flags/es.svg" width="36"/><span class="summary-main"><span class="summary-title">Spanien</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status unproven">Präsenzumfang offen</span></span><span class="summary-note">Der detaillierteste Vertrag – Räume ausdrücklich nicht unverletzlich.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Abkommen von 2001 regelt reziprok das Instituto Cervantes in Moskau und das Zentrum in Madrid. Es verleiht die Rechte juristischer Personen, unterstellt die Zentren dem Recht des Gaststaats und schließt die diplomatische Unverletzlichkeit der Räume ausdrücklich aus.</p><p>Spanien wies im April 2022 rund 25 russische Diplomaten und Botschaftsmitarbeiter aus; eine Zuordnung zum Haus wurde nicht gefunden. Das Haus blieb aktiv, ein datierter Präsenztermin für 2026 ließ sich jedoch nicht belegen.</p><div class="key-fact"><strong>Kernbefund:</strong> Der stärkste Rechtsvergleich: Rechtsfähigkeit ist nicht Unverletzlichkeit, Privilegien sind akkreditierungsabhängig, und Sanktionsvollzug ersetzt keine Vertragsbeendigung.</div><a class="country-link" href="eu-spanien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Tschechiens" class="summary-flag-img" height="24" src="img/flags/cz.svg" width="36"/><span class="summary-main"><span class="summary-title">Tschechien</span><span class="summary-statuses"><span class="status restricted">Finanziell und praktisch beschränkt</span><span class="status active">Angebote weiter aktiv</span></span><span class="summary-note">Die Immobilie ist Sanktionsfall; Kultur-, Sprach- und Onlineangebote liefen weiter.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Tschechien behandelte Gebäude und wirtschaftliche Nutzung des Russischen Hauses als Sanktionsfall. Einnahmen und Verwertung wurden erheblich blockiert. Das bedeutete jedoch keine politische Schließung des Zentrums.</p><p>Veranstaltungen, Sprachkurse, Bibliothek und Onlineangebote liefen weiter. Auch das allgemeine Kulturabkommen blieb bestehen, obwohl es kündbar ist. Die Rechtsgrundlage erklärt den heutigen Zwischenzustand – sie zwang die Regierung nicht dazu, ihn aufrechtzuerhalten.</p><div class="key-fact"><strong>Kernbefund:</strong> Prag zeigt die Trennung zwischen Sanktionen gegen Betreiber und Immobilie einerseits und dem fortgesetzten institutionellen Betrieb andererseits.</div><a class="country-link" href="eu-tschechien.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Ungarns" class="summary-flag-img" height="24" src="img/flags/hu.svg" width="36"/><span class="summary-main"><span class="summary-title">Ungarn</span><span class="summary-statuses"><span class="status active">Aktiver offizieller Standort</span><span class="status unproven">Eigentums- und Vertragsstatus offen</span></span><span class="summary-note">Budapest arbeitet weiter; keine hausbezogene Maßnahme gefunden.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Budapester Haus ist eine in die russische Botschaftsstruktur eingebettete Einrichtung, keine bloße Partnerorganisation. Das Abkommen von 1993 erkennt die Zentren an, verweist ihre Unterstützung aber auf ein gesondertes Abkommen, dessen Text nicht gefunden wurde.</p><p>Eine ungarische Schließung, eine Aussetzung des Kulturabkommens oder ein zentrumsspezifischer Vermögensvollzug wurde nicht gefunden. Eine Denkmaldatenbank bezeichnet das Gebäude als russisches Staatseigentum – ohne Grundbuchbeleg bleibt das eine Sekundärangabe.</p><div class="key-fact"><strong>Kernbefund:</strong> Dass keine Maßnahme gefunden wurde, belegt nicht, dass alle Transaktionen des Hauses zulässig oder unbeschränkt geblieben sind.</div><a class="country-link" href="eu-ungarn.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge Zyperns" class="summary-flag-img" height="24" src="img/flags/cy.svg" width="36"/><span class="summary-main"><span class="summary-title">Zypern</span><span class="summary-statuses"><span class="status active">Aktive offizielle Vertretung</span><span class="status unproven">Vertragsfortgeltung offen</span></span><span class="summary-note">Fortgesetzte Präsenz trotz EU-Listung; kein Statusabkommen auffindbar.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Zentrum in Nikosia besteht seit 1978 und ist eine offizielle Rossotrudnitschestwo-Vertretung. Nach dem Brand von 2023 – für Brandstiftung fand die Polizei keine Belege – ist es 2024 und erneut 2026 mit Veranstaltungen nachweisbar.</p><p>Ein Protokoll von 2000 bezeichnet das Kulturabkommen von 1972 als fortgeltend; das für sein Inkrafttreten erforderliche Notifikationsdatum wurde nicht gefunden. Ein gesondertes Statusabkommen zum Zentrum ließ sich nicht verifizieren.</p><div class="key-fact"><strong>Kernbefund:</strong> EU-Listung, nationaler Vollzug und Schließung sind drei verschiedene Ebenen. Der zyprische Sanktionsrahmen von 2025 ist allgemein – ein Einzelakt gegen das Haus fehlt.</div><a class="country-link" href="eu-zypern.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
+<details class="country"><summary><img alt="Flagge der Republik Moldau" class="summary-flag-img" height="24" src="img/flags/md.svg" width="36"/><span class="summary-main"><span class="summary-title">Republik Moldau · Nicht-EU</span><span class="summary-statuses"><span class="status closed">Tätigkeit beendet</span><span class="status network">Botschaftsstruktur weiter aktiv</span></span><span class="summary-note">Moldau kündigte den Vertrag fristgerecht; das Haus schloss am 4. Juli 2026.</span></span><span aria-hidden="true" class="summary-icon"></span></summary><div class="country-body"><p>Das Russische Haus in Chișinău beruhte auf einem 1998 geschlossenen Kulturzentren-Abkommen. Artikel 17 sah automatische Fünfjahresverlängerungen vor, sofern keine Seite mindestens sechs Monate vor Ablauf schriftlich widersprach. Nach erneuten russischen Drohnenverletzungen des moldauischen Luftraums leitete die Regierung 2025 die Kündigung ein; Russland wurde am 3. Dezember 2025 fristgerecht informiert.</p><p>Das Abkommen endete am 4. Juli 2026, und das offizielle Russische Haus stellte am selben Tag seinen Betrieb ein. Rossotrudnitschestwo behielt jedoch einen Vertreter innerhalb der russischen Botschaft; insbesondere Bildungsquoten und weitere sogenannte humanitäre Programme sollen dort fortgeführt werden.</p><div class="key-fact"><strong>Kernbefund:</strong> Moldau nutzte die vertraglich vorgesehene Kündigungsmöglichkeit tatsächlich. Das offizielle Haus schloss – einzelne Funktionen wanderten jedoch in die russische Botschaft ab.</div><a class="country-link" href="eu-moldau.html">Zur vollständigen Länderakte mit Quellen →</a></div></details>
 </div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Bulgariens" class="summary-flag-img" height="24" src="img/flags/bg.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Bulgarien</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status pending">Steuerverfahren anhängig</span>
-</span>
-<span class="summary-note">Sofia erkannte 2024 die mögliche sanktionsrechtliche Erfassung an; 2026 blieb eine Steuerrevision zunächst ohne Vollzug.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Russische Kultur- und Informationszentrum in Sofia arbeitet weiter. Bulgarien erkannte 2024 die mögliche sanktionsrechtliche Erfassung ausdrücklich an, vollzog entsprechende Maßnahmen aber nicht. 2026 stellte die Steuerbehörde steuerpflichtige wirtschaftliche Tätigkeit ohne entsprechende Steuererklärungen und Steuerzahlungen fest.</p>
-<p>Eine Recherche von <em>Sega</em> dokumentierte außerdem zahlreiche Besuche städtischer Schulen und Kindergärten im Zentrum nach dem 24. Februar 2022. Im Untergeschoss befindet sich zudem der von einem Drittanbieter betriebene Kampfflugzeug-Simulator „Fotonika“, mit Angeboten ausdrücklich ab sechs Jahren.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Bulgarien ist bislang kein Schließungsfall. Die Problemlage wurde politisch und steuerrechtlich erkannt, doch das offizielle Zentrum blieb in Betrieb.</div>
-<a class="country-link" href="eu-bulgarien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Dänemarks" class="summary-flag-img" height="24" src="img/flags/dk.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Dänemark</span>
-<span class="summary-statuses">
-<span class="status restricted">Regulärer Präsenzbetrieb beendet</span>
-<span class="status network">Punktuelle Nutzung dokumentiert</span>
-</span>
-<span class="summary-note">Eine Personalobergrenze legte den regulären Betrieb 2023 still; seit 2025 meldet die russische Botschaft einzelne Veranstaltungen.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            In Kopenhagen bestand ein offizielles Russisches Zentrum für Wissenschaft und Kultur. Dänemark schloss es nicht durch einen eigenen kulturpolitischen Akt, sondern begrenzte im September 2023 die gesamte russische Mission auf fünf Diplomaten sowie 20 Verwaltungs- und technische Beschäftigte. Danach endete der reguläre Betrieb.
-          </p>
-<p>
-            Seit 2024 fehlt das Zentrum in der dänischen Diplomatenliste. Russische Botschaftskanäle berichteten ab Mai 2025 dennoch wieder über einzelne Veranstaltungen an einem Ort, den sie weiterhin als Russisches Haus oder RCSC bezeichneten. Das belegt eine punktuelle Nutzung, aber keine Wiederaufnahme des früheren regulären Rossotrudnitschestwo-Betriebs.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Dänemark legte den regulären Betrieb durch eine allgemeine diplomatische Personalmaßnahme praktisch still. Weil das kündbare Kulturabkommen bestehen blieb, ist der institutionelle Reststatus jedoch nicht vollständig geklärt.</div>
-<a class="country-link" href="eu-daenemark.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Estlands" class="summary-flag-img" height="24" src="img/flags/ee.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Estland</span>
-<span class="summary-statuses">
-<span class="status unproven">Kein offizielles Haus nachgewiesen</span>
-<span class="status network">Partnerstrukturen abgegrenzt</span>
-</span>
-<span class="summary-note">Kein Rossotrudnitschestwo-Zentrum nachweisbar – dafür drei verwechselbare Strukturen.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Für Estland ließ sich kein offizielles Rossotrudnitschestwo-Zentrum verifizieren. Die Tallinner Diplomatenliste vom Juni 2026 führt die Botschaft, aber kein Wissenschafts- und Kulturzentrum.</p>
-<p>Abzugrenzen sind drei Strukturen: das kommunale Vene Kultuurikeskus der Stadt Tallinn, ein Russkiy-Mir-Zentrum an einer privaten Sprachschule und die Botschaft. Ihre Zusammenführung 2025 war eine städtische Organisationsentscheidung.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Eine Umbenennung oder Fusion einer kommunalen Einrichtung ist kein Ersatzbegriff für die Schließung eines Russischen Hauses. Erst der Rechtsträger, dann die Statusbehauptung.</div>
-<a class="country-link" href="eu-estland.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Finnlands" class="summary-flag-img" height="24" src="img/flags/fi.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Finnland</span>
-<span class="summary-statuses">
-<span class="status restricted">Finanziell und vermögensrechtlich beschränkt</span>
-<span class="status active">Organisatorisch weiter aktiv</span>
-</span>
-<span class="summary-note">Konten wurden eingefroren, die Immobilie juristisch arrestiert – die Institution blieb bestehen.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            Finnland setzte die EU-Sanktionen gegen Rossotrudnitschestwo um und fror Konten ein. Grundstück und Gebäude des Russischen Hauses wurden im Zusammenhang mit ukrainischen Entschädigungsansprüchen im Naftogaz-Verfahren beschlagnahmt beziehungsweise juristisch arrestiert.
-          </p>
-<p>
-            Die Vollstreckung wurde angeordnet, ist wegen russischer Rechtsmittel aber noch nicht endgültig abgeschlossen. Zugleich blieb die Institution organisatorisch und digital aktiv. Auch das mit sechs Monaten Frist kündbare Kulturabkommen wurde nicht beendet.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Helsinki zeigt, wie weit Sanktionen und Vollstreckungsmaßnahmen reichen können, ohne dass der Staat den zugrunde liegenden Vertrag kündigt oder die Institution politisch beendet.</div>
-<a class="country-link" href="eu-finnland.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Frankreichs" class="summary-flag-img" height="24" src="img/flags/fr.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Frankreich</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status restricted">Staatliche Kooperation ausgesetzt</span>
-</span>
-<span class="summary-note">Paris setzte die Kooperation aus, kündigte den Vertrag von 1992 aber nicht.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Regierungsabkommen von 1992 errichtet reziprok ein französisches Zentrum in Moskau und ein russisches in Paris und ordnet letzteres der Botschaft zu. Frankreich setzte 2022 die staatliche Kultur-, Hochschul- und Wissenschaftskooperation aus.</p>
-<p>Das Abkommen wurde nach den geprüften amtlichen Fundstellen nicht gekündigt, die Maison russe nicht geschlossen; im Juli 2026 war sie geöffnet. Eine Kontensperre Ende 2024 wurde ausschließlich in russischer Berichterstattung behauptet und ist amtlich nicht bestätigt.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Frankreich trennt vier Ebenen sauber: Programmkooperation, Finanzsanktionsvollzug, diplomatischer Personalstatus und Vertragskündigung. Ausgesetzt ist nicht gekündigt.</div>
-<a class="country-link" href="eu-frankreich.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Griechenlands" class="summary-flag-img" height="24" src="img/flags/gr.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Griechenland</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status restricted">Kulturkooperation ausgesetzt</span>
-</span>
-<span class="summary-note">Die Kulturministerin stellte klar: Aussetzung, nicht Annullierung.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das 2001 unterzeichnete und 2005 ratifizierte Abkommen gibt beiden Zentren Rechtsfähigkeit und unterstellt sie dem Recht des Gaststaats. Das internationale Inkrafttreten blieb offen, weil die nach Artikel 16 maßgebliche letzte Notifikation nicht gefunden wurde.</p>
-<p>Das Kulturministerium setzte ab Februar 2022 die Kooperation mit russischen Kulturorganisationen aus. Nach Berichten über ihre Antwort im Parlament betonte die Ministerin, die Aussetzung sei keine Annullierung. Im Juli 2026 fanden im Haus staatliche Sprachprüfungen statt.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Eine belegte Zwischenstufe: staatliche Kooperation suspendiert, ohne Schließung und ohne auffindbare Kündigung. Ratifikation und internationales Inkrafttreten sind zweierlei.</div>
-<a class="country-link" href="eu-griechenland.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Irlands" class="summary-flag-img" height="24" src="img/flags/ie.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Irland</span>
-<span class="summary-statuses">
-<span class="status unproven">Kein offizieller Standort nachgewiesen</span>
-<span class="status network">Partner- und Diasporanetz aktiv</span>
-</span>
-<span class="summary-note">Verhandlungen von 2010 führten nicht nachweisbar zu einem Zentrum.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Ein offizielles Rossotrudnitschestwo-Büro oder formales Russkiy-Mir-Zentrum ließ sich für Irland nicht nachweisen. Belegt ist, dass das Trinity College 2010 fortgeschrittene Verhandlungen über Irlands erstes Russisches Kulturzentrum ankündigte – ein Abschluss ist es nicht.</p>
-<p>Sichtbar sind private Kulturorganisationen und ein botschaftsnahes Landsleutenetzwerk. Das 2026 in Stiftungsberichten auftauchende Zentrum „Matrёshka“ ist Aktivitätsevidenz, im formalen Zentrenkatalog aber nicht als Vertretung ausgewiesen.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Irland ist ein Netzwerk- statt Standortfall. Aktivitätsevidenz begründet keinen Vertretungsstatus – und das Fehlen einer Immobilie macht ein Netzwerk nicht politisch irrelevant.</div>
-<a class="country-link" href="eu-irland.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Italiens" class="summary-flag-img" height="24" src="img/flags/it.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Italien</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status unproven">Vertragsgeltung offen</span>
-</span>
-<span class="summary-note">Das Haus in Rom arbeitet seit 2011 – die Vertragsgeltung ist ungeklärt.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Russische Haus in Rom ist eine offizielle Rossotrudnitschestwo-Einrichtung und arbeitet seit November 2011 in einem historischen Palazzo. Die Einordnung des Gebäudes als Privateigentum beruht auf der Eigendarstellung und wurde nicht unabhängig verifiziert.</p>
-<p>Rechtlich bleiben zwei Inkrafttretensfragen offen: für das allgemeine Abkommen von 1998 fehlt die letzte Notifikation, für das spezifische Zentrumsabkommen ein italienischer Ratifikations- oder Inkrafttretensnachweis.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Tatsächlicher Betrieb beweist nicht den rechtlichen Bestand eines Vertrags. Eigentum am Gebäude und wirtschaftliches Nutzungsrecht sind zudem getrennt zu prüfen.</div>
-<a class="country-link" href="eu-italien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Kroatiens" class="summary-flag-img" height="24" src="img/flags/hr.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Kroatien</span>
-<span class="summary-statuses">
-<span class="status unproven">Kein offizielles Haus nachgewiesen</span>
-<span class="status pending">Steuerverfahren anhängig</span>
-<span class="status vanished">Frühere Struktur nicht mehr nachweisbar</span>
-</span>
-<span class="summary-note">Das geplante Zentrum wurde nie vertraglich umgesetzt; eine spätere Ersatzvertretung verschwand nach 2022.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            Das allgemeine Kulturabkommen zwischen Kroatien und Russland errichtete kein Zentrum. Ein 2013 vorgesehenes Sonderabkommen über Informations- und Kulturzentren wurde 2015 ausdrücklich als nicht umgesetzt geführt.
-          </p>
-<p>
-            Trotzdem ist spätestens 2018 eine Rossotrudnitschestwo-Vertretung und spätestens 2021 die öffentliche Marke „Russisches Haus Zagreb“ nachweisbar. Nach der drastischen Verkleinerung der russischen Botschaft 2022 ist keine reguläre Tätigkeit mehr öffentlich belegt. Spätere Quellen sprechen von Suspendierung; einen kroatischen Schließungsakt fanden wir nicht.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Kroatien ist kein klassischer Schließungsfall. Ein nie vollständig institutionalisiertes Zentrum wurde durch eine spätere Ersatzvertretung ersetzt, die anschließend aus der Öffentlichkeit verschwand.</div>
-<a class="country-link" href="eu-kroatien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Lettlands" class="summary-flag-img" height="24" src="img/flags/lv.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Lettland</span>
-<span class="summary-statuses">
-<span class="status closed">Tätigkeit beendet</span>
-<span class="status restricted">Immobilie gesetzlich übertragen</span>
-</span>
-<span class="summary-note">Das Moskauer Haus war eine Stadtvertretung – kein Rossotrudnitschestwo-Zentrum.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Moskauer Haus in Riga war nach Angaben des Staatssicherheitsdienstes die Repräsentanz eines staatlich-städtischen Moskauer Unternehmens, dessen alleiniger Anteilseigner die Moskauer Immobilienbehörde war – keine Rossotrudnitschestwo-Vertretung.</p>
-<p>Seit 2022 durchlief es vier zu trennende Stadien: eingefrorene wirtschaftliche Ressource, Gegenstand eines Strafverfahrens, durch Spezialgesetz lastenfrei auf den Staat übertragen, zum Verkauf gestellt. Ende September 2025 war noch kein Käufer gefunden.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Der weitestgehende Vollzugsfall dieser Sammlung – und zugleich der am leichtesten falsch etikettierte. Eine Verurteilung im beantragten Strafverfahren ist nicht belegt.</div>
-<a class="country-link" href="eu-lettland.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Litauens" class="summary-flag-img" height="24" src="img/flags/lt.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Litauen</span>
-<span class="summary-statuses">
-<span class="status unproven">Nie regulär eröffnet</span>
-<span class="status pending">Abrissverfahren offen</span>
-</span>
-<span class="summary-note">Nie eröffnet – und am 1. August 2026 immer noch nicht abgerissen.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Moskauer Haus in Vilnius wurde nie regulär eröffnet. Es darf deshalb weder als nach Februar 2022 geschlossenes Russisches Haus noch als früherer Rossotrudnitschestwo-Betrieb beschrieben werden. Die Baugenehmigung wurde 2017 endgültig unwirksam.</p>
-<p>Der Abriss ist rechtskräftig angeordnet, aber nicht vollzogen: Ein Gericht stoppte im Juli 2026 die geplante Übertragung an die Stadt; am 1. August 2026 fehlten Unterschriften und gerichtliche Bestätigung einer privat finanzierten Vereinbarung.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Bau- und Planungsrecht kann ein Projekt dauerhaft stoppen. Aber ein rechtskräftiges Abrissziel ist kein vollzogener Abriss – und „nie eröffnet“ ist keine Schließung.</div>
-<a class="country-link" href="eu-litauen.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Luxemburgs" class="summary-flag-img" height="24" src="img/flags/lu.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Luxemburg</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status unproven">Statusabkommen nicht öffentlich</span>
-</span>
-<span class="summary-note">Das Statusabkommen von 2010 ist belegt – sein Wortlaut nicht auffindbar.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Zwei Rechtsakte stützen das Zentrum: das 1996 gebilligte allgemeine Abkommen von 1993 mit ausdrücklicher Kündigungsregel und ein spezielles Abkommen vom 16. März 2010 über Status und Funktionsweise, das nach dem Jahresbericht des Außenministeriums sofort in Kraft trat.</p>
-<p>Luxemburg vollzieht die Sanktionen robust und wies 2022 einen Diplomaten aus; weder die Ausweisung noch die veröffentlichten Einfrierungszahlen sind dem Haus zugeordnet. Im April 2026 fanden dort mehrere Veranstaltungen statt.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Aus dem Bestehen eines Statusvertrags folgt nicht die Kenntnis seines Inhalts. Rechtspersönlichkeit, Steuerregeln, Kündigungsfrist und Personalprivilegien bleiben unbekannt.</div>
-<a class="country-link" href="eu-luxemburg.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Maltas" class="summary-flag-img" height="24" src="img/flags/mt.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Malta</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status restricted">2022 zeitweise geschlossen</span>
-</span>
-<span class="summary-note">Die Schließung 2022 erfolgte aus Schutzgründen – nicht auf staatliche Anordnung.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Zentrum in Valletta besteht seit 1990. Die Rechtsspur reicht bis zu einem Notenwechsel von 1987 zurück, ist aber überwiegend durch russische Regierungsbeschlüsse über <em>Entwürfe</em> dokumentiert; unterzeichnete Endtexte und Inkrafttreten wurden nicht gefunden.</p>
-<p>Ab dem 3. März 2022 schloss das Zentrum nach Drohungen und polizeilicher Intervention vorübergehend selbst. Ein Beleg für eine staatliche Schließungsanordnung existiert nicht. Veranstaltungen 2024 bis 2026 belegen den wiederaufgenommenen Präsenzbetrieb.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Eine sicherheitsbedingte Eigenschließung ist keine staatliche Suspendierung. Das genaue Datum der Wiedereröffnung wurde nicht gefunden.</div>
-<a class="country-link" href="eu-malta.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge der Niederlande" class="summary-flag-img" height="24" src="img/flags/nl.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Niederlande</span>
-<span class="summary-statuses">
-<span class="status vanished">Frühere Vertretung verschwunden</span>
-<span class="status network">Partnernetzwerk aktiv</span>
-</span>
-<span class="summary-note">Kein heutiges Haus – aber ein dezentrales Netz aus Botschaft, Vereinen, Schulen und Brüssel.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            Ein heutiges offizielles Russisches Haus existiert in den Niederlanden nicht. Eine Rossotrudnitschestwo-Landesvertretung ist jedoch für 2013 und 2014 belegt. Sie besaß offenbar kein eigenes öffentliches Zentrumgebäude und war spätestens 2017 verschwunden – lange vor dem russischen Großangriff.
-          </p>
-<p>
-            Funktionen blieben dezentral erhalten: über die russische Botschaft, den Landsleuterat KCOPC/KSORS, Schulen, Kulturvereine, Honorarkonsulate, die Universität Groningen und das Russische Haus in Brüssel. Kooperationen örtlicher Vereine mit Rossotrudnitschestwo beweisen dabei nicht automatisch Finanzierung, Trägerschaft oder Weisungsabhängigkeit.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Kein Schild an der Tür bedeutet nicht, dass keine Struktur existiert. Die niederländische Architektur ist kleiner, dezentraler und schwerer sichtbar.</div>
-<a class="country-link" href="eu-niederlande.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Österreichs" class="summary-flag-img" height="24" src="img/flags/at.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Österreich</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver Botschaftsteil</span>
-<span class="status restricted">Staatliche Kooperation ausgesetzt</span>
-</span>
-<span class="summary-note">Artikel 15 des Kulturabkommens nennt das Wiener Zentrum ausdrücklich.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Artikel 15 des Kulturabkommens von 1998 nennt das Wiener Zentrum ausdrücklich als Kulturzentrum bei der russischen Botschaft. Das Außenministerium ordnete es 2023 als notifizierten Botschaftsteil ein und wandte das Wiener Übereinkommen an.</p>
-<p>Seit Februar 2022 sind alle bilateralen staatlichen Kulturaktivitäten suspendiert – eine Kooperationssuspendierung, keine Schließung. Das Institut war bis Sommer 2026 mit Veranstaltungen und Unterricht tätig.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Rechtsform und Notifikation wiegen schwerer als das Etikett „Russisches Haus“: Die Schließung eines Missionsbestandteils wäre völkerrechtlich anders zu bewerten als die Auflösung eines Vereins.</div>
-<a class="country-link" href="eu-oesterreich.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Polens" class="summary-flag-img" height="24" src="img/flags/pl.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Polen</span>
-<span class="summary-statuses">
-<span class="status restricted">Präsenzbetrieb ausgesetzt</span>
-<span class="status network">Digitale Struktur weiter aktiv</span>
-</span>
-<span class="summary-note">Nicht Polen schloss: Rossotrudnitschestwo setzte den Warschauer Präsenzbetrieb 2026 selbst aus.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            In Warschau bestand ein offizielles Russisches Zentrum. Polen erkannte dessen Propaganda- und Desinformationsfunktion, verzichtete aber auf eine staatliche Schließung – auch aus Sorge um das Polnische Institut in Moskau und wegen des Gegenseitigkeitsprinzips.
-          </p>
-<p>
-            Im Februar 2026 setzte Rossotrudnitschestwo den Präsenzbetrieb selbst aus und verlagerte Aufgaben nach Budapest. Digitale Kanäle blieben aktiv. Ein belegter Kausalzusammenhang zwischen einer polnischen Maßnahme und dem russischen Rückzug wurde nicht gefunden; das Abkommen wurde nicht gekündigt.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Warschau ist kein polnischer Schließungsfall, sondern ein staatlich tolerierter Standort, aus dem Russland später selbst den Präsenzbetrieb zurückzog.</div>
-<a class="country-link" href="eu-polen.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Portugals" class="summary-flag-img" height="24" src="img/flags/pt.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Portugal</span>
-<span class="summary-statuses">
-<span class="status network">Botschaftsvertretung belegt</span>
-<span class="status unproven">Kein eigenes Haus nachgewiesen</span>
-</span>
-<span class="summary-note">Ein Vertreter innerhalb der Botschaft statt eines verselbständigten Zentrums.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Die offizielle Rossotrudnitschestwo-Seite nennt für Portugal keinen als eigene juristische Person ausgewiesenen Hausbetrieb, sondern einen Vertreter im Bestand der russischen Botschaft – führt aber eine eigene Lissabonner Kontaktadresse und nutzt die Marke „Russisches Haus“.</p>
-<p>Portugal wies am 5. April 2022 zehn Missionsmitarbeiter aus. Eine Betroffenheit des Vertreters ist denkbar, ohne Namensliste aber Spekulation. Ob am Kontaktbüro regelmäßiger Publikumsbetrieb besteht, blieb offen.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Der wichtigste Organisationsform-Kontrast: Nicht jede als „Casa da Rússia“ bezeichnete Struktur ist die offizielle Vertretung – ohne Registerbeleg bleiben beide getrennt.</div>
-<a class="country-link" href="eu-portugal.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Rumäniens" class="summary-flag-img" height="24" src="img/flags/ro.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Rumänien</span>
-<span class="summary-statuses">
-<span class="status closed">Tätigkeit beendet</span>
-<span class="status unproven">Formaler Reststatus ungeklärt</span>
-</span>
-<span class="summary-note">Bukarest setzte den Betrieb 2023 aus; einzelne Registereinträge blieben bestehen.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            In Bukarest bestand ein offiziell eröffnetes Russisches Zentrum für Wissenschaft und Kultur auf Grundlage eines 2013 geschlossenen Regierungsabkommens. Am 21. Februar 2023 teilte das rumänische Außenministerium dem russischen Botschafter mit, dass die Tätigkeit des Zentrums ausgesetzt werde. Der Betrieb musste spätestens am 20. August 2023 enden.
-          </p>
-<p>
-            Die Regierung begründete den Schritt ausdrücklich mit Propaganda, Desinformation, der verzerrten Darstellung historischer Tatsachen und der Rechtfertigung russischer Kriegsverbrechen. Bukarest fehlt auf der aktuellen Rossotrudnitschestwo-Karte; wegen fortbestehender Einträge ist der formale Reststatus dennoch nicht in allen Einzelheiten geklärt.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Rumänien setzte ein förmlich eröffnetes Zentrum staatlich außer Betrieb. Die Tätigkeit endete; die vollständige vertrags- und registerrechtliche Abwicklung bleibt gesondert zu beurteilen.</div>
-<a class="country-link" href="eu-rumaenien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Schwedens" class="summary-flag-img" height="24" src="img/flags/se.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Schweden</span>
-<span class="summary-statuses">
-<span class="status unproven">Kein offizielles Haus nachgewiesen</span>
-<span class="status vanished">Frühere Struktur nicht mehr belegt</span>
-</span>
-<span class="summary-note">Ein Kontrollfall: „nicht gefunden“ ist etwas anderes als „existiert nicht“.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Die Stockholmer Diplomatenliste vom Februar 2026 nennt Botschaft, Konsularabteilung und Handelsvertretung, aber kein russisches Kulturzentrum. Weil sie Kulturinstitute anderer Staaten ausdrücklich führt, stärkt das den Negativbefund – ohne Nichtexistenz zu beweisen.</p>
-<p>Belegt ist nur ein historisches „Kabinett für russische Sprache und Literatur“ in Göteborg, eröffnet mit Stadtteilverwaltung und Generalkonsulat. Das Eröffnungsjahr ließ sich nicht verifizieren; ein heutiger Betrieb ebenso wenig.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Ein „Kabinett“ einer gelisteten Stiftung ist kein diplomatisches Kulturzentrum. Schweden ist der Prüfstein für sauber formulierte Negativbefunde.</div>
-<a class="country-link" href="eu-schweden.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge der Slowakei" class="summary-flag-img" height="24" src="img/flags/sk.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Slowakei</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status unproven">Rechtsform und Vertragslage offen</span>
-</span>
-<span class="summary-note">Der Kooperationsstopp von 2022 wurde im Januar 2024 wieder aufgehoben.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>In Bratislava besteht eine offizielle Rossotrudnitschestwo-Vertretung. Das staatliche Transparenzportal führt sie mit Namen und Adresse, nennt aber keine Rechtsform; ein unterzeichnetes Zentrumsabkommen wurde nicht gefunden – nur ein russischer Entwurf von 1996.</p>
-<p>Das Kulturministerium untersagte im März 2022 seinen eigenen Organisationen die Zusammenarbeit und hob dies im Januar 2024 wieder auf. Präsenzveranstaltungen 2025 und 2026 belegen laufenden Betrieb.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Eine reversible faktische Einschränkung ohne rechtliche Schließung. Der Zusatz „Vollbetrieb seit Juni 2025“ bleibt Selbstdarstellung Rossotrudnitschestwos.</div>
-<a class="country-link" href="eu-slowakei.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Sloweniens" class="summary-flag-img" height="24" src="img/flags/si.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Slowenien</span>
-<span class="summary-statuses">
-<span class="status closed">Physisch geschlossen</span>
-<span class="status pending">Vertragsende offen</span>
-</span>
-<span class="summary-note">Gekündigt und geschlossen – die sofortige Rechtswirkung bleibt offen.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Slowenien leitete am 22. März 2022 die Kündigung des Abkommens von 2011 ein; nach Auskunft des Außenministeriums ging die Note am 1. April zu. Das Zentrum in Ljubljana schloss am 8. April 2022, eine Woche vor Ablauf der Frist.</p>
-<p>Die Note selbst, eine russische Antwort und eine amtliche Bekanntmachung des Beendigungsdatums wurden nicht gefunden. Bei rein ordentlicher Anwendung von Artikel 17 wäre das nächste Periodenende der 19. September 2026.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Der einzige Fall mit Kündigungserklärung und tatsächlicher Schließung. Physische Schließung, Kündigungserklärung und völkerrechtliches Vertragsende bleiben dennoch drei verschiedene Daten – und in Maribor besteht ein Partnernetz fort.</div>
-<a class="country-link" href="eu-slowenien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Spaniens" class="summary-flag-img" height="24" src="img/flags/es.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Spanien</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status unproven">Präsenzumfang offen</span>
-</span>
-<span class="summary-note">Der detaillierteste Vertrag – Räume ausdrücklich nicht unverletzlich.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Abkommen von 2001 regelt reziprok das Instituto Cervantes in Moskau und das Zentrum in Madrid. Es verleiht die Rechte juristischer Personen, unterstellt die Zentren dem Recht des Gaststaats und schließt die diplomatische Unverletzlichkeit der Räume ausdrücklich aus.</p>
-<p>Spanien wies im April 2022 rund 25 russische Diplomaten und Botschaftsmitarbeiter aus; eine Zuordnung zum Haus wurde nicht gefunden. Das Haus blieb aktiv, ein datierter Präsenztermin für 2026 ließ sich jedoch nicht belegen.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Der stärkste Rechtsvergleich: Rechtsfähigkeit ist nicht Unverletzlichkeit, Privilegien sind akkreditierungsabhängig, und Sanktionsvollzug ersetzt keine Vertragsbeendigung.</div>
-<a class="country-link" href="eu-spanien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Tschechiens" class="summary-flag-img" height="24" src="img/flags/cz.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Tschechien</span>
-<span class="summary-statuses">
-<span class="status restricted">Finanziell und praktisch beschränkt</span>
-<span class="status active">Angebote weiter aktiv</span>
-</span>
-<span class="summary-note">Die Immobilie ist Sanktionsfall; Kultur-, Sprach- und Onlineangebote liefen weiter.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            Tschechien behandelte Gebäude und wirtschaftliche Nutzung des Russischen Hauses als Sanktionsfall. Einnahmen und Verwertung wurden erheblich blockiert. Das bedeutete jedoch keine politische Schließung des Zentrums.
-          </p>
-<p>
-            Veranstaltungen, Sprachkurse, Bibliothek und Onlineangebote liefen weiter. Auch das allgemeine Kulturabkommen blieb bestehen, obwohl es kündbar ist. Die Rechtsgrundlage erklärt den heutigen Zwischenzustand – sie zwang die Regierung nicht dazu, ihn aufrechtzuerhalten.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Prag zeigt die Trennung zwischen Sanktionen gegen Betreiber und Immobilie einerseits und dem fortgesetzten institutionellen Betrieb andererseits.</div>
-<a class="country-link" href="eu-tschechien.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Ungarns" class="summary-flag-img" height="24" src="img/flags/hu.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Ungarn</span>
-<span class="summary-statuses">
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status unproven">Eigentums- und Vertragsstatus offen</span>
-</span>
-<span class="summary-note">Budapest arbeitet weiter; keine hausbezogene Maßnahme gefunden.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Budapester Haus ist eine in die russische Botschaftsstruktur eingebettete Einrichtung, keine bloße Partnerorganisation. Das Abkommen von 1993 erkennt die Zentren an, verweist ihre Unterstützung aber auf ein gesondertes Abkommen, dessen Text nicht gefunden wurde.</p>
-<p>Eine ungarische Schließung, eine Aussetzung des Kulturabkommens oder ein zentrumsspezifischer Vermögensvollzug wurde nicht gefunden. Eine Denkmaldatenbank bezeichnet das Gebäude als russisches Staatseigentum – ohne Grundbuchbeleg bleibt das eine Sekundärangabe.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> Dass keine Maßnahme gefunden wurde, belegt nicht, dass alle Transaktionen des Hauses zulässig oder unbeschränkt geblieben sind.</div>
-<a class="country-link" href="eu-ungarn.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge Zyperns" class="summary-flag-img" height="24" src="img/flags/cy.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Zypern</span>
-<span class="summary-statuses">
-<span class="status active">Aktive offizielle Vertretung</span>
-<span class="status unproven">Vertragsfortgeltung offen</span>
-</span>
-<span class="summary-note">Fortgesetzte Präsenz trotz EU-Listung; kein Statusabkommen auffindbar.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>Das Zentrum in Nikosia besteht seit 1978 und ist eine offizielle Rossotrudnitschestwo-Vertretung. Nach dem Brand von 2023 – für Brandstiftung fand die Polizei keine Belege – ist es 2024 und erneut 2026 mit Veranstaltungen nachweisbar.</p>
-<p>Ein Protokoll von 2000 bezeichnet das Kulturabkommen von 1972 als fortgeltend; das für sein Inkrafttreten erforderliche Notifikationsdatum wurde nicht gefunden. Ein gesondertes Statusabkommen zum Zentrum ließ sich nicht verifizieren.</p>
-<div class="key-fact"><strong>Kernbefund:</strong> EU-Listung, nationaler Vollzug und Schließung sind drei verschiedene Ebenen. Der zyprische Sanktionsrahmen von 2025 ist allgemein – ein Einzelakt gegen das Haus fehlt.</div>
-<a class="country-link" href="eu-zypern.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<details class="country">
-<summary>
-<img alt="Flagge der Republik Moldau" class="summary-flag-img" height="24" src="img/flags/md.svg" width="36"/>
-<span class="summary-main">
-<span class="summary-title">Republik Moldau · Nicht-EU</span>
-<span class="summary-statuses">
-<span class="status closed">Tätigkeit beendet</span>
-<span class="status network">Botschaftsstruktur weiter aktiv</span>
-</span>
-<span class="summary-note">Moldau kündigte den Vertrag fristgerecht; das Haus schloss am 4. Juli 2026.</span></span>
-<span aria-hidden="true" class="summary-icon"></span>
-</summary>
-<div class="country-body">
-<p>
-            Das Russische Haus in Chișinău beruhte auf einem 1998 geschlossenen Kulturzentren-Abkommen. Artikel 17 sah automatische Fünfjahresverlängerungen vor, sofern keine Seite mindestens sechs Monate vor Ablauf schriftlich widersprach. Nach erneuten russischen Drohnenverletzungen des moldauischen Luftraums leitete die Regierung 2025 die Kündigung ein; Russland wurde am 3. Dezember 2025 fristgerecht informiert.
-          </p>
-<p>
-            Das Abkommen endete am 4. Juli 2026, und das offizielle Russische Haus stellte am selben Tag seinen Betrieb ein. Rossotrudnitschestwo behielt jedoch einen Vertreter innerhalb der russischen Botschaft; insbesondere Bildungsquoten und weitere sogenannte humanitäre Programme sollen dort fortgeführt werden.
-          </p>
-<div class="key-fact"><strong>Kernbefund:</strong> Moldau nutzte die vertraglich vorgesehene Kündigungsmöglichkeit tatsächlich. Das offizielle Haus schloss – einzelne Funktionen wanderten jedoch in die russische Botschaft ab.</div>
-<a class="country-link" href="eu-moldau.html">Zur vollständigen Länderakte mit Quellen →</a>
-</div>
-</details>
-
-<!-- Ende: 18 neue EU-Länder -->
-</div>
-</section><section class="section"><h2 class="section-title">Russlands eigenes Bild seines europäischen Netzes</h2><p class="section-text">Rossotrudnitschestwo veröffentlicht auf seiner Website eine Karte seiner Russischen Häuser und Auslandsvertretungen. Sie zeigt, wie die Behörde ihre Präsenz in Europa selbst darstellt – und bildet den Ausgangspunkt für unseren Abgleich mit den tatsächlich nachweisbaren Strukturen.</p><figure class="figure">
-<img alt="Offizielle Karte der von Rossotrudnitschestwo ausgewiesenen Russischen Häuser und Auslandsvertretungen in Europa, Stand 18. Juli 2026" loading="eager" src="img/rossotrudnitschestwo-karte-europa-2026-07-18.png"/>
-<figcaption>
-<strong>Offizielle Standortkarte Rossotrudnitschestwos, Ausschnitt Europa, abgerufen am 18. Juli 2026.</strong>
-      Die Karte zeigt die von der russischen Behörde aktuell ausgewiesenen Standorte. Sie bildet weder frühere Vertretungen noch sämtliche Partner- und Ersatzstrukturen ab.
-      Quelle:
-      <a href="https://rs.gov.ru/kontakty/predstavitelstva-za-rubezhom/represents-with-map/" rel="noopener noreferrer" target="_blank">https://rs.gov.ru/kontakty/predstavitelstva-za-rubezhom/represents-with-map/</a>
-</figcaption>
-</figure><h3 class="subsection-title">Russlands offizielle Karte der Russischen Häuser – im Faktencheck</h3><p class="section-text">Die roten Punkte sollen jene Städte markieren, in denen Rossotrudnitschestwo nach eigener Darstellung ein Russisches Haus oder eine Auslandsvertretung unterhält. Ein vollständiges und durchgehend verlässliches Verzeichnis ist die Karte jedoch nicht.</p><p class="section-text">Schon der Abgleich mit den übrigen Angaben der Behörde zeigt Unstimmigkeiten: Auf der Karte fehlt beispielsweise ein roter Punkt für Warschau, obwohl Rossotrudnitschestwo weiterhin eine eigene Website mit Adresse, Kontaktdaten und Tätigkeitsbereichen für das Russische Haus in Warschau unterhält.</p><p class="section-text">Auch aus einem fehlenden Punkt lässt sich deshalb nicht automatisch schließen, dass in einem Land keine russische Struktur existiert. Ein Zentrum kann geschlossen worden sein, eine frühere Vertretung kann verschwunden sein – oder Russland arbeitet über eine Botschaft, Vereine, Schulen, Partnerorganisationen oder ein Russisches Haus im Nachbarland weiter. Umgekehrt sagt ein vorhandener Punkt noch wenig über Rechtsform, Größe, diplomatischen Status oder tatsächliche Aktivität des jeweiligen Standorts aus.</p><p class="section-text">Deshalb prüfen die Länderakten nicht nur die heutige Standortliste. Unterschieden werden <strong>offizielle Russische Häuser, Rossotrudnitschestwo-Vertretungen, Botschaftsstrukturen, Russkiy-Mir-Zentren, „Landsleute“-Netzwerke und örtliche Partnerorganisationen</strong>.</p><div class="method-box">
-<h3>Was seit 2022 rechtlich gilt</h3>
-<p>
-        Die Europäische Union setzte Rossotrudnitschestwo am 21. Juli 2022 auf die Sanktionsliste. Daraus folgte jedoch kein automatischer europaweiter Schließungsbefehl. Ob ein Zentrum weiterarbeiten konnte, hing zusätzlich von Eigentum, diplomatischem Status, bilateralen Verträgen und den Maßnahmen des jeweiligen Staates ab.
-      </p>
-<p>
-        Die Statusangaben auf dieser Seite beschreiben deshalb den nachweisbaren Zustand – nicht das Etikett, das Russland einer Einrichtung gibt.
-      </p>
-</div><div aria-label="Statuslegende" class="legend">
-<span class="status closed">Tätigkeit beendet</span>
-<span class="status active">Aktiver offizieller Standort</span>
-<span class="status restricted">Finanziell oder praktisch beschränkt</span>
-<span class="status vanished">Frühere Vertretung verschwunden</span>
-<span class="status network">Partnernetzwerk aktiv</span>
-<span class="status unproven">Kein offizieller Standort nachgewiesen / offen</span>
-</div></section>
-<div class="interim">
-<div class="label">Zwischenstand nach 26 EU-Länderakten und einem europäischen Vergleichsfall</div>
-<h2>Der Vergleich zeigt nun auch: Ein kündbares Abkommen muss kein Dauerzustand bleiben</h2>
-<p>
-      Die 26 untersuchten EU-Staaten nutzten sehr unterschiedliche Hebel: Tätigkeit aussetzen, Finanzströme blockieren, Immobilien und Betreiber sanktionieren, diplomatische Strukturen verkleinern, ein nie eröffnetes Projekt baurechtlich stoppen, eine Immobilie per Spezialgesetz übertragen oder eine schwach verankerte Ersatzstruktur auslaufen lassen. Ebenso häufig blieb es bei ausgesetzter Kooperation, während das Haus weiterarbeitete. Mit der Republik Moldau kommt erstmals ein europäischer Nicht-EU-Fall hinzu, in dem die vertraglich vorgesehene Kündigung tatsächlich vollständig vollzogen wurde: <strong>Das Abkommen endete, das offizielle Russische Haus schloss.</strong>
-</p>
-<p style="margin-top:12px;">
-      Zugleich zeigt auch Moldau die Grenze einer Schließung: Einzelne Bildungs- und Einflussfunktionen können in eine Botschaft oder in Partnerstrukturen abwandern. Der entscheidende Vergleich lautet deshalb weiterhin nicht nur: „Wer hat geschlossen?“ Sondern: <strong>Welche rechtlichen und politischen Möglichkeiten bestanden – welche wurden genutzt, und welche Ersatzwege blieben offen?</strong>
-</p>
-<div class="work-in-progress">
-<h3>Weitere Länderakten folgen</h3>
-<p>Die Recherche wird fortgesetzt. Länderakten werden nach Standortgeschichte, Rechtsgrundlage, Maßnahmen und Quellen geprüft und bei neuen Befunden aktualisiert. Offene Belegfragen – etwa zu Inkrafttreten, Rechtsträgern, Eigentum, Konten und Akkreditierungen – sind in den Länderakten ausdrücklich als offen gekennzeichnet. Die englischen Fassungen der 18 neuen Länderakten und die englische Übersicht werden in einem gesonderten Schritt nachgezogen.</p>
-</div>
-</div>
-<footer>
-<span>pressemappe.antwortseiten.org · Europa-Dossier</span>
-<span>
-<a href="index.html">Übersicht</a>
-       · 
-      <a href="impressum.html">Impressum</a>
-       · 
-      <a href="datenschutz.html">Datenschutz</a>
-</span>
-</footer>
+</section>
+<section class="section"><h2 class="section-title">Russlands eigenes Bild seines europäischen Netzes</h2><p class="section-text">Rossotrudnitschestwo veröffentlicht auf seiner Website eine Karte seiner Russischen Häuser und Auslandsvertretungen. Sie zeigt, wie die Behörde ihre Präsenz in Europa selbst darstellt – und bildet den Ausgangspunkt für unseren Abgleich mit den tatsächlich nachweisbaren Strukturen.</p><figure class="figure"><img alt="Offizielle Karte der von Rossotrudnitschestwo ausgewiesenen Russischen Häuser und Auslandsvertretungen in Europa, Stand 18. Juli 2026" loading="eager" src="img/rossotrudnitschestwo-karte-europa-2026-07-18.png"/><figcaption><strong>Offizielle Standortkarte Rossotrudnitschestwos, Ausschnitt Europa, abgerufen am 18. Juli 2026.</strong> Die Karte zeigt die von der russischen Behörde aktuell ausgewiesenen Standorte. Sie bildet weder frühere Vertretungen noch sämtliche Partner- und Ersatzstrukturen ab. Quelle: <a href="https://rs.gov.ru/kontakty/predstavitelstva-za-rubezhom/represents-with-map/" rel="noopener noreferrer" target="_blank">Rossotrudnitschestwo</a></figcaption></figure><h3 class="subsection-title">Russlands offizielle Karte der Russischen Häuser – im Faktencheck</h3><p class="section-text">Die roten Punkte sollen jene Städte markieren, in denen Rossotrudnitschestwo nach eigener Darstellung ein Russisches Haus oder eine Auslandsvertretung unterhält. Ein vollständiges und durchgehend verlässliches Verzeichnis ist die Karte jedoch nicht.</p><p class="section-text">Schon der Abgleich mit den übrigen Angaben der Behörde zeigt Unstimmigkeiten: Auf der Karte fehlt beispielsweise ein roter Punkt für Warschau, obwohl Rossotrudnitschestwo weiterhin eine eigene Website mit Adresse, Kontaktdaten und Tätigkeitsbereichen für das Russische Haus in Warschau unterhält.</p><p class="section-text">Auch aus einem fehlenden Punkt lässt sich deshalb nicht automatisch schließen, dass in einem Land keine russische Struktur existiert. Ein Zentrum kann geschlossen worden sein, eine frühere Vertretung kann verschwunden sein – oder Russland arbeitet über eine Botschaft, Vereine, Schulen, Partnerorganisationen oder ein Russisches Haus im Nachbarland weiter. Umgekehrt sagt ein vorhandener Punkt noch wenig über Rechtsform, Größe, diplomatischen Status oder tatsächliche Aktivität des jeweiligen Standorts aus.</p><p class="section-text">Deshalb prüfen die Länderakten nicht nur die heutige Standortliste. Unterschieden werden <strong>offizielle Russische Häuser, Rossotrudnitschestwo-Vertretungen, Botschaftsstrukturen, Russkiy-Mir-Zentren, „Landsleute“-Netzwerke und örtliche Partnerorganisationen</strong>.</p><div class="method-box"><h3>Was seit 2022 rechtlich gilt</h3><p>Die Europäische Union setzte Rossotrudnitschestwo am 21. Juli 2022 auf die Sanktionsliste. Daraus folgte jedoch kein automatischer europaweiter Schließungsbefehl. Ob ein Zentrum weiterarbeiten konnte, hing zusätzlich von Eigentum, diplomatischem Status, bilateralen Verträgen und den Maßnahmen des jeweiligen Staates ab.</p><p>Die Statusangaben auf dieser Seite beschreiben deshalb den nachweisbaren Zustand – nicht das Etikett, das Russland einer Einrichtung gibt.</p></div><div aria-label="Statuslegende" class="legend"><span class="status closed">Tätigkeit beendet</span><span class="status active">Aktiver offizieller Standort</span><span class="status restricted">Finanziell oder praktisch beschränkt</span><span class="status vanished">Frühere Vertretung verschwunden</span><span class="status network">Partnernetzwerk aktiv</span><span class="status unproven">Kein offizieller Standort nachgewiesen / offen</span></div></section>
+<div class="interim"><div class="label">Zwischenstand nach 26 EU-Länderakten und einem europäischen Vergleichsfall</div><h2>Deutschland hat gekündigt. Die europäische Strukturfrage bleibt.</h2><p>Deutschland gehört seit September 2026 selbst zu den Staaten, die den vertraglichen Rahmen eines Russischen Hauses tatsächlich gekündigt haben. Anders als in Moldau ist die Schließung in Berlin jedoch noch nicht vollständig vollzogen; das Tätigkeitsabkommen läuft bis Juni 2027, das Unterbringungsabkommen von 2013 bleibt gesondert bestehen. Der europäische Vergleich verliert dadurch nicht an Bedeutung – seine Frage verschiebt sich.</p><p style="margin-top:12px;">Moldau zeigt den vollständig vollzogenen Fall: Kündigung, Vertragsende und Schließung. Deutschland zeigt nun den Übergang. Andere Staaten zeigen weitere Modelle – Sanktionen, Suspendierung, diplomatische Verkleinerung, physische Schließung oder fortgesetzten Betrieb. Zugleich bleibt überall dieselbe zweite Frage: <strong>Was geschieht mit Funktionen, Personal und Netzwerken, wenn das sichtbare Haus verschwindet?</strong></p><div class="work-in-progress"><h3>Die Recherche wird fortgesetzt</h3><p>Die Länderakten werden bei neuen Befunden aktualisiert. Besonders relevant sind nun Fälle, in denen offizielle Häuser fortbestehen oder Funktionen in Botschaften, Vereine, Schulen und Partnerstrukturen ausweichen. Offene Belegfragen – etwa zu Inkrafttreten, Rechtsträgern, Eigentum, Konten und Akkreditierungen – bleiben ausdrücklich als offen gekennzeichnet.</p></div></div>
+<footer><span>Recherche-Dossier · Russisches Haus Berlin · Europa</span><span><a href="index.html">Dossier</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span></footer>
 </div>
 </body>
 </html>
