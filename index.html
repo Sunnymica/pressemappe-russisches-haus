@@ -208,29 +208,65 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
   margin-top:18px;
 }
 .intro-cta{
-  display:block;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  column-gap:20px;
   margin-top:20px;
-  padding:15px 18px 16px;
-  background:#181818;
-  border-top:4px solid #b42032;
+  padding:20px 22px 19px;
+  background:#b42032;
+  border:1px solid #8f1726;
+  border-bottom:5px solid #74111d;
   color:#fff;
   text-decoration:none;
-  transition:background .2s ease;
+  box-shadow:0 7px 15px rgba(24,24,24,.22);
+  transition:transform .16s ease,background .16s ease,box-shadow .16s ease;
 }
 .intro-cta .cta-kicker{
   display:block;
-  margin-bottom:5px;
-  font:800 10px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  letter-spacing:.1em;
+  grid-column:1;
+  margin-bottom:6px;
+  font:850 11px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  letter-spacing:.105em;
   text-transform:uppercase;
-  color:#ddd;
+  color:#fff;
+  opacity:.84;
 }
 .intro-cta .cta-main{
   display:block;
-  font:700 18px/1.25 Georgia,Cambria,serif;
+  grid-column:1;
+  font:700 25px/1.14 Georgia,Cambria,serif;
   color:#fff;
 }
-.intro-cta:hover{background:#2b2927}
+.intro-cta .cta-arrow{
+  grid-column:2;
+  grid-row:1 / span 2;
+  display:grid;
+  place-items:center;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#fff;
+  color:#a7182a;
+  font:900 25px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  box-shadow:0 2px 5px rgba(75,8,18,.3);
+}
+.intro-cta:hover{
+  background:#a7182a;
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(24,24,24,.27);
+}
+.intro-cta:active{
+  transform:translateY(2px);
+  box-shadow:0 3px 8px rgba(24,24,24,.2);
+}
+.intro-cta:focus-visible{outline:3px solid #005bbb;outline-offset:4px}
+@media(max-width:520px){
+  .intro-cta{padding:18px 16px 17px;column-gap:13px}
+  .intro-cta .cta-kicker{font-size:9px;letter-spacing:.085em}
+  .intro-cta .cta-main{font-size:21px}
+  .intro-cta .cta-arrow{width:38px;height:38px;font-size:22px}
+}
 
 .escalation-feature{
   margin:0 0 58px;
@@ -803,7 +839,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 <a href="index.html">Überblick</a><a href="vertraege.html">Verträge</a><a href="moskau-reagiert.html">Politik</a><a href="polizei.html">Polizei</a><a href="fakten.html">Recherchen</a><a href="vertragsanalyse.html">Dokumente</a><a href="medien-august-september-2026.html">Pressespiegel</a>
 </div>
 <main class="content">
-<section class="escalation-feature escalation-story story-final"><div class="story-copy"><div class="story-overline">Darum geht’s:</div><div class="story-date">4. SEPTEMBER 2026</div><h2>Erst sie. Dann er.</h2><p class="story-line">Ein Beamter bringt Anette Klassen zu Boden. <strong>→ Trümmerbruch im Handgelenk.</strong></p><p class="story-line">Henry Lindemeier will zu ihr. <strong>→ Gegen die Wand geschleudert.</strong></p><p class="story-police">Die Polizei sagt: Erst sei er gestürzt, dann habe sie einen Beamten geschlagen.<br/><strong>Die Videos zeigen die andere Abfolge.</strong></p><p class="story-investigation">Das LKA ermittelt wegen Körperverletzung im Amt.</p><a class="intro-cta" href="eskalation.html"><span class="cta-kicker">Videos · Chronologie · Polizeidarstellung</span><span class="cta-main">Zum vollständigen Dossier →</span></a></div><div class="story-media-top"><div class="anette-visual"><figure><img alt="Anette am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte." src="embedded-1ea9fdda9415bfc6.png"/><figcaption>Klassen am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte.</figcaption></figure><div class="hand-detail"><figure><img alt="Anette Klassens Hand nach dem Einsatz in ärztlicher Behandlung." src="embedded-4c3204006718b9b3.jpg"/><figcaption>Notärztliche Versorgung: Klassens Hand nach Polizeieinsatz.</figcaption></figure></div></div></div><div class="story-media-bottom"><div class="henry-sequence"><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-71c9a69b4668c2bd.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-bc43b70cddc4d13a.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-10bb4c0a29189a36.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-3c29cdb47a9426fe.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-82fd37ba17c690cc.jpg"/></div><div class="sequence-caption">Er will seiner Freundin helfen – Polizei schleudert Henry Lindemeier gegen die Wand!</div></div></section>
+<section class="escalation-feature escalation-story story-final"><div class="story-copy"><div class="story-overline">Darum geht’s:</div><div class="story-date">4. SEPTEMBER 2026</div><h2>Erst sie. Dann er.</h2><p class="story-line">Ein Beamter bringt Anette Klassen zu Boden. <strong>→ Trümmerbruch im Handgelenk.</strong></p><p class="story-line">Henry Lindemeier will zu ihr. <strong>→ Gegen die Wand geschleudert.</strong></p><p class="story-police">Die Polizei sagt: Erst sei er gestürzt, dann habe sie einen Beamten geschlagen.<br/><strong>Die Videos zeigen die andere Abfolge.</strong></p><p class="story-investigation">Das LKA ermittelt wegen Körperverletzung im Amt.</p><a class="intro-cta" href="eskalation.html"><span class="cta-kicker">Videos · Chronologie · Polizeidarstellung</span><span class="cta-main">Zum vollständigen Dossier</span><span aria-hidden="true" class="cta-arrow">→</span></a></div><div class="story-media-top"><div class="anette-visual"><figure><img alt="Anette am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte." src="embedded-1ea9fdda9415bfc6.png"/><figcaption>Klassen am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte.</figcaption></figure><div class="hand-detail"><figure><img alt="Anette Klassens Hand nach dem Einsatz in ärztlicher Behandlung." src="embedded-4c3204006718b9b3.jpg"/><figcaption>Notärztliche Versorgung: Klassens Hand nach Polizeieinsatz.</figcaption></figure></div></div></div><div class="story-media-bottom"><div class="henry-sequence"><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-71c9a69b4668c2bd.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-bc43b70cddc4d13a.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-10bb4c0a29189a36.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-3c29cdb47a9426fe.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-82fd37ba17c690cc.jpg"/></div><div class="sequence-caption">Er will seiner Freundin helfen – Polizei schleudert Henry Lindemeier gegen die Wand!</div></div></section>
 <section class="media">
 <h2>Die aktuelle Lage</h2>
 <div class="media-grid">
