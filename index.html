@@ -42,8 +42,8 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
   max-width:100%;
 }
 .nav{display:flex;gap:clamp(18px,3vw,40px);overflow:auto;white-space:nowrap;padding:0 clamp(20px,4vw,64px);border-bottom:1px solid var(--line)}
-.nav span{padding:16px 0 13px;text-transform:uppercase;letter-spacing:.11em;font-size:11px;font-weight:700}
-.nav span:first-child{border-bottom:4px solid var(--accent)}
+.nav a{padding:16px 0 13px;text-transform:uppercase;letter-spacing:.11em;font-size:11px;font-weight:700;color:inherit;text-decoration:none}
+.nav a:first-child{border-bottom:4px solid var(--accent)}
 
 .content{max-width:1220px;margin:auto;padding:46px 30px 80px}
 .grid{display:grid;grid-template-columns:.9fr 1.5fr;gap:60px;align-items:start}
@@ -89,6 +89,18 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
   height:100%;
   border:0;
 }
+.video-direct{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  font:700 24px/1.25 Georgia,Cambria,serif;
+}
 .source-line{
   margin-top:9px;
   font-size:11px;
@@ -111,7 +123,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 .go{margin-top:auto;font-size:12px;font-weight:800;color:#005BBB}
 .archive-section{margin-top:58px}
 .archive{display:flex;flex-wrap:wrap;gap:8px}
-.archive span{border:1px solid #d8d8d8;border-radius:999px;padding:8px 12px;font-size:12px;background:#fff}
+.archive a{border:1px solid #d8d8d8;border-radius:999px;padding:8px 12px;font-size:12px;background:#fff;color:inherit;text-decoration:none}
 @media(max-width:820px){
   .media-grid,.dossiers{grid-template-columns:1fr}
 }
@@ -699,7 +711,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
   background:#fff;
   border-bottom:1px solid #DDD8D0;
 }
-.nav span:first-child{
+.nav a:first-child{
   border-bottom-color:var(--accent);
 }
 
@@ -753,7 +765,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 </div>
 </section>
 <div class="nav">
-<span>Überblick</span><span>Verträge</span><span>Politik</span><span>Polizei</span><span>Recherchen</span><span>Dokumente</span><span>Pressespiegel</span>
+<a href="index.html">Überblick</a><a href="vertraege.html">Verträge</a><a href="moskau-reagiert.html">Politik</a><a href="polizei.html">Polizei</a><a href="fakten.html">Recherchen</a><a href="vertragsanalyse.html">Dokumente</a><a href="medien-august-september-2026.html">Pressespiegel</a>
 </div>
 <main class="content">
 <section class="escalation-feature escalation-story story-final"><div class="story-copy"><div class="story-overline">Darum geht’s:</div><div class="story-date">4. SEPTEMBER 2026</div><h2>Erst sie. Dann er.</h2><p class="story-line">Ein Beamter bringt Anette Klassen zu Boden. <strong>→ Trümmerbruch im Handgelenk.</strong></p><p class="story-line">Henry Lindemeier will zu ihr. <strong>→ Gegen die Wand geschleudert.</strong></p><p class="story-police">Die Polizei sagt: Erst sei er gestürzt, dann habe sie einen Beamten geschlagen.<br/><strong>Die Videos zeigen die andere Abfolge.</strong></p><p class="story-investigation">Das LKA ermittelt wegen Körperverletzung im Amt.</p><a class="intro-cta" href="eskalation.html">Zum Dossier →</a></div><div class="story-media-top"><div class="anette-visual"><figure><img alt="Anette am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte." src="embedded-1ea9fdda9415bfc6.png"/><figcaption>Klassen am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte.</figcaption></figure><div class="hand-detail"><figure><img alt="Anette Klassens Hand nach dem Einsatz in ärztlicher Behandlung." src="embedded-4c3204006718b9b3.jpg"/><figcaption>Notärztliche Versorgung: Klassens Hand nach Polizeieinsatz.</figcaption></figure></div></div></div><div class="story-media-bottom"><div class="henry-sequence"><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-71c9a69b4668c2bd.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-bc43b70cddc4d13a.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-10bb4c0a29189a36.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-3c29cdb47a9426fe.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-82fd37ba17c690cc.jpg"/></div><div class="sequence-caption">Er will seiner Freundin helfen – Polizei schleudert Henry Lindemeier gegen die Wand!</div></div></section>
@@ -765,8 +777,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 <h3>Deutschland kündigt das Abkommen</h3>
 <p>Nach dem Drohnenanschlag am Flughafen Leipzig/Halle, für den die Bundesregierung Russland verantwortlich macht, kündigte Außenminister Johann Wadephul am 1. September das Ende des Tätigkeitsabkommens für das Russische Haus an. Zugleich stellte er weitere Maßnahmen gegen Russland vor. Während des Statements wurde der russische Botschafter, so Wadephul, ins Auswärtige Amt einbestellt.</p>
 <div class="video-wrap">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" src="https://www.youtube-nocookie.com/embed/i3LuTzBbsqs?start=560&amp;end=634" title="Johann Wadephul zu den Maßnahmen gegen Russland am 1. September 2026">
-</iframe>
+<a class="video-direct" href="https://www.auswaertiges-amt.de/de/newsroom/2800598-2800598" rel="noopener" target="_blank">Offizielles Statement beim Auswärtigen Amt öffnen →</a>
 </div>
 <div class="source-line">
         Statement vom 1. September 2026, Ausschnitt Johann Wadephul
@@ -904,25 +915,25 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 <section class="dossier-section">
 <h2>Vier Dossiers</h2>
 <div class="dossiers four">
-<a class="dossier red" href="#" id="dossier-eskalation">
+<a class="dossier red" href="eskalation.html" id="dossier-eskalation">
 <div class="dtag">4. September · Polizei</div>
 <h4>Die Eskalation vor dem Russischen Haus</h4>
 <p>Zwei Einsätze, Videos, Polizeidarstellung, Verletzungen, Zeugen, Strafanzeigen und laufende Ermittlungen.</p>
 <div class="go">Eskalationsdossier öffnen →</div>
 </a>
-<a class="dossier" href="#">
+<a class="dossier" href="vertraege.html">
 <div class="dtag">Verträge · Eigentum · Kündigung</div>
 <h4>Was endet – und was bleibt?</h4>
 <p>Die maßgeblichen deutsch-russischen Abkommen und Vereinbarungen, Kündigungsfristen, Liegenschaftsfragen und die Folgen der aktuellen Entscheidung.</p>
 <div class="go">Rechtslage öffnen →</div>
 </a>
-<a class="dossier blue" href="#">
+<a class="dossier blue" href="fakten.html">
 <div class="dtag">Rossotrudnitschestwo · Struktur</div>
 <h4>Was für ein Haus ist das?</h4>
 <p>Staatliche Trägerschaft, EU-Sanktionen, Kulturdiplomatie, Netzwerke, Narrative und die Rolle des Berliner Standorts.</p>
 <div class="go">Hintergrund öffnen →</div>
 </a>
-<a class="dossier" href="#">
+<a class="dossier" href="medien-august-september-2026.html">
 <div class="dtag">August–September 2026</div>
 <h4>Die neue Berichterstattungswelle</h4>
 <p>CORRECTIV, dpa, RBB, t-online, Deutschlandfunk und weitere Medien: die wichtigsten Recherchen und Entwicklungen im Überblick.</p>
@@ -932,7 +943,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 </section>
 <section class="archive-section">
 <h2>Vertiefung</h2>
-<div class="archive"><span>Behörden- &amp; Protestgeschichte</span><span>Frankreich / Geheimdienste</span><span>Fakten &amp; Quellen</span><span>Vertragsanalyse</span><span>Eigentumsfrage</span><span>Kündigungsfolgen</span><span>Kameras</span><span>Polizei &amp; Protest</span><span>Konsul Prime</span><span>Russische Post</span><span>Übersetzungsbüro</span><span>Goethe-Institut</span><span>Europa-Dossier</span><span>Personalwechsel</span></div>
+<div class="archive"><a href="methoden.html">Behörden- &amp; Protestgeschichte</a><a href="frankreich-geheimdienste.html">Frankreich / Geheimdienste</a><a href="fakten.html">Fakten &amp; Quellen</a><a href="vertragsanalyse.html">Vertragsanalyse</a><a href="vertraege.html">Eigentumsfrage</a><a href="kuendigungsfolgen.html">Kündigungsfolgen</a><a href="kameras.html">Kameras</a><a href="polizei.html">Polizei &amp; Protest</a><a href="konsulprime.html">Konsul Prime</a><a href="postannahmestelle.html">Russische Post</a><a href="uebersetzungsbuero.html">Übersetzungsbüro</a><a href="goethe.html">Goethe-Institut</a><a href="eu-laender.html">Europa-Dossier</a><a href="direktorenwechsel.html">Personalwechsel</a></div>
 </section>
 </main>
 <script async="" charset="utf-8" src="https://platform.x.com/widgets.js"></script>
