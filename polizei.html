@@ -2,260 +2,70 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Polizei &amp; Protest – Pressemappe Russisches Haus Berlin</title>
-<meta name="description" content="Dokumentierte Schieflage bei Polizeieinsätzen – Rechtswidrigkeit einer Festnahme von der Polizei formell eingeräumt.">
-<meta property="og:title" content="Polizei &amp; Protest – Russisches Haus Berlin">
-<meta property="og:description" content="Mindestens 33 Polizeieinsätze 2024, rechtswidrige Festnahme, BSW-Vorfall – dokumentiert.">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Polizei und Protest — Recherche-Dossier Russisches Haus Berlin</title>
+<meta name="description" content="Zweieinhalb Jahre Protest vor dem Russischen Haus, mehr als hundert Anzeigen, eine eingestandene rechtswidrige Festnahme – und am 4. September 2026 ein Trümmerbruch. Die Vorgeschichte der Eskalation.">
+<meta property="og:title" content="Polizei und Protest vor dem Russischen Haus">
+<meta property="og:description" content="Vorgeschichte der Eskalation vom 4. September 2026: Anzeigen, Einsätze, eine rechtswidrige Festnahme und die Frage nach dem Muster.">
 <style>
-  /* Keine externen Fonts: Google Fonts entfernt (DSGVO). Systemschriften. */
-  :root {
-    --paper: #f4f1ea;
-    --ink: #1a1814;
-    --ink-muted: #5a534a;
-    --rule: #c9c1b1;
-    --rh-red: #b8252f;
-    --rh-red-dark: #8e1a23;
-    --accent: #c8a13a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; padding: 40px 20px; }
-  .page { max-width: 920px; margin: 0 auto; }
-
-  .lang-switch { text-align: right; margin-bottom: 14px; }
-  .lang-switch a { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--rh-red-dark); text-decoration: none; border: 1px solid var(--rh-red-dark); padding: 5px 12px; border-radius: 4px; }
-  .lang-switch a:hover { background: var(--rh-red-dark); color: #fff; }
-
-  .back-link { display: inline-block; margin-bottom: 28px; font-size: 14px; color: var(--ink-muted); text-decoration: none; font-weight: 500; }
-  .back-link:hover { color: var(--rh-red); }
-
-  .dossier-header { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--rule); padding: 12px 0 10px; display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 36px; gap: 16px; flex-wrap: wrap; }
-  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
-
-  .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rh-red); margin-bottom: 18px; }
-  h1 { font-family: Georgia, serif; font-weight: 800; font-size: clamp(24px, 4.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 22px; max-width: 820px; }
-  header p { font-family: Georgia, serif; font-size: 19px; line-height: 1.55; max-width: 720px; margin-bottom: 36px; }
-
-  .zahlen { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 36px 0; }
-  .zahl-kachel { background: white; border: 1px solid var(--rule); border-top: 3px solid var(--rh-red); border-radius: 4px; padding: 20px; text-align: center; }
-  .zahl-kachel .zahl { font-family: Georgia, serif; font-size: 42px; font-weight: 800; color: var(--rh-red-dark); line-height: 1; margin-bottom: 8px; }
-  .zahl-kachel .label { font-size: 13px; color: var(--ink-muted); line-height: 1.45; }
-
-  .accordion-group { margin-top: 24px; }
-  details { background: white; border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 10px; transition: border-color 0.15s, box-shadow 0.15s; }
-  details:hover { border-color: var(--rh-red); }
-  details[open] { border-color: var(--rh-red); box-shadow: 0 2px 8px rgba(184,37,47,0.08); }
-  summary { cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; list-style: none; font-family: Georgia, serif; font-size: 18px; font-weight: 600; line-height: 1.35; padding: 18px 22px; user-select: none; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; font-family: inherit; font-weight: 400; font-size: 22px; color: white; background: var(--rh-red); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1; transition: background 0.15s; }
-  details:hover summary::after { background: var(--rh-red-dark); }
-  details[open] summary::after { content: "\2212"; }
-  details > .body { padding: 4px 22px 22px; max-width: 820px; font-size: 16px; line-height: 1.65; border-top: 1px solid var(--rule); padding-top: 18px; }
-  details > .body ul { list-style: none; padding: 0; }
-  details > .body ul li { padding: 10px 0 10px 28px; position: relative; font-size: 15px; border-bottom: 1px solid var(--rule); line-height: 1.55; }
-  details > .body ul li:last-child { border-bottom: none; }
-  details > .body ul li::before { content: "\2192"; position: absolute; left: 0; color: var(--rh-red); font-weight: 700; }
-  details > .body ul li strong { color: var(--rh-red-dark); font-weight: 700; }
-
-  .quelle { display: block; font-size: 11px; color: var(--ink-muted); margin-top: 4px; font-style: italic; }
-  .quelle a { color: var(--ink-muted); text-decoration: underline; }
-  .quelle a:hover { color: var(--rh-red); }
-
-  .zitat { background: var(--paper); border-left: 4px solid var(--accent); padding: 16px 20px; margin: 20px 0; font-family: Georgia, serif; font-style: italic; font-size: 16px; border-radius: 0 4px 4px 0; }
-  .zitat .attribution { font-family: inherit; font-style: normal; font-size: 12px; margin-top: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); }
-  .zitat .attribution a { color: var(--ink-muted); text-decoration: underline; }
-  .zitat .attribution a:hover { color: var(--rh-red); }
-
-  .hinweis { margin: 28px 0; padding: 14px 18px; background: #fff; border: 1px solid var(--rule); border-radius: 4px; font-size: 13px; color: var(--ink-muted); line-height: 1.55; }
-
-  .urteil { margin: 48px 0 32px; padding: 28px 32px; background: #fbf3f4; border: 1px solid var(--rule); border-left: 4px solid var(--rh-red); border-radius: 4px; }
-  .urteil .datum { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rh-red); margin-bottom: 8px; }
-  .urteil h3 { font-family: Georgia, serif; font-weight: 700; font-size: 20px; color: var(--rh-red-dark); margin-bottom: 10px; }
-  .urteil p { font-size: 15px; line-height: 1.6; }
-
-  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  footer a { color: var(--ink-muted); text-decoration: none; }
-  footer a:hover { color: var(--rh-red); }
-
-  @media (max-width: 768px) {
-    .zahlen { grid-template-columns: 1fr; }
-    summary { font-size: 16px; padding: 16px 18px; }
-    details > .body { padding: 4px 18px 18px; padding-top: 16px; }
-    .urteil { padding: 22px 20px; }
-  }
+:root{--paper:#f4f1ea;--ink:#1b1916;--muted:#655e54;--rule:#cfc6b5;--red:#9d2f36;--red2:#7f2027;--white:#fff;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;--serif:Georgia,Cambria,"Times New Roman",Times,serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.62}.wrap{max-width:820px;margin:0 auto;padding:34px 22px 18px}.back{font-family:var(--sans);font-size:13px;color:var(--muted);text-decoration:none}.mast{margin:26px 0 34px;padding:12px 0 11px;border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;font-family:var(--sans);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.mast strong{color:var(--red)}.kicker{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:14px}h1{font-size:clamp(34px,6vw,58px);line-height:1.02;letter-spacing:-.025em;margin:0 0 20px;font-weight:700}.dek{font-size:21px;line-height:1.48;margin:0 0 30px;color:#2c2925}.update{margin:28px 0 38px;padding:20px 22px;border-top:1px solid var(--red);border-bottom:1px solid var(--red);background:rgba(255,255,255,.36)}.update .label{font-family:var(--sans);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:8px}.update p{margin:0;font-size:16px}.update a{color:var(--red2)}h2{font-size:29px;line-height:1.16;margin:48px 0 14px}p{font-size:17px;margin:0 0 17px}a{color:var(--red2)}.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 30px;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:18px 0}.numbers div{padding-right:10px}.numbers b{display:block;font-size:40px;line-height:1;letter-spacing:-.03em;color:var(--red)}.numbers span{display:block;font-family:var(--sans);font-size:13px;line-height:1.4;color:var(--muted);margin-top:8px}.quote{margin:28px 0;padding:18px 0 18px 22px;border-left:3px solid var(--red);font-size:19px;line-height:1.48}.quote small{display:block;margin-top:10px;font-family:var(--sans);font-size:11px;color:var(--muted)}.fact{margin:28px 0;padding:18px 20px;background:var(--white);border:1px solid var(--rule)}.fact b{font-family:var(--sans);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:7px}.fact p{font-size:15px;margin:0}.src{font-family:var(--sans);font-size:11px;color:var(--muted)}.timeline{margin:24px 0 10px;padding:0;list-style:none}.timeline li{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--rule)}.timeline li:last-child{border-bottom:1px solid var(--rule)}.timeline .d{font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);font-weight:700;padding-top:4px}.timeline p{font-size:16px;margin:0 0 6px}.sources{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:12px;color:var(--muted)}.sources h2{font-family:var(--sans);font-size:11px;letter-spacing:.15em;text-transform:uppercase;margin:0 0 12px}.sources li{margin-bottom:7px}.sources a{color:var(--red2)}footer{margin-top:44px;background:var(--ink);color:#fff;padding:18px 22px;font-family:var(--sans);font-size:11px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}footer a{color:#c9def7;text-decoration:none;margin-left:14px}@media(max-width:700px){.wrap{padding:26px 16px 12px}.mast{display:block}.mast span{display:block;margin:2px 0}h2{font-size:25px}.dek{font-size:19px}.numbers{grid-template-columns:1fr;gap:14px}.timeline li{grid-template-columns:1fr;gap:4px}}
 </style>
-<script data-goatcounter="https://pressemappe-russisches-haus.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://pressemappe-russisches-haus.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-<div class="page">
+<div class="wrap">
+<a class="back" href="index.html">← Zurück zum Dossier</a>
+<div class="mast"><span><strong>Recherche-Dossier</strong> · Russisches Haus Berlin</span><span>Polizei und Protest</span><span>Aktualisiert 14. September 2026</span></div>
+<div class="kicker">Behördenverhalten</div>
+<h1>Zweieinhalb Jahre Anzeigen, Platzverweise, Einsätze. Dann ein Trümmerbruch.</h1>
+<p class="dek">Seit 2024 steht Henry Lindemeier fast täglich mit einer ukrainischen Fahne vor dem Russischen Haus. Die Polizei kam, wenn das Haus rief, und blieb aus, als er selbst bedroht wurde. Einmal hat sie eingeräumt, rechtswidrig gehandelt zu haben. Am 4. September 2026, dem Abend nach der angekündigten Kündigung, endete der Protest mit einer Trümmerfraktur.</p>
 
-  <div class="lang-switch"><a href="polizei_en.html">&#127468;&#127463; English version</a></div>
-  <a href="index.html" class="back-link">&larr; Zur&uuml;ck zur &Uuml;bersicht</a>
+<div class="update"><div class="label">Aktualisiert · 14. September 2026</div><p>Diese Seite entstand im Juni 2026 und dokumentierte die Einsätze bis Dezember 2025. Seither hat sich die Lage in zwei Schritten verändert: t-online zählte am 3. September 92 polizeiliche und staatsanwaltschaftliche Vorgänge gegen Gegner des Hauses, ohne eine einzige Verurteilung. Und am 4. September eskalierte ein Polizeieinsatz gegen Lindemeier und seine Freundin Anette Klassen; das LKA ermittelt wegen Körperverletzung im Amt. Die Eskalation hat ein eigenes Dossier: <a href="eskalation.html">Der 4. September 2026 – Video gegen Polizeimeldung</a>. Diese Seite erzählt, was davor war.</p></div>
 
-  <div class="dossier-header">
-    <span>Pressemappe &middot; Russisches Haus Berlin</span>
-    <span>Sicherheitsbeh&ouml;rden &amp; Versammlungsfreiheit</span>
-    <span>Stand 06/2026</span>
-  </div>
+<h2>Der 4. September in drei Sätzen</h2>
+<p>Am Abend des 4. September, nach fünf Kundgebungen für und gegen das Russische Haus, prostete Henry Lindemeier zum Abschied in Richtung des Gebäudes und wollte gehen. Ein Beamter hielt ihn am Arm fest, Anette Klassen wollte ihn wegführen und lag kurz darauf am Boden; danach wurde Lindemeier mehrere Meter weit bis an die Hauswand gezerrt und dagegen geschleudert. Die Polizei Berlin beschreibt in ihrer Meldung vom 5. September die umgekehrte Reihenfolge: erst sei er gestürzt, dann habe sie einen Beamten geschlagen.</p>
+<div class="fact"><b>Stand der Ermittlungen</b><p>Anette Klassen erlitt eine Trümmerfraktur des linken Handgelenks, die am 8. September operiert wurde; sie ist mindestens zwölf Wochen arbeitsunfähig. Lindemeier trug Schürfwunden und Knieschmerzen davon. Das Landeskriminalamt ermittelt wegen Körperverletzung im Amt, die Polizei gegen beide wegen Widerstands beziehungsweise tätlichen Angriffs. Am 13. September erstattete Rechtsanwalt Patrick Heinemann Strafanzeige und beantragte, die Ermittlungen außerhalb der Berliner Polizei zu führen. Videos, Meldung im Wortlaut, Chronologie und Verletzungen: <a href="eskalation.html">Eskalationsdossier</a>.</p></div>
+<p>Patrick Heinemann nannte das Vorgehen der Beamten im Video gegenüber dem Tagesspiegel „erkennbar unverhältnismäßig“ und ordnete es ein: „Die Berliner Polizei hat in dieser Hinsicht einen Ruf weg.“ Ob das stimmt, lässt sich an dieser Seite prüfen. Sie ist die Vorgeschichte.</p>
 
-  <header>
-    <div class="kicker">Beh&ouml;rdenverhalten</div>
-    <h1>Polizei &amp; Protest</h1>
-    <p>
-      Eins&auml;tze gegen den friedlichen Protest erfolgen prompt und mit erheblichem Ressourceneinsatz, w&auml;hrend Schutz f&uuml;r den Demonstranten wiederholt ausblieb. Die Schieflage ist dokumentiert, und sie wird inzwischen juristisch aufgearbeitet.
-    </p>
-  </header>
-
-  <div class="zahlen">
-    <div class="zahl-kachel">
-      <div class="zahl">33+</div>
-      <div class="label">Mal kam die Polizei 2024 laut t-online ans Russische Haus, weil Lindemeier dort mit seiner Box stand. Mindestzahl, die Polizei nennt keine.</div>
-    </div>
-    <div class="zahl-kachel">
-      <div class="zahl">100+</div>
-      <div class="label">Anzeigen aus dem Russischen Haus gegen den Demonstranten Henry Lindemeier</div>
-    </div>
-    <div class="zahl-kachel">
-      <div class="zahl">1</div>
-      <div class="label">Festnahme, deren Rechtswidrigkeit die Berliner Polizei einger&auml;umt hat</div>
-    </div>
-  </div>
-
-  <div class="hinweis">
-    Zahlen und Abl&auml;ufe auf dieser Seite beruhen auf der Berichterstattung von t-online (Mai 2025) und S&uuml;ddeutscher Zeitung (Dezember 2025). Die Polizei Berlin &auml;u&szlig;ert sich zu Zahl und Umfang der Eins&auml;tze nicht und verweist auf Datenschutz und laufende Ermittlungen. Aussagen von Beteiligten sind als solche gekennzeichnet.
-  </div>
-
-  <div class="accordion-group">
-
-    <details open>
-      <summary>Die Schieflage, dokumentiert</summary>
-      <div class="body">
-        <ul>
-          <li>
-            Mindestens <strong>33 Polizeieins&auml;tze</strong> kamen 2024 am Russischen Haus zusammen, weil Lindemeier dort mit seiner Lautsprecherbox stand. Das ist die Zahl, die t-online recherchiert hat. Die Polizei Berlin selbst &auml;u&szlig;ert sich zur Zahl der Eins&auml;tze nicht, sie verweist auf Datenschutz und laufende Ermittlungen. Nach der Darstellung von t-online ruft das Russische Haus seinetwegen regelm&auml;&szlig;ig die Polizei.
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-          <li>
-            &Uuml;ber <strong>100 Anzeigen</strong> wurden aus dem Russischen Haus gegen Henry Lindemeier erstattet, dazu drei Strafbefehle wegen fortgesetzter Ruhest&ouml;rung und Beleidigung.
-            <span class="quelle"><a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></span>
-          </li>
-          <li>
-            Bei einer Anzeige wegen Volksverhetzung lie&szlig; das Landeskriminalamt den abgespielten Liedtext &uuml;bersetzen. Der Befund: <strong>Der Text war nicht volksverhetzend.</strong> Die Ermittlungen liefen dennoch erst einmal weiter.
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-          <li>
-            Bis Mai 2025 hatte sich laut Berichterstattung <strong>keiner der Vorw&uuml;rfe wegen Beleidigung</strong> best&auml;tigt, t-online schreibt von Anzeigen wegen Beleidigungen, die keine waren. Zur Ruhest&ouml;rung sagt Lindemeiers Anwalt Heinemann, die Diskussion fange immer bei null an, weil die Polizei keinen L&auml;rmrichtwert benenne und den Schall nicht messe.
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-        </ul>
-        <div class="zitat">
-          &bdquo;Bei einer gemeldeten Ruhest&ouml;rung kommen manchmal drei Streifenwagen ans Russische Haus. Als mein Mandant bedroht wurde, war niemand verf&uuml;gbar.&ldquo;
-          <div class="attribution">Rechtsanwalt Christian Wolf &middot; <a href="artikel_tonline_2025.html">t-online, Mai 2025</a></div>
-        </div>
-      </div>
-    </details>
-
-    <details>
-      <summary>Die rechtswidrige Festnahme, 18. Dezember 2024</summary>
-      <div class="body">
-        <ul>
-          <li>
-            Henry Lindemeier wurde vor dem Russischen Haus <strong>festgenommen und gefesselt</strong> und in eine Sammelzelle gebracht.
-          </li>
-          <li>
-            Es folgten vier Stunden Freiheitsentziehung und eine <strong>erkennungsdienstliche Behandlung</strong>.
-          </li>
-          <li>
-            Als Vorwurf wurden Beleidigungen und Ruhest&ouml;rungen der Vorwochen angef&uuml;hrt. <strong>Beides war nicht belegt.</strong>
-          </li>
-          <li>
-            Im Rahmen einer <strong>Fortsetzungsfeststellungsklage</strong> r&auml;umte die Berliner Polizei formell ein: <strong>Der Einsatz war rechtswidrig.</strong>
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-          <li>
-            Am Vortag hatte Lindemeier selbst die Polizei gerufen, nachdem ihm ein Besucher des Hauses gedroht hatte, er bekomme irgendwann ein Messer in den R&uuml;cken. Er wartete eine Dreiviertelstunde. <strong>Die Polizei kam nicht.</strong>
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-        </ul>
-        <div class="zitat">
-          &bdquo;Es ist seltsam, warum die Polizei fortlaufend Quatsch nachgeht.&ldquo;
-          <div class="attribution">Rechtsanwalt Patrick Heinemann &middot; <a href="artikel_tonline_2025.html">t-online, Mai 2025</a></div>
-        </div>
-      </div>
-    </details>
-
-    <details>
-      <summary>Der BSW-Vorfall, Mai 2025</summary>
-      <div class="body">
-        <ul>
-          <li>
-            Nach Lindemeiers Darstellung wollten kr&auml;ftige M&auml;nner in Begleitung der BSW-Vorsitzenden Amira Mohamed Ali ihn am Ehrenmal im Tiergarten <strong>k&ouml;rperlich abdr&auml;ngen</strong>.
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-          <li>
-            Als er laut nach der Polizei rief, forderten die Beamten <strong>ihn</strong> auf, den Ort zu verlassen. Anschlie&szlig;end durfte er in dem Bereich nicht mehr stehen.
-            <span class="quelle"><a href="artikel_tonline_2025.html">t-online, Mai 2025</a></span>
-          </li>
-        </ul>
-        <div class="zitat">
-          &bdquo;Die Gruppe hat den Auftritt des Herrn als eine St&ouml;rung des stillen Gedenkens empfunden.&ldquo;
-          <div class="attribution">Polizeisprecher gegen&uuml;ber t-online &middot; <a href="artikel_tonline_2025.html">t-online, Mai 2025</a></div>
-        </div>
-        <p style="font-size:14px; color:var(--ink-muted);">Die Polizei gleiche zwischen den Interessen aus, hei&szlig;t es dort weiter.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>9. Dezember 2025: Gegenveranstaltung verdr&auml;ngt den Protest</summary>
-      <div class="body">
-        <ul>
-          <li>
-            F&uuml;r diesen Tag meldeten die Betreiber des Russischen Hauses eine eigene Veranstaltung an, Titel: &bdquo;Lassen Sie sich nicht provozieren!&ldquo;
-            <span class="quelle"><a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></span>
-          </li>
-          <li>
-            Lindemeier erfuhr davon <strong>in der Nacht zuvor</strong> durch eine Mail der Berliner Polizei, die ihm mitteilte, seine Demo vor dem Haus d&uuml;rfe an diesem Tag nicht stattfinden.
-            <span class="quelle"><a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></span>
-          </li>
-          <li>
-            Etwa <strong>zwanzig Polizisten</strong> standen vor dem Eingang. Sie waren wegen Lindemeier da.
-            <span class="quelle"><a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></span>
-          </li>
-          <li>
-            Er baute sich trotzdem auf und lie&szlig; die Luftalarmsirene laufen. Die Polizei erteilte ihm einen <strong>Platzverweis</strong> und eskortierte ihn auf die andere Stra&szlig;enseite. Vor dem Haus fand sein Protest nicht statt.
-            <span class="quelle"><a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></span>
-          </li>
-          <li>
-            Ein Gespr&auml;ch zwischen Lindemeier und Unterst&uuml;tzern stufte die Polizei anschlie&szlig;end als <strong>unangemeldete Versammlung</strong> ein.
-            <span class="quelle"><a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></span>
-          </li>
-          <li>
-            Die SZ schreibt, Lindemeier frage sich manchmal, wessen Freiheit die Polizei hier eigentlich verteidige. <em>Das ist die Formulierung der Redaktion, kein Zitat, und steht deshalb nicht in Anf&uuml;hrungszeichen.</em>
-          </li>
-        </ul>
-        <div class="zitat">
-          &bdquo;Die Russen haben gewonnen.&ldquo;
-          <div class="attribution">Henry Lindemeier am Ende des Tages &middot; <a href="artikel_sz_2025.html">S&uuml;ddeutsche Zeitung, Dezember 2025</a></div>
-        </div>
-      </div>
-    </details>
-
-  </div>
-
-  <div class="urteil">
-    <div class="datum">Im Klageverfahren formell einger&auml;umt</div>
-    <h3>Die Festnahme vom 18. Dezember 2024 war rechtswidrig</h3>
-    <p>
-      Im Rahmen einer Fortsetzungsfeststellungsklage hat die Berliner Polizei eingestanden, dass Festnahme und Freiheitsentziehung ohne rechtliche Grundlage erfolgten. Das ist bislang das einzige beh&ouml;rdliche Eingest&auml;ndnis eines Fehlers in diesem Komplex. Ob die Abfolge der dokumentierten Vorf&auml;lle ein einzelnes Versagen zeigt oder ein Muster, ist eine Frage, die sie aufwirft, aber nicht beantwortet.
-    </p>
-  </div>
-
-  <footer>
-    <span>Pressemappe Russisches Haus Berlin</span>
-    <span><a href="index.html">Zur &Uuml;bersicht</a></span>
-  </footer>
-
+<h2>Die Schieflage in Zahlen</h2>
+<div class="numbers">
+<div><b>92</b><span>polizeiliche oder staatsanwaltschaftliche Vorgänge gegen Gegner des Hauses bis September 2026, keiner mit Verurteilung (t-online, 3. September 2026)</span></div>
+<div><b>33+</b><span>Polizeieinsätze am Russischen Haus allein 2024, weil Lindemeier dort mit seiner Lautsprecherbox stand; Mindestzahl, die Polizei nennt keine (t-online, Mai 2025)</span></div>
+<div><b>1</b><span>Festnahme, deren Rechtswidrigkeit die Polizei Berlin im Klageverfahren formell eingeräumt hat (t-online, Mai 2025)</span></div>
 </div>
+<p>Die Zahlen auf dieser Seite stammen aus der Berichterstattung von t-online (Mai 2025, September 2026) und der Süddeutschen Zeitung (Dezember 2025). Die Polizei Berlin äußert sich zu Zahl und Umfang der Einsätze nicht; sie verweist auf Datenschutz und laufende Ermittlungen. Aussagen der Beteiligten sind als solche gekennzeichnet.</p>
+<p>Über hundert Anzeigen wurden aus dem Russischen Haus gegen Lindemeier erstattet, dazu drei Strafbefehle wegen fortgesetzter Ruhestörung und Beleidigung. Bei einer Anzeige wegen Volksverhetzung ließ das Landeskriminalamt den abgespielten Liedtext übersetzen. Der Befund: nicht volksverhetzend. Die Ermittlungen liefen dennoch erst einmal weiter. Zur Ruhestörung sagt Lindemeiers Anwalt Heinemann, die Diskussion fange jedes Mal bei null an, weil die Polizei keinen Lärmrichtwert nenne und den Schall nicht messe.</p>
+<div class="quote">„Bei einer gemeldeten Ruhestörung kommen manchmal drei Streifenwagen ans Russische Haus. Als mein Mandant bedroht wurde, war niemand verfügbar.“<small>Rechtsanwalt Christian Wolf · t-online, Mai 2025</small></div>
+
+<h2>Die Vorfälle, chronologisch</h2>
+<ul class="timeline">
+<li><div class="d">17. Dez. 2024</div><div><p>Ein Besucher des Hauses droht Lindemeier, er bekomme irgendwann ein Messer in den Rücken. Lindemeier ruft die Polizei und wartet eine Dreiviertelstunde. Sie kommt nicht.</p><span class="src">t-online, Mai 2025</span></div></li>
+<li><div class="d">18. Dez. 2024</div><div><p>Am Tag darauf wird Lindemeier vor dem Russischen Haus festgenommen, gefesselt und in eine Sammelzelle gebracht: vier Stunden Freiheitsentziehung, erkennungsdienstliche Behandlung. Vorwurf: Beleidigungen und Ruhestörungen der Vorwochen, beides nicht belegt. Im Rahmen einer Fortsetzungsfeststellungsklage räumt die Polizei Berlin später formell ein, dass der Einsatz rechtswidrig war.</p><span class="src">t-online, Mai 2025</span></div></li>
+<li><div class="d">Mai 2025</div><div><p>Am Ehrenmal im Tiergarten wollen nach Lindemeiers Darstellung kräftige Männer in Begleitung der BSW-Vorsitzenden Amira Mohamed Ali ihn körperlich abdrängen. Als er laut nach der Polizei ruft, fordern die Beamten ihn auf, den Ort zu verlassen. Ein Polizeisprecher gegenüber t-online: „Die Gruppe hat den Auftritt des Herrn als eine Störung des stillen Gedenkens empfunden.“ Die Polizei gleiche zwischen den Interessen aus.</p><span class="src">t-online, Mai 2025</span></div></li>
+<li><div class="d">9. Dez. 2025</div><div><p>Die Betreiber des Russischen Hauses melden für diesen Tag eine eigene Veranstaltung an, Titel: „Lassen Sie sich nicht provozieren!“ Lindemeier erfährt in der Nacht zuvor per Mail der Polizei, dass seine Demonstration vor dem Haus nicht stattfinden darf. Etwa zwanzig Polizisten stehen vor dem Eingang, seinetwegen. Er baut sich trotzdem auf und lässt die Luftalarmsirene laufen; die Polizei erteilt einen Platzverweis und eskortiert ihn auf die andere Straßenseite. Ein Gespräch mit Unterstützern stuft sie anschließend als unangemeldete Versammlung ein.</p><span class="src">Süddeutsche Zeitung, Dezember 2025</span></div></li>
+<li><div class="d">2. Sept. 2026</div><div><p>Einen Tag nach Wadephuls Ankündigung, das Tätigkeitsabkommen zu kündigen, spricht Lindemeier mit dem Tagesspiegel: „Ich hatte Freudentränen in den Augen.“ Für ihn sei der Protest damit beendet: „Es waren zweieinhalb Jahre meiner Lebenszeit.“</p><span class="src">Tagesspiegel, 2. September 2026</span></div></li>
+<li><div class="d">3. Sept. 2026</div><div><p>t-online rekonstruiert 92 polizeiliche beziehungsweise staatsanwaltschaftliche Vorgänge gegen Gegner des Hauses. Bis dahin hatte keiner zu einer Verurteilung geführt.</p><span class="src">t-online, 3. September 2026</span></div></li>
+<li><div class="d">4. Sept. 2026</div><div><p>Fünf Kundgebungen vor dem Russischen Haus, darunter eine vom BSW angemeldete für den Erhalt des Hauses und eine Gegenkundgebung des ukrainischen Vereins Vitsche. Nach dem Ende der Versammlungen eskaliert der Polizeieinsatz gegen Lindemeier und Anette Klassen. <a href="eskalation.html">Zum Eskalationsdossier →</a></p><span class="src">Polizei Berlin, Meldung vom 5. September 2026 · Tagesspiegel, 5. September 2026 · Videomaterial</span></div></li>
+</ul>
+<div class="quote">„Die Russen haben gewonnen.“<small>Henry Lindemeier am Abend des 9. Dezember 2025 · Süddeutsche Zeitung</small></div>
+<p>Die SZ schreibt, Lindemeier frage sich manchmal, wessen Freiheit die Polizei hier eigentlich verteidige. Das ist die Formulierung der Redaktion, kein Zitat, und steht deshalb nicht in Anführungszeichen.</p>
+
+<h2>Einzelfall oder Muster?</h2>
+<p>Ein behördliches Eingeständnis gibt es in diesem Komplex bislang genau eines: Die Festnahme vom 18. Dezember 2024 war rechtswidrig, das hat die Polizei Berlin im Klageverfahren erklärt. Alles andere ist Gegenstand laufender Verfahren. Was sich aber ohne Verfahren feststellen lässt, ist die Richtung: Einsätze gegen den Protest erfolgten prompt und mit erheblichem Aufwand, Schutz für den Protestierenden blieb wiederholt aus. Dass die Abfolge am 4. September in einem Trümmerbruch endete, hat diese Frage nicht beantwortet. Sie hat sie nur lauter gestellt.</p>
+<p>Wer nach dem 4. September fragt, ob es sich um ein einzelnes Versagen handelt, findet auf dieser Seite die Vorgeschichte. Wer nach dem Muster fragt, findet die Zahlen. Die Antwort bleibt Sache der Ermittlungen, die Lindemeiers Anwalt ausdrücklich außerhalb der Berliner Polizei führen lassen will.</p>
+
+<div class="sources"><h2>Quellen</h2><ul>
+<li><a href="https://www.t-online.de/nachrichten/deutschland/gesellschaft/id_100709118/-tag-des-sieges-berliner-polizei-geht-protest-gegen-russland-zu-weit.html" target="_blank" rel="noopener noreferrer">t-online, Mai 2025: „Berliner Polizei geht Protest gegen Russland zu weit“</a> · <a href="artikel_tonline_2025.html">Zusammenfassung im Dossier</a></li>
+<li>Süddeutsche Zeitung, Dezember 2025 · <a href="artikel_sz_2025.html">Zusammenfassung im Dossier</a></li>
+<li><a href="https://www.tagesspiegel.de/berlin/bezirke/mitte/ich-hatte-freudentranen-in-den-augen-dauerdemonstrant-reagiert-auf-angekundigtes-aus-fur-russisches-haus-in-berlin-16008050.html" target="_blank" rel="noopener noreferrer">Tagesspiegel, 2. September 2026: „Ich hatte Freudentränen in den Augen“</a></li>
+<li><a href="https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101382778/russisches-haus-gegner-um-henry-lindemeier-haben-aerger-mit-polizei.html" target="_blank" rel="noopener noreferrer">t-online, 3. September 2026: 92 Vorgänge gegen Gegner des Hauses</a></li>
+<li><a href="https://www.tagesspiegel.de/berlin/die-berliner-polizei-hat-einen-ruf-weg-schwere-gewaltvorwurfe-gegen-beamte-nach-demo-vor-russischem-haus-16021573.html" target="_blank" rel="noopener noreferrer">Tagesspiegel, 5. September 2026: „Die Berliner Polizei hat einen Ruf weg“</a></li>
+<li><a href="https://www.t-online.de/nachrichten/panorama/kriminalitaet/id_101421830/russisches-haus-polizei-bei-einsatz-gegen-henry-lindemeier-zu-brutal-.html" target="_blank" rel="noopener noreferrer">t-online, 6. September 2026: „Polizei bei Einsatz gegen Henry Lindemeier zu brutal?“</a></li>
+<li>Polizei Berlin, Pressemitteilung Nr. 1131 vom 5. September 2026, im Wortlaut im <a href="eskalation.html">Eskalationsdossier</a></li>
+<li>Strafanzeige Rechtsanwalt Patrick Heinemann vom 13. September 2026 (liegt dem Dossier vor)</li>
+</ul><p>Stand: 14. September 2026.</p></div>
+</div>
+<footer><span>Antwortseiten · unabhängige Dokumentation</span><div><a href="index.html">Dossier</a><a href="eskalation.html">Eskalation</a><a href="impressum.html">Impressum</a></div></footer>
 </body>
 </html>
