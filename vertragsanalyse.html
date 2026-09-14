@@ -2,48 +2,455 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
-<title>Zwei Verträge, neue Lage — Recherche-Dossier Russisches Haus Berlin</title>
-<meta name="description" content="Die Bundesregierung hat das Tätigkeitsabkommen von 2011 gekündigt. Die Vertragsanalyse trennt Tätigkeits- und Unterbringungsabkommen und ordnet die Folgen ein.">
-<meta property="og:title" content="Zwei Verträge, neue Lage">
-<meta property="og:description" content="Was die Kündigung des Tätigkeitsabkommens 2011 verändert – und was das 99-jährige Unterbringungsabkommen von 2013 davon trennt.">
+<title>Zwei Verträge, eine Auskunft — Pressemappe Russisches Haus Berlin</title>
+<meta name="description" content="Das Auswärtige Amt beruft sich auf eine komplizierte Rechtslage. Die Verträge selbst sind klar: Tätigkeitsabkommen 2011 und Unterbringungsabkommen 2013 sind zwei getrennte Instrumente mit unterschiedlichen Kündigungsfristen.">
+<meta property="og:title" content="Zwei Verträge, eine Auskunft">
+<meta property="og:description" content="Titel, Datum und Kündigungsregel zweier getrennter Abkommen — in einer einzigen Auskunft zusammengefasst.">
+
 <style>
-:root{--paper:#f4f1ea;--ink:#1b1916;--muted:#655e54;--rule:#cfc6b5;--red:#9d2f36;--red2:#7f2027;--white:#fff;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;--serif:Georgia,Cambria,"Times New Roman",Times,serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.62}.wrap{max-width:820px;margin:0 auto;padding:34px 22px 18px}.back{font-family:var(--sans);font-size:13px;color:var(--muted);text-decoration:none}.mast{margin:26px 0 34px;padding:12px 0 11px;border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;font-family:var(--sans);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.mast strong{color:var(--red)}.kicker{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:14px}h1{font-size:clamp(34px,6vw,58px);line-height:1.02;letter-spacing:-.025em;margin:0 0 20px;font-weight:700}.dek{font-size:21px;line-height:1.48;margin:0 0 30px;color:#2c2925}.update{margin:28px 0 38px;padding:20px 22px;border-top:1px solid var(--red);border-bottom:1px solid var(--red);background:rgba(255,255,255,.36)}.update .label{font-family:var(--sans);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:8px}.update p{margin:0;font-size:16px}h2{font-size:29px;line-height:1.16;margin:48px 0 14px}p{font-size:17px;margin:0 0 17px}.contracts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 34px}.contract{border-top:2px solid var(--ink);padding-top:14px}.contract.red{border-color:var(--red)}.contract .date{font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:700}.contract h3{font-size:19px;line-height:1.25;margin:7px 0 10px}.contract dl{margin:0}.contract dt{font-family:var(--sans);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:10px}.contract dd{margin:2px 0 0;font-size:15px}.quote{margin:28px 0;padding:18px 0 18px 22px;border-left:3px solid var(--red);font-size:19px;line-height:1.48}.quote small{display:block;margin-top:10px;font-family:var(--sans);font-size:11px;color:var(--muted)}.fact{margin:28px 0;padding:18px 20px;background:var(--white);border:1px solid var(--rule)}.fact b{font-family:var(--sans);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:7px}.fact p{font-size:15px;margin:0}.sources{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:12px;color:var(--muted)}.sources h2{font-family:var(--sans);font-size:11px;letter-spacing:.15em;text-transform:uppercase;margin:0 0 12px}.sources li{margin-bottom:7px}.sources a{color:var(--red2)}footer{margin-top:44px;background:var(--ink);color:#fff;padding:18px 22px;font-family:var(--sans);font-size:11px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}footer a{color:#c9def7;text-decoration:none}@media(max-width:700px){.wrap{padding:26px 16px 12px}.contracts{grid-template-columns:1fr}.mast{display:block}.mast span{display:block;margin:2px 0}h2{font-size:25px}.dek{font-size:19px}}
+  :root {
+    --paper: #f4f1ea;
+    --ink: #1a1814;
+    --ink-muted: #5a534a;
+    --rule: #c9c1b1;
+    --rh-red: #b8252f;
+    --rh-red-dark: #8e1a23;
+    --footer-link: #7eb8f7;
+
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Arial, Helvetica, sans-serif;
+    --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--rh-red); }
+
+  .dossier-header {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 36px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .dossier-header span:nth-child(2) { color: var(--rh-red); font-weight: 700; }
+
+  .kicker {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rh-red);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 800;
+    font-size: clamp(28px, 4.2vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 22px;
+  }
+  h1 em { font-style: normal; color: var(--rh-red-dark); }
+
+  .standfirst {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    line-height: 1.55;
+    margin-bottom: 36px;
+    font-style: italic;
+  }
+
+  h2 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    margin: 44px 0 16px 0;
+  }
+
+  p {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  p strong { color: var(--rh-red-dark); font-weight: 700; }
+
+  .pull {
+    margin: 32px 0;
+    padding: 18px 0 18px 22px;
+    border-left: 4px solid var(--rh-red);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .vergleich {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .vertrag {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 20px 22px;
+  }
+  .vertrag.kuendbar { border-left: 4px solid var(--rh-red); }
+  .vertrag.lang { border-left: 4px solid var(--ink-muted); }
+  .vertrag .jahr {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--rh-red);
+    margin-bottom: 6px;
+  }
+  .vertrag.lang .jahr { color: var(--ink-muted); }
+  .vertrag .titel {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .vertrag dl { font-size: 14px; line-height: 1.5; }
+  .vertrag dt {
+    font-weight: 700;
+    color: var(--ink-muted);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .vertrag dd { font-family: var(--font-serif); font-size: 15px; }
+
+  .box {
+    margin: 32px 0;
+    padding: 20px 24px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--ink);
+    border-radius: 4px;
+  }
+  .box .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rh-red);
+    margin-bottom: 10px;
+  }
+  .box p { font-size: 15px; line-height: 1.55; margin-bottom: 10px; }
+  .box p:last-child { margin-bottom: 0; }
+  .box a {
+    color: var(--rh-red-dark);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--rh-red-dark);
+  }
+
+  .zitat {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.55;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+  .zitat .quelle {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 10px;
+    display: block;
+  }
+
+  .quellen {
+    font-size: 14px;
+    color: var(--ink-muted);
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  .quellen h2 {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+  }
+  .quellen ul { padding-left: 18px; margin: 0 0 16px; }
+  .quellen li { margin-bottom: 8px; line-height: 1.5; }
+  .quellen a { color: var(--rh-red-dark); }
+  .stand { font-size: 13px; margin-top: 16px; }
+
+  footer {
+    background: var(--ink);
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 40px;
+  }
+  footer span { font-size: 12px; opacity: 0.5; }
+  footer div { display: flex; gap: 20px; flex-wrap: wrap; }
+  footer a { font-size: 12px; color: var(--footer-link); text-decoration: none; }
+
+  @media (max-width: 680px) {
+    .page { padding: 28px 16px 16px; }
+    .pull { font-size: 17px; padding-left: 18px; }
+    .vergleich { grid-template-columns: 1fr; }
+  }
 </style>
-<script data-goatcounter="https://pressemappe-russisches-haus.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://pressemappe-russisches-haus.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<div class="wrap">
-<a class="back" href="index.html">← Zurück zum Dossier</a>
-<div class="mast"><span><strong>Recherche-Dossier</strong> · Russisches Haus Berlin</span><span>Vertragsanalyse</span><span>Aktualisiert 14. September 2026</span></div>
-<div class="kicker">Rechtslage</div>
-<h1>Zwei Verträge. Eine Kündigung. Und eine Frage, die bleibt.</h1>
-<p class="dek">Am 1. September hat die Bundesregierung die Beendigung des Tätigkeitsabkommens angekündigt; am 2. September bestätigte das Auswärtige Amt, die Kündigung sei ausgesprochen. Damit ist die alte Frage „Wird Deutschland kündigen?“ erledigt. Entscheidend ist jetzt, was genau gekündigt wurde – und was nicht.</p>
-<div class="update"><div class="label">Aktualisiert · 14. September 2026</div><p>Diese Seite entstand vor der Regierungsentscheidung. Die Analyse ist auf den neuen Stand umgestellt: Das Tätigkeitsabkommen von 2011 ist gekündigt. Das Unterbringungsabkommen von 2013 ist davon rechtlich zu trennen und läuft nach seinem eigenen Regime weiter.</p></div>
-<p>Noch am 10. August hatte das Auswärtige Amt gegenüber dpa erklärt, eine Schließung des Russischen Hauses sei nicht absehbar. Drei Wochen später änderte die Bundesregierung ihren Kurs. Gerade deshalb lohnt der Blick in die Verträge: Die politische Lage hat sich gedreht, die vertragliche Architektur nicht.</p>
-<h2>Die beiden Verträge</h2>
-<div class="contracts">
-<section class="contract red"><div class="date">4. Februar 2011</div><h3>Tätigkeit von Kultur- und Informationszentren</h3><dl><dt>In Kraft</dt><dd>7. Juni 2012</dd><dt>Regelt</dt><dd>Tätigkeit, Programme, Einnahmen, Vermietung, Personal- und Statusfragen.</dd><dt>Laufzeit</dt><dd>Fünf Jahre, danach automatische Verlängerung um weitere fünf Jahre.</dd><dt>Kündigung</dt><dd>Sechs Monate vor Ende der laufenden Periode auf diplomatischem Wege.</dd><dt>Neuer Stand</dt><dd><strong>Von Deutschland gekündigt.</strong></dd></dl></section>
-<section class="contract"><div class="date">15. Mai 2013</div><h3>Unterbringung des Russischen Hauses und des Goethe-Instituts</h3><dl><dt>In Kraft</dt><dd>5. Juni 2013</dd><dt>Regelt</dt><dd>Liegenschaften, Nutzungs- und Eigentumsfragen, Steuerfragen und Vollstreckungsimmunität.</dd><dt>Laufzeit</dt><dd>99 Jahre mit eigener Kündigungsregel.</dd><dt>Neuer Stand</dt><dd><strong>Nicht automatisch durch die Kündigung von 2011 beendet.</strong></dd></dl></section>
+<div class="page">
+
+  <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
+
+  <div class="dossier-header">
+    <span>Pressemappe · Russisches Haus Berlin</span>
+    <span>Vertragsanalyse</span>
+    <span>Stand 08/2026</span>
+  </div>
+
+  <div class="kicker">Rechtslage</div>
+
+  <h1>Zwei Verträge, <em>eine Auskunft</em></h1>
+
+  <p class="standfirst">
+    Das Auswärtige Amt beruft sich beim Russischen Haus auf eine komplizierte Rechtslage. Die Verträge selbst sind an diesem Punkt erstaunlich klar — und sie grenzen sich gegenseitig ausdrücklich voneinander ab.
+  </p>
+
+  <p>
+    Am 10. August 2026 erklärte ein Sprecher des Auswärtigen Amts gegenüber der Deutschen Presse-Agentur, eine Schließung des Russischen Hauses sei nicht absehbar. Zwischen Deutschland und Russland bestünden „die beiden bilateralen Abkommen zu Liegenschaftsangelegenheiten“, die zu beachten seien und nicht ohne Weiteres aufgehoben werden könnten. Diese beträfen auch das Goethe-Institut in Moskau.
+  </p>
+
+  <p>
+    Wer daraufhin im Bundesgesetzblatt nachschlägt, findet zwei Abkommen — aber nur eines davon regelt Liegenschaften.
+  </p>
+
+  <h2>Die beiden Verträge im Wortlaut</h2>
+
+  <div class="vergleich">
+    <div class="vertrag kuendbar">
+      <div class="jahr">4. Februar 2011</div>
+      <div class="titel">Abkommen über die Tätigkeit von Kultur- und Informationszentren</div>
+      <dl>
+        <dt>Unterzeichnet</dt>
+        <dd>München, 4. Februar 2011</dd>
+        <dt>In Kraft</dt>
+        <dd>7. Juni 2012</dd>
+        <dt>Fundstelle</dt>
+        <dd>BGBl. 2013 II Nr. 28, S. 1355</dd>
+        <dt>Regelt</dt>
+        <dd>Tätigkeit des Russischen Hauses in Berlin und der Goethe-Institute in Moskau, Sankt Petersburg und Nowosibirsk. Programm, Einnahmen, Personal, Status der Mitarbeitenden, Vermietung, Zollbefreiungen.</dd>
+        <dt>Laufzeit</dt>
+        <dd>Fünf Jahre, automatische Verlängerung um jeweils fünf Jahre (Artikel 12)</dd>
+        <dt>Kündigung</dt>
+        <dd>Schriftliche Mitteilung auf diplomatischem Wege, spätestens sechs Monate vor Ablauf der laufenden Periode</dd>
+      </dl>
+    </div>
+
+    <div class="vertrag lang">
+      <div class="jahr">15. Mai 2013</div>
+      <div class="titel">Abkommen über die Bedingungen der Unterbringung des Russischen Hauses der Wissenschaft und Kultur in Berlin und des Goethe-Instituts in Moskau</div>
+      <dl>
+        <dt>Unterzeichnet</dt>
+        <dd>Berlin, 15. Mai 2013</dd>
+        <dt>In Kraft</dt>
+        <dd>5. Juni 2013</dd>
+        <dt>Fundstelle</dt>
+        <dd>BGBl. 2013 II Nr. 31, S. 1447</dd>
+        <dt>Regelt</dt>
+        <dd>Grundstück Friedrichstraße 176–179, Gebäudekomplex mit 29.000 m², Grundstücke in Moskau, Eigentums- und Nutzungsrechte, Steuerfragen, Vollstreckungsimmunität.</dd>
+        <dt>Laufzeit</dt>
+        <dd>99 Jahre, automatische Verlängerung um jeweils weitere 99 Jahre (Artikel 5)</dd>
+        <dt>Kündigung</dt>
+        <dd>Schriftliche Mitteilung, spätestens zwölf Monate vor Ablauf der Geltungsdauer</dd>
+      </dl>
+    </div>
+  </div>
+
+  <h2>Die Verträge trennen sich gegenseitig ab</h2>
+
+  <p>
+    Dass es sich um zwei eigenständige Instrumente handelt, steht nicht in einer Auslegung, sondern in den Verträgen selbst — und zwar wechselseitig.
+  </p>
+
+  <div class="zitat">
+    „Fragen der Überlassung der Grundstücke zur Nutzung durch die genannten Zentren und Fragen der Eigentums- und Besitzrechte an den auf den Grundstücken befindlichen Bauten werden durch ein gesondertes Abkommen geregelt.“
+    <span class="quelle">Abkommen vom 4. Februar 2011, Artikel 1 Absatz 2</span>
+  </div>
+
+  <p>
+    Das Tätigkeitsabkommen erklärt Liegenschaftsfragen also ausdrücklich zum Gegenstand eines anderen Vertrages. Umgekehrt verweist das Abkommen von 2013 in seiner Präambel ausdrücklich auf das Abkommen vom 4. Februar 2011 als eigenständiges Instrument und bestimmt in Artikel 4, dessen Bestimmungen blieben „unberührt“.
+  </p>
+
+  <p>
+    Damit steht die Trennung doppelt fest: Der eine Vertrag verweist für Grundstücke auf den anderen, der andere lässt den einen unberührt.
+  </p>
+
+  <h2>Warum die Unterscheidung entscheidend ist</h2>
+
+  <p>
+    Die 99 Jahre, auf die in der öffentlichen Debatte regelmäßig verwiesen wird, stehen in Artikel 5 des Unterbringungsabkommens von 2013. Sie betreffen Grundstück und Gebäude.
+  </p>
+
+  <p>
+    Das Tätigkeitsabkommen von 2011 — jener Vertrag, der das spezielle Tätigkeitsregime des Russischen Hauses einschließlich Veranstaltungen, Einnahmen, Vermietung und Personalfragen regelt — enthält eine völlig andere Laufzeitregelung. Artikel 12 sieht fünfjährige Perioden vor, die sich automatisch verlängern, sofern nicht eine Vertragspartei sechs Monate vor Ablauf schriftlich mitteilt, dass sie die Gültigkeit beenden will.
+  </p>
+
+  <p>
+    Das Abkommen trat am 7. Juni 2012 in Kraft. Die laufende Fünfjahresperiode endet damit mit Ablauf des <strong>6. Juni 2027</strong>. Die Mitteilung müsste spätestens am <strong>6. Dezember 2026</strong> vorliegen.
+  </p>
+
+  <div class="pull">
+    Eine ordentliche einseitige Beendigung des Tätigkeitsabkommens ist nicht nur rechtlich möglich. Deutschland befindet sich gegenwärtig in dem Zeitraum, in dem es sie erklären kann.
+  </div>
+
+  <h2>Vertragstreue schließt Beendigung nicht aus</h2>
+
+  <p>
+    Artikel 26 des Wiener Übereinkommens über das Recht der Verträge enthält den Grundsatz <em>pacta sunt servanda</em>: Ein in Kraft befindlicher Vertrag bindet die Vertragsparteien und ist nach Treu und Glauben zu erfüllen.
+  </p>
+
+  <p>
+    Artikel 54 desselben Übereinkommens bestimmt zugleich, dass die Beendigung eines Vertrages nach Maßgabe seiner eigenen Bestimmungen erfolgen kann. Die Beendigungsklausel ist Teil des Vertrages. Wer sie anwendet, bricht den Vertrag nicht.
+  </p>
+
+  <p>
+    <strong>Verträge sind einzuhalten, nicht zu verewigen.</strong> Vertragstreue bedeutet nicht Unkündbarkeit.
+  </p>
+
+  <h2>Vier Bestimmungen, die selten zitiert werden</h2>
+
+  <p>
+    <strong>Die Räumlichkeiten genießen keine diplomatische Unverletzlichkeit.</strong> Artikel 4 Absatz 3 des Tätigkeitsabkommens bestimmt ausdrücklich: „Die Räumlichkeiten der Zentren genießen keine diplomatische Immunität oder Unverletzlichkeit.“ Daraus folgt nicht, dass Behörden ohne Rechtsgrundlage Zutritt hätten — für ein Betreten gelten die allgemeinen Vorschriften des deutschen Rechts. Es widerlegt aber die Vorstellung, die Räumlichkeiten seien allein aufgrund des Kulturzentrumsstatus völkerrechtlich unantastbar.
+  </p>
+
+  <p>
+    <strong>Vollstreckungsimmunität nur zweckbezogen.</strong> Artikel 3 Absatz 1 des Unterbringungsabkommens gewährt Immunität von Vollstreckungsmaßnahmen ausdrücklich nur, „soweit sie hoheitlichen Zwecken dienen“. Die Einschränkung steht im Vertragstext selbst.
+  </p>
+
+  <p>
+    <strong>Vermietung nur nach deutschem Recht.</strong> Artikel 7 Absatz 4 des Tätigkeitsabkommens räumt den Zentren das Recht ein, einen Teil ihrer Räumlichkeiten zu vermieten — jedoch „in Übereinstimmung mit dem Recht des Empfangsstaates“. Dazu gehören die geltenden EU-Sanktionen.
+  </p>
+
+  <p>
+    <strong>Diplomatischer Status der Leitung.</strong> Artikel 8 Absatz 4 des Tätigkeitsabkommens ermöglicht es, Direktoren der Zentren sowie deren Stellvertretern nach Notifizierung einen Status nach dem Wiener Übereinkommen zu verleihen. Mit einer Beendigung des Abkommens entfiele diese spezielle vertragliche Grundlage; ob eine Person daneben aus anderem Rechtsgrund Status hätte, wäre gesondert zu prüfen.
+  </p>
+
+  <h2>Die Grundsteuer steht unter einer Bedingung</h2>
+
+  <p>
+    Für 2026 sind im Bundeshaushalt 70.000 Euro für die Grundsteuer des Russischen Hauses vorgesehen. Grundlage ist Artikel 4 Absatz 3 des Unterbringungsabkommens. Die dort geregelte deutsche Zahlungsübernahme gilt allerdings nicht unbedingt, sondern ausdrücklich „im Wege der Gewährleistung der Gegenseitigkeit“ und nur, „solange in der Russischen Föderation weder eine Grundsteuer noch eine dieser vergleichbare Steuer oder sonstige Abgabe“ auf das Moskauer Grundstück erhoben wird.
+  </p>
+
+  <p>
+    Ob diese Bedingung gegenwärtig erfüllt ist, ist eine überprüfbare Tatsachenfrage. Öffentlich beantwortet wurde sie bislang nicht.
+  </p>
+
+  <h2>Was eine Beendigung bedeuten würde — und was nicht</h2>
+
+  <p>
+    Eine Beendigung des Tätigkeitsabkommens würde das Unterbringungsabkommen von 2013 nach dem Wortlaut nicht automatisch beenden. Grundstück und Gebäude blieben zunächst Gegenstand des gesonderten Abkommens von 2013.
+  </p>
+
+  <p>
+    Wegfallen würde das spezielle vertragliche Regime von 2011 mit seinen konkreten Rechten und Privilegien: Regelungen zu Sprachkursen und Prüfungen, Veranstaltungen, Einnahmen, Cafeterien und Verkaufsständen, Vermietung, Zollvergünstigungen sowie zur Stellung des Personals.
+  </p>
+
+  <p>
+    Daneben besteht das Abkommen über kulturelle Zusammenarbeit von 1992 fort, das in Artikel 14 und seiner Anlage allgemeine Regelungen zu kulturellen Einrichtungen enthält. Welche Tätigkeiten allein auf dieser Grundlage und nach deutschem Recht noch zulässig wären, müsste gesondert geprüft werden. Auch dieses Abkommen ist kündbar; die Frist für die laufende Periode endet am 17. November 2027.
+  </p>
+
+  <div class="box">
+    <div class="label">Zur Verknüpfung mit dem Goethe-Institut</div>
+    <p>Die Verbindung beider Institutionen ist keine politische Erfindung. Artikel 1 Absatz 1 des Tätigkeitsabkommens nennt ausdrücklich gemeinsam das Russische Haus in Berlin und die Goethe-Institute in Moskau, Sankt Petersburg und Nowosibirsk. Eine Beendigung würde auch deren vertragliche Grundlage betreffen.</p>
+    <p>Die Frage lautet daher nicht, ob diese Kopplung besteht, sondern warum sie jede Kündigung politisch ausschließen soll — obwohl der Vertrag selbst eine Kündigungsklausel enthält und Russland den Betrieb der Goethe-Institute bereits 2023 einseitig auf einen Bruchteil reduziert hat.</p>
+  </div>
+
+  <h2>Offene Fragen an die Bundesregierung</h2>
+
+  <p>
+    Welche „beiden bilateralen Abkommen zu Liegenschaftsangelegenheiten“ meint das Auswärtige Amt in seiner öffentlichen Erklärung vom 10. August 2026 konkret — mit vollständigem Titel, Datum und Artikel? Welche rechtliche Wirkung schreibt es jedem dieser Abkommen für eine mögliche Schließung des Russischen Hauses zu? Erkennt die Bundesregierung an, dass Artikel 12 des Tätigkeitsabkommens eine Beendigung zum Ablauf der laufenden Fünfjahresperiode ermöglicht? Beabsichtigt sie, diese Möglichkeit bis zum 6. Dezember 2026 zu nutzen? Welche Rechtsfolgen hätte eine Beendigung nach ihrer Auffassung für Programm, Personal, Einnahmen und Vermietung? Und wird gegenwärtig in der Russischen Föderation eine Grundsteuer oder vergleichbare Abgabe auf das im Unterbringungsabkommen bezeichnete Moskauer Grundstück erhoben?
+  </p>
+
+  <div class="box">
+    <div class="label">Weiterführend in der Pressemappe</div>
+    <p>Die Verträge im Überblick: <a href="vertraege.html">Welche Abkommen regeln das Russische Haus</a></p>
+    <p>Die französische Einstufung: <a href="frankreich-geheimdienste.html">„Tarnung der russischen Geheimdienste“</a></p>
+    <p>Das Gegenseitigkeitsargument: <a href="goethe.html">Goethe-Institut — kein Druckmittel mehr</a></p>
+  </div>
+
+  <div class="quellen">
+    <h2>Quellen</h2>
+    <ul>
+      <li>Abkommen zwischen der Regierung der Bundesrepublik Deutschland und der Regierung der Russischen Föderation über die Tätigkeit von Kultur- und Informationszentren vom 4. Februar 2011, Bundesgesetzblatt 2013 Teil II Nr. 28, ausgegeben am 14. Oktober 2013, S. 1355 ff.</li>
+      <li>Abkommen zwischen der Regierung der Bundesrepublik Deutschland und der Regierung der Russischen Föderation über die Bedingungen der Unterbringung des Russischen Hauses der Wissenschaft und Kultur in Berlin und des Goethe-Instituts in Moskau vom 15. Mai 2013, Bundesgesetzblatt 2013 Teil II Nr. 31, ausgegeben am 25. Oktober 2013, S. 1447 ff.</li>
+      <li>Abkommen zwischen der Regierung der Bundesrepublik Deutschland und der Regierung der Russischen Föderation über kulturelle Zusammenarbeit vom 16. Dezember 1992, Bundesgesetzblatt 1993 Teil II Nr. 29, S. 1256 ff.</li>
+      <li>Wiener Übereinkommen über das Recht der Verträge vom 23. Mai 1969, Artikel 26 und Artikel 54</li>
+      <li>Deutsche Presse-Agentur: „Innenministerium: Russisches Haus ‚im Blick‘“, 10. August 2026</li>
+    </ul>
+
+    <p class="stand">Stand: 11. August 2026. Alle Vertragszitate nach der amtlichen Veröffentlichung im Bundesgesetzblatt. Die Fristberechnung folgt den in den Abkommen genannten Daten des Inkrafttretens.</p>
+  </div>
+
 </div>
-<h2>Die Verträge grenzen sich selbst voneinander ab</h2>
-<p>Das Tätigkeitsabkommen verweist für Grundstücke sowie Eigentums- und Besitzrechte an Bauten ausdrücklich auf ein gesondertes Abkommen. Umgekehrt lässt das Unterbringungsabkommen von 2013 das Tätigkeitsabkommen ausdrücklich unberührt.</p>
-<div class="quote">„Fragen der Überlassung der Grundstücke zur Nutzung durch die genannten Zentren und Fragen der Eigentums- und Besitzrechte an den auf den Grundstücken befindlichen Bauten werden durch ein gesondertes Abkommen geregelt.“<small>Tätigkeitsabkommen vom 4. Februar 2011, Artikel 1 Absatz 2</small></div>
-<p>Die Konsequenz ist zentral: Mit der Kündigung des Tätigkeitsabkommens endet nicht automatisch das gesamte rechtliche Geflecht rund um das Russische Haus. Die Regeln für die Unterbringung und die Liegenschaften folgen einem eigenen Vertrag.</p>
-<h2>Was sich durch die Kündigung verändert</h2>
-<p>Wegfallen soll das spezielle gegenseitige Tätigkeitsregime von 2011: also jene vertragliche Grundlage, die Sprachkurse, Veranstaltungen, Einnahmen, Vermietung, Personalfragen und bestimmte statusrechtliche Privilegien regelt. Für das Russische Haus wie für die Goethe-Institute war dieses Abkommen spiegelbildlich formuliert.</p>
-<p>Die laufende Fünfjahresperiode endet nach der bisherigen Fristberechnung am 7. Juni 2027. Die Kündigung musste spätestens sechs Monate zuvor erklärt werden. Genau diese Möglichkeit hat die Bundesregierung nun genutzt.</p>
-<div class="fact"><b>Was weiterhin getrennt zu prüfen ist</b><p>Welche Tätigkeiten bis zum Wirksamwerden der Kündigung noch zulässig sind, welche Folgen sich anschließend aus dem Kulturabkommen von 1992 und deutschem Recht ergeben und wie das Unterbringungsabkommen von 2013 praktisch behandelt wird, sind eigenständige Fragen.</p></div>
-<h2>Grundstück und Gebäude: nicht vermischen</h2>
-<p>Die Eigentumsfrage wurde in der Berichterstattung häufig verkürzt. Die <em>Frankfurter Allgemeine Zeitung</em> berichtete am 5. September, das Gebäude bleibe Eigentum der Russischen Föderation, während das Grundstück der Bundesrepublik gehöre und Russland für 99 Jahre zur Nutzung überlassen sei.</p>
-<p><strong>Diese konkrete Zuordnung wird hier vorerst als FAZ-Darstellung wiedergegeben.</strong> Der im Repository hinterlegte Vertragstext ist die maßgebliche Primärquelle; bis zur abschließenden Wortlautprüfung sollte aus der Presseformulierung keine weitergehende eigene Tatsachenbehauptung abgeleitet werden.</p>
-<p>Fest steht unabhängig davon: Das Unterbringungsabkommen regelt Grundstücks-, Nutzungs- und Eigentumsfragen gesondert. Deshalb ist die politische Aussage „Das Russische Haus wird geschlossen“ nicht gleichbedeutend mit „Deutschland erhält Gebäude und Grundstück“.</p>
-<h2>Was aus den alten offenen Fragen geworden ist</h2>
-<p>Die wichtigste frühere Frage ist beantwortet: Deutschland hat die Kündigung erklärt. Offen bleiben dagegen die Folgen des 2013er Unterbringungsabkommens, die Behandlung der Grundsteuerregelung und die praktische Abwicklung des Hauses bis zum Ende des Tätigkeitsregimes.</p>
-<p>Auch die Russland-Seite hat inzwischen gehandelt: Nach der deutschen Entscheidung kündigte Moskau die Schließung der Goethe-Institute an und entzog ihnen am 7. September die Tätigkeitserlaubnis. Damit ist aus der früher theoretischen Gegenseitigkeit eine reale politische Folge geworden.</p>
-<div class="sources"><h2>Quellen</h2><ul><li><a href="pdf/vertrag_taetigkeitsabkommen_2011.pdf" target="_blank">Tätigkeitsabkommen vom 4. Februar 2011</a></li><li><a href="pdf/vertrag_liegenschaftsabkommen_2013.pdf" target="_blank">Unterbringungsabkommen vom 15. Mai 2013</a></li><li><a href="https://www.lto.de/recht/hintergruende/h/russland-bundesregierung-deutschland-hybride-angriffe-leipzig-russisches-haus-konsulat-schliessen" target="_blank" rel="noopener noreferrer">LTO, 2. September 2026: juristische Einordnung der Kündigung</a></li><li>Frankfurter Allgemeine Zeitung, 5. September 2026: „Russisches Haus vor dem Aus: Ende eines Kulturabkommens“</li><li><a href="https://correctiv.org/russland/2026/08/11/russisches-haus-ein-ende-fuer-propaganda-und-spionage/" target="_blank" rel="noopener noreferrer">CORRECTIV, 11. August 2026</a></li></ul><p>Stand: 14. September 2026.</p></div>
-</div>
-<footer><span>Antwortseiten · unabhängige Dokumentation</span><div><a href="index.html">Dossier</a><a href="vertraege.html">Verträge</a><a href="impressum.html">Impressum</a></div></footer>
+
+<footer>
+  <span>Pressemappe Russisches Haus Berlin · Antwortseiten</span>
+  <div>
+    <a href="mailto:kontakt@antwortseiten.org">Kontakt &amp; Presseanfragen</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+
 </body>
 </html>
