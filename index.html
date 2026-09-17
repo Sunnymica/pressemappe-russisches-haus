@@ -261,11 +261,28 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
   box-shadow:0 3px 8px rgba(24,24,24,.2);
 }
 .intro-cta:focus-visible{outline:3px solid #005bbb;outline-offset:4px}
+.pk-recording-link{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-top:11px;
+  padding:11px 14px;
+  background:#f3eee7;
+  border-left:4px solid #b42032;
+  color:#181818;
+  text-decoration:none;
+  font:800 13px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  transition:background .16s ease,color .16s ease;
+}
+.pk-recording-link .play{color:#b42032;font-size:15px;line-height:1}
+.pk-recording-link:hover{background:#ebe1d5;color:#8f1726}
+.pk-recording-link:focus-visible{outline:3px solid #005bbb;outline-offset:3px}
 @media(max-width:520px){
   .intro-cta{padding:18px 16px 17px;column-gap:13px}
   .intro-cta .cta-kicker{font-size:9px;letter-spacing:.085em}
   .intro-cta .cta-main{font-size:21px}
   .intro-cta .cta-arrow{width:38px;height:38px;font-size:22px}
+  .pk-recording-link{padding:10px 12px;font-size:12px}
 }
 
 .escalation-feature{
@@ -822,7 +839,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 </head>
 <body>
 <div class="top">
-<div class="eyebrow">ANTWORTSEITEN · AKTUALISIERT 14. SEPTEMBER 2026</div>
+<div class="eyebrow">ANTWORTSEITEN · AKTUALISIERT 17. SEPTEMBER 2026</div>
 <div class="lang">DE  |  EN</div>
 </div>
 <header class="mast"><div class="mast-kicker">RECHERCHE-DOSSIER</div><h1>Russisches Haus Berlin</h1><div class="mast-byline">Antwortseiten · unabhängige Dokumentation</div></header>
@@ -839,7 +856,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMa
 <a href="index.html">Überblick</a><a href="vertraege.html">Verträge</a><a href="moskau-reagiert.html">Politik</a><a href="polizei.html">Polizei</a><a href="fakten.html">Recherchen</a><a href="vertragsanalyse.html">Dokumente</a><a href="medien-august-september-2026.html">Pressespiegel</a>
 </div>
 <main class="content">
-<section class="escalation-feature escalation-story story-final"><div class="story-copy"><div class="story-overline">Darum geht’s:</div><div class="story-date">4. SEPTEMBER 2026</div><h2>Erst sie. Dann er.</h2><p class="story-line">Ein Beamter bringt Anette Klassen zu Boden. <strong>→ Trümmerbruch im Handgelenk.</strong></p><p class="story-line">Henry Lindemeier will zu ihr. <strong>→ Gegen die Wand geschleudert.</strong></p><p class="story-police">Die Polizei sagt: Erst sei er gestürzt, dann habe sie einen Beamten geschlagen.<br/><strong>Die Videos zeigen die andere Abfolge.</strong></p><p class="story-investigation">Das LKA ermittelt wegen Körperverletzung im Amt.</p><a class="intro-cta" href="eskalation.html"><span class="cta-kicker">Videos · Chronologie · Polizeidarstellung</span><span class="cta-main">Zum vollständigen Dossier</span><span aria-hidden="true" class="cta-arrow">→</span></a></div><div class="story-media-top"><div class="anette-visual"><figure><img alt="Anette am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte." src="embedded-1ea9fdda9415bfc6.png"/><figcaption>Klassen am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte.</figcaption></figure><div class="hand-detail"><figure><img alt="Anette Klassens Hand nach dem Einsatz in ärztlicher Behandlung." src="embedded-4c3204006718b9b3.jpg"/><figcaption>Notärztliche Versorgung: Klassens Hand nach Polizeieinsatz.</figcaption></figure></div></div></div><div class="story-media-bottom"><div class="henry-sequence"><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-71c9a69b4668c2bd.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-bc43b70cddc4d13a.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-10bb4c0a29189a36.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-3c29cdb47a9426fe.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-82fd37ba17c690cc.jpg"/></div><div class="sequence-caption">Er will seiner Freundin helfen – Polizei schleudert Henry Lindemeier gegen die Wand!</div></div></section>
+<section class="escalation-feature escalation-story story-final"><div class="story-copy"><div class="story-overline">Darum geht’s:</div><div class="story-date">4. SEPTEMBER 2026</div><h2>Erst sie. Dann er.</h2><p class="story-line">Ein Beamter bringt Anette Klassen zu Boden. <strong>→ Trümmerbruch im Handgelenk.</strong></p><p class="story-line">Henry Lindemeier will zu ihr. <strong>→ Gegen die Wand geschleudert.</strong></p><p class="story-police">Die Polizei sagt: Erst sei er gestürzt, dann habe sie einen Beamten geschlagen.<br/><strong>Die Videos zeigen die andere Abfolge.</strong></p><p class="story-investigation">Das LKA ermittelt wegen Körperverletzung im Amt.</p><a class="intro-cta" href="eskalation.html"><span class="cta-kicker">Videos · Chronologie · Polizeidarstellung</span><span class="cta-main">Zum vollständigen Dossier</span><span aria-hidden="true" class="cta-arrow">→</span></a><a class="pk-recording-link" href="eskalation.html#pressekonferenz"><span aria-hidden="true" class="play">▶</span><span>Neu: Pressekonferenz vom 14. September – vollständige Aufzeichnung</span></a></div><div class="story-media-top"><div class="anette-visual"><figure><img alt="Anette am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte." src="embedded-1ea9fdda9415bfc6.png"/><figcaption>Klassen am Boden, ein Helfer beugt sich zu ihr. Links: der beteiligte Polizeibeamte.</figcaption></figure><div class="hand-detail"><figure><img alt="Anette Klassens Hand nach dem Einsatz in ärztlicher Behandlung." src="embedded-4c3204006718b9b3.jpg"/><figcaption>Notärztliche Versorgung: Klassens Hand nach Polizeieinsatz.</figcaption></figure></div></div></div><div class="story-media-bottom"><div class="henry-sequence"><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-71c9a69b4668c2bd.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-bc43b70cddc4d13a.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-10bb4c0a29189a36.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-3c29cdb47a9426fe.jpg"/><img alt="Videoframe: Henry Lindemeier beim Polizeieinsatz vor dem Russischen Haus." src="embedded-82fd37ba17c690cc.jpg"/></div><div class="sequence-caption">Er will seiner Freundin helfen – Polizei schleudert Henry Lindemeier gegen die Wand!</div></div></section>
 <section class="media">
 <h2>Die aktuelle Lage</h2>
 <div class="media-grid">
